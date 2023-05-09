@@ -10,7 +10,7 @@
     <footer class="footer">
         <ul class="footer__list">
             <li class="footer__listItem">
-                <p class="footer__heading">INFORMACJE</p>
+                <h4 class="footer__heading">INFORMACJE</h4>
                 <div class="footer__line">
                     <span class="footer__lineColorRed line"></span>
                     <span class="footer__lineColorWhite line"></span>
@@ -37,7 +37,7 @@
                 </ul>
             </li>
             <li class="footer__listItem information">
-                <p class="footer__heading">INFORMACJE</p>
+                <h4 class="footer__heading">INFORMACJE</h4>
                 <div class="footer__line">
                     <span class="footer__lineColorRed line"></span>
                     <span class="footer__lineColorWhite line"></span>
@@ -64,7 +64,7 @@
                 </ul>
             </li>
             <li class="footer__listItem information">
-                <p class="footer__heading">MOJE KONTO</p>
+                <h4 class="footer__heading">MOJE KONTO</h4>
                 <div class="footer__line">
                     <span class="footer__lineColorRed line"></span>
                     <span class="footer__lineColorWhite line"></span>
@@ -91,7 +91,7 @@
                 </ul>
             </li>
             <li class="footer__listItem information">
-                <p class="footer__heading">INFORMACJE</p>
+                <h4 class="footer__heading">INFORMACJE</h4>
                 <div class="footer__line">
                     <span class="footer__lineColorRed line"></span>
                     <span class="footer__lineColorWhite line"></span>
