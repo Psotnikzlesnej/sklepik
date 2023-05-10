@@ -1,6 +1,6 @@
 <?php 
 $default_credentials = [
-  'HOSTNAME' => 'localhossst', 
+  'HOSTNAME' => 'localhost', 
   'USERNAME' => 'root', 
   'PASSWORD' => '', 
   'DATABASE' => 'sklep'
