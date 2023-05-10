@@ -50,13 +50,8 @@ INSERT INTO `filter_value` (`ID`, `ID_filter`, `value`) VALUES
 
 INSERT INTO `flag` (`ID`, `name`) VALUES
 (1, 'new'),
-(2, 'new'),
-(3, 'featured'),
-(4, 'featured'),
-(5, 'featured'),
-(6, 'promo'),
-(7, 'promo'),
-(8, 'promo');
+(2, 'featured'),
+(3, 'promo');
 
 INSERT INTO `parameter_value` (`ID`, `value`, `parameter`) VALUES
 (1, '33', 'eget'),
@@ -98,13 +93,13 @@ INSERT INTO `product_filter_value` (`product_ID`, `filter_value_ID`) VALUES
 
 INSERT INTO `product_flag` (`product_ID`, `flag_ID`) VALUES
 (1, 1),
+(1, 2),
+(1, 3),
+(2, 1),
 (2, 2),
-(3, 3),
-(4, 2),
-(5, 3),
-(6, 4),
-(7, 5),
-(8, 6);
+(2, 3),
+(3, 1),
+(3, 2);
 
 INSERT INTO `product_image` (`ID`, `image_name`, `product_ID`, `main`) VALUES
 (1, 'http://dummyimage.com/113x100.png/ff4444/ffffff', 1, 0),
