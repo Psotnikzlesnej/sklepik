@@ -48,7 +48,7 @@ CREATE TABLE `product_image` (
 
 CREATE TABLE `flag` (
   `ID` integer PRIMARY KEY,
-  `name` varchar(255)
+  `name` ENUM ('new', 'promo'),
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 CREATE TABLE `filter_value` (
