@@ -66,7 +66,7 @@ INSERT INTO `parameter_value` (`ID`, `value`, `parameter`) VALUES
 (5, '56', 'pede lobortis'),
 (6, '60', 'ultrices');
 
-INSERT INTO `product` (`ID`, `name`, `description`, `video_url`, `promo_price`, `catalog_price`, `serial_number`, `stock`, `delivery_ID`, `visible`, `variant_name`, `variant_ID`) VALUES
+INSERT INTO `product` (`ID`, `name`, `description`, `video_url`, `promo_price`, `catalog_price`, `serial_number`, `stock`, `delivery_ID`, `visible`, `variant_name`, `variant_group_ID`) VALUES
 (1, 'Granger', 'est risus auctor sed tristique in tempus sit amet sem', 'http://dummyimage.com/166x100.png/ff4444/ffffff', '55', '22', '4237e8dsx793', 89, 8, 1, 'amet diam in magna bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt', 1),
 (2, 'Caryl', 'cursus id turpis integer aliquet massa id lobortis convallis tortor', 'http://dummyimage.com/169x100.png/dddddd/000000', '20', '87', '4237e8dsx793', 96, 7, 1, 'id lobortis convallis tortor risus dapibus augue vel accumsan tellus', 1),
 (3, 'Gilbertina', 'ac lobortis vel dapibus at diam nam', 'http://dummyimage.com/181x100.png/ff4444/ffffff', '72', '21', '4237e8dsx793', 41, 6, 0, 'justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut', 1),
@@ -86,7 +86,7 @@ INSERT INTO `product_category` (`product_ID`, `category_ID`) VALUES
 (7, 4),
 (8, 3);
 
-INSERT INTO `product_filter` (`product_ID`, `filter_ID`) VALUES
+INSERT INTO `product_filter_value` (`product_ID`, `filter_value_ID`) VALUES
 (1, 1),
 (2, 2),
 (3, 3),
