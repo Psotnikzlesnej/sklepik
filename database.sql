@@ -9,13 +9,8 @@ CREATE TABLE `product` (
   `stock` integer,
   `delivery_ID` integer,
   `visible` boolean DEFAULT 1,
+  `variant_ID` integer,
   `variant_name` varchar(255)
-) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-
-CREATE TABLE `variant` (
-  `product_ID` integer UNIQUE,
-  `group` integer,
-  `name` varchar(255)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 CREATE TABLE `delivery` (
@@ -116,8 +111,6 @@ CREATE TABLE `product_filter` (
 ALTER TABLE `product_filter` ADD FOREIGN KEY (`product_ID`) REFERENCES `product` (`ID`);
 
 ALTER TABLE `product_filter` ADD FOREIGN KEY (`filter_ID`) REFERENCES `filter` (`ID`);
-
-ALTER TABLE `variant` ADD FOREIGN KEY (`product_ID`) REFERENCES `product` (`ID`);
 
 ALTER TABLE `product_image` ADD FOREIGN KEY (`product_ID`) REFERENCES `product` (`ID`);
 
