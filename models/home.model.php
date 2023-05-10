@@ -1,18 +1,21 @@
 <?php
 
 function get_top_banners(){
+  global $mysqli;
   $query = "SELECT * FROM `banner` WHERE visible=true AND type=home_top";
   $result = $mysqli->query($query);
   return $result;
 }
 
 function get_tiles(){
+  global $mysqli;
   $query = "SELECT * FROM `banner` WHERE visible=true AND type=home_tile";
   $result = $mysqli->query($query);
   return $result;
 }
 
 function get_bottom_banner(){
+  global $mysqli;
   $query = "SELECT * FROM `banner` WHERE visible=true AND type=home_bottom";
   $result = $mysqli->query($query);
   return $result;
