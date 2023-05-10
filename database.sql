@@ -24,7 +24,7 @@ CREATE TABLE `category` (
   `image_name` varchar(255),
   `parent` integer,
   `level` integer,
-  `type` varchar(255),
+  `type` ENUM ('manufacturer', 'normal'),
   `description` varchar(512)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
