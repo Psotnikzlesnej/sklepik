@@ -16,5 +16,4 @@ $mysqli = @new mysqli(
   $credentials['DATABASE']
 );
 $mysqli->set_charset('utf8mb4');
-
 ?>
