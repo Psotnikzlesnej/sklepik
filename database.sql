@@ -66,7 +66,7 @@ CREATE TABLE `banner` (
   `link` varchar(255),
   `visible` boolean DEFAULT 1,
   `type` ENUM ('home_top', 'home_tile', 'home_bottom', 'store'),
-  `alt` varchar(255)
+  `alt` varchar(255),
   `mask` boolean DEFAULT 1
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
