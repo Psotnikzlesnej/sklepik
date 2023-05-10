@@ -102,15 +102,15 @@ ALTER TABLE `product_flag` ADD FOREIGN KEY (`product_ID`) REFERENCES `product` (
 ALTER TABLE `product_flag` ADD FOREIGN KEY (`flag_ID`) REFERENCES `flag` (`ID`);
 
 
-CREATE TABLE `product_filter` (
+CREATE TABLE `product_filter_value` (
   `product_ID` integer,
-  `filter_ID` integer,
-  PRIMARY KEY (`product_ID`, `filter_ID`)
+  `filter_value_ID` integer,
+  PRIMARY KEY (`product_ID`, `filter_value_ID`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
-ALTER TABLE `product_filter` ADD FOREIGN KEY (`product_ID`) REFERENCES `product` (`ID`);
+ALTER TABLE `product_filter_value` ADD FOREIGN KEY (`product_ID`) REFERENCES `product` (`ID`);
 
-ALTER TABLE `product_filter` ADD FOREIGN KEY (`filter_ID`) REFERENCES `filter` (`ID`);
+ALTER TABLE `product_filter_value` ADD FOREIGN KEY (`filter_value_ID`) REFERENCES `filter_value` (`ID`);
 
 ALTER TABLE `product_image` ADD FOREIGN KEY (`product_ID`) REFERENCES `product` (`ID`);
 
