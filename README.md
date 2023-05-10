@@ -53,6 +53,11 @@ https://xd.adobe.com/view/78db40f1-fe66-4e89-bc40-17146c585105-2d88/
 
 product/product-id - strona produktu
 
+## kompilowanie scss
+
+1. uruchomić komendę `npm i`, aby zainstalować potrzebne paczki
+2. uruchomić komendę `npm compile-sass`, aby skompilować pliki scss
+
 
 
 ##### aha i to jest do ciągłej aktualizacji nieroby
