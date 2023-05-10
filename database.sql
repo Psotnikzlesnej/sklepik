@@ -59,7 +59,7 @@ CREATE TABLE `filter_value` (
 
 CREATE TABLE `filter` (
   `ID` integer PRIMARY KEY,
-  `type` ENUM ('manufacturer', 'color', 'grid_multiple', 'range', 'slider'),
+  `type` ENUM ('color', 'grid_multiple', 'range', 'slider'),
   `name` varchar(255)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
