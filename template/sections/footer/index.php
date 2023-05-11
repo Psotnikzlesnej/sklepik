@@ -5,17 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
 </head>
 <body>
     <footer class="footer">
         <ul class="footer__list">
             <li class="footer__listItem">
-                <h4 class="footer__heading">INFORMACJE</h4>
+                <p class="footer__heading">
+                    INFORMACJE
+                    <a class="footer__mobileViewBtn icon" href="javascript:void(0);" onclick="toggleElementVisibility1()">
+                        <i class="footer__btnIcon plus" id="changeIcon"></i>
+                    </a>
+                </p>
                 <div class="footer__line">
                     <span class="footer__lineColorRed line"></span>
                     <span class="footer__lineColorWhite line"></span>
                 </div>
-                <ul class="footer__nestedList">
+                <ul class="footer__nestedList" id="footer__mobileView1">
                     <li class="footer__nestedListItem">
                         <p class="footer__nestedListItemParagraph"><a href="#" class="footer__nestedListItemAnchor">Informacje o sklepie</a></p>
                     </li>
@@ -37,12 +44,17 @@
                 </ul>
             </li>
             <li class="footer__listItem information">
-                <h4 class="footer__heading">INFORMACJE</h4>
+                <p class="footer__heading">
+                    INFORMACJE
+                    <a class="footer__mobileViewBtn icon" href="javascript:void(0);" onclick="toggleElementVisibility2()">
+                        <i class="footer__btnIcon plus" id="changeIcon"></i>
+                    </a>
+                </p>
                 <div class="footer__line">
                     <span class="footer__lineColorRed line"></span>
                     <span class="footer__lineColorWhite line"></span>
                 </div>
-                <ul class="footer__nestedList">
+                <ul class="footer__nestedList" id="footer__mobileView2">
                     <li class="footer__nestedListItem">
                         <p class="footer__nestedListItemParagraph"><a href="#" class="footer__nestedListItemAnchor">Czas realizacji</a></p>
                     </li>
@@ -64,12 +76,17 @@
                 </ul>
             </li>
             <li class="footer__listItem information">
-                <h4 class="footer__heading">MOJE KONTO</h4>
+                <p class="footer__heading">
+                    MOJE KONTO
+                    <a class="footer__mobileViewBtn icon" href="javascript:void(0);" onclick="toggleElementVisibility3()">
+                        <i class="footer__btnIcon plus" id="changeIcon"></i>
+                    </a>
+                </p>
                 <div class="footer__line">
                     <span class="footer__lineColorRed line"></span>
                     <span class="footer__lineColorWhite line"></span>
                 </div>
-                <ul class="footer__nestedList">
+                <ul class="footer__nestedList" id="footer__mobileView3">
                     <li class="footer__nestedListItem">
                         <p class="footer__nestedListItemParagraph"><a href="#" class="footer__nestedListItemAnchor">Logowanie</a></p>
                     </li>
@@ -91,12 +108,17 @@
                 </ul>
             </li>
             <li class="footer__listItem information">
-                <h4 class="footer__heading">INFORMACJE</h4>
+                <p class="footer__heading">
+                    INFORMACJE
+                    <a class="footer__mobileViewBtn icon" href="javascript:void(0);" onclick="toggleElementVisibility4()">
+                        <i class="footer__btnIcon plus" id="changeIcon"></i>
+                    </a>
+                </p>
                 <div class="footer__line">
                     <span class="footer__lineColorRed line"></span>
                     <span class="footer__lineColorWhite line"></span>
                 </div>
-                <ul class="footer__nestedList">
+                <ul class="footer__nestedList" id="footer__mobileView4">
                     <li class="footer__nestedListItem">
                         <p class="footer__nestedListItemParagraph"><a href="#" class="footer__nestedListItemAnchor">Informacje o sklepie</a></p>
                     </li>

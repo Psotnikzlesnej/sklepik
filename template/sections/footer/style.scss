@@ -1,5 +1,5 @@
-@use '/utils/styles/fonts';
-@use '/utils/styles/variables';
+@use '../../../utils/styles/fonts';
+@use '../../../utils/styles/variables';
 
 * {
     padding: 0;
@@ -16,14 +16,29 @@ body {
     font-size: 14px;
     padding: 0 10px 30px;
 
+    &__mobileViewBtn {
+        height: 16px;
+    }
+
+    .plus {
+        content: url(plus.svg);
+        height: 100%;
+    }
+
+    .minus {
+        content: url(minus.svg);
+        height: 100%;
+    }
+
     &__list {
         display: flex;
         justify-content: space-evenly;
         list-style: none;
+        flex-direction: column;
+        padding: 16px;
     }
 
     &__listItem {
-        width: 100%;
         display: flex;
         flex-direction: column;
         margin: 20px;
@@ -32,7 +47,9 @@ body {
     &__heading {
         text-align: start;
         padding: 10px 0 0;
-        font-weight: fonts.$bold;
+        font-weight: variables.$bold;
+        display: flex;
+        justify-content: space-between;
     }
 
     &__line {
@@ -60,13 +77,14 @@ body {
     &__nestedList {
         flex-direction: column;
         list-style: none;
+        display: none;
     }
 
     &__nestedListItem {
         margin: 0;
     }
 
-    &__nestedListItemHeading {
+    &__nestedListItemParagraph {
         text-align: start;
         padding: 15px 0;
     }
@@ -74,7 +92,7 @@ body {
     &__nestedListItemAnchor {
         text-decoration: none;
         color: #FFF;
-        font-weight: fonts.$regular;
+        font-weight: variables.$regular;
     }
 }
 
@@ -85,11 +103,46 @@ body {
 
     &__list {
         display: flex;
-        flex-direction: wrap;
-        justify-content: space-between;
+        flex-direction: column;
+        padding: 0;
     }
 
     &__listItem {
         list-style: none;
+        text-align: center;
+        font-weight: variables.$regular;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer {
+        &__mobileViewBtn {
+            display: none;
+        }
+
+        &__btnIcon {
+            display: none;
+        }
+
+        &__list {
+            flex-direction: row;
+            width: 100%;
+            padding: 0;
+        }
+
+        &__listItem {
+            width: 90%;
+        }
+
+        &__nestedList {
+            display: block;
+        }
+    }
+
+    .copyright {
+        &__list {
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
 }
