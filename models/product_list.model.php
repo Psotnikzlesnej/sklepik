@@ -49,6 +49,8 @@ if (mysqli_num_rows($select_category_result) > 0) {
 
 }
 
-
-
+function getFilters(){
+  $query = "SELECT filter.name, filter.type, filter.ID, filter_value.value  FROM filter
+  JOIN filter_value ON filter_value.ID_filter = filter.ID";
+}
 ?>
