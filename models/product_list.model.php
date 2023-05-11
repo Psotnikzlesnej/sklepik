@@ -22,4 +22,33 @@
       }
      return $result;
     }
+
+
+function getCategory(){
+
+$select_category =  "SELECT banner.title, banner.description,banner.image_name,banner.link,banner.visible,banner.type,banner.alt,banner.mask,category.ID , category.name , category.image_name , category.description from category JOIN banner ON category.ID = banner.ID where level='1'";
+
+$select_category_result= $mysqli -> query($select_category);
+
+if (mysqli_num_rows($select_category_result) > 0) {
+  // output data of each row
+  while($row = mysqli_fetch_assoc($select_category_result)) {
+    echo "id: " . $row["ID"]. "  <br>";
+    echo "title: " . $row["title"]. "  <br>";
+    echo "des: " . $row["description"]. "  <br>";
+    echo "in: " . $row["image_name"]. "  <br>";
+    echo "link: " . $row["link"]. "  <br>";
+    echo "vis: " . $row["visible"]. "  <br>";
+    echo "alt: " . $row["alt"]. "  <br>";
+    echo "mask: " . $row["mask"]. "  <br>";
+    echo "name: " . $row["name"]. "  <br>";
+  }
+} else {
+  echo "0 results";
+}
+
+}
+
+
+
 ?>
