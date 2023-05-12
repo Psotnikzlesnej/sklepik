@@ -4,10 +4,13 @@ function get_product($id){
 	$query = "SELECT product.ID, product.name, product.stock, product.variant_name, product.catalog_price, 
 	product.promo_price, delivery.name as delivery_name, product.serial_number,
 	flag.name as flag_name, product_image.main, product_image.image_name,
-	product.description, product.video_url, parameter_value.parameter, parameter_value.value  FROM product
+	product.description, product.video_url, parameter_value.parameter, parameter_value.value,
+	manufacturer.name as manufacturer_name, manufacturer.image_name as manufacturer_image FROM product
 		JOIN delivery ON delivery.ID = product.delivery_ID
 		JOIN product_parameter_value ON product_parameter_value.product_ID = product.ID
 		JOIN parameter_value ON parameter_value.ID = product_parameter_value.parameter_value_ID
+		JOIN product_manufacturer ON product_manufacturer.product_ID = product.ID
+		JOIN manufacturer ON manufacturer.ID = product_manufacturer.manufacturer_ID
 		LEFT JOIN product_flag ON product_flag.product_ID = product.ID
 		LEFT JOIN flag ON product_flag.flag_ID = flag.ID
 		LEFT JOIN product_image ON product_image.product_ID = product.ID
