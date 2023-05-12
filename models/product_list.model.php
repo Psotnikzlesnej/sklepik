@@ -1,5 +1,4 @@
 <?php
-require('../utils/php/config.php');
 
 function get_products($sorting_mode,$offset,$boundary,$category,$manufacturer,$colors,$grid_values,$range,$price_range){ 
   global $mysqli;

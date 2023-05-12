@@ -1,10 +1,43 @@
 <?php
-class Masher {
+abstract class Masher {
   function __construct($arr){
     $this->initial_arr = $arr;
     $this->mashed_arr = [];
   }
 
+}
+
+class FilterMashed extends Masher {
+  function __construct($arr){
+    parent::__construct($arr);
+  }
+
+  public function mashWrapper(){
+    $last_mashed_arr = array_reduce($this->initial_arr, [$this, 'mashMultiple']);
+    array_push($this->mashed_arr, $last_mashed_arr);
+    return $this->mashed_arr;
+  }
+
+  private function mashMultiple($mashed_arr, $filter_arr){
+    $is_different_filter = (isset($mashed_arr) && ($mashed_arr['ID'] != $filter_arr['ID']));
+  
+    if($is_different_filter){
+      array_push($this->mashed_arr, $mashed_arr);
+    }
+    if(!isset($mashed_arr) || $is_different_filter){
+      $new_mashed_arr = [
+        'ID' => $filter_arr['ID'],
+        'name' => $filter_arr['name'],
+        'type' => $filter_arr['type'],
+        'values' => [$filter_arr['value']]
+      ];
+      return $new_mashed_arr;
+    }
+  
+    array_push($mashed_arr['values'], $filter_arr['value']);
+  
+    return $mashed_arr;
+  }
 }
 
 class ProductMasher extends Masher {
@@ -34,7 +67,8 @@ class ProductMasher extends Masher {
         'delivery_name' => $product_arr['delivery_name'],
         'flags' => [$product_arr['flag_name']],
         'images' => [$product_arr['image_name']],
-        'details' => [$product_arr['parameter']=>$product_arr['value']]
+        'details' => [$product_arr['parameter']=>$product_arr['value']],
+        'manufacturer' => ['name' => $product_arr['manufacturer_name'], 'image' => $product_arr['manufacturer_image']]
       ];
       return $mashed_arr;
     }
