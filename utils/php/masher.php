@@ -7,7 +7,7 @@ abstract class Masher {
 
 }
 
-class FilterMashed extends Masher {
+class FilterMasher extends Masher {
   function __construct($arr){
     parent::__construct($arr);
   }

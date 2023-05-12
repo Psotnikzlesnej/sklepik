@@ -45,24 +45,21 @@ function get_filters(){
   global $mysqli;
   $query = "SELECT filter.name, filter.type, filter.ID, filter_value.value FROM 
   filter JOIN filter_value ON filter_value.ID_filter = filter.ID";
-  $result= $mysqli->query($query);
+  $result = $mysqli->query($query);
   return $result;
 }
 
 
 
 function getBanner(){
-
+  global $mysqli;
   $select_banner =  "SELECT id,title, description ,image_name, link,visible,type,alt,mask from banner  where type='store' and visible='1'";
 
-  $select_banner_result= $mysqli -> query($select_banner );
+  $select_banner_result= $mysqli -> query($select_banner);
   
   if (mysqli_num_rows($select_banner_result) > 0) {
-    // output data of each row
      while($row = mysqli_fetch_assoc($select_banner_result)) {
-     echo "<pre>";
-      print_r($row);
-      echo "</pre>";
+    return $select_banner_result;
     }
   } else {
     echo "0 results";
