@@ -17,7 +17,7 @@ function process_featured(){
   }
 
   $masher = new ProductMasher($products);
-  $mashed_products = $masher->mashWrapper('several');
+  $mashed_products = $masher->mashWrapper('multiple');
 
   return $mashed_products;
 }

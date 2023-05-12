@@ -13,8 +13,8 @@ class ProductMasher extends Masher {
   }
 
   public function mashWrapper($type){
-    if($type == 'several'){
-      $last_mashed_arr = array_reduce($this->initial_arr, [$this, 'mashSeveral']);
+    if($type == 'multiple'){
+      $last_mashed_arr = array_reduce($this->initial_arr, [$this, 'mashMultiple']);
       array_push($this->mashed_arr, $last_mashed_arr);
       return $this->mashed_arr;
     }
@@ -63,7 +63,7 @@ class ProductMasher extends Masher {
     return $mashed_arr;
   }
 
-  private function mashSeveral($mashed_arr, $product_arr){
+  private function mashMultiple($mashed_arr, $product_arr){
     $is_different_product = (isset($mashed_arr) && ($mashed_arr['ID'] != $product_arr['ID']));
   
     if($is_different_product){
