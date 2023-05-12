@@ -1,3 +1,184 @@
-
-
 /*# sourceMappingURL=style.css.map */
+
+body {
+    margin: 0px;
+}
+
+.parameters_layout {
+    top: 2074px;
+    left: 0px;
+    width: 1920px;
+    height: 500px;
+    position: absolute;
+}
+
+.parameters_box {
+    top: 2074px;
+    left: 0px;
+    width: 1920px;
+    height: 66px;
+    opacity: 1;
+    position: absolute;
+}
+
+.parameters_box_text_top {
+    top: 2074px;
+    width: 1600px;
+    left: 160px;
+    width: 1600px;
+    text-align: center;
+    color: #111111;
+    opacity: 1;
+    height: 50px;
+    /* font: normal normal bold 36px/200px Metropolis; */
+    letter-spacing: 0px;
+    position: absolute;
+}
+
+.parameters_box_detail_line {
+    top: 2074px;
+    text-align: center;
+    height: 50px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-top: 1px solid #ff0000;
+    opacity: 1;
+    width: 50px;
+}
+
+.parameters_box_detail_white_1,
+.parameters_box_detail_white_2,
+.parameters_box_detail_white_3,
+.parameters_box_detail_white_4 {
+    height: 50px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #e1e2e8;
+    opacity: 1;
+    width: 1858px;
+    left: 31px;
+    position: absolute;
+}
+
+.parameters_box_detail_white_1 {
+    top: 2180px;
+}
+
+.parameters_box_detail_white_2 {
+    top: 2278px;
+}
+
+.parameters_box_detail_white_3 {
+    top: 2376px;
+}
+
+.parameters_box_detail_white_4 {
+    top: 2474px;
+}
+
+.parameters_box_detail_blue_1,
+.parameters_box_detail_blue_2,
+.parameters_box_detail_blue_3,
+.parameters_box_detail_blue_4 {
+    height: 50px;
+    background: #f8f8f8 0% 0% no-repeat padding-box;
+    border: 1px solid #e1e2e8;
+    opacity: 1;
+    width: 1858px;
+    left: 31px;
+    position: absolute;
+}
+
+.parameters_box_detail_blue_1 {
+    top: 2229px;
+}
+
+.parameters_box_detail_blue_2 {
+    top: 2327px;
+}
+
+.parameters_box_detail_blue_3 {
+    top: 2425px;
+}
+
+.parameters_box_detail_blue_4 {
+    top: 2523px;
+}
+
+.parameters_box_text_span1,
+.parameters_box_text_span2,
+.parameters_box_text_span3,
+.parameters_box_text_span4,
+.parameters_box_text_span5,
+.parameters_box_text_span6,
+.parameters_box_text_span7 {
+    height: 14px;
+    /* UI Properties */
+    text-align: right;
+    font: normal normal normal 14px/20px Metropolis;
+    letter-spacing: -0.28px;
+    color: #111111;
+    opacity: 1;
+    position: absolute;
+    z-index: 3;
+}
+
+.parameters_box_text_span1 {
+    top: 2198px;
+    left: 868px;
+    width: 32px;
+}
+
+.parameters_box_text_span2 {
+    top: 2247px;
+    left: 744px;
+    width: 156px;
+}
+
+.parameters_box_text_span3 {
+    top: 2296px;
+    left: 812px;
+    width: 88px;
+}
+
+.parameters_box_text_span4 {
+    top: 2345px;
+    left: 688px;
+    width: 212px;
+}
+
+.parameters_box_text_span5 {
+    top: 2394px;
+    left: 758px;
+    width: 142px;
+}
+
+.parameters_box_text_span6 {
+    top: 2443px;
+    left: 685px;
+    width: 215px;
+}
+
+.parameters_box_text_span7 {
+    top: 2492px;
+    left: 778px;
+    width: 122px;
+}
+
+.parameters_box_text1 {
+    top: 2198px;
+    left: 695px;
+    width: 205px;
+    height: 367px;
+    opacity: 1;
+    position: absolute;
+    z-index: 2;
+}
+
+.parameters_box_text2 {
+    top: 2198px;
+    left: 1020px;
+    width: 513px;
+    height: 373px;
+    opacity: 1;
+    position: absolute;
+    z-index: 2;
+}
