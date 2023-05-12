@@ -21,7 +21,7 @@ function get_product_categories($id) {
 	$query = "SELECT c.ID FROM `product` as p
 		JOIN `product_category` as p_c on p_c.product_ID = p.ID
 		JOIN `category` as c on p_c.category_ID = c.ID
-			WHERE p.ID = ? ORDER BY level";
+			WHERE p.ID = ? ORDER BY level DESC";
 	$result = $mysqli->execute_query($query, [$id]);
 	return $result;
 }
@@ -30,8 +30,8 @@ function get_similar_products($category, $id){
 	global $mysqli;
 	$query = "SELECT p.ID, p.name, p.promo_price, p.catalog_price, p.serial_number,
   p.stock, f.name as flag_name, p_i.main, p_i.image_name FROM `product` as p
-		JOIN `product_flag` as p_f on p_f.product_ID = p.ID
-    JOIN `flag` as f on p_f.flag_ID = f.ID
+		LEFT JOIN `product_flag` as p_f on p_f.product_ID = p.ID
+    LEFT JOIN `flag` as f on p_f.flag_ID = f.ID
 		JOIN `product_category` as p_c on p_c.product_ID = p.ID
 		JOIN `category` as c on p_c.category_ID = c.ID
     LEFT JOIN `product_image` as p_i on p_i.product_ID = p.ID
