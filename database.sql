@@ -24,8 +24,13 @@ CREATE TABLE `category` (
   `image_name` varchar(255),
   `parent` integer,
   `level` integer,
-  `type` ENUM ('manufacturer', 'normal'),
   `description` varchar(512)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+CREATE TABLE `manufacturer` (
+  `ID` integer PRIMARY KEY,
+  `name` varchar(255),
+  `image_name` varchar(255)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 CREATE TABLE `parameter_value` (
@@ -79,6 +84,16 @@ CREATE TABLE `product_category` (
 ALTER TABLE `product_category` ADD FOREIGN KEY (`product_ID`) REFERENCES `product` (`ID`);
 
 ALTER TABLE `product_category` ADD FOREIGN KEY (`category_ID`) REFERENCES `category` (`ID`);
+
+CREATE TABLE `product_manufacturer` (
+  `product_ID` integer,
+  `manufacturer_ID` integer,
+  PRIMARY KEY (`product_ID`, `manufacturer_ID`)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+ALTER TABLE `product_manufacturer` ADD FOREIGN KEY (`product_ID`) REFERENCES `product` (`ID`);
+
+ALTER TABLE `product_manufacturer` ADD FOREIGN KEY (`manufacturer_ID`) REFERENCES `manufacturer` (`ID`);
 
 
 CREATE TABLE `product_parameter_value` (
