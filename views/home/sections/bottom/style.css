@@ -1,3 +1,287 @@
+@font-face {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 100;
+  src: url("/fonts/Metropolis-Thin.otf") format("otf");
+}
+@font-face {
+  font-family: "Metropolis";
+  font-style: italic;
+  font-weight: 100;
+  src: url("/fonts/Metropolis-ThinItalic.otf") format("otf");
+}
+@font-face {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 200;
+  src: url("/fonts/Metropolis-ExtraLight.otf") format("otf");
+}
+@font-face {
+  font-family: "Metropolis";
+  font-style: italic;
+  font-weight: 200;
+  src: url("/fonts/Metropolis-ExtraLightItalic.otf") format("otf");
+}
+@font-face {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/Metropolis-Light.otf") format("otf");
+}
+@font-face {
+  font-family: "Metropolis";
+  font-style: italic;
+  font-weight: 300;
+  src: url("/fonts/Metropolis-LightItalic.otf") format("otf");
+}
+@font-face {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Metropolis-Regular.otf") format("otf");
+}
+@font-face {
+  font-family: "Metropolis";
+  font-style: italic;
+  font-weight: 400;
+  src: url("/fonts/Metropolis-RegularItalic.otf") format("otf");
+}
+@font-face {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/Metropolis-Medium.otf") format("otf");
+}
+@font-face {
+  font-family: "Metropolis";
+  font-style: italic;
+  font-weight: 500;
+  src: url("/fonts/Metropolis-MediumItalic.otf") format("otf");
+}
+@font-face {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/Metropolis-SemiBold.otf") format("otf");
+}
+@font-face {
+  font-family: "Metropolis";
+  font-style: italic;
+  font-weight: 600;
+  src: url("/fonts/Metropolis-SemiBoldItalic.otf") format("otf");
+}
+@font-face {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/Metropolis-Bold.otf") format("otf");
+}
+@font-face {
+  font-family: "Metropolis";
+  font-style: italic;
+  font-weight: 700;
+  src: url("/fonts/Metropolis-BoldItalic.otf") format("otf");
+}
+@font-face {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 800;
+  src: url("/fonts/Metropolis-ExtraBold.otf") format("otf");
+}
+@font-face {
+  font-family: "Metropolis";
+  font-style: italic;
+  font-weight: 800;
+  src: url("/fonts/Metropolis-ExtraBoldItalic.otf") format("otf");
+}
+@font-face {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 900;
+  src: url("/fonts/Metropolis-Black.otf") format("otf");
+}
+@font-face {
+  font-family: "Metropolis";
+  font-style: italic;
+  font-weight: 900;
+  src: url("/fonts/Metropolis-BlackItalic.otf") format("otf");
+}
+* {
+  padding: 0;
+  margin: 0;
+}
 
+body {
+  font-family: "Metropolis", sans-serif;
+}
 
-/*# sourceMappingURL=style.css.map */
+.whyUs {
+  overflow: hidden;
+  position: relative;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.whyUs__bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+}
+.whyUs__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+.whyUs__heading {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.whyUs__line {
+  width: 100%;
+  display: flex;
+}
+.whyUs__lineColorRed {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #F74137;
+  width: 60px;
+  border-width: 0;
+  height: 3px;
+}
+.whyUs__lineColorWhite {
+  background-color: #fff;
+  width: 100%;
+  opacity: 0.1;
+  border-width: 0;
+  height: 1px;
+}
+.whyUs__paragraph {
+  align-self: center;
+  text-align: center;
+  width: 100%;
+  margin: 45px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.whyUs__list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  flex-direction: column;
+}
+.whyUs__listItem {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.whyUs__listItemIcon {
+  margin-bottom: 5px;
+}
+.whyUs__listItemSpan {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+.whyUs__btn {
+  padding: 20px;
+  background-color: #F74137;
+  border: 0;
+  width: 50%;
+  align-self: center;
+  margin-top: 20px;
+}
+.whyUs__btnSpan {
+  color: #FFF;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.whyUs__btnSpanAnchor {
+  color: #FFF;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .whyUs__img {
+    content: url("Image.jpg");
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+  .whyUs__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .whyUs__list {
+    flex-direction: row;
+  }
+  .whyUs__listItem {
+    width: 200px;
+  }
+  .whyUs__listItemIcon {
+    margin-bottom: 5px;
+  }
+  .whyUs__listItemSpan {
+    margin-top: 5px;
+  }
+  .whyUs__btn {
+    width: 25%;
+  }
+}
+@media (min-width: 1024px) {
+  .whyUs__list {
+    flex-direction: row;
+  }
+  .whyUs__listItem {
+    width: 270px;
+  }
+  .whyUs__listItemIcon {
+    margin-bottom: 10px;
+  }
+  .whyUs__listItemSpan {
+    margin-top: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .whyUs {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .whyUs__heading {
+    font-size: 44px;
+  }
+  .whyUs__paragraph {
+    font-size: 18px;
+    width: 53%;
+  }
+  .whyUs__listItem {
+    width: 308px;
+    height: 151px;
+  }
+  .whyUs__listItemSpan {
+    font-size: 14px;
+  }
+  .whyUs__btn {
+    width: 246px;
+    height: 55px;
+  }
+  .whyUs__btnSpan {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=style.css.map */
