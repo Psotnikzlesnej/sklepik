@@ -2,7 +2,7 @@
 require('../utils/php/config.php');
 
 function get_products($sorting_mode,$offset,$boundary,$category,$manufacturer,$colors,$grid_values,$range,$price_range){ 
-  global $mysqli
+  global $mysqli;
   $imploded_colors =implode(',', $colors);
   $imploded_grid =implode(',', $grid_values);
   // $count_query = $mysqli -> query("SELECT count(ID) from product");
@@ -34,7 +34,7 @@ function get_products($sorting_mode,$offset,$boundary,$category,$manufacturer,$c
 
 
 function get_categories($curr_category){
-  global $mysqli
+  global $mysqli;
   $query = "SELECT category.ID, category.name, category.image_name, category.description, 
   (category.ID = ?) as is_current from category WHERE level=1";
 
@@ -43,7 +43,7 @@ function get_categories($curr_category){
 }
 
 function get_filters(){
-  global $mysqli
+  global $mysqli;
   $query = "SELECT filter.name, filter.type, filter.ID, filter_value.value FROM 
   filter JOIN filter_value ON filter_value.ID_filter = filter.ID";
   $result= $mysqli->query($query);
