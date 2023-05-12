@@ -9,15 +9,15 @@ INSERT INTO `banner` (`ID`, `title`, `description`, `image_name`, `link`, `visib
 (7, 'Nlounge', 'lorem ipsum dolor sit amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan', 'http://dummyimage.com/156x100.png/cc0000/ffffff', 'https://guardian.co.uk/curabitur/convallis/duis/consequat.xml?cum=eu&sociis=sapien&natoque=cursus&penatibus=vestibulum&et=proin&magnis=eu&dis=mi&parturient=nulla&montes=ac&nascetur=enim&ridiculus=in&mus=tempor&vivamus=turpis&vestibulum=nec&sagittis=euismo', 1, 'home_top', 'vivamus vestibulum sagittis sapien cum sociis natoque', 1),
 (8, 'Meeveo', 'suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo eu massa donec dapibus duis at veli', 'http://dummyimage.com/186x100.png/cc0000/ffffff', 'https://behance.net/fusce/congue/diam.jsp?potenti=faucibus&cras=accumsan&in=odio&purus=curabitur&eu=convallis&magna=duis&vulputate=consequat&luctus=dui&cum=nec&sociis=nisi&natoque=volutpat&penatibus=eleifend&et=donec&magnis=ut&dis=dolor&parturient=morbi&m', 0, 'home_bottom', 'in blandit ultrices enim lorem ipsum dolor', 0);
 
-INSERT INTO `category` (`ID`, `name`, `image_name`, `parent`, `level`, `type`, `description`) VALUES
-(1, 'Cogilith', 'http://dummyimage.com/168x100.png/5fa2dd/ffffff', NULL, 1, '', 'consequat dui nec nisi volutpat eleifend donec ut'),
-(2, 'Dynazzy', 'http://dummyimage.com/117x100.png/cc0000/ffffff', NULL, 1, '', 'viverra diam vitae quam suspendisse potenti nullam porttitor'),
-(3, 'Yodo', 'http://dummyimage.com/210x100.png/5fa2dd/ffffff', NULL, 1, '', 'mattis egestas metus aenean fermentum donec'),
-(4, 'Aivee', 'http://dummyimage.com/188x100.png/dddddd/000000', NULL, 1, '', 'molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque'),
-(5, 'Zoozzy', 'http://dummyimage.com/160x100.png/ff4444/ffffff', NULL, 1, '', 'pellentesque ultrices mattis odio donec vitae nisi nam ultrices'),
-(6, 'Gigashots', 'http://dummyimage.com/140x100.png/dddddd/000000', 3, 2, '', 'lectus in est risus auctor sed tristique in tempus sit'),
-(7, 'Dynava', 'http://dummyimage.com/123x100.png/dddddd/000000', 4, 2, '', 'id consequat in consequat ut nulla sed'),
-(8, 'Gabvine', 'http://dummyimage.com/107x100.png/ff4444/ffffff', 6, 3, '', 'potenti nullam porttitor lacus at turpis donec posuere metus');
+INSERT INTO `category` (`ID`, `name`, `image_name`, `parent`, `level`,`description`) VALUES
+(1, 'Cogilith', 'http://dummyimage.com/168x100.png/5fa2dd/ffffff', NULL, 1,  'consequat dui nec nisi volutpat eleifend donec ut'),
+(2, 'Dynazzy', 'http://dummyimage.com/117x100.png/cc0000/ffffff', NULL, 1,  'viverra diam vitae quam suspendisse potenti nullam porttitor'),
+(3, 'Yodo', 'http://dummyimage.com/210x100.png/5fa2dd/ffffff', NULL, 1,  'mattis egestas metus aenean fermentum donec'),
+(4, 'Aivee', 'http://dummyimage.com/188x100.png/dddddd/000000', NULL, 1,  'molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque'),
+(5, 'Zoozzy', 'http://dummyimage.com/160x100.png/ff4444/ffffff', NULL, 1,  'pellentesque ultrices mattis odio donec vitae nisi nam ultrices'),
+(6, 'Gigashots', 'http://dummyimage.com/140x100.png/dddddd/000000', 3, 2, 'lectus in est risus auctor sed tristique in tempus sit'),
+(7, 'Dynava', 'http://dummyimage.com/123x100.png/dddddd/000000', 4, 2, 'id consequat in consequat ut nulla sed'),
+(8, 'Gabvine', 'http://dummyimage.com/107x100.png/ff4444/ffffff', 6, 3, 'potenti nullam porttitor lacus at turpis donec posuere metus');
 
 INSERT INTO `delivery` (`ID`, `name`) VALUES
 (1, '24'),
@@ -109,6 +109,29 @@ INSERT INTO `product_image` (`ID`, `image_name`, `product_ID`, `main`) VALUES
 (8, 'http://dummyimage.com/243x100.png/cc0000/ffffff', 8, 0);
 
 INSERT INTO `product_parameter_value` (`product_ID`, `parameter_value_ID`) VALUES
+(1, 1),
+(2, 2),
+(3, 3),
+(4, 2),
+(5, 3),
+(6, 4),
+(7, 5),
+(8, 6);
+
+
+
+insert into manufacturer (ID, name, image_name) values (1, 'Skilith', 'http://dummyimage.com/188x100.png/cc0000/ffffff');
+insert into manufacturer (ID, name, image_name) values (2, 'Wordpedia', 'http://dummyimage.com/180x100.png/cc0000/ffffff');
+insert into manufacturer (ID, name, image_name) values (3, 'Edgeblab', 'http://dummyimage.com/201x100.png/cc0000/ffffff');
+insert into manufacturer (ID, name, image_name) values (4, 'Npath', 'http://dummyimage.com/244x100.png/5fa2dd/ffffff');
+insert into manufacturer (ID, name, image_name) values (5, 'Aimbu', 'http://dummyimage.com/134x100.png/dddddd/000000');
+insert into manufacturer (ID, name, image_name) values (6, 'Tagcat', 'http://dummyimage.com/177x100.png/5fa2dd/ffffff');
+insert into manufacturer (ID, name, image_name) values (7, 'Twinte', 'http://dummyimage.com/113x100.png/dddddd/000000');
+insert into manufacturer (ID, name, image_name) values (8, 'Mydo', 'http://dummyimage.com/210x100.png/cc0000/ffffff');
+
+
+
+INSERT INTO `product_manufacturer` (`product_ID`, `manufacturer_ID`) VALUES
 (1, 1),
 (2, 2),
 (3, 3),
