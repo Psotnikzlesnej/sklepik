@@ -42,19 +42,8 @@
                         <div class="price1">297zł</div>
                         <div class="price2">100zł</div>   
                     </div>
-                </div>
-
-                <div class="product_tile">
-                    <div class="photo">
-                        <img src="" alt="">
-                    </div>
-                    <div class="dsc">
-                        <div class="dsc1">TURBOMATURA</div>
-                        <div class="dsc2">2017</div>
-                    </div>
-                    <div class="price">
-                        <div class="price1">297zł</div>
-                        <div class="price2">100zł</div>   
+                    <div class="addtocart">
+                        
                     </div>
                 </div>
 
@@ -70,6 +59,9 @@
                         <div class="price1">297zł</div>
                         <div class="price2">100zł</div>   
                     </div>
+                    <div class="addtocart">
+                        
+                    </div>
                 </div>
 
                 <div class="product_tile">
@@ -83,6 +75,26 @@
                     <div class="price">
                         <div class="price1">297zł</div>
                         <div class="price2">100zł</div>   
+                    </div>
+                    <div class="addtocart">
+                        
+                    </div>
+                </div>
+
+                <div class="product_tile">
+                    <div class="photo">
+                        <img src="" alt="">
+                    </div>
+                    <div class="dsc">
+                        <div class="dsc1">TURBOMATURA</div>
+                        <div class="dsc2">2017</div>
+                    </div>
+                    <div class="price">
+                        <div class="price1">297zł</div>
+                        <div class="price2">100zł</div>   
+                    </div>
+                    <div class="addtocart">
+                        
                     </div>
                 </div>
 

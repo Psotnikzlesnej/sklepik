@@ -266,8 +266,19 @@ body {
   margin-top: 80px;
 }
 
-.product_tile:hover img, .product_tile:addtocart h3 {
-  margin-top: -80px;
+.product_tile:hover > .addtocart {
+  margin-top: 30px;
+  transition: 150ms;
+}
+
+.product_tile:hover > .price and .dsc {
+  margin-top: -30px;
+  transition: 150ms;
+}
+
+.product_tile:hover > .dsc {
+  margin-top: 0;
+  transition: 150ms;
 }
 
 /*# sourceMappingURL=style.css.map */
