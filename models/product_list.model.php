@@ -50,4 +50,27 @@ function get_filters(){
   return $result;
 }
 
+
+
+function getBanner(){
+
+  $select_banner =  "SELECT id,title, description ,image_name, link,visible,type,alt,mask from banner  where type='store' and visible='1'";
+
+  $select_banner_result= $mysqli -> query($select_banner );
+  
+  if (mysqli_num_rows($select_banner_result) > 0) {
+    // output data of each row
+     while($row = mysqli_fetch_assoc($select_banner_result)) {
+     echo "<pre>";
+      print_r($row);
+      echo "</pre>";
+    }
+  } else {
+    echo "0 results";
+  }
+  
+  }
+
 ?>
+
+
