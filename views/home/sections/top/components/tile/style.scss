@@ -1,0 +1,84 @@
+@use '../../../../../../utils/styles/fonts';
+@use '../../../../../../utils/styles/variables';
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Metropolis', sans-serif;
+    background-color: #F2F3F4;
+}
+
+.tile {
+    &__carousel {
+
+    }
+
+    &__slider {
+
+    }
+
+    &__sliderDiv {
+        
+    }
+
+    &__sliderDivImage {
+        
+    }
+
+    &__sliderDivHeading {
+        
+    }
+
+    &__sliderDivSpan {
+        
+    }
+
+    &__sliderDivBtn {
+        
+    }
+}
+
+@media (min-width: 1200px) {
+    .tile {
+
+        &__slider {
+            display: flex;
+            flex-direction: row;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        &__sliderDiv {
+            position: relative;
+            width: 600px;
+            height: 400px;
+            padding: 15px;
+        }
+
+        &__sliderDivImage {
+            width: 100%;
+            height: 100%;
+        }
+
+        &__sliderDivItems {
+            position: absolute;
+            left: 8%;
+            top: 30%;
+        }
+
+        &__sliderDivHeading {
+            
+        }
+
+        &__sliderDivSpan {
+            
+        }
+
+        &__sliderDivBtn {
+            
+        }
+    }
+}

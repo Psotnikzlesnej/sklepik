@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* Error: Can't find stylesheet to import.
  *   ,
  * 1 | @use '/utils/styles/fonts';
@@ -6,15 +5,20 @@
  *   '
  *   template\sections\footer\style.scss 1:1  root stylesheet */
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @use '/utils/styles/fonts';\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   template\\sections\\footer\\style.scss 1:1  root stylesheet";
+.copyright {
+  background-color: #FFF;
+  color: #111;
+  padding: 22px 30px;
+}
+.copyright__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.copyright__listItem {
+  list-style: none;
+  text-align: center;
+  font-weight: 400;
 }
 =======
 @font-face {
@@ -246,3 +250,27 @@ body {
   }
 }/*# sourceMappingURL=style.css.map */
 >>>>>>> 23dc82c28c628ba3efef8549be9478ffdc20be56
+
+@media (min-width: 768px) {
+  .footer__mobileViewBtn {
+    display: none;
+  }
+  .footer__btnIcon {
+    display: none;
+  }
+  .footer__list {
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+  }
+  .footer__listItem {
+    width: 90%;
+  }
+  .footer__nestedList {
+    display: block;
+  }
+  .copyright__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}/*# sourceMappingURL=style.css.map */
