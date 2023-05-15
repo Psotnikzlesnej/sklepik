@@ -12,22 +12,24 @@
             <div class="tile__sliderDiv">
                 <img src="Image 203.jpg" class="tile__sliderDivImage">
                 <div class="tile__sliderDivItems">
-                    <h2 class="tile__sliderDivHeading">Pomoc eksperta<span class="tile__sliderDivSpan">Doradzamy</span></h2>
-                    <button class="tile__sliderDivBtn" href="#">zobacz więcej</button>
+                    <h2 class="tile__sliderDivHeading">Pomoc eksperta</h2><span class="tile__sliderDivSpan">Doradzamy</span>
+                    <button class="tile__sliderDivBtn" href="#"><h5>ZOBACZ WIĘCEJ</h5></button>
                 </div>
             </div>
             <div class="tile__sliderDiv">
                 <img src="Image 204.jpg" class="tile__sliderDivImage">
                 <div class="tile__sliderDivItems">
-                    <h2 class="tile__sliderDivHeading">Szukaj wygodnie<span class="tile__sliderDivSpan">Elhurt Plus</span></h2>
-                    <button class="tile__sliderDivBtn" href="#">zobacz więcej</button>
+                    <h2 class="tile__sliderDivHeading">Szukaj wygodnie</h2>
+                    <span class="tile__sliderDivSpan">Elhurt Plus</span>
+                    <button class="tile__sliderDivBtn" href="#"><h5>ZOBACZ WIĘCEJ</h5></button>
                 </div>
             </div>
             <div class="tile__sliderDiv">
                 <img src="Image 205.jpg" class="tile__sliderDivImage">
                 <div class="tile__sliderDivItems">
-                    <h2 class="tile__sliderDivHeading">Seria Unica<span class="tile__sliderDivSpan">Wyjątkowy wzór</span></h2>
-                    <button class="tile__sliderDivBtn" href="#">zobacz więcej</button>
+                    <h2 class="tile__sliderDivHeading">Seria Unica</h2>
+                    <span class="tile__sliderDivSpan">Wyjątkowy wzór</span>
+                    <button class="tile__sliderDivBtn" href="#"><h5>ZOBACZ WIĘCEJ</h5></button>
                 </div>
             </div>
         </div>
