@@ -1,6 +1,7 @@
 <?php 
 include_once(__DIR__ . '/utils/php/error_handling.php'); 
 include_once(__DIR__ . '/utils/php/config.php'); 
+include_once(__DIR__ . '/utils/php/debug.php'); 
 $url = isset($_GET['url']) ? $_GET['url'] : 'index.html';
 $splitted_url = explode("/", $url);
 $layout_determiner = $splitted_url[0];
