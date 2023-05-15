@@ -38,4 +38,14 @@ function process_similar(){
 
   return $mashed_products;
 }
+
+  function process_variants(){
+    $variants = [];
+    $variant_result = get_product_variant();
+    while ($variant = $variant_result->fetch_assoc())
+    {
+      array_push($variants, $variant);
+    }
+    return $variants;
+}
 ?>
