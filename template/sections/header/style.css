@@ -106,50 +106,65 @@
   font-weight: 900;
   src: url("/fonts/Metropolis-BlackItalic.otf") format("otf");
 }
-body {
+* {
   margin: 0px;
 }
 
-@media (min-width: 320px) {
-  .photo {
-    margin: auto;
-  }
-  .menu {
-    display: none;
-  }
-  .menu-long {
-    display: flex;
-    flex-direction: column;
-  }
-  .menu__item {
-    display: block;
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
-    color: #111111;
-    border: 1px solid rgb(230, 231, 233);
-    font-size: 12px;
-  }
-  .menu__text {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .mobile__block {
-    display: block;
-    width: 20%;
-    text-align: center;
-    color: #111111;
-    margin: auto;
-    padding: 10px;
-  }
-  .menu__lo span {
-    display: none;
-  }
-  .menu__lo1 span {
-    display: none;
-  }
+body {
+  font-family: "Metropolis", sans-serif;
 }
+
+span {
+  font-weight: 700;
+}
+
+.photo {
+  margin: auto;
+  padding: 15px;
+}
+
+.menu {
+  display: none;
+}
+
+.menu-long {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__item {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  color: #111111;
+  border: 1px solid rgb(230, 231, 233);
+  font-size: 12px;
+}
+
+.menu__text {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.mobile__block {
+  display: block;
+  width: 20%;
+  text-align: center;
+  color: #111111;
+  margin: auto;
+  padding: 10px;
+}
+
+.menu__lo span {
+  display: none;
+}
+
+.menu__lo1 span {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .menu-long {
     display: flex;
@@ -213,6 +228,7 @@ body {
   }
   .photo {
     margin: 10px;
+    padding: 0;
   }
   .menu-long {
     border: 1px solid rgb(230, 231, 233);

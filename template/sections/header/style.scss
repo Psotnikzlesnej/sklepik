@@ -10,12 +10,13 @@ body{
 }
 
 span {
-    font-weight: $bold;
+    font-weight: variables.$bold;
 }
 
-@media (min-width: 320px) {
+
   .photo {
       margin: auto;
+      padding: 15px;
   }
 
   .menu {
@@ -59,7 +60,7 @@ span {
   .menu__lo1 span {
       display: none;
   }
-}
+
 
 @media (min-width: 768px) {
   .menu-long {
@@ -136,6 +137,7 @@ span {
 
   .photo{
       margin: 10px;
+      padding: 0;
   }
 
   .menu-long{
