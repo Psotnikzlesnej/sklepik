@@ -11,7 +11,7 @@ function get_products($offset = '',$boundary = '',$category = '',$manufacturer =
   // $offset = ($page - 1) * $items_per_page;
   $query = "SELECT p.ID, p.name, p.promo_price, p.catalog_price, p.serial_number, p.stock,
   GROUP_CONCAT(DISTINCT fl.name SEPARATOR ', ') as flag_names,
-  (select p_i.main from product_image as p_i 
+  (select p_i.image_name from product_image as p_i 
     where p_i.product_ID = p.ID ORDER BY p_i.main DESC LIMIT 1) as image_name,
   CONCAT('%', c.ID, c.name, '%') as category_for_like,
   IF(GROUP_CONCAT(DISTINCT fl.name SEPARATOR ', ') LIKE '%promo%', promo_price, catalog_price) as curr_price
@@ -45,7 +45,7 @@ function get_products($offset = '',$boundary = '',$category = '',$manufacturer =
 
 function get_categories($curr_category){
   global $mysqli;
-  $query = "SELECT ID, name, image_name, description, (ID = 1) as is_current, level from category ORDER BY level;";
+  $query = "SELECT ID, name, image_name, description, (ID = ?) as is_current, parent, level from category ORDER BY level;";
 
   $result= $mysqli -> execute_query($query, [$curr_category]);
   return $result;

@@ -2,7 +2,7 @@
 function get_product($id){
 	global $mysqli;
 	$query = "SELECT p.ID, p.name, p.variant_name, p.catalog_price, 
-	p.promo_price, d.name as delivery_name, p.serial_number,
+	p.promo_price, d.name as delivery_name, p.serial_number, p.variant_group_ID,
 	GROUP_CONCAT(DISTINCT f.name SEPARATOR ', ') as flag_names, 
   (select GROUP_CONCAT(DISTINCT p_i.image_name ORDER BY p_i.main DESC SEPARATOR ', ') 
 		from product_image as p_i where p_i.product_ID = p.ID) as product_images,
@@ -34,7 +34,7 @@ function get_similar_products($category, $id){
 	global $mysqli;
 	$query = "SELECT p.ID, p.name, p.promo_price, p.catalog_price, p.serial_number, p.stock,
   GROUP_CONCAT(DISTINCT f.name SEPARATOR ', ') as flag_names,
-  (select p_i.main from product_image as p_i 
+  (select p_i.image_name from product_image as p_i 
     where p_i.product_ID = p.ID ORDER BY p_i.main DESC LIMIT 1) as image_name 
   FROM product as p 
     JOIN product_flag as p_f on p_f.product_ID = p.ID JOIN flag as f on p_f.flag_ID = f.ID 
@@ -46,8 +46,9 @@ function get_similar_products($category, $id){
 
 function get_product_variant($variant_id){
 	global $mysqli;
-	$query = "SELECT product.ID, product.variant_group_id, product.variant_name FROM product
-	WHERE product.visible = true AND product.stock > 0 AND product.ID =?";
+	$query = "SELECT product.ID, product.variant_name, (select p_i.image_name from product_image as p_i 
+	where p_i.product_ID = product.ID ORDER BY p_i.main DESC LIMIT 1) as image_name FROM product
+	WHERE product.visible = true AND product.stock > 0 AND product.variant_group_ID =?";
 	$result = $mysqli -> execute_query($query, [$variant_id]);
 	return $result;
 }
