@@ -1,20 +1,21 @@
 <?php
 function get_product($id){
 	global $mysqli;
-	$query = "SELECT product.ID, product.name, product.stock, product.variant_name, product.catalog_price, 
-	product.promo_price, delivery.name as delivery_name, product.serial_number,
-	flag.name as flag_name, product_image.main, product_image.image_name,
-	product.description, product.video_url, parameter_value.parameter, parameter_value.value,
-	manufacturer.name as manufacturer_name, manufacturer.image_name as manufacturer_image FROM product
-		JOIN delivery ON delivery.ID = product.delivery_ID
-		JOIN product_parameter_value ON product_parameter_value.product_ID = product.ID
-		JOIN parameter_value ON parameter_value.ID = product_parameter_value.parameter_value_ID
-		JOIN product_manufacturer ON product_manufacturer.product_ID = product.ID
-		JOIN manufacturer ON manufacturer.ID = product_manufacturer.manufacturer_ID
-		LEFT JOIN product_flag ON product_flag.product_ID = product.ID
-		LEFT JOIN flag ON product_flag.flag_ID = flag.ID
-		LEFT JOIN product_image ON product_image.product_ID = product.ID
-			WHERE product.visible = true AND product.stock > 0 AND product.ID = ?";
+	$query = "SELECT p.ID, p.name, p.variant_name, p.catalog_price, 
+	p.promo_price, d.name as delivery_name, p.serial_number,
+	GROUP_CONCAT(DISTINCT f.name SEPARATOR ', ') as flag_names, 
+  (select GROUP_CONCAT(DISTINCT p_i.image_name ORDER BY p_i.main DESC SEPARATOR ', ') 
+		from product_image as p_i where p_i.product_ID = p.ID) as product_images,
+	p.description, p.video_url, p_v.parameter, p_v.value,
+	m.name as manufacturer_name, m.image_name as manufacturer_image FROM product as p
+		JOIN delivery as d ON d.ID = p.delivery_ID
+		JOIN product_parameter_value as p_p_v ON p_p_v.product_ID = p.ID
+		JOIN parameter_value as p_v ON p_v.ID = p_p_v.parameter_value_ID
+		JOIN product_manufacturer as p_m ON p_m.product_ID = p.ID
+		JOIN manufacturer as m ON m.ID = p_m.manufacturer_ID
+		LEFT JOIN product_flag as p_f ON p_f.product_ID = p.ID
+		LEFT JOIN flag as f ON p_f.flag_ID = f.ID
+			WHERE p.visible = true AND p.stock > 0 AND p.ID = ? GROUP BY p.ID;";
 	$result = $mysqli->execute_query($query, [$id]);
 	return $result;
 }
@@ -31,14 +32,14 @@ function get_product_categories($id) {
 
 function get_similar_products($category, $id){
 	global $mysqli;
-	$query = "SELECT p.ID, p.name, p.promo_price, p.catalog_price, p.serial_number,
-  p.stock, f.name as flag_name, p_i.main, p_i.image_name FROM `product` as p
-		LEFT JOIN `product_flag` as p_f on p_f.product_ID = p.ID
-    LEFT JOIN `flag` as f on p_f.flag_ID = f.ID
-		JOIN `product_category` as p_c on p_c.product_ID = p.ID
-		JOIN `category` as c on p_c.category_ID = c.ID
-    LEFT JOIN `product_image` as p_i on p_i.product_ID = p.ID
-      WHERE p.visible = true AND p.stock > 0 AND c.ID=$category AND NOT p.ID = ? ORDER BY p.ID;";
+	$query = "SELECT p.ID, p.name, p.promo_price, p.catalog_price, p.serial_number, p.stock,
+  GROUP_CONCAT(DISTINCT f.name SEPARATOR ', ') as flag_names,
+  (select p_i.main from product_image as p_i 
+    where p_i.product_ID = p.ID ORDER BY p_i.main DESC LIMIT 1) as image_name 
+  FROM product as p 
+    JOIN product_flag as p_f on p_f.product_ID = p.ID JOIN flag as f on p_f.flag_ID = f.ID 
+      WHERE p.visible = true AND p.stock > 0 AND c.ID=$category AND NOT p.ID = ? 
+			GROUP BY p.ID;";
 	$result = $mysqli->execute_query($query, [$id]);
 	return $result;
 }

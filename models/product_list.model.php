@@ -1,9 +1,7 @@
 <?php
 
-function get_products($sorting_mode,$offset,$boundary,$category,$manufacturer,$colors,$grid_values,$range,$price_range){ 
+function get_products($offset = '',$boundary = '',$category = '',$manufacturer = '',$colors = '',$grid_values = '', $min_price = '', $max_price = ''){ 
   global $mysqli;
-  $imploded_colors =implode(',', $colors);
-  $imploded_grid =implode(',', $grid_values);
   // $count_query = $mysqli -> query("SELECT count(ID) from product");
   // $count_result = $count_query->fetch_assoc();
   // $count = $count_result["count(ID)"];
@@ -11,31 +9,43 @@ function get_products($sorting_mode,$offset,$boundary,$category,$manufacturer,$c
   //  $math = is_float(is_numeric($count) / 12);
   //  $page = ceil($math);
   // $offset = ($page - 1) * $items_per_page;
-  $query = "SELECT product.name, product.stock, product.variant_name, product.catalog_price,
-  product.promo_price, product.delivery_ID, delivery.name, flag.name, product_image.image_name 
-  FROM product JOIN delivery ON delivery.ID = product.delivery_ID 
-    JOIN product_filter_value ON product_filter_value.product_ID = product.ID
-    JOIN filter_value ON filter_value.ID = product_filter_value.filter_value_ID
-    JOIN filter ON filter.ID = filter_value.ID_filter
-    JOIN product_category ON product_category.product_ID = product.ID
-    JOIN category ON category.ID = product_category.category_ID
-    JOIN product_manufacturer ON product_manufacturer.product_ID = product.ID
-    JOIN manufacturer ON manufacturer.ID = product_manufacturer.manufacturer_ID
-    LEFT JOIN product_flag ON product_flag.product_ID = product.ID
-    LEFT JOIN flag ON product_flag.flag_ID = flag.ID
-    LEFT JOIN product_image ON product_image.product_ID = product.ID 
-      WHERE category.ID = ? AND manufacturer.ID = ? AND (filter.type = 'color' AND filter_value.ID IN (?))
-      OR (filter.type = 'grid_multiple' AND filter_value.ID IN (?)) AND product.visible = true AND product.stock > 0
-        ORDER BY $sorting_mode LIMIT ?, ?";
-  $result= $mysqli->execute_query($query, [$category, $manufacturer, $imploded_colors, $imploded_grid, $offset, $boundary]);
+  $query = "SELECT p.ID, p.name, p.promo_price, p.catalog_price, p.serial_number, p.stock,
+  GROUP_CONCAT(DISTINCT fl.name SEPARATOR ', ') as flag_names,
+  (select p_i.main from product_image as p_i 
+    where p_i.product_ID = p.ID ORDER BY p_i.main DESC LIMIT 1) as image_name,
+  CONCAT('%', c.ID, c.name, '%') as category_for_like,
+  IF(GROUP_CONCAT(DISTINCT fl.name SEPARATOR ', ') LIKE '%promo%', promo_price, catalog_price) as curr_price
+  FROM product as p
+    LEFT JOIN product_flag as p_f on p_f.product_ID = p.ID
+    LEFT JOIN flag as fl on p_f.flag_ID = fl.ID 
+    JOIN product_filter_value as p_f_v ON p_f_v.product_ID = p.ID
+    JOIN filter_value as f_v ON f_v.ID = p_f_v.filter_value_ID
+    JOIN filter as f ON f.ID = f_v.ID_filter
+    JOIN product_category as p_c ON p_c.product_ID = p.ID
+    JOIN category as c ON c.ID = p_c.category_ID
+    JOIN product_manufacturer as p_m ON p_m.product_ID = p.ID
+    JOIN manufacturer as m ON m.ID = p_m.manufacturer_ID
+      WHERE (? = '' OR m.ID = ?) 
+      AND (? = '' OR (f.type = 'color' AND f_v.ID IN (?)))
+      AND (? = '' OR (f.type = 'grid_multiple' AND f_v.ID IN (?))
+      AND p.visible = true AND p.stock > 0 GROUP BY ID
+        HAVING (? = '' OR (with recursive cte (id, name, parent) as (select id, name, parent from category
+          where id = ? union all select c.id, c.name, c.parent from category c 
+          inner join cte on c.parent = cte.id
+      ) select GROUP_CONCAT(DISTINCT id, name SEPARATOR ', ') from cte) LIKE category_for_like)
+      AND (? = '' OR curr_price > ?)
+      AND (? = '' OR curr_price < ?)
+      	ORDER BY curr_price
+        LIMIT ?, ?;";
+  $result= $mysqli->execute_query($query, [$manufacturer, $manufacturer, $colors, $colors, 
+  $grid, $grid, $category, $category, $min_price, $min_price, $max_price, $max_price, $offset, $boundary]);
   return $result;
 }
 
 
 function get_categories($curr_category){
   global $mysqli;
-  $query = "SELECT category.ID, category.name, category.image_name, category.description, 
-  (category.ID = ?) as is_current from category WHERE level=1";
+  $query = "SELECT ID, name, image_name, description, (ID = 1) as is_current, level from category ORDER BY level;";
 
   $result= $mysqli -> execute_query($query, [$curr_category]);
   return $result;
@@ -43,13 +53,11 @@ function get_categories($curr_category){
 
 function get_filters(){
   global $mysqli;
-  $query = "SELECT filter.name, filter.type, filter.ID, filter_value.value FROM 
-  filter JOIN filter_value ON filter_value.ID_filter = filter.ID";
+  $query = "SELECT filter.name, filter.type, filter.ID, GROUP_CONCAT(DISTINCT filter_value.value SEPARATOR ', ') 
+  FROM filter JOIN filter_value ON filter_value.ID_filter = filter.ID GROUP BY ID";
   $result = $mysqli->query($query);
   return $result;
 }
-
-
 
 function getBanner(){
   global $mysqli;
