@@ -42,4 +42,13 @@ function get_similar_products($category, $id){
 	$result = $mysqli->execute_query($query, [$id]);
 	return $result;
 }
+
+function get_product_variant($variant_id){
+	global $mysqli;
+	$query = "SELECT product.ID, product.variant_group_id, product.variant_name FROM product
+	WHERE product.visible = true AND product.stock > 0 AND product.ID =?";
+	$result = $mysqli -> execute_query($query, [$variant_id]);
+	return $result;
+}
+get_product_variant(1);
 ?>
