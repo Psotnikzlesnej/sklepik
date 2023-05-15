@@ -50,5 +50,4 @@ function get_product_variant($variant_id){
 	$result = $mysqli -> execute_query($query, [$variant_id]);
 	return $result;
 }
-get_product_variant(1);
 ?>
