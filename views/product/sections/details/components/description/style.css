@@ -1,3 +1,161 @@
 
 
 /*# sourceMappingURL=style.css.map */
+.parameters_box_text_top_description{
+    top: 1049px;
+    left: 160px;
+    width: 1600px;
+    height: 50px;
+position: absolute;
+font: normal normal bold 36px/200px Metropolis;
+/* UI Properties */
+text-align: center;
+letter-spacing: 0px;
+color: #111111;
+opacity: 1;
+
+}
+
+.description_box_text_line{
+    top: 1116px;
+    left: 930px;
+    width: 60px;
+    height: 3px;
+    /* UI Properties */
+    background: #F74137 0% 0% no-repeat padding-box;
+    opacity: 1;
+    position: absolute;
+}
+
+
+.description_layout{
+position: absolute;
+    top: 1049px;
+left: 0px;
+width: 1920px;
+height: 532px;
+/* UI Properties */
+opacity: 1;
+}
+
+.description_box{
+    top: 1049px;
+    left: 0px;
+    width: 1920px;
+    height: 71px;
+    /* UI Properties */
+    opacity: 1;
+    border-bottom:  1px solid #e1e2e8;
+    position: absolute;
+}
+
+
+.description_box_text{
+    top: 1166px;
+left: 160px;
+width: 1511px;
+height: 177px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 19px/27px Metropolis;
+letter-spacing: -0.38px;
+color: #111111;
+opacity: 1;
+position: absolute;
+}
+
+.description_box_text2{
+    top: 1271px;
+    left: 160px;
+    width: 1432px;
+    height: 310px;
+    /* UI Properties */
+    text-align: left;
+    letter-spacing: -0.32px;
+    color: #111111;
+    opacity: 1;
+    position: absolute;
+}
+
+
+.description_span_big_top{
+    top: 0px;
+    left: 0px;
+    width: 330px;
+    height: 16px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal bold 16px/21px Metropolis;
+    letter-spacing: -0.32px;
+    color: #111111;
+    text-transform: uppercase;
+}
+
+
+.description_span_big_down{
+    top: 189px;
+left: 0px;
+width: 579px;
+height: 16px;
+/* UI Properties */
+text-align: left;
+font: normal normal bold 16px/21px Metropolis;
+letter-spacing: -0.32px;
+color: #111111;
+text-transform: uppercase;
+position: absolute;
+}
+
+
+.description_span1{
+    top: 63px;
+    left: 0px;
+    width: 1389px;
+    height: 16px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal normal 16px/21px Metropolis;
+    letter-spacing: -0.32px;
+    color: #111111;
+    position: absolute;
+}
+
+
+.description_span2{
+    top: 126px;
+    left: 0px;
+    width: 1425px;
+    height: 16px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal normal 16px/21px Metropolis;
+    letter-spacing: -0.32px;
+    color: #111111;
+    position: absolute;
+    }
+
+    
+.description_span_down{
+    top: 252px;
+    left: 0px;
+    width: 1233px;
+    height: 16px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal normal 16px/21px Metropolis;
+    letter-spacing: -0.32px;
+    color: #111111;
+    position: absolute;
+    }
+
+
+.test{
+    top: 1597px;
+left: 565px;
+width: 790px;
+height: 420px;
+/* UI Properties */
+background: transparent url('img/Mask Group 45.png') 0% 0% no-repeat padding-box;
+opacity: 1;
+position: absolute;
+}

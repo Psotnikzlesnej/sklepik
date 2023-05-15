@@ -7,36 +7,19 @@ $splitted_url = explode("/", $url);
 $product_ID = end($splitted_url);
 
 function process_product(){
-  global $product_ID;
-  $product_variations = [];
-  $products_result = get_product($product_ID);
-  while ($product_variation = $products_result->fetch_assoc()) {
-    array_push($product_variations, $product_variation);
-  }
-
-  $masher = new ProductMasher($product_variations);
-  $mashed_product = $masher->mashWrapper('one');
-
-  return $mashed_product;
+  $product_results = get_product();
+  $product = $product_results->fetch_assoc();
+  return $product;
 }
 
 function process_similar(){
-  global $product_ID;
-  $similar_products = [];
-  $categories_result = get_product_categories($product_ID);
-  while (empty($similar_products) && $category = $categories_result->fetch_assoc()) {
-    $category_ID = $category['ID'];
-    echo $category_ID;
-    $similar_products_result = get_similar_products($category_ID, $product_ID);
-    while($similar_product = $similar_products_result->fetch_assoc()){
-      array_push($similar_products, $similar_product);
-    }
+  $similar = [];
+  $similar_result = get_similar_products();
+  while ($similar_product = $similar_result->fetch_assoc())
+  {
+    array_push($similar_product, $similar);
   }
-
-  $masher = new ProductMasher($similar_products);
-  $mashed_products = $masher->mashWrapper('multiple');
-
-  return $mashed_products;
+  return $similar;
 }
 
   function process_variants(){
