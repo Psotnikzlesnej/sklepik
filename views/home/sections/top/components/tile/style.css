@@ -118,20 +118,23 @@ body {
 
 @media (min-width: 1200px) {
   .tile__slider {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: max-content;
+    max-width: 100%;
+    box-sizing: border-box;
+    gap: 15px;
     padding-left: 15px;
     padding-right: 15px;
   }
   .tile__sliderDiv {
+    overflow: none;
+    aspect-ratio: 6/4;
     position: relative;
-    width: 600px;
-    height: 400px;
-    padding: 15px;
   }
   .tile__sliderDivImage {
     width: 100%;
-    height: 100%;
+    object-fit: cover;
   }
   .tile__sliderDivItems {
     position: absolute;
@@ -139,26 +142,21 @@ body {
     top: 30%;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
-
-.tile__sliderDivHeading{
-  
+.tile__sliderDivHeading {
   color: white;
   font-size: 44px;
 }
-.tile__sliderDivSpan{
+.tile__sliderDivSpan {
   color: white;
   font-size: 44px;
-  
 }
-.tile__sliderDivItems{
+.tile__sliderDivItems {
   display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px;
 }
-.tile__sliderDivBtn{
+.tile__sliderDivBtn {
   border: 1px solid #FFFFFF;
   padding: 21PX;
   background-color: transparent;
@@ -170,22 +168,18 @@ body {
   text-transform: uppercase;
   width: 59%;
 }
-.tile__sliderDivBtn:hover{
+.tile__sliderDivBtn:hover {
   background-color: #F74137;
   border-color: #F74137;
-
 }
-.tile__sliderDivImage{
-  filter:  brightness(0.8);
+.tile__sliderDivImage {
+  filter: brightness(0.8);
 }
-
-.tile__sliderDiv{
- margin-right: 15px;
- margin-left: 15px;
- overflow: hidden;
- padding: 0;
+.tile__sliderDiv {
+  overflow: hidden;
+  padding: 0;
 }
-.tile__sliderDiv  img {
+.tile__sliderDiv img {
   transition-duration: 1s;
   margin: 0 auto;
   display: block;
@@ -196,3 +190,5 @@ body {
   -moz-transform: scale(1.2);
   z-index: 0;
 }
+
+/*# sourceMappingURL=style.css.map */
