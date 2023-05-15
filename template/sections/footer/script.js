@@ -1,5 +1,5 @@
 function toggleElementVisibility1() {
-    let x = document.getElementById("footer__mobileView1");
+    let x = document.getElementById("footer__mobile1");
     if (x.style.display === "block") {
         document.getElementById("changeIcon1").classList.add('plus');
         document.getElementById("changeIcon1").classList.remove('minus');
@@ -18,7 +18,7 @@ function toggleElementVisibility1() {
 }
 
 function toggleElementVisibility2() {
-    let x = document.getElementById("footer__mobileView2");
+    let x = document.getElementById("footer__mobile2");
     if (x.style.display === "block") {
         document.getElementById("changeIcon2").classList.add('plus');
         document.getElementById("changeIcon2").classList.remove('minus');
@@ -37,7 +37,7 @@ function toggleElementVisibility2() {
 }
 
 function toggleElementVisibility3() {
-    let x = document.getElementById("footer__mobileView3");
+    let x = document.getElementById("footer__mobile3");
     if (x.style.display === "block") {
         document.getElementById("changeIcon3").classList.add('plus');
         document.getElementById("changeIcon3").classList.remove('minus');
@@ -56,7 +56,7 @@ function toggleElementVisibility3() {
 }
 
 function toggleElementVisibility4() {
-    let x = document.getElementById("footer__mobileView4");
+    let x = document.getElementById("footer__mobile4");
     if (x.style.display === "block") {
         document.getElementById("changeIcon4").classList.add('plus');
         document.getElementById("changeIcon4").classList.remove('minus');
