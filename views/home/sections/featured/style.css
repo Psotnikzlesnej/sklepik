@@ -153,8 +153,7 @@ body {
 }
 
 .border {
-  top: 1336px;
-  left: 0px;
+  margin-right: 20px;
   width: 1920px;
   height: 1px;
   background: #E1E2E8 0% 0% no-repeat padding-box;
@@ -166,6 +165,7 @@ body {
   margin-left: 23px;
   display: inline-block;
   flex-grow: 4;
+  user-select: none;
   width: 350px;
   height: 560px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -198,7 +198,6 @@ body {
   left: 73px;
   width: 270px;
   height: 270px;
-  background: #ebebeb 0% 0% no-repeat padding-box;
   opacity: 1;
   margin-left: auto;
   margin-right: auto;
@@ -258,11 +257,10 @@ body {
 }
 
 .addtocart {
-  background: red;
   margin-left: auto;
   margin-right: auto;
   height: 50px;
-  width: 160px;
+  width: 190px;
   margin-top: 80px;
 }
 
@@ -279,6 +277,46 @@ body {
 .product_tile:hover > .dsc {
   margin-top: 0;
   transition: 150ms;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 50px;
+  border: 1px solid #ccc;
+  font-size: 19px;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter div {
+  color: #111111;
+  text-align: center;
+}
+
+.minus,
+.plus {
+  cursor: pointer;
+  user-select: none;
+  height: 50px;
+  width: 30px;
+  border: 1px solid #ccc;
+  background: #F8F8F8 0% 0% no-repeat padding-box;
+}
+
+.count {
+  width: 100px;
+  color: #111111;
+  opacity: 0.5;
+  user-select: none;
+}
+
+.buybutton {
+  width: 50px;
+  height: 50px;
+  background: green;
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
