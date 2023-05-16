@@ -1,0 +1,60 @@
+@use '../../../utils/styles/fonts';
+
+custom-counter {
+  $light-gray: #F8F8F8;
+  $dark-gray: #E1E2E8;
+  $black: #323940;
+  width: 100px;
+  height: 50px;
+  display: grid;
+  grid-template-columns: 20px 60px 20px;
+  border: 1px solid $dark-gray;
+
+  .counter {
+    &__button {
+      border: none;
+      background: $light-gray;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &-decrease::after, &-increase::after {
+        position: absolute;
+        content: '';
+        width: 9px;
+        display: block;
+        height: 1px;
+        background: $black
+      }
+
+      &-increase::before {
+        position: absolute;
+        content: '';
+        width: 1px;
+        display: block;
+        height: 9px;
+        background: $black
+      }
+    }
+
+    &__input {
+      border-top: none;
+      border-bottom: none;
+      border-right: 2px solid $dark-gray;
+      border-left: 2px solid $dark-gray;
+      outline: none;
+      text-align: center;
+      font-family: 'Metropolis', sans-serif;
+      opacity: .5;
+      font-size: 14px;
+      -moz-appearance: textfield;
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        display: none;
+      }
+    }
+  }
+}
