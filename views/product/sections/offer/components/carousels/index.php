@@ -16,18 +16,37 @@
 <section class="slider-wrapper">
  
 
-<button class="slide-arrow" id="slide-arrow-prev">
-<i class="fa-solid fa-angle-left"></i>  </button>
-  <button class="slide-arrow" id="slide-arrow-next">
-  <i class="fa-solid fa-angle-right"></i>
-  </button>
+
+
+
+
 
   <ul class="slides-container" id="slides-container">
+    
+  <button class="slide-arrow" id="slide-arrow-prev">
+
+<i class="fa-solid fa-angle-left"></i> 
+
+</button>
+
+
     <div class="slide"><img src="testy.png"></div>
     <div class="slide"><img src="testy.png"></div>
     <div class="slide"><img src="testy.png"></div>
     <div class="slide"><img src="testy.png"></div>
   </ul>
+
+
+
+  
+
+
+  <button class="slide-arrow" id="slide-arrow-next">
+
+  <i class="fa-solid fa-angle-right"></i>
+
+  </button>
+
 </section>
 <script src="script.js"></script> 
 
