@@ -5,7 +5,6 @@ include_once(__DIR__ . '/utils/php/debug.php');
 $url = isset($_GET['url']) ? $_GET['url'] : 'index.html';
 $splitted_url = explode("/", $url);
 $layout_determiner = $splitted_url[0];
-
 switch($layout_determiner){
   case 'index.html':
     include_once(__DIR__ . '/views/home/index.php');

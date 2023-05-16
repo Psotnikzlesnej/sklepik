@@ -46,8 +46,6 @@ function compute_categories(){
   return $category_tree;
 }
 
-compute_categories();
-
 function compute_banner(){
   $banners_result = getBanner();
   $banner = $banners_result->fetch_assoc();

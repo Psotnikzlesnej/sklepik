@@ -46,7 +46,6 @@ function get_products($offset = '',$boundary = '',$category = '',$manufacturer =
 function get_categories($curr_category){
   global $mysqli;
   $query = "SELECT ID, name, image_name, description, (ID = ?) as is_current, parent, level from category ORDER BY level;";
-
   $result= $mysqli -> execute_query($query, [$curr_category]);
   return $result;
 }
