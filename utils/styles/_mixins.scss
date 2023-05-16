@@ -1,0 +1,35 @@
+@use 'fonts';
+@use 'variables';
+
+@mixin button($width, $height, $color, $background, $border-color: null, $hover-color: null, $hover-background: null, $hover-border-color: null, $transition-time: .3s){
+  @if not $border-color {
+    $border-color: $background;
+  }
+  cursor: pointer;
+  width: $width;
+  height: $height;
+  background-color: $background;
+  color: $color;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid $border-color;
+  font-family: 'Metropolis', sans-serif;
+  font-size: 14px;
+  font-weight: variables.$bold;
+
+  @if($hover-color and $hover-background and $hover-border-color){
+    transition: color $transition-time ease-in-out,
+      background-color $transition-time ease-in-out, 
+      border-color $transition-time ease-in-out;
+
+    &:hover {
+      color: $hover-color;
+      background-color: $hover-background;
+      border-color: $hover-border-color;
+    }  
+  }
+
+  &:focus {
+    box-shadow:0 0 7px variables.$light-blue;
+  }
+}
