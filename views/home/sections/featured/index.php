@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head> 
 <body>
-        <div class="bg">
+        <div class="bg"> 
            
                 <div class="text">Polecane produkty</div>
                 <div class="rectangle"></div>
@@ -26,6 +26,16 @@
                         <div class="price2">100zł</div>   
                     </div>
                     <div class="addtocart">
+                        <div class="counter">
+                            
+                            <div id="minus" class="minus">-</div>
+                            <div id="count" class="count">0</div>
+                            <div id="plus" class="plus">+</div>
+                            <script src="script.js"></script>
+                        </div>
+                        <div class="buybutton">
+                            
+                        </div>
                         
                     </div>
                 </div>
@@ -43,7 +53,16 @@
                         <div class="price2">100zł</div>   
                     </div>
                     <div class="addtocart">
-                        
+                        <div class="counter">
+                            
+                            <div id="minus" class="minus">-</div>
+                            <div id="count" class="count">0</div>
+                            <div id="plus" class="plus">+</div>
+                            <script src="script.js"></script>
+                        </div>
+                        <div class="buybutton">
+                            
+                        </div>
                     </div>
                 </div>
 
@@ -60,7 +79,16 @@
                         <div class="price2">100zł</div>   
                     </div>
                     <div class="addtocart">
-                        
+                        <div class="counter">
+                            
+                            <div id="minus" class="minus">-</div>
+                            <div id="count" class="count">0</div>
+                            <div id="plus" class="plus">+</div>
+                            <script src="script.js"></script>
+                        </div>
+                        <div class="buybutton">
+                            
+                        </div>
                     </div>
                 </div>
 
@@ -77,7 +105,16 @@
                         <div class="price2">100zł</div>   
                     </div>
                     <div class="addtocart">
-                        
+                        <div class="counter">
+                            
+                            <div id="minus" class="minus">-</div>
+                            <div id="count" class="count">0</div>
+                            <div id="plus" class="plus">+</div>
+                            <script src="script.js"></script>
+                        </div>
+                        <div class="buybutton">
+                            
+                        </div>
                     </div>
                 </div>
 
@@ -94,7 +131,16 @@
                         <div class="price2">100zł</div>   
                     </div>
                     <div class="addtocart">
-                        
+                        <div class="counter">
+                            
+                            <div id="minus" class="minus">-</div>
+                            <div id="count" class="count">0</div>
+                            <div id="plus" class="plus">+</div>
+                            <script src="script.js"></script>
+                        </div>
+                        <div class="buybutton">
+                            
+                        </div>
                     </div>
                 </div>
 
