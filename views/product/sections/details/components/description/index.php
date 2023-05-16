@@ -13,11 +13,12 @@
 
 <div class="description_layout"></div>
 
-   <div class="description_box"></div>  
+   <div class="description_box">  <div class="parameters_box_text_top_description">DANE PODSTAWOWE </div>      <div class="description_box_text_line"></div>
+</div>  
 
-      <div class="parameters_box_text_top_description">DANE PODSTAWOWE </div>
+    
 
-      <div class="description_box_text_line"></div>
+
 
 
 
@@ -45,7 +46,10 @@
 
           <span class="description_span_down">       Seria Simon 10 dedykowana jest inwestycjom, gdzie wytworny design i różnorodność w kolorach osprzętu nie jest najważniejsza. 
               W tej linii produktów liczy się przede wszystkim ekonomiczność, funkcjonalność oraz trwałość. Uniwersalne kolory: biały i kremowy pozwolą 
-              na wykorzystanie łączników oraz gniazd w każdym mieszkaniu czy też przestrzeni biurowej.</span></div>
+              na wykorzystanie łączników oraz gniazd w każdym mieszkaniu czy też przestrzeni biurowej.</span>
+            
+            
+            </div>
 
 <img src="test.png" class="test"></img>
 
