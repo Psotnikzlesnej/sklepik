@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../../../details/style.css">
+    <link rel="stylesheet" href="..\styles\description.css">
 
     <title>Details</title>
 </head>
