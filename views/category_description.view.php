@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="..\styles\category_description.scss">
-
+    <link rel="stylesheet" href="..\styles\category_description.css">
 </head>
 <body>
     <div class="info_container">
@@ -27,7 +27,7 @@
 <div class="lapa2">
 
  <div class="line"></div>
- 
+
  <a id="btn" onclick="readmore()">Rozwiń</a>
 
 </div>
@@ -53,15 +53,13 @@ if (dots.style.display === "none")
     dots.style.display = "inline";
     btn.innerHTML = "Rozwiń";
     more.style.display = 'none';
-    lapa.style.height = '80px';
+    lapa.style.height = '150px';
 
 }else{
-    lapa.style.height = '90px';
+    lapa.style.height = '140px';
     dots.style.display = 'none';
     btn.innerHTML = "Zwiń";
     more.style.display = 'inline';
-
-
 }
 
 }
