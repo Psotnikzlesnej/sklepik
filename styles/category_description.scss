@@ -1,45 +1,32 @@
 #more {
     display: none;
     overflow: hidden;
-    transition: height 400ms;
 }
 
 .container button {
     outline: none;
     overflow: hidden;
-    transition: height 400ms;
 }
 
-#more {
+.container_text_box {
     overflow: hidden;
-    transition: height 400ms;
-}
-
-.lapa {
-    overflow: hidden;
-    transition: height 400ms;
     height: 80px;
     margin: 0px;
 }
 
-.hej {
+#dots {
+    position: fixed;
+}
+
+.text {
     margin: 0px;
     display: inline;
-    transition: height 400ms;
 }
 
-hr {
-    width: 90%;
-    display: inline-flex;
-    margin: 9px;
-    transition: height 400ms;
-}
-
-#btn {
+#readmore {
     outline: none;
     overflow: hidden;
     display: inline-flex;
-    transition: height 400ms;
     cursor: pointer;
     margin-left: 15px;
     text-align: left;
@@ -50,14 +37,9 @@ hr {
     opacity: 1;
 }
 
-#dots {
-    transition: height 400ms;
-}
-
-.lapa2 {
+.box2 {
     display: flex;
     margin-top: 20px;
-    transition: height 400ms;
 }
 
 .line {

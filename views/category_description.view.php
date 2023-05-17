@@ -14,56 +14,29 @@
             <h1>Przykładowy tytuł</h1>
 
 
-<div class="lapa" id="lapa">
+<div class="container_text_box" id="container_text_box">
 
-          <p class="hej">Gniazda elektryczne są niezbędnym elementem instalacji elektrycznej. To dzięki nim użytkownicy mogą zasilić urządzenia i sprzęt. Kontakty elektryczne są funkcjonalne i łatwe w montażu. Posiadamy zarówno gniazda instalacyjne natynkowe, podtynkowe, nowoczesne gniazdka teleinformatyczne, RTV i SAT, jak i hermetyczne, sprawdzające się tam, gdzie istnieje ryzyko kontaktu z wodą – łazienka, kuchnia
+          <p class="text">Gniazda elektryczne są niezbędnym elementem instalacji elektrycznej. To dzięki nim użytkownicy mogą zasilić urządzenia i sprzęt. Kontakty elektryczne są funkcjonalne i łatwe w montażu. Posiadamy zarówno gniazda instalacyjne natynkowe, podtynkowe, nowoczesne gniazdka teleinformatyczne, RTV i SAT, jak i hermetyczne, sprawdzające się tam, gdzie istnieje ryzyko kontaktu z wodą – łazienka, kuchnia
         <span id="dots">...</span>
     <div id="more">
 
-       <p class="hej">emil to cwel Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, harum provident soluta exercitationem nisi nulla distinctio laudantium dolore hic sapiente voluptates dolorum odio cupiditate porro minima maiores tempore quisquam vero.</p>
+       <p class="text">emil to cwel Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, harum provident soluta exercitationem nisi nulla distinctio laudantium dolore hic sapiente voluptates dolorum odio cupiditate porro minima maiores tempore quisquam vero.</p>
 
     </div>
 
-<div class="lapa2">
+<div class="box2">
 
  <div class="line"></div>
 
- <a id="btn" onclick="readmore()">Rozwiń</a>
+ <a id="readmore" onclick="readmore()">Rozwiń</a>
 
 </div>
 
 </div>
-
-
-     
             </div>
             </div>
 
-            <script>
-
-function readmore()
-{
-var dots = document.getElementById("dots");
-var more = document.getElementById("more");
-var btn = document.getElementById("btn");
-var lapa = document.getElementById("lapa");
-
-if (dots.style.display === "none")
-{
-    dots.style.display = "inline";
-    btn.innerHTML = "Rozwiń";
-    more.style.display = 'none';
-    lapa.style.height = '150px';
-
-}else{
-    lapa.style.height = '140px';
-    dots.style.display = 'none';
-    btn.innerHTML = "Zwiń";
-    more.style.display = 'inline';
-}
-
-}
-    </script> 
+            <script src="../js/category_description.js"></script> 
 
     </body>
 

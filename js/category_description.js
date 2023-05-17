@@ -1,22 +1,18 @@
-var container = document.querySelector(".info_container");
-var str =
-    "Gniazda elektryczne są niezbędnym elementem instalacji elektrycznej. To dzięki nim użytkownicy mogą zasilić urządzenia i sprzęt. Kontakty elektryczne są funkcjonalne i łatwe w montażu. Posiadamy zarówno gniazda instalacyjne natynkowe, podtynkowe, nowoczesne gniazdka teleinformatyczne, RTV i SAT, jak i hermetyczne, sprawdzające się tam, gdzie istnieje ryzyko kontaktu z wodą – łazienka, kuchnia… Gniazda elektryczne są niezbędnym elementem instalacji elektrycznej. To dzięki nim użytkownicy mogą zasilić urządzenia i sprzęt. Kontakty elektryczne są funkcjonalne i łatwe w montażu. Posiadamy zarówno gniazda instalacyjne natynkowe, podtynkowe, nowoczesne gniazdka teleinformatyczne, RTV i SAT, jak i hermetyczne, sprawdzające się tam, gdzie istnieje ryzyko kontaktu z wodą – łazienka, kuchnia…";
-var arr = str.split(" ");
-var count = arr.length;
-if (count > 50) {
-    container.innerHTML += `<div class="info"></div>   <button type="button" class="collapsible">Rozwiń</button> `;
-    var coll = document.querySelector(".collapsible");
-    var info = document.querySelector(".info");
-    for (var i = 24; i <= count - 1; i++) {
-        info.innerHTML += arr[i] + " ";
-    }
+function readmore() {
+    var dots = document.getElementById("dots");
+    var more = document.getElementById("more");
+    var readmore = document.getElementById("readmore");
+    var box = document.getElementById("container_text_box");
 
-    coll.addEventListener("click", function() {
-        coll.classList.toggle("active");
-        if (info.style.display === "block") {
-            info.style.display = "none";
-        } else {
-            info.style.display = "block";
-        }
-    });
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        readmore.innerHTML = "Rozwiń";
+        more.style.display = "none";
+        box.style.height = "150px";
+    } else {
+        dots.style.display = "none";
+        readmore.innerHTML = "Zwiń";
+        more.style.display = "inline";
+        box.style.height = "140px";
+    }
 }
