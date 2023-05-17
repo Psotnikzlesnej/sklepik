@@ -18,16 +18,16 @@
 
 
 
-
-
-
-  <ul class="slides-container" id="slides-container">
-    
-  <button class="slide-arrow" id="slide-arrow-prev">
+ <button class="slide-arrow" id="slide-arrow-prev">
 
 <i class="fa-solid fa-angle-left"></i> 
 
 </button>
+
+
+  <ul class="slides-container" id="slides-container">
+    
+ 
 
 
     <div class="slide"><img src="testy.png"></div>
@@ -36,9 +36,6 @@
     <div class="slide"><img src="testy.png"></div>
   </ul>
 
-
-
-  
 
 
   <button class="slide-arrow" id="slide-arrow-next">
