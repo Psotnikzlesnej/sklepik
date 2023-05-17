@@ -17,19 +17,26 @@
 
 <div class="lapa" id="lapa">
 
-<p>Gniazda elektryczne są niezbędnym elementem instalacji elektrycznej. To dzięki nim użytkownicy mogą zasilić urządzenia i sprzęt. Kontakty elektryczne są funkcjonalne i łatwe w montażu. Posiadamy zarówno gniazda instalacyjne natynkowe, podtynkowe, nowoczesne gniazdka teleinformatyczne, RTV i SAT, jak i hermetyczne, sprawdzające się tam, gdzie istnieje ryzyko kontaktu z wodą – łazienka, kuchnia
+          <p class="hej">Gniazda elektryczne są niezbędnym elementem instalacji elektrycznej. To dzięki nim użytkownicy mogą zasilić urządzenia i sprzęt. Kontakty elektryczne są funkcjonalne i łatwe w montażu. Posiadamy zarówno gniazda instalacyjne natynkowe, podtynkowe, nowoczesne gniazdka teleinformatyczne, RTV i SAT, jak i hermetyczne, sprawdzające się tam, gdzie istnieje ryzyko kontaktu z wodą – łazienka, kuchnia
         <span id="dots">...</span>
     <div id="more">
 
-        <p>no hejka</p>
-        <p>no hejka</p>
+       <p class="hej">emil to cwel Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, harum provident soluta exercitationem nisi nulla distinctio laudantium dolore hic sapiente voluptates dolorum odio cupiditate porro minima maiores tempore quisquam vero.</p>
 
     </div>
-</p>
+
+<div class="lapa2">
+
+ <div class="line"></div>
+ 
+ <a id="btn" onclick="readmore()">Rozwiń</a>
 
 </div>
 
-     <button id="btn"  onclick="readmore()">Rozwiń</button>
+</div>
+
+
+     
             </div>
             </div>
 
@@ -47,10 +54,10 @@ if (dots.style.display === "none")
     dots.style.display = "inline";
     btn.innerHTML = "Rozwiń";
     more.style.display = 'none';
-    lapa.style.height = '50px';
+    lapa.style.height = '80px';
 
 }else{
-    lapa.style.height = '150px';
+    lapa.style.height = '90px';
     dots.style.display = 'none';
     btn.innerHTML = "Zwiń";
     more.style.display = 'inline';
