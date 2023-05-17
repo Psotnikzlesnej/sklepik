@@ -1,1 +1,22 @@
-/*# sourceMappingURL=category_description.css.map */
+#more {
+    display: none;
+    overflow: hidden;
+    transition: height 200ms;
+}
+
+.container button {
+    outline: none;
+    overflow: hidden;
+    transition: height 200ms;
+}
+
+#more {
+    overflow: hidden;
+    transition: height 200ms;
+}
+
+.lapa {
+    overflow: hidden;
+    transition: height 200ms;
+    height: 50px;
+}
