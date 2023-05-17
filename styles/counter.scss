@@ -1,4 +1,5 @@
-@use '../../utils/styles/fonts';
+@use '../utils/styles/fonts';
+@use '../utils/styles/variables';
 custom-counter {
   $light-gray: #F8F8F8;
   $dark-gray: #E1E2E8;
