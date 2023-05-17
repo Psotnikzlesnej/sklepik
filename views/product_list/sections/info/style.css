@@ -1,3 +1,7 @@
+#more {
+    display: none;
+}
 
-
-/*# sourceMappingURL=style.css.map */
+.container button {
+    outline: none;
+}
