@@ -15,8 +15,12 @@
 
   <div class="container">
     
-   
+  <div class="info">
+<div class="prom">PROMOCJA</div>
+<div class="new">NOWOŚĆ</div>
+</div>
 <div class="shop-min">
+  
 <div class="id">IPC-HFW2231S-S-0280B<hr style="border:  1px solid #E1E2E8; margin-top: 15px;"><div>
 <div class="main_id">
   

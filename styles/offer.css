@@ -118,7 +118,7 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
-  align-items: center;
+ 
   justify-content: flex-end;
 }
 
@@ -230,3 +230,34 @@ body {
   margin-top: 3px;
   font-weight: bold;
 }/*# sourceMappingURL=offer.css.map */
+
+
+.prom{
+width: 75px;
+height: 18px;
+background-color: #F74137;
+padding: 5px;
+color: white;
+font-weight: bold;
+display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+}
+.new{
+  width: 75px;
+  height: 18px;
+  background-color: #80B61A;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    margin-top: 3px;
+}
+.info{
+  margin-right: 35px;
+  
+}
