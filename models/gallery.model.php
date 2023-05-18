@@ -1,7 +1,7 @@
 <?php
 
 class GalleryModel {
-  function _construct(){
+  function __construct(){
     global $mysqli;
     $this ->mysqli = $mysqli;
   }

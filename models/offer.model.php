@@ -1,6 +1,6 @@
 <?php
 	class offerModel{
-		function _construct(){
+		function __construct(){
 			global $mysqli;
 			$this ->mysqli = $mysqli;
 			$this->id = $GLOBALS['product_id'] ?? null;

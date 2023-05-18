@@ -1,6 +1,6 @@
 <?php
 class featuredModel {
-  function _construct(){
+  function __construct(){
     global $mysqli;
     $this->mysqli = $mysqli;
   }
