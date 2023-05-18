@@ -1,1 +1,202 @@
-/*# sourceMappingURL=sidebar.css.map */
+@font-face {
+  font-family: "metropolis";
+  font-style: normal;
+  font-weight: 100;
+  src: url("/fonts/metropolis-thin-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: italic;
+  font-weight: 100;
+  src: url("/fonts/metropolis-thinitalic-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: normal;
+  font-weight: 200;
+  src: url("/fonts/metropolis-extralight-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: italic;
+  font-weight: 200;
+  src: url("/fonts/metropolis-extralightitalic-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/metropolis-light-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: italic;
+  font-weight: 300;
+  src: url("/fonts/metropolis-lightitalic-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/metropolis-regular-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: italic;
+  font-weight: 400;
+  src: url("/fonts/metropolis-regularitalic-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/metropolis-medium-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: italic;
+  font-weight: 500;
+  src: url("/fonts/metropolis-mediumitalic-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/metropolis-semibold-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: italic;
+  font-weight: 600;
+  src: url("/fonts/metropolis-semibolditalic-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/metropolis-bold-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: italic;
+  font-weight: 700;
+  src: url("/fonts/metropolis-bolditalic-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: normal;
+  font-weight: 800;
+  src: url("/fonts/metropolis-extrabold-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: italic;
+  font-weight: 800;
+  src: url("/fonts/metropolis-extrabolditalic-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: normal;
+  font-weight: 900;
+  src: url("/fonts/metropolis-black-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: italic;
+  font-weight: 900;
+  src: url("/fonts/metropolis-blackitalic-webfont.woff2") format("woff2");
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Metropolis", sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #111;
+}
+
+.plus {
+  content: url(../static/plus.svg);
+  height: 12px;
+  width: 12px;
+  color: #323940;
+}
+
+.minus {
+  content: url(../static/minus.svg);
+  height: 12px;
+  width: 12px;
+  color: #323940;
+}
+
+.sidebar {
+  width: 300px;
+  color: #111;
+  padding: 30px;
+}
+.sidebar__heading {
+  display: block;
+  border: 1px solid #E1E2E8;
+  padding: 20px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.sidebar__hr {
+  background-color: #F74137;
+  border: none;
+  height: 2px;
+}
+.sidebar__list {
+  width: 100%;
+}
+.sidebar__listItem {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #E1E2E8;
+  padding: 20px;
+}
+.sidebar__listItem:hover {
+  background-color: #F8F8F8;
+  transition: background-color 0.3s ease-out;
+}
+.sidebar__listItemAnchor {
+  display: block;
+  padding: 20px auto 20px 20px;
+  align-self: center;
+}
+.sidebar__listItemSpan {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+}
+.sidebar__nestedList {
+  display: none;
+}
+.sidebar__nestedListItem {
+  border: 1px solid #E1E2E8;
+  background-color: #F8F8F8;
+}
+.sidebar__nestedListItem:hover {
+  background-color: #e1e2e8;
+  transition: background-color 0.3s ease-out;
+}
+.sidebar__nestedListItemAnchor {
+  display: block;
+  padding: 20px 40px 20px;
+}
+.sidebar__nestedListItemSpan {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+}/*# sourceMappingURL=sidebar.css.map */
