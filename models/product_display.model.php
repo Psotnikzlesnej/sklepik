@@ -21,7 +21,7 @@ class ProductDisplayModel {
     };
   }
 
-  private function get_products(){
+  private function getProducts(){
     $query = "SELECT p.ID, p.name, p.promo_price, p.catalog_price, p.serial_number, p.stock,
     GROUP_CONCAT(DISTINCT fl.name SEPARATOR ', ') as flag_names,
     (select p_i.image_name from product_image as p_i 
@@ -59,7 +59,7 @@ class ProductDisplayModel {
     return $products;
   }
 
-  private function count_products(){
+  private function countProducts(){
     $query = "SELECT COUNT(*) as count
     FROM product as p
       JOIN product_filter_value as p_f_v ON p_f_v.product_ID = p.ID
@@ -85,9 +85,9 @@ class ProductDisplayModel {
       return $description;
   }
 
-  public function get_everything(){
-    $products = $this->get_products();
-    $products_amount = $this->count_products()['count'];
+  public function getEverything(){
+    $products = $this->getProducts();
+    $products_amount = $this->countProducts()['count'];
     $pages_amount = ceil($products_amount/$this->products_per_page);
     return ['products'=>$products, 'display_variation'=>$this->display_variation,
       'curr_page'=>$this->page, 'pages_amount'=>$pages_amount];

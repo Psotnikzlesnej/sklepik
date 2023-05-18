@@ -1,10 +1,10 @@
 <?php
-class featuredModel {
+class FeaturedModel {
   function __construct(){
     global $mysqli;
     $this->mysqli = $mysqli;
   }
-  private function get_featured_products(){
+  private function getFeaturedProducts(){
   $query = "SELECT p.ID, p.name, p.promo_price, p.catalog_price, p.serial_number, p.stock,
   GROUP_CONCAT(DISTINCT f.name SEPARATOR ', ') as flag_names,
   (select p_i.image_name from product_image as p_i 
@@ -16,8 +16,8 @@ class featuredModel {
   $featured = $result -> featch_assoc();
   return $result;
 }
-  public function get_everything(){
-    $featured = $this->get_featured_products();
+  public function getEverything(){
+    $featured = $this->getFeaturedProducts();
     return $featured;
   }
 }

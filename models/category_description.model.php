@@ -6,16 +6,16 @@ class CategoryDescriptionModel {
     $this->id = $GLOBALS['catalog_id'] ?? null;
   }
 
-  private function get_description(){
+  private function getDescription(){
     $query = "SELECT name, description from category WHERE ID = ?;";
     $result= $this->mysqli->execute_query($query, [$this->id]);
     $description = $result->fetch_assoc();
     return $result;
   }
 
-  public function get_everything(){
-    $description = $this->get_description();
-    return $description;
+  public function getEverything(){
+    $description = $this->getDescription();
+    return ['description' => $description];
   }
 }
 ?>

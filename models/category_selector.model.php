@@ -6,7 +6,7 @@ class CategorySelectorModel {
     $this->id = $GLOBALS['catalog_id'] ?? null;
   }
 
-  private function get_categories($parent_id){
+  private function getCategories($parent_id){
     $query = "SELECT ID, name, image_name, description, (ID = ?) as is_current 
     from category WHERE parent = ?;";
     $result= $mysqli -> execute_query($query, [$this->id, $parent_id]);
@@ -18,17 +18,17 @@ class CategorySelectorModel {
     return $categories;
   }
   
-  private function get_parent_id(){
+  private function getParentId(){
     $query = "SELECT parent from category WHERE ID = ?;";
     $result = $this->mysqli->execute_query($query, [$this->id]);
     $parent = $result->fetch_assoc();
     return $parent;
   }
 
-  public function get_everything(){
-    $parent_id = $this->get_parent_id();
-    $categories = $this->get_categories($parent_id);
-    return $categories;
+  public function getEverything(){
+    $parent_id = $this->getParentId();
+    $categories = $this->getCategories($parent_id);
+    return ['categories' => $categories];
   }
 }
 ?>

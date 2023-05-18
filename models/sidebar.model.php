@@ -23,7 +23,7 @@ class SidebarModel {
     return $tree;
   }
 
-  private function get_categories(){
+  private function getCategories(){
     $query = "SELECT ID, name, image_name, description, (ID = ?) as is_current, parent, level from category;";
     $result= $this->$mysqli->execute_query($query, [$this->category]);
     $categories_sorted_by_parent = [];
@@ -36,7 +36,7 @@ class SidebarModel {
     return $category_tree;
   }
 
-  private function get_colors(){
+  private function getColors(){
     $query = "SELECT filter.name, filter.type, filter_value.value, filter_value.id as value_ID,
      (filter_value.id in (?)) as is_selected FROM filter JOIN filter_value
       ON filter_value.ID_filter = filter.ID WHERE type = 'color';";
@@ -49,7 +49,7 @@ class SidebarModel {
     return $colors;
   }
 
-  private function get_manufacturers(){
+  private function getManufacturers(){
     $query = "SELECT ID, name FROM manufacturer";
     $result = $this->mysqli->execute_query($query);
     $manufacturers = [];
@@ -60,10 +60,10 @@ class SidebarModel {
     return $manufacturers;
   }
 
-  public function get_everything(){
+  public function getEverything(){
     $colors = $this->get_colors();
-    $manufacturers = $this->get_manufacturers();
-    $category_tree = $this->get_categories();
+    $manufacturers = $this->getManufacturers();
+    $category_tree = $this->getCategories();
     return ['colors' => $colors, 'manufacturers' => $manufacturers, 'categories'=>$category_tree, 
     'price_range'=>['from'=>$this->min_price, 'to'=>$this->max_price]];
   }

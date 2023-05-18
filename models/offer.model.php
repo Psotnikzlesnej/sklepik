@@ -1,23 +1,23 @@
 <?php
-	class offerModel{
+	class OfferModel{
 		function __construct(){
 			global $mysqli;
 			$this ->mysqli = $mysqli;
 			$this->id = $GLOBALS['product_id'] ?? null;
 		  }
-   private function get_horizontal_carousel_image(){
+   private function getHorizontalCarouselImage(){
 	$query = "SELECT image_name FROM product_image";
 	$result = $this->mysqli->query($query);
 	$horizontal_carousel_image = $result -> fetch_assoc();
 	return $result;
 	}
-	private function get_vertical_carousel_image(){
+	private function getVerticalCarouselImage(){
 	$query = "SELECT image_name FROM product_image";
 	$result = $this->mysqli->query($query);
 	$vertical_carousel_image = $result -> fetch_assoc();
 	return $result;
 	}
- 	private  function get_product_offer(){
+ 	private  function getProductOffer(){
 	$query = "SELECT p.ID, p.name, p.variant_name, p.catalog_price, 
 	p.promo_price, d.name as delivery_name, p.serial_number, p.variant_group_ID,
 	GROUP_CONCAT(DISTINCT f.name SEPARATOR ', ') as flag_names, m.name as manufacturer_name, m.image_name as manufacturer_image FROM product as p
@@ -31,10 +31,10 @@
 	$product_offer = $result -> fetch_assoc();
 	return $result;
 }
-	public function get_everything(){
-		$horizontal_carousel_image = $this -> get_horizontal_carousel_image();
-		$vertical_carousel_image = $this -> get_vertical_carousel_image();
-		$product_offer = $this-> get_product_offer();
+	public function getEverything(){
+		$horizontal_carousel_image = $this -> getHorizontalCarouselImage();
+		$vertical_carousel_image = $this -> getVerticalCarouselImage();
+		$product_offer = $this-> getProductOffer();
 		return ['horizontal_carousel_image' => $horizontal_carousel_image , 'vertical_carousel_image' => $vertical_carousel_image , 'product_offer' => $product_offer];
 	}
 	}

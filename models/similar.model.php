@@ -1,12 +1,12 @@
 <?php
-class get_product_similarModel{
+class ProductSimilarModel{
   function __construct(){
 global $mysqli;
 $this ->mysqli = $mysqli;
 $this->id = $GLOBALS['product_id'] ?? null;
 }
 
-private function get_product_categories(){
+private function getProductCategories(){
 	$query = "SELECT c.ID FROM `product` as p
 		JOIN `product_category` as p_c on p_c.product_ID = p.ID
 		JOIN `category` as c on p_c.category_ID = c.ID
@@ -16,7 +16,7 @@ private function get_product_categories(){
 	return $result;
 }
 
-private function get_similar_products($category_id){
+private function getSimilarProducts($category_id){
 	$query = "SELECT p.ID, p.name, p.promo_price, p.catalog_price, p.serial_number, p.stock,
   GROUP_CONCAT(DISTINCT f.name SEPARATOR ', ') as flag_names,
   (select p_i.image_name from product_image as p_i 
@@ -29,9 +29,9 @@ private function get_similar_products($category_id){
   $similar_product= $result -> fetch_assoc();
 	return $result;
 }
-public function get_everything(){
-  $category = $this->get_product_categories();
-  $similar_product = $this->get_similar_products($category);
+public function getEverything(){
+  $category = $this->getProductCategories();
+  $similar_product = $this->getSimilarProducts($category);
   return ['product_category' => $category, 'similar_products' => $similar_product];
 }}
 ?>
