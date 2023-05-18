@@ -1,4 +1,16 @@
 <?php
+    function get_horizontal_carousel_image($id){
+			global $mysqli;
+	$query = "SELECT image_name FROM product_image";
+	$result = $mysqli->query($query);
+	return $result;
+	}
+	function get_vertical_carousel_image($id){
+		global $mysqli;
+$query = "SELECT image_name FROM product_image";
+$result = $mysqli->query($query);
+return $result;
+}
    function get_product_offer($id){
 	global $mysqli;
 	$query = "SELECT p.ID, p.name, p.variant_name, p.catalog_price, 
