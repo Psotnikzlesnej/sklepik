@@ -5,14 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/page_navigation.css">
+    <script src="../js/page_navigation.js"></script>
     <title>Document</title>
 </head>
-<script>
- function changeColor(div) {
-    div.classList.toggle("blue");
-  }
 
-</script>
 
 <body>
 <div class="nav-long">
