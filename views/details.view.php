@@ -12,9 +12,9 @@
     
 <?php 
 
-include '../details/components/description/index.php';
+include_once '../details/components/description/index.php';
 
-include '../details/components/parameters/index.php';
+include_once '../details/components/parameters/index.php';
 
 
 
