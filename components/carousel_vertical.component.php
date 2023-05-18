@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="../styles/carousel_horizontal.scss">
+    <link rel="stylesheet" href="../styles/carousel_vertical.scss">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
 
@@ -13,14 +13,14 @@
 <body>
     
 
-<section class="slider-wrapper">
+<div class="slider-wrapper">
  
 
+ <button class="slide-arrow" id="slide-arrow-prev" >
 
-
- <button class="slide-arrow" id="slide-arrow-prev">
-
-<i class="fa-solid fa-angle-left"></i> 
+<i class="fa-solid fa-angle-left" style="
+    display: block;
+    margin-bottom: 5px;"></i> 
 
 </button>
 
@@ -28,24 +28,33 @@
   <ul class="slides-container" id="slides-container">
     
  
+  <div class="slide"><img src="..\photos\categories\Image 149.png"></div>
+  <div class="slide"><img src="..\photos\categories\Image 149.png"></div>
+  <div class="slide"><img src="..\photos\categories\Image 149.png"></div>
+  <div class="slide"><img src="..\photos\categories\Image 149.png"></div>
+  <div class="slide"><img src="..\photos\categories\Image 149.png"></div>
 
+   
+  <div class="slide"><img src="..\photos\categories\Image 149.png"></div>
+  <div class="slide"><img src="..\photos\categories\Image 149.png"></div>
+  <div class="slide"><img src="..\photos\categories\Image 149.png"></div>
+  <div class="slide"><img src="..\photos\categories\Image 149.png"></div>
+  <div class="slide"><img src="..\photos\categories\Image 149.png"></div>
 
-  <div class="slide"><img src="../photos/products/Photo – 1.png"></div>
-  <div class="slide"><img src="../photos/products/Photo – 1.png"></div>
-  <div class="slide"><img src="../photos/products/Photo – 1.png"></div>
-  <div class="slide"><img src="../photos/products/Photo – 1.png"></div>
   </ul>
 
 
 
   <button class="slide-arrow" id="slide-arrow-next">
 
-  <i class="fa-solid fa-angle-right"></i>
+  <i class="fa-solid fa-angle-right" style="
+    display: block;
+    margin-bottom: 5px;"></i>
 
   </button>
 
-</section>
-<script src="../js/carousel_horizontal.js"></script> 
+</div>
+<script src="../js/carousel_vertical.js"></script> 
 
 </body>
 </html>

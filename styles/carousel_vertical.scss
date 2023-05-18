@@ -7,46 +7,22 @@ body {
     margin: auto;
 }
 
-.slider-wrapper {
-    margin: 1rem;
-    position: relative;
-    overflow: hidden;
-}
+.slider-wrapper {}
 
 .slides-container {
-    height: calc(100vh - 2rem);
-    width: 100%;
-    display: flex;
-    overflow: scroll;
+    height: calc(44vh - 2rem);
+    overflow: hidden;
+    width: 10%;
     scroll-behavior: smooth;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    margin-left: -35px;
 }
 
-.slides-container {
-    scrollbar-width: none;
-    /* Firefox */
-    -ms-overflow-style: none;
-    /* Internet Explorer 10+ */
-}
-
-
-/* WebKit */
-
-.slides-container::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-}
+.slides-container::-webkit-scrollbar {}
 
 .slide-arrow {
-    position: absolute;
-    display: flex;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    height: 4rem;
-    background: #c1c2c6 0% 0% no-repeat padding-box;
+    display: inline-block;
     border: none;
     width: 2rem;
     font-size: 3rem;
@@ -54,6 +30,7 @@ body {
     cursor: pointer;
     opacity: 0.5;
     transition: opacity 100ms;
+    transform: rotate(90deg);
 }
 
 .slide-arrow:hover,
@@ -62,18 +39,19 @@ body {
 }
 
 #slide-arrow-prev {
-    left: 0;
     background: #c1c2c6 0% 0% no-repeat padding-box;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 70px;
+    margin-left: 20px;
+    margin-bottom: -15px;
 }
 
 #slide-arrow-next {
-    right: 0;
     background: #c1c2c6 0% 0% no-repeat padding-box;
-    /* border-radius: 2rem 0 0 2rem; */
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 70px;
+    margin-left: 20px;
+    margin-top: -9px;
 }
 
 .slide {
@@ -94,7 +72,27 @@ body {
 
 .fa-solid {
     color: #ffffff;
-    margin-left: 20px;
     font-size: 19px;
-    margin-top: 15px;
+}
+
+.fa-solid,
+.fas {
+    font-weight: 900;
+    display: block;
+    margin-bottom: 5px;
+}
+
+img {
+    width: 31px;
+    height: 52px;
+    margin-top: 7px;
+}
+
+.slide {
+    width: 70px;
+    height: 70px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #e1e2e8;
+    opacity: 1;
+    margin-top: 6px;
 }

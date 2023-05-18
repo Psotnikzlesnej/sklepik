@@ -140,7 +140,7 @@ margin-left: 10px;
 }
 .cate{
     display: flex;
-    
+    margin-left: 50px;
 }
 span:hover{
     background-color: #F74137;
