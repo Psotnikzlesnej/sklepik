@@ -7,7 +7,7 @@ class GalleryModel {
   }
   private function get_home_banners(){
   $query = "SELECT title, description, image_name, link, type, alt, mask FROM `banner` 
-  WHERE visible=true AND type = 'home_top'";
+  WHERE visible=true AND type = 'home_top' LIMIT 0,5";
   $result = $this ->mysqli ->query($query);
   $banners = $result -> fetch_assoc();
   return $result;

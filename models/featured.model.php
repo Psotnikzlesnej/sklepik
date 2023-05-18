@@ -11,7 +11,7 @@ class featuredModel {
     where p_i.product_ID = p.ID ORDER BY p_i.main DESC LIMIT 1) as image_name 
   FROM product as p 
     JOIN product_flag as p_f on p_f.product_ID = p.ID JOIN flag as f on p_f.flag_ID = f.ID 
-      WHERE p.visible = true AND p.stock > 0 GROUP BY p.ID HAVING flag_names LIKE '%featured%';";
+      WHERE p.visible = true AND p.stock > 0 GROUP BY p.ID HAVING flag_names LIKE '%featured%'; LIMIT 5,25";
   $result = $this->mysqli ->query($query);
   $featured = $result -> featch_assoc();
   return $result;
