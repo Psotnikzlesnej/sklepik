@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="main-text">Łącznik jednobiegunowy (moduł) 10AX, 250V~, zaciski śrubowe
-<img src="Philips_logo.svg.png" style="height: 17px; "alt="">
+<img src="..\photos\manufacturers\Philips_logo.svg.png" style="height: 17px; "alt="">
 </div>
 
   <div class="container">
@@ -48,7 +48,7 @@
 <div class="container-product">
 
 <div class="item1">
-<img src="Image 149.png" alt="light" style="background: #FFFFFF 0% 0% no-repeat padding-box;
+<img src="..\photos\categories\49.png" alt="light" style="background: #FFFFFF 0% 0% no-repeat padding-box;
 border: 1px solid #E1E2E8;
 opacity: 1;     padding: 6px 14px;" >
 <div style="
@@ -58,7 +58,7 @@ opacity: 1;     padding: 6px 14px;" >
 ">Biały</div>
 </div>
 <div class="item2">
-<img src="Image 149.png" alt="light" style="background: #FFFFFF 0% 0% no-repeat padding-box;
+<img src="..\photos\categories\49.png" alt="light" style="background: #FFFFFF 0% 0% no-repeat padding-box;
 border: 1px solid #E1E2E8;
 opacity: 1;     padding: 6px 14px; ">
 
