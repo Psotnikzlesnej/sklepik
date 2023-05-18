@@ -1,263 +1,290 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "metropolis";
-  font-style: normal;
-  font-weight: 100;
-  src: url("/fonts/metropolis-thin-webfont.woff2") format("woff2");
+    font-family: "metropolis";
+    font-style: normal;
+    font-weight: 100;
+    src: url("/fonts/metropolis-thin-webfont.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: "metropolis";
-  font-style: italic;
-  font-weight: 100;
-  src: url("/fonts/metropolis-thinitalic-webfont.woff2") format("woff2");
+    font-family: "metropolis";
+    font-style: italic;
+    font-weight: 100;
+    src: url("/fonts/metropolis-thinitalic-webfont.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: "metropolis";
-  font-style: normal;
-  font-weight: 200;
-  src: url("/fonts/metropolis-extralight-webfont.woff2") format("woff2");
+    font-family: "metropolis";
+    font-style: normal;
+    font-weight: 200;
+    src: url("/fonts/metropolis-extralight-webfont.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: "metropolis";
-  font-style: italic;
-  font-weight: 200;
-  src: url("/fonts/metropolis-extralightitalic-webfont.woff2") format("woff2");
+    font-family: "metropolis";
+    font-style: italic;
+    font-weight: 200;
+    src: url("/fonts/metropolis-extralightitalic-webfont.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: "metropolis";
-  font-style: normal;
-  font-weight: 300;
-  src: url("/fonts/metropolis-light-webfont.woff2") format("woff2");
+    font-family: "metropolis";
+    font-style: normal;
+    font-weight: 300;
+    src: url("/fonts/metropolis-light-webfont.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: "metropolis";
-  font-style: italic;
-  font-weight: 300;
-  src: url("/fonts/metropolis-lightitalic-webfont.woff2") format("woff2");
+    font-family: "metropolis";
+    font-style: italic;
+    font-weight: 300;
+    src: url("/fonts/metropolis-lightitalic-webfont.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: "metropolis";
-  font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/metropolis-regular-webfont.woff2") format("woff2");
+    font-family: "metropolis";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/metropolis-regular-webfont.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: "metropolis";
-  font-style: italic;
-  font-weight: 400;
-  src: url("/fonts/metropolis-regularitalic-webfont.woff2") format("woff2");
+    font-family: "metropolis";
+    font-style: italic;
+    font-weight: 400;
+    src: url("/fonts/metropolis-regularitalic-webfont.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: "metropolis";
-  font-style: normal;
-  font-weight: 500;
-  src: url("/fonts/metropolis-medium-webfont.woff2") format("woff2");
+    font-family: "metropolis";
+    font-style: normal;
+    font-weight: 500;
+    src: url("/fonts/metropolis-medium-webfont.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: "metropolis";
-  font-style: italic;
-  font-weight: 500;
-  src: url("/fonts/metropolis-mediumitalic-webfont.woff2") format("woff2");
+    font-family: "metropolis";
+    font-style: italic;
+    font-weight: 500;
+    src: url("/fonts/metropolis-mediumitalic-webfont.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: "metropolis";
-  font-style: normal;
-  font-weight: 600;
-  src: url("/fonts/metropolis-semibold-webfont.woff2") format("woff2");
+    font-family: "metropolis";
+    font-style: normal;
+    font-weight: 600;
+    src: url("/fonts/metropolis-semibold-webfont.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: "metropolis";
-  font-style: italic;
-  font-weight: 600;
-  src: url("/fonts/metropolis-semibolditalic-webfont.woff2") format("woff2");
+    font-family: "metropolis";
+    font-style: italic;
+    font-weight: 600;
+    src: url("/fonts/metropolis-semibolditalic-webfont.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: "metropolis";
-  font-style: normal;
-  font-weight: 700;
-  src: url("/fonts/metropolis-bold-webfont.woff2") format("woff2");
+    font-family: "metropolis";
+    font-style: normal;
+    font-weight: 700;
+    src: url("/fonts/metropolis-bold-webfont.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: "metropolis";
-  font-style: italic;
-  font-weight: 700;
-  src: url("/fonts/metropolis-bolditalic-webfont.woff2") format("woff2");
+    font-family: "metropolis";
+    font-style: italic;
+    font-weight: 700;
+    src: url("/fonts/metropolis-bolditalic-webfont.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: "metropolis";
-  font-style: normal;
-  font-weight: 800;
-  src: url("/fonts/metropolis-extrabold-webfont.woff2") format("woff2");
+    font-family: "metropolis";
+    font-style: normal;
+    font-weight: 800;
+    src: url("/fonts/metropolis-extrabold-webfont.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: "metropolis";
-  font-style: italic;
-  font-weight: 800;
-  src: url("/fonts/metropolis-extrabolditalic-webfont.woff2") format("woff2");
+    font-family: "metropolis";
+    font-style: italic;
+    font-weight: 800;
+    src: url("/fonts/metropolis-extrabolditalic-webfont.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: "metropolis";
-  font-style: normal;
-  font-weight: 900;
-  src: url("/fonts/metropolis-black-webfont.woff2") format("woff2");
+    font-family: "metropolis";
+    font-style: normal;
+    font-weight: 900;
+    src: url("/fonts/metropolis-black-webfont.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: "metropolis";
-  font-style: italic;
-  font-weight: 900;
-  src: url("/fonts/metropolis-blackitalic-webfont.woff2") format("woff2");
+    font-family: "metropolis";
+    font-style: italic;
+    font-weight: 900;
+    src: url("/fonts/metropolis-blackitalic-webfont.woff2") format("woff2");
 }
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Metropolis", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "Metropolis", sans-serif;
 }
 
 .container {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  display: flex;
- 
-  justify-content: flex-end;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .shop-min {
-  width: 613px;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  border: 1px solid #E1E2E8;
-  opacity: 1;
-  margin-right: 30px;
-  padding: 30px;
-  border-bottom: none;
+    width: 613px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #e1e2e8;
+    opacity: 1;
+    margin-right: 30px;
+    padding: 30px;
+    border-bottom: none;
 }
 
 .main-text {
-  text-align: left;
-  font-size: 44px;
-  letter-spacing: 0px;
-  color: #111111;
-  padding: 30px;
-  opacity: 1;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-weight: bold;
+    text-align: left;
+    font-size: 44px;
+    letter-spacing: 0px;
+    color: #111111;
+    padding: 30px;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
 }
 
 .id {
-  text-align: left;
-  font-size: 14px;
-  letter-spacing: -0.28px;
-  color: #A1A4A7;
-  opacity: 1;
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: -0.28px;
+    color: #a1a4a7;
+    opacity: 1;
 }
 
 .main_id {
-  display: flex;
-  flex-direction: row;
-  border-bottom: 1px solid #E1E2E8;
-  padding-bottom: 7px;
-  color: black;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #e1e2e8;
+    padding-bottom: 7px;
+    color: black;
 }
 
 .xd {
-  display: flex;
-  align-items: center;
-  margin-left: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
 }
 
 .Dostępne {
-  padding-right: 220px;
-  align-items: center;
-  display: flex;
+    padding-right: 220px;
+    align-items: center;
+    display: flex;
 }
 
 .product {
-  color: black;
+    color: black;
 }
 
 .container-product {
-  display: flex;
+    display: flex;
 }
 
 .item2 {
-  margin-left: 5px;
-  height: 56px;
-  color: #111111;
+    margin-left: 5px;
+    height: 56px;
+    color: #111111;
 }
 
 .item1 {
-  color: #111111;
-  height: 56px;
+    color: #111111;
+    height: 56px;
 }
 
 .item2:hover {
-  border: 1px solid #1BB0F7;
+    border: 1px solid #1bb0f7;
 }
 
 .item1:hover {
-  border: 1px solid #1BB0F7;
+    border: 1px solid #1bb0f7;
 }
 
 .container-product {
-  display: flex;
+    display: flex;
 }
 
 .shopme {
-  width: 673px;
-  height: 248px;
-  background-color: #F2F3F4;
-  margin: 0;
-  padding: 0;
-  float: right;
-  margin-right: 30px;
-  border: 1px solid #E1E2E8;
+    width: 673px;
+    height: 248px;
+    background-color: #f2f3f4;
+    margin: 0;
+    padding: 0;
+    float: right;
+    margin-right: 30px;
+    border: 1px solid #e1e2e8;
 }
 
 .high {
-  color: #A1A4A7;
-  margin-top: 30px;
-  margin-left: 30px;
+    color: #a1a4a7;
+    margin-top: 30px;
+    margin-left: 30px;
 }
 
 .low {
-  font-size: 32px;
-  letter-spacing: -0.64px;
-  color: #111111;
-  opacity: 1;
-  margin-left: 30px;
-  margin-top: 3px;
-  font-weight: bold;
-}/*# sourceMappingURL=offer.css.map */
+    font-size: 32px;
+    letter-spacing: -0.64px;
+    color: #111111;
+    opacity: 1;
+    margin-left: 30px;
+    margin-top: 3px;
+    font-weight: bold;
+}
 
 
-.prom{
-width: 75px;
-height: 18px;
-background-color: #F74137;
-padding: 5px;
-color: white;
-font-weight: bold;
-display: flex;
+/*# sourceMappingURL=offer.css.map */
+
+.prom {
+    width: 75px;
+    height: 18px;
+    background-color: #f74137;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    display: flex;
     align-items: center;
     justify-content: center;
     font-size: 11px;
 }
-.new{
-  width: 75px;
-  height: 18px;
-  background-color: #80B61A;
-  padding: 5px;
-  color: white;
-  font-weight: bold;
-  display: flex;
+
+.new {
+    width: 75px;
+    height: 18px;
+    background-color: #80b61a;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    display: flex;
     align-items: center;
     justify-content: center;
     font-size: 11px;
     margin-top: 3px;
 }
-.info{
-  margin-right: 35px;
-  
+
+.info {
+    margin-right: 35px;
+}
+
+.img1 {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #e1e2e8;
+    opacity: 1;
+    padding: 6px 14px;
 }

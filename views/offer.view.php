@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="..\styles\offer.css">
+  <link rel="stylesheet" href="..\styles\offer.scss">
   
   <title>Document</title>
 </head>
@@ -52,25 +52,17 @@
 <div class="container-product">
 
 <div class="item1">
-<img src="..\photos\categories\49.png" alt="light" style="background: #FFFFFF 0% 0% no-repeat padding-box;
-border: 1px solid #E1E2E8;
-opacity: 1;     padding: 6px 14px;" >
+<img src="..\photos\categories\49.png" alt="light" class="img1"  >
 <div style="
     display: flex;
     align-items: center;
-    justify-content: center;
-">Biały</div>
+    justify-content: center;">Biały</div>
 </div>
 <div class="item2">
-<img src="..\photos\categories\49.png" alt="light" style="background: #FFFFFF 0% 0% no-repeat padding-box;
-border: 1px solid #E1E2E8;
-opacity: 1;     padding: 6px 14px; ">
+<img src="..\photos\categories\49.png" alt="light" class="img1">
 
-<div style="
-    display: flex;
-    align-items: center;
-    justify-content: center;
-">Czarny</div>
+<div class="black_variant" ;">Czarny</div>
+
 </div>
 </div>
 </div>
