@@ -31,7 +31,7 @@
                             <div id="minus" class="minus">-</div>
                             <div id="count" class="count">0</div>
                             <div id="plus" class="plus">+</div>
-                            <script src="script.js"></script>
+                            <script src="C:\xampp\htdocs\sklepik\js\featured.js"></script>
                         </div>
                         <div class="buybutton">
                             

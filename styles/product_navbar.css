@@ -1,1 +1,174 @@
+@font-face {
+    font-family: "metropolis";
+    font-style: normal;
+    font-weight: 100;
+    src: url("../fonts/metropolis-thin-webfont.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "metropolis";
+    font-style: italic;
+    font-weight: 100;
+    src: url("../fonts/metropolis-thinitalic-webfont.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "metropolis";
+    font-style: normal;
+    font-weight: 200;
+    src: url("../fonts/metropolis-extralight-webfont.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "metropolis";
+    font-style: italic;
+    font-weight: 200;
+    src: url("../fonts/metropolis-extralightitalic-webfont.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "metropolis";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/metropolis-light-webfont.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "metropolis";
+    font-style: italic;
+    font-weight: 300;
+    src: url("../fonts/metropolis-lightitalic-webfont.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "metropolis";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/metropolis-regular-webfont.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "metropolis";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/metropolis-regularitalic-webfont.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "metropolis";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/metropolis-medium-webfont.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "metropolis";
+    font-style: italic;
+    font-weight: 500;
+    src: url("../fonts/metropolis-mediumitalic-webfont.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "metropolis";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/metropolis-semibold-webfont.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "metropolis";
+    font-style: italic;
+    font-weight: 600;
+    src: url("../fonts/metropolis-semibolditalic-webfont.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "metropolis";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/metropolis-bold-webfont.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "metropolis";
+    font-style: italic;
+    font-weight: 700;
+    src: url("../fonts/metropolis-bolditalic-webfont.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "metropolis";
+    font-style: normal;
+    font-weight: 800;
+    src: url("../fonts/metropolis-extrabold-webfont.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "metropolis";
+    font-style: italic;
+    font-weight: 800;
+    src: url("../fonts/metropolis-extrabolditalic-webfont.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "metropolis";
+    font-style: normal;
+    font-weight: 900;
+    src: url("../fonts/metropolis-black-webfont.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "metropolis";
+    font-style: italic;
+    font-weight: 900;
+    src: url("../fonts/metropolis-blackitalic-webfont.woff2") format("woff2");
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    font-family: "Metropolis", sans-serif;
+   
+}
+.banner{
+    width: 1530px;
+    height: 360px;
+    opacity: 1;
+    background-image: url("../photos/banners/img_04.jpg");
+    -webkit-box-shadow: inset 500px 0px 110px 0px rgba(0,0,0,0.55);
+        -moz-box-shadow: inset 500px 0px 110px 0px rgba(0,0,0,0.55);
+        box-shadow: inset 500px 0px 10358px 0px rgba(0,0,0,0.55);
+    
+    
+   
+}
+.toptext{
+  
+    margin-left: 54px;
+    width: 363px;
+    height: 44px;
+    text-align: left;
+    font: normal normal bold 44px/200px Metropolis;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.bottomtext{
+
+    margin-left: 54px;
+    width: 396px;
+    height: 44px;
+    text-align: left;
+    font: normal normal 300 44px/200px Metropolis;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.button{
+    font-family: 'Metropolis', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    /* czcionka */
+    color: white;
+    margin-left: 54px;
+    margin-top: 108px;
+    width: 200px;
+    height: 50px;
+    background: #F74137 0% 0% no-repeat padding-box;
+    opacity: 1;
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+}
+.button_text{
+    margin-top: auto;
+    margin-bottom: auto;
+}
 /*# sourceMappingURL=product_navbar.css.map */
