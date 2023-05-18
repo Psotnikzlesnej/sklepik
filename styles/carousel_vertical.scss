@@ -28,7 +28,7 @@ body {
     font-size: 3rem;
     padding: 0;
     cursor: pointer;
-    opacity: 0.5;
+    opacity: 0.2;
     transition: opacity 100ms;
     transform: rotate(90deg);
 }
@@ -95,4 +95,5 @@ img {
     border: 1px solid #e1e2e8;
     opacity: 1;
     margin-top: 6px;
+    cursor: pointer;
 }
