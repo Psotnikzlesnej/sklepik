@@ -125,11 +125,11 @@ body {
   height: 16px;
 }
 .footer .plus {
-  content: url(plus.svg);
+  content: url(../static/plus.svg);
   height: 100%;
 }
 .footer .minus {
-  content: url(minus.svg);
+  content: url(../static/minus.svg);
   height: 100%;
 }
 .footer__list {
@@ -225,4 +225,6 @@ body {
     flex-direction: row;
     justify-content: space-between;
   }
-}/*# sourceMappingURL=footer.css.map */
+}
+
+/*# sourceMappingURL=footer.css.map */

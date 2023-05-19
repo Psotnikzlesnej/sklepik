@@ -13,32 +13,30 @@
 <body>
     
 
-<section class="slider-wrapper">
+<section class="slider-wrapper_horizontal">
  
 
 
 
- <button class="slide-arrow" id="slide-arrow-prev">
+ <button class="slide-arrow_horizontal" id="slide-arrow-prev_horizontal">
 
 <i class="fa-solid fa-angle-left"></i> 
 
 </button>
 
 
-  <ul class="slides-container" id="slides-container">
+  <ul class="slides-container_horizontal" id="slides-container_horizontal">
     
- 
 
-
-  <div class="slide"><img src="../photos/products/Photo – 1.png"></div>
-  <div class="slide"><img src="../photos/products/Photo – 1.png"></div>
-  <div class="slide"><img src="../photos/products/Photo – 1.png"></div>
-  <div class="slide"><img src="../photos/products/Photo – 1.png"></div>
+  <div class="slide_horizontal"><img src="../photos/products/Photo – 1.png"></div>
+  <div class="slide_horizontal"><img src="../photos/products/Photo – 1.png"></div>
+  <div class="slide_horizontal"><img src="../photos/products/Photo – 1.png"></div>
+  <div class="slide_horizontal"><img src="../photos/products/Photo – 1.png"></div>
   </ul>
 
 
 
-  <button class="slide-arrow" id="slide-arrow-next">
+  <button class="slide-arrow_horizontal" id="slide-arrow-next_horizontal">
 
   <i class="fa-solid fa-angle-right"></i>
 

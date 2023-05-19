@@ -165,9 +165,7 @@ body {
   margin-left: 23px;
   display: inline-block;
   flex-grow: 4;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   width: 350px;
   height: 560px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -300,9 +298,7 @@ body {
 .minus,
 .plus {
   cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   height: 50px;
   width: 30px;
   border: 1px solid #ccc;
@@ -313,9 +309,7 @@ body {
   width: 100px;
   color: #111111;
   opacity: 0.5;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 .buybutton {
@@ -323,4 +317,6 @@ body {
   height: 50px;
   background: green;
   display: flex;
-}/*# sourceMappingURL=featured.css.map */
+}
+
+/*# sourceMappingURL=featured.css.map */
