@@ -14,7 +14,7 @@ body {
 }
 
 .slides-container_horizontal {
-    height: calc(59vh - 2rem);
+    height: calc(66vh - 2rem);
     width: 100%;
     display: flex;
     overflow: scroll;
@@ -25,18 +25,13 @@ body {
 }
 
 .slides-container_horizontal {
-    // scrollbar-width: none;
-    // /* Firefox */
-    // -ms-overflow-style: none;
-    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
-
-/* WebKit */
-
 .slides-container_horizontal::-webkit-scrollbar {
-    // width: 0;
-    // height: 0;
+    width: 0;
+    height: 0;
 }
 
 .slide-arrow_horizontal {
