@@ -1,52 +1,54 @@
 #more {
-    display: none;
-    overflow: hidden;
+  display: none;
+  overflow: hidden;
 }
 
 .container button {
-    outline: none;
-    overflow: hidden;
+  outline: none;
+  overflow: hidden;
 }
 
 .container_text_box {
-    overflow: hidden;
-    height: 80px;
-    margin: 0px;
+  overflow: hidden;
+  height: 80px;
+  margin: 0px;
 }
 
 #dots {
-    position: fixed;
+  position: fixed;
 }
 
 .text {
-    margin: 0px;
-    display: inline;
+  margin: 0px;
+  display: inline;
 }
 
 #readmore {
-    outline: none;
-    overflow: hidden;
-    display: inline-flex;
-    cursor: pointer;
-    margin-left: 15px;
-    text-align: left;
-    font: normal normal bold 14px/14px Metropolis;
-    letter-spacing: -0.28px;
-    color: #22262c;
-    text-transform: uppercase;
-    opacity: 1;
+  outline: none;
+  overflow: hidden;
+  display: inline-flex;
+  cursor: pointer;
+  margin-left: 15px;
+  text-align: left;
+  font: normal normal bold 14px/14px Metropolis;
+  letter-spacing: -0.28px;
+  color: #22262c;
+  text-transform: uppercase;
+  opacity: 1;
 }
 
 .box2 {
-    display: flex;
-    margin-top: 20px;
+  display: flex;
+  margin-top: 20px;
 }
 
 .line {
-    opacity: 1;
-    background-color: #e1e2e8;
-    width: 94%;
-    height: 1px;
-    margin-top: 6px;
-    transition: height 400ms;
+  opacity: 1;
+  background-color: #e1e2e8;
+  width: 94%;
+  height: 1px;
+  margin-top: 6px;
+  transition: height 400ms;
 }
+
+/*# sourceMappingURL=category_description.css.map */

@@ -106,52 +106,59 @@
   font-weight: 900;
   src: url("/fonts/metropolis-blackitalic-webfont.woff2") format("woff2");
 }
-custom-counter {
-  width: 100px;
-  height: 50px;
-  display: grid;
-  grid-template-columns: 20px 60px 20px;
-  border: 1px solid #E1E2E8;
-}
-custom-counter .counter__button {
-  border: none;
-  background: #F8F8F8;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-custom-counter .counter__button-decrease::after, custom-counter .counter__button-increase::after {
-  position: absolute;
-  content: "";
-  width: 9px;
-  display: block;
-  height: 1px;
-  background: #323940;
-}
-custom-counter .counter__button-increase::before {
-  position: absolute;
-  content: "";
-  width: 1px;
-  display: block;
-  height: 9px;
-  background: #323940;
-}
-custom-counter .counter__input {
-  border-top: none;
-  border-bottom: none;
-  border-right: 2px solid #E1E2E8;
-  border-left: 2px solid #E1E2E8;
-  outline: none;
-  text-align: center;
+:host {
   font-family: "Metropolis", sans-serif;
-  opacity: 0.5;
-  font-size: 14px;
-  -moz-appearance: textfield;
-}
-custom-counter .counter__input::-webkit-outer-spin-button, custom-counter .counter__input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  display: none;
+  font-size: 12px;
+  width: max-content;
+  min-width: 100px;
+  display: block;
+  color: #22262c;
 }
 
-/*# sourceMappingURL=counter.css.map */
+.select__current-element {
+  cursor: pointer;
+  box-sizing: border-box;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: max-content;
+  width: 100%;
+  padding: 10px;
+}
+.select__list {
+  position: relative;
+  background: #fff;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #e1e2e8;
+}
+::slotted(.select__list-item) {
+  cursor: pointer;
+  padding: 10px;
+}
+::slotted(.select__list-item--selected) {
+  background: #f5f5f5;
+}
+::slotted(.select__list-item:hover) {
+  background: #efefef;
+}
+.select__list--hidden {
+  display: none;
+}
+.select__icon {
+  width: 7px;
+  height: 7px;
+  border-top: 2px solid #22262c;
+  border-right: 2px solid #22262c;
+  transform: rotateX(0deg) rotate(135deg) translateY(3.5355339059px) translateX(-3.5355339059px);
+  transition: transform ease-in-out 0.15s;
+}
+.select__icon--rotated {
+  transform: rotateY(180deg) rotate(-45deg);
+}
+
+/*# sourceMappingURL=select.css.map */

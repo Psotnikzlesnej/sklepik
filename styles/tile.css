@@ -120,7 +120,6 @@ body {
   .tile__slider {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: -moz-max-content;
     width: max-content;
     max-width: 100%;
     box-sizing: border-box;
@@ -135,8 +134,7 @@ body {
   }
   .tile__sliderDivImage {
     width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .tile__sliderDivItems {
     position: absolute;
@@ -191,4 +189,6 @@ body {
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   z-index: 0;
-}/*# sourceMappingURL=tile.css.map */
+}
+
+/*# sourceMappingURL=tile.css.map */
