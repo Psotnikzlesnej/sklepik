@@ -4,30 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles/home_carousel.scss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
 </head>
 <body>
-    <section class="carousel">
-        <div class="carousel__carousel">
-            <div class="carousel__carouselDiv">
-                <img src="Group 40.jpg" class="carousel__carouselDivImage">
-                <div class="carousel__carouselDivText">
-                    <h2 class="carousel__carouselDivHeading">Poznaj SEDNA<span class="carousel__carouselDivSpan">Schneider Electric</span></h2>
-                    <p class="carousel__carouselDivParagraph">Sedna to osprzęt elektroinstalacyjny o wyrazistym kształcie oraz unikalnej formie.</p>
-                    <button class="carousel__carouselDivBtn" href="#">zobacz więcej</button>
-                </div>
-            </div>
-            <div class="carousel__carouselDiv">
-                <img src="Mask Group 40.jpg" class="carousel__carouselDivImage">
-                <div class="carousel__carouselDivText">
-                    <h2 class="carousel__carouselDivHeading">Philips HUE<span class="carousel__carouselDivSpan">Oświetl swój dom</span></h2>
-                    <p class="carousel__carouselDivParagraph">Wyobraź sobie, że jednym dotknięciem wyłączasz wszystkie światła.</p>
-                    <button class="carousel__carouselDivBtn" href="#">zobacz więcej</button>
-                </div>
-            </div>
-            <a class="class="carousel__carouselBtn prev"></a>
-            <a class="class="carousel__carouselBtn next"></a>
-        </div>
-    </section>
+
+
+<section class="slider-wrapper_horizontal">
+ 
+
+
+  <ul class="slides-container_horizontal" id="slides-container_horizontal">
+    
+
+  <button class="slide-arrow_horizontal" id="slide-arrow-prev_horizontal">
+
+<i class="fa-solid fa-angle-left"></i> 
+
+</button>
+
+
+
+  <div class="slide_horizontal"><img class="image149" src="../photos/categories/Image 149.png"> <p class="slide_text_top">ŁĄCZNIK JEDNOBIEGUNOWY</p>  <p class="slide_text_middle">Kod produktu: CW1.01/11</p><div class="slide_text_prices"><p class="slide_old_price">656,65 zł</p><p class="slide_new_price">442,85 zł</p> </div>  </div>
+  <div class="slide_horizontal"><img class="image149" src="../photos/categories/Image 149.png"> <p class="slide_text_top">ŁĄCZNIK JEDNOBIEGUNOWY</p>  <p class="slide_text_middle">Kod produktu: CW1.01/11</p><div class="slide_text_prices"><p class="slide_old_price">656,65 zł</p><p class="slide_new_price">442,85 zł</p> </div>  </div>
+  <div class="slide_horizontal"><img class="image149" src="../photos/categories/Image 149.png"> <p class="slide_text_top">ŁĄCZNIK JEDNOBIEGUNOWY</p>  <p class="slide_text_middle">Kod produktu: CW1.01/11</p><div class="slide_text_prices"><p class="slide_old_price">656,65 zł</p><p class="slide_new_price">442,85 zł</p> </div>  </div>
+  <div class="slide_horizontal"><img class="image149" src="../photos/categories/Image 149.png"> <p class="slide_text_top">ŁĄCZNIK JEDNOBIEGUNOWY</p>  <p class="slide_text_middle">Kod produktu: CW1.01/11</p><div class="slide_text_prices"><p class="slide_old_price">656,65 zł</p><p class="slide_new_price">442,85 zł</p> </div>  </div>
+  <div class="slide_horizontal"><img class="image149" src="../photos/categories/Image 149.png"> <p class="slide_text_top">ŁĄCZNIK JEDNOBIEGUNOWY</p>  <p class="slide_text_middle">Kod produktu: CW1.01/11</p><div class="slide_text_prices"><p class="slide_old_price">656,65 zł</p><p class="slide_new_price">442,85 zł</p> </div>  </div>
+  <div class="slide_horizontal"><img class="image149" src="../photos/categories/Image 149.png"> <p class="slide_text_top">ŁĄCZNIK JEDNOBIEGUNOWY</p>  <p class="slide_text_middle">Kod produktu: CW1.01/11</p><div class="slide_text_prices"><p class="slide_old_price">656,65 zł</p><p class="slide_new_price">442,85 zł</p> </div>  </div>
+  <div class="slide_horizontal"><img class="image149" src="../photos/categories/Image 149.png"> <p class="slide_text_top">ŁĄCZNIK JEDNOBIEGUNOWY</p>  <p class="slide_text_middle">Kod produktu: CW1.01/11</p><div class="slide_text_prices"><p class="slide_old_price">656,65 zł</p><p class="slide_new_price">442,85 zł</p> </div>  </div>
+ 
+
+  </ul>
+
+
+  <button class="slide-arrow_horizontal" id="slide-arrow-next_horizontal">
+
+  <i class="fa-solid fa-angle-right"></i>
+
+  </button>
+
+</section>
+<script src="../js/home_carousel.js"></script> 
+
+
 </body>
 </html>
