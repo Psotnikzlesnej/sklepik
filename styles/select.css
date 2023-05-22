@@ -106,7 +106,7 @@
   font-weight: 900;
   src: url("/fonts/metropolis-blackitalic-webfont.woff2") format("woff2");
 }
-:host {
+custom-select {
   font-family: "Metropolis", sans-serif;
   font-size: 12px;
   width: max-content;
@@ -114,8 +114,7 @@
   display: block;
   color: #22262c;
 }
-
-.select__current-element {
+custom-select .select__current-element {
   cursor: pointer;
   box-sizing: border-box;
   background: #fff;
@@ -126,7 +125,7 @@
   width: 100%;
   padding: 10px;
 }
-.select__list {
+custom-select .select__list {
   position: relative;
   background: #fff;
   list-style: none;
@@ -136,20 +135,20 @@
   box-sizing: border-box;
   border: 1px solid #e1e2e8;
 }
-::slotted(.select__list-item) {
+::slotted(custom-select .select__list-item) {
   cursor: pointer;
   padding: 10px;
 }
-::slotted(.select__list-item--selected) {
+::slotted(custom-select .select__list-item--selected) {
   background: #f5f5f5;
 }
-::slotted(.select__list-item:hover) {
+::slotted(custom-select .select__list-item:hover) {
   background: #efefef;
 }
-.select__list--hidden {
+custom-select .select__list--hidden {
   display: none;
 }
-.select__icon {
+custom-select .select__icon {
   width: 7px;
   height: 7px;
   border-top: 2px solid #22262c;
@@ -157,7 +156,7 @@
   transform: rotateX(0deg) rotate(135deg) translateY(3.5355339059px) translateX(-3.5355339059px);
   transition: transform ease-in-out 0.15s;
 }
-.select__icon--rotated {
+custom-select .select__icon--rotated {
   transform: rotateY(180deg) rotate(-45deg);
 }
 

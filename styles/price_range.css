@@ -5,10 +5,12 @@
 
 price-range {
   position: relative;
+  width: 400px;
+  display: block;
 }
 price-range .range__track {
   height: 4px;
-  width: 210px;
+  width: 400px;
   background: #F6F7FB;
   position: absolute;
   top: 15px;
@@ -18,12 +20,12 @@ price-range .range__track-disabler {
   position: absolute;
   top: 10px;
   height: 30px;
-  width: 210px;
+  width: 400px;
 }
 price-range .range__input {
   margin: 0;
   height: 30px;
-  width: 210px;
+  width: 400px;
   overflow: hidden;
 }
 price-range .range__input, price-range .range__input::-webkit-slider-runnable-track, price-range .range__input::-webkit-slider-thumb {
@@ -80,6 +82,10 @@ price-range .range__value {
   font-size: 14px;
   padding: 10px 5px;
   -moz-appearance: textfield;
+}
+price-range .range__value--max {
+  position: absolute;
+  right: 0;
 }
 price-range .range__value::-webkit-outer-spin-button, price-range .range__value::-webkit-inner-spin-button {
   -webkit-appearance: none;

@@ -44,26 +44,30 @@ class PriceRange extends HTMLElement {
       }
       this.max = this.inputMax.value = this.rangeMax.value = maxValue;
     }
+    this.dispatchEvent(new CustomEvent("rangechange", {
+      detail: {
+        min: this.min,
+        max: this.max,
+      },
+    }))
     this.updateProgress()
   }
 
   setEventListeners(){
     this.rangeMin.addEventListener('input', (e)=>this.eventListenerFactory(this.rangeMin, this.rangeMax, e.target))
-    this.inputMin.addEventListener('input', (e)=>this.eventListenerFactory(this.inputMin, this.inputMax, e.target))
+    this.inputMin.addEventListener('change', (e)=>this.eventListenerFactory(this.inputMin, this.inputMax, e.target))
     this.rangeMax.addEventListener('input', (e)=>this.eventListenerFactory(this.rangeMin, this.rangeMax, e.target))
-    this.inputMax.addEventListener('input', (e)=>this.eventListenerFactory(this.inputMin, this.inputMax, e.target))
+    this.inputMax.addEventListener('change', (e)=>this.eventListenerFactory(this.inputMin, this.inputMax, e.target))
   }
   
   updateProgress(){
     const maxValue = this.max;
     const minValue = this.min;
-    const minWidth = ((minValue - this.bottomBoundary)/(this.topBoundary-this.bottomBoundary)*210)
-    const maxWidth = ((maxValue - this.bottomBoundary) / (this.topBoundary - this.bottomBoundary)*210)
+    const minWidth = ((minValue - this.bottomBoundary)/(this.topBoundary-this.bottomBoundary)*400)
+    const maxWidth = ((maxValue - this.bottomBoundary) / (this.topBoundary - this.bottomBoundary)*400)
     document.documentElement.style.setProperty("--left", Math.floor(minWidth) + "px");
     document.documentElement.style.setProperty("--width", Math.floor(maxWidth-minWidth) + "px");
   }
 }
 
 customElements.define('price-range', PriceRange)
-
-// var px = ((rangeMin.valueAsNumber - parseInt(rangeMin.min)) * off) - (myValue.clientWidth / 2) + (thumbWidth / 2);

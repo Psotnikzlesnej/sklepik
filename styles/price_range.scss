@@ -1,6 +1,6 @@
 $dark-gray: #E1E2E8;
 
-$range-width: 210px;
+$range-width: 400px;
 $range-height: 30px;
 :root{
   --width: 0%;
@@ -9,11 +9,13 @@ $range-height: 30px;
 
 price-range {
   position: relative;
+  width: $range-width;
+  display: block;
   
   .range {
     &__track {
       height: 4px;
-      width: 210px;
+      width: $range-width;
       background: #F6F7FB;
       position: absolute;
       top: 15px;
@@ -101,6 +103,11 @@ price-range {
       font-size: 14px;
       padding: 10px 5px;
       -moz-appearance: textfield;
+
+      &--max {
+        position: absolute;
+        right: 0;
+      }
     
       &::-webkit-outer-spin-button,
       &::-webkit-inner-spin-button {
