@@ -4,35 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles/tile.css">
 </head>
 <body>
-    <section class="tile">
-        <div class="tile__slider">
-            <div class="tile__sliderDiv">
-                <img src="Image 203.jpg" class="tile__sliderDivImage">
-                <div class="tile__sliderDivItems">
-                    <h2 class="tile__sliderDivHeading">Pomoc eksperta</h2><span class="tile__sliderDivSpan">Doradzamy</span>
-                    <button class="tile__sliderDivBtn" href="#"><h5>ZOBACZ WIĘCEJ</h5></button>
-                </div>
-            </div>
-            <div class="tile__sliderDiv">
-                <img src="Image 204.jpg" class="tile__sliderDivImage">
-                <div class="tile__sliderDivItems">
-                    <h2 class="tile__sliderDivHeading">Szukaj wygodnie</h2>
-                    <span class="tile__sliderDivSpan">Elhurt Plus</span>
-                    <button class="tile__sliderDivBtn" href="#"><h5>ZOBACZ WIĘCEJ</h5></button>
-                </div>
-            </div>
-            <div class="tile__sliderDiv">
-                <img src="Image 205.jpg" class="tile__sliderDivImage">
-                <div class="tile__sliderDivItems">
-                    <h2 class="tile__sliderDivHeading">Seria Unica</h2>
-                    <span class="tile__sliderDivSpan">Wyjątkowy wzór</span>
-                    <button class="tile__sliderDivBtn" href="#"><h5>ZOBACZ WIĘCEJ</h5></button>
-                </div>
-            </div>
+    
+    <div class="tile__main">
+        <div class="tile__image">
+            <img class="tile__image" src="../photos/banners/Image 203.jpg">
+            <div class="tile__gradient"></div>
         </div>
-    </section>
+        <div class="tile__title">Pomoc eksperta</div>
+        <div class="tile__dsc">Doradzamy</div>
+        <div class="tile__button">
+            <div class="tile__buttontext">ZOBACZ WIĘCEJ</div>
+        </div>
+    </div>
+
+    <div class="tile__main">
+        <div class="tile__image">
+            <img class="tile__image" src="../photos/banners/Image 204.jpg">
+            <div class="tile__gradient"></div>
+        </div>
+        <div class="tile__title">Szukaj wygodnie</div>
+        <div class="tile__dsc">Elhurt Plus</div>
+        <div class="tile__button">
+            <div class="tile__buttontext">ZOBACZ WIĘCEJ</div>
+        </div>
+
+    </div>
+
+    <div class="tile__main">
+        <div class="tile__image">
+            <img class="tile__image" src="../photos/banners/Image 205.jpg">
+            <div class="tile__gradient"></div>
+        </div>
+        <div class="tile__title">Seria Unica</div>
+        <div class="tile__dsc">Krynica moja ulica</div>
+        <div class="tile__button">
+            <div class="tile__buttontext">ZOBACZ WIĘCEJ</div>
+        </div>
+
+    </div>
+
 </body>
 </html>
