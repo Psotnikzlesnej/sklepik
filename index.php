@@ -14,6 +14,7 @@ if(isset($splitted_url[1])){
 $query_string = explode('?', $_SERVER['REQUEST_URI'])[1] ?? '';
 $pairs = explode('&', $query_string);
 
+
 foreach($pairs as $pair){
   $splitted_pair = explode('=', $pair);
   $key = $splitted_pair[0];
