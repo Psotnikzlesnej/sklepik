@@ -167,3 +167,134 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 767px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .main-text {
+        font-size: 28px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-text img {
+        padding: 15px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15px;
+        height: 100%;
+    }
+
+    .id {
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .main_id {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .shop-min {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .Dostępne {
+        padding: 0;
+    }
+
+    .product {
+        display: flex;
+        justify-content: start;
+        padding-left: 30px;
+    }
+
+    .container-product {
+        display: flex;
+        justify-content: flex-start;
+        padding-bottom: 30px;
+        padding-left: 30px;
+    }
+
+    .shopme {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .info, .prom, .new {
+        margin: 0 0 5px;
+    }
+
+    .prom, .new {
+        margin: 0 5px;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .main-text {
+        padding: 0;
+    }
+
+    .container {
+        width: 40%;
+        flex-direction: column;
+        align-self: flex-end;
+    }
+
+    .shop-min {
+        width: 100%;
+        margin: 0;
+        align-self: flex-end;
+        padding: 0;
+        border: none;
+    }
+
+    .id {
+        padding: 30px;
+        border: 1px solid #e1e2e8;
+    }
+
+    .main_id {
+        justify-content: space-between;
+    }
+
+    .Dostępne {
+        padding: 0;
+    }
+
+    .shopme {
+        align-self: flex-end;
+        width: 40%;
+        border: none;
+        margin: 0;
+    }
+
+    .shopme-border {
+        border: 1px solid #e1e2e8;
+        height: 100%;
+    }
+}

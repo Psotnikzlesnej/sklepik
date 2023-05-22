@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @font-face {
     font-family: "metropolis";
     font-style: normal;
@@ -133,89 +132,101 @@ body{
     margin-bottom: 20px;
     font-weight: bold;
 }
+
 .producent__parametr{
-    width: 250px;
-    margin-left: 20px;
-    margin-top: 20px;
-}
-.checkbox__container{
-    width: 290px;
-        margin-bottom: 20px;
-        margin-left: 45px;
-        display: block;
-        position: relative;
-        cursor: pointer;
-        font-size: 16px;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        
-}
-.checkbox__container input{
-    position: relative;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
-.checkmark {
-    position: absolute;
-    
-    height: 22px;
-    width: 22px;
-    background-color: #ffffff;
-    border: 1px solid #E1E2E8
-  }
-  .checkmark2{
-    position: absolute;
-    margin-left: 3px;
-    margin-top: 3px;
-
-    height: 16px;
-    width: 16px;
-    
-  }
-  .checkbox__container:hover input ~ .checkmark {
-    background-color: #ccc;
-  }
-
-
-  .checkbox__container input:checked ~ .checkmark .checkmark2 {
-    background-color: #F74137;
-  }
+  width: 100%;
+  height: 20px;
+  /* background-color: red; */
+  margin-bottom: 5px;
   
-  .show-more {
-    text-align: left;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 20px;
+}
+
+.producent__checkbox{
+  width: 30px;
+  height: 20px;
+  /* background-color: blue; */
+  margin-left: 20px;
+}
+
+.checkbox__container input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: relative;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-color: #ffffff;
+  border: 1px solid #E1E2E8;
+}
+
+.checkmark2 {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  height: 16px;
+  width: 16px;
+  background-color: #F74137;
+  display: none;
+}
+
+
+.checkbox__container input[type="checkbox"]:checked ~ .checkmark .checkmark2 {
+  display: block;
+}
+
+
+.checkbox__container:hover .checkmark {
+  background-color: #e4e4e4;
+}
+
+.producent__parametr {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.producent__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+.producent__checkbox {
+  margin-right: 10px;
+}
+
+.producent__nazwa {
+  margin-top: 4px;
+  font-size: 17px;
+  color: #111111;
+}
+
+.show-more {
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
 }
 
 #showMoreButton {
-    display: inline-block;
-    
-    font-size: 14px;
-    border: none;
-    cursor: pointer;
-    user-select: none;
-    color: #F74137;
-    text-decoration: none;
+  display: inline-block;
+  
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  color: #F74137;
+  text-decoration: none;
 }
 
 #showMoreButton:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 .hidden {
-    display: none;
+  display: none;
 }
-
-
-
-
-/*# sourceMappingURL=manufacturer_checkbox.css.map */
-=======
-
-
-/*# sourceMappingURL=manufacturer_checkbox.css.map */
->>>>>>> c008ba70e55c9d4d7bcf0ce00ef769d968d400f8
