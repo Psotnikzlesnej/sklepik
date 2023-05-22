@@ -1,23 +1,20 @@
 
 INSERT INTO `banner` (`ID`, `title`, `description`, `image_name`, `link`, `visible`, `type`, `alt`, `mask`) VALUES
-(1, 'banner_home', 'Poznaj SEDNA Schneider Electric Sedna to osprzęt elektroinstalacyjny o wyrazistym kształcie oraz unikalnej formie.','./photo/Group 40.png', './photo/Group 40.png', 0, 'home_top', 'baner strony głównej', 1),
-(2, 'banner_home2', 'Philips HUE Oświetl swój dom Wyobraź sobie, że jednym dotknięciem wyłączasz wszystkie światła.', './photo/Group 40.png', './photo/Mask Group 40.png', 1, 'home_top', '2 baner strony głównej', 0),
-(3, 'Meetz', 'platea dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed a', 'http://dummyimage.com/185x100.png/5fa2dd/ffffff', 'http://biblegateway.com/congue/elementum/in/hac/habitasse/platea/dictumst.json?neque=massa&libero=volutpat&convallis=convallis&eget=morbi&eleifend=odio&luctus=odio&ultricies=elementum&eu=eu&nibh=interdum&quisque=eu&id=tincidunt&justo=in&sit=leo&amet=maece', 1, 'store', 'felis sed interdum venenatis turpis', 1),
-(4, 'Livefish', 'cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis just', 'http://dummyimage.com/153x100.png/ff4444/ffffff', 'http://epa.gov/habitasse/platea.xml?aenean=nisi&fermentum=at&donec=nibh&ut=in&mauris=hac&eget=habitasse&massa=platea&tempor=dictumst&convallis=aliquam&nulla=augue&neque=quam&libero=sollicitudin&convallis=vitae&eget=consectetuer&eleifend=eget&luctus=rutrum', 0, 'home_tile', 'consectetuer adipiscing elit proin risus praesent', 0),
-(5, 'Mydeo', 'rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehi', 'http://dummyimage.com/116x100.png/5fa2dd/ffffff', 'https://webnode.com/at/turpis/a.jpg?vulputate=eleifend&luctus=quam&cum=a&sociis=odio&natoque=in&penatibus=hac&et=habitasse&magnis=platea&dis=dictumst&parturient=maecenas&montes=ut&nascetur=massa&ridiculus=quis&mus=augue&vivamus=luctus&vestibulum=tincidunt', 1, 'store', 'vel nisl duis ac nibh fusce lacus purus', 1),
-(6, 'Twimm', 'porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate luctus cum sociis natoque penatibus et magnis dis parturient montes ', 'http://dummyimage.com/108x100.png/dddddd/000000', 'http://wiley.com/condimentum.jsp?natoque=nec&penatibus=nisi&et=volutpat&magnis=eleifend&dis=donec&parturient=ut&montes=dolor&nascetur=morbi&ridiculus=vel&mus=lectus&etiam=in&vel=quam&augue=fringilla&vestibulum=rhoncus&rutrum=mauris&rutrum=enim&neque=leo&a', 1, 'home_tile', 'id turpis integer aliquet massa', 0),
-(7, 'Nlounge', 'lorem ipsum dolor sit amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan', 'http://dummyimage.com/156x100.png/cc0000/ffffff', 'https://guardian.co.uk/curabitur/convallis/duis/consequat.xml?cum=eu&sociis=sapien&natoque=cursus&penatibus=vestibulum&et=proin&magnis=eu&dis=mi&parturient=nulla&montes=ac&nascetur=enim&ridiculus=in&mus=tempor&vivamus=turpis&vestibulum=nec&sagittis=euismo', 1, 'home_top', 'vivamus vestibulum sagittis sapien cum sociis natoque', 1),
-(8, 'Meeveo', 'suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo eu massa donec dapibus duis at veli', 'http://dummyimage.com/186x100.png/cc0000/ffffff', 'https://behance.net/fusce/congue/diam.jsp?potenti=faucibus&cras=accumsan&in=odio&purus=curabitur&eu=convallis&magna=duis&vulputate=consequat&luctus=dui&cum=nec&sociis=nisi&natoque=volutpat&penatibus=eleifend&et=donec&magnis=ut&dis=dolor&parturient=morbi&m', 0, 'home_bottom', 'in blandit ultrices enim lorem ipsum dolor', 0);
+(1, 'Poznaj SEDNA ', '<h2> Schneider Electric </h2> <p> Sedna to osprzęt elektroinstalacyjny o wyrazistym kształcie oraz unikalnej formie.</p>','../photos/banners/Group 40.jpg', 'http://biblegateway.com/congue/elementum/in/hac/habitasse/platea/dictumst.json?neque=massa&libero=volutpat&convallis=convallis&eget=morbi&eleifend=odio&luctus=odio&ultricies=elementum&eu=eu&nibh=interdum&quisque=eu&id=tincidunt&justo=in&sit=leo&amet=maece', 1, 'home_top', 'baner strony głównej', 1),
+(2, 'Philips HUE', '<h2> Oświetl swój dom </h2> <p>Wyobraź sobie, że jednym dotknięciem wyłączasz wszystkie światła.</p>', '../photos/banners/Mask Group 40.jpg', 'http://biblegateway.com/congue/elementum/in/hac/habitasse/platea/dictumst.json?neque=massa&libero=volutpat&convallis=convallis&eget=morbi&eleifend=odio&luctus=odio&ultricies=elementum&eu=eu&nibh=interdum&quisque=eu&id=tincidunt&justo=in&sit=leo&amet=maece', 1, 'home_top', '2 baner strony głównej', 1),
+(3, 'Pomoc Eksperta', '<h2> Doradzamy </h2>', '../photos/banners/image_203.jpg', 'http://biblegateway.com/congue/elementum/in/hac/habitasse/platea/dictumst.json?neque=massa&libero=volutpat&convallis=convallis&eget=morbi&eleifend=odio&luctus=odio&ultricies=elementum&eu=eu&nibh=interdum&quisque=eu&id=tincidunt&justo=in&sit=leo&amet=maece', 1, 'home_tile', 'home tile ekspert', 1),
+(4, 'Szukaj Wygodnie', '<h2> Elhurt plus </h2>', '../photos/banners/image_204.jpg', 'http://epa.gov/habitasse/platea.xml?aenean=nisi&fermentum=at&donec=nibh&ut=in&mauris=hac&eget=habitasse&massa=platea&tempor=dictumst&convallis=aliquam&nulla=augue&neque=quam&libero=sollicitudin&convallis=vitae&eget=consectetuer&eleifend=eget&luctus=rutrum', 1, 'home_tile', 'home tile szukaj', 1),
+(5, 'Seria Unica', '<h2> Wyjątkowy wzór </h2>', '../photos/banners/image_205.jpg', 'https://webnode.com/at/turpis/a.jpg?vulputate=eleifend&luctus=quam&cum=a&sociis=odio&natoque=in&penatibus=hac&et=habitasse&magnis=platea&dis=dictumst&parturient=maecenas&montes=ut&nascetur=massa&ridiculus=quis&mus=augue&vivamus=luctus&vestibulum=tincidunt', 1, 'home_tile', 'home tile unica', 1),
+(6, 'Sprawdź dlaczego my', 'Początki działalności to rok 2002r i otwarcie hurtowni elektrycznej, oferującej podstawoer produkty do instalacji elektrycznych jak i również materiały używane w przemyśle wydobywczym. Firma dostarczała produkty trudno dostępne do kopalń, zakładów przemysłowych <img src="icon1.png"> <img src="icon2.png"> <img src="icon3.png">', '../photos/about_us/image.jpg', 'http://wiley.com/condimentum.jsp?natoque=nec&penatibus=nisi&et=volutpat&magnis=eleifend&dis=donec&parturient=ut&montes=dolor&nascetur=morbi&ridiculus=vel&mus=lectus&etiam=in&vel=quam&augue=fringilla&vestibulum=rhoncus&rutrum=mauris&rutrum=enim&neque=leo&a', 1, 'home_bottom', 'about_us', 0),
+(7, 'DJI Mavic Air 2', '<h2> Fly More Combo </h2>', '../photos/banners/img_04.jpg', 'https://guardian.co.uk/curabitur/convallis/duis/consequat.xml?cum=eu&sociis=sapien&natoque=cursus&penatibus=vestibulum&et=proin&magnis=eu&dis=mi&parturient=nulla&montes=ac&nascetur=enim&ridiculus=in&mus=tempor&vivamus=turpis&vestibulum=nec&sagittis=euismo', 1, 'store', 'banner sklep', 1);
 
 INSERT INTO `category` (`ID`, `name`, `image_name`, `parent`, `level`,`description`) VALUES
 (1, 'Gniazdka,wyłączniki', 'http://dummyimage.com/168x100.png/5fa2dd/ffffff', 0, 1,  'Gniazda elektryczne są niezbędnym elementem instalacji elektrycznej. To dzięki nim użytkownicy mogą zasilić urządzenia i sprzęt. Kontakty elektryczne są funkcjonalne i łatwe w montażu. Posiadamy zarówno gniazda instalacyjne natynkowe, podtynkowe, nowoczesne gniazdka teleinformatyczne, RTV i SAT, jak i hermetyczne, sprawdzające się tam, gdzie istnieje ryzyko kontaktu z wodą – łazienka, kuchnia…'),
-(2, 'Automatyka,sterowanie', 'http://dummyimage.com/117x100.png/cc0000/ffffff', 0, 1,  'viverra diam vitae quam suspendisse potenti nullam porttitor'),
-(3, 'Żródła światła', 'http://dummyimage.com/210x100.png/5fa2dd/ffffff', 0, 1,  'mattis egestas metus aenean fermentum donec'),
-(4, 'Oświetlenie wewnętrzne', 'http://dummyimage.com/188x100.png/dddddd/000000', 0, 1,  'molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque'),
-(5, 'Rozdzielnie i aparatura', 'http://dummyimage.com/160x100.png/ff4444/ffffff', 0, 1,  'pellentesque ultrices mattis odio donec vitae nisi nam ultrices'),
-(6, 'Materiały instalacyjne', 'http://dummyimage.com/140x100.png/dddddd/000000', 3, 2, 'lectus in est risus auctor sed tristique in tempus sit'),
-(7, 'Dynava', 'http://dummyimage.com/123x100.png/dddddd/000000', 4, 2, 'id consequat in consequat ut nulla sed'),
-(8, 'Gabvine', 'http://dummyimage.com/107x100.png/ff4444/ffffff', 6, 3, 'potenti nullam porttitor lacus at turpis donec posuere metus');
+(2, 'Automatyka,sterowanie', 'http://dummyimage.com/117x100.png/cc0000/ffffff', 0, 1,  'Witamy w kategorii "Automatyka, sterowanie" naszego sklepu internetowego! Znajdziesz tutaj szeroki wybór wysokiej jakości produktów, które umożliwią Ci automatyzację procesów oraz precyzyjne sterowanie nimi. Nasza oferta obejmuje innowacyjne urządzenia i systemy z różnych branż, takich jak przemysł, energetyka, transport i wiele innych. Dzięki naszym produktom będziesz mógł zoptymalizować swoje operacje, zwiększyć efektywność oraz osiągnąć doskonałą kontrolę nad swoimi procesami.'),
+(3, 'Żródła światła', 'http://dummyimage.com/210x100.png/5fa2dd/ffffff', 0, 1,  'Oferujemy szeroki wybór wysokiej jakości produktów, które doskonale oświetlą Twoje wnętrza i stworzą przyjemną atmosferę w każdym pomieszczeniu. Nasza oferta obejmuje różnorodne rodzaje źródeł światła, które są nie tylko funkcjonalne, ale także estetyczne i energooszczędne.'),
+(4, 'Oświetlenie wewnętrzne', 'http://dummyimage.com/188x100.png/dddddd/000000', 0, 1,  'Znajdziesz tutaj szeroki wybór wysokiej jakości produktów, które pozwolą Ci stworzyć idealną atmosferę wewnątrz swojego domu, biura czy innego wnętrza. Nasza oferta obejmuje różnorodne style, wzory i rodzaje oświetlenia, które spełnią Twoje najwyższe oczekiwania.'),
+(5, 'Rozdzielnie i aparatura', 'http://dummyimage.com/160x100.png/ff4444/ffffff', 0, 1,  'W naszym sklepie stawiamy na wysoką jakość, dlatego oferujemy produkty renomowanych producentów, którzy są gwarancją nie tylko solidności, ale również bezpieczeństwa Twojej instalacji elektrycznej. Zapewniamy profesjonalną obsługę i doradztwo, aby pomóc Ci w wyborze odpowiednich produktów dla Twoich indywidualnych potrzeb. Przełącz na wyższy poziom efektywności i bezpieczeństwa dzięki naszym rozdzielniom i aparaturze!'),
+(6, 'Materiały instalacyjne', 'http://dummyimage.com/140x100.png/dddddd/000000', 0, 1, ' Oferujemy szeroki wybór wysokiej jakości produktów, które umożliwią Ci kompleksowe i solidne wykonanie instalacji elektrycznych, hydraulicznych, telekomunikacyjnych i wielu innych. Nasza oferta obejmuje różnorodne materiały, narzędzia i akcesoria, które są niezbędne do prawidłowego wykonania prac instalacyjnych.');
 
 INSERT INTO `delivery` (`ID`, `name`) VALUES
 (1, '24'),
@@ -36,14 +33,27 @@ INSERT INTO `filter` (`ID`, `type`, `name`) VALUES
 (4, 'grid_multiple', 'Numer');
 
 INSERT INTO `filter_value` (`ID`, `ID_filter`, `value`) VALUES
-(1, 1, 'Żółty'),
-(2, 1, 'Czerwony'),
-(3, 2, '25'),
-(4, 2, '100'),
-(5, 3, '50'),
-(6, 3, '75'),
-(7, 4, '90'),
-(8, 4, '100');
+(1, 1, 'Yellow'),
+(2, 1, 'Red'),
+(3, 1, 'RebeccaPurple'),
+(4, 1, 'Magenta'),
+(5, 1, 'Orange'),
+(6, 1, 'Lime'),
+(7, 1, 'Green'),
+(8, 1, 'Cyan'),
+(9, 1, 'DodgerBlue'),
+(10, 1, 'NavajoWhite'),
+(11, 1, 'White'),
+(12, 1, 'Black'),
+(13, 1, 'Pink'),
+(14, 1, 'PeachPuff'),
+(15, 1, 'Wheat'),
+(16, 2, '25'),
+(17, 2, '100'),
+(18, 3, '50'),
+(19, 3, '75'),
+(20, 4, '90'),
+(21, 4, '100');
 
 INSERT INTO `flag` (`ID`, `name`) VALUES
 (1, 'Nowość'),
@@ -60,15 +70,13 @@ INSERT INTO `parameter_value` (`ID`, `value`, `parameter`) VALUES
 
 INSERT INTO `product` (`ID`, `name`, `description`, `video_url`, `promo_price`, `catalog_price`, `serial_number`, `stock`, `delivery_ID`, `visible`, `variant_group_ID`, `variant_name`) VALUES
 (1, 'Łącznik jednobiegunowy (moduł) 10AX, 250V~, zaciski śrubowe biały Simon 10 CW1.01/11', 'Simon 10 to ekonomiczna seria modułowa dla inwestycji, na których zróżnicowana kolorystyka nie jest wymagana. Dwa podstawowe kolory: biały i kremowy oraz pełen przekrój asortymentu łączników i gniazd pozwolą na kompleksowe wyposażenie każdego mieszkania lub biura. Elementem wyróżniającym tę serię jest nieprzewodzący prądu mostek wykonany z wysokiej jakości tworzywa zapewniającego trwałość i elastyczność oraz bezpieczeństwo podczas prac montażowych', './Photo -1.png', '442,85', '656,65', 'IPC-HFW2231S-S-0280B', 89, 8, 1, 1, 'czarny'),
-
-
-(2, 'Caryl', 'cursus id turpis integer aliquet massa id lobortis convallis tortor', 'http://dummyimage.com/169x100.png/dddddd/000000', '20', '87', '4237e8dsx793', 96, 7, 1, 1, 'id lobortis convallis tortor risus dapibus augue vel accumsan tellus'),
-(3, 'Gilbertina', 'ac lobortis vel dapibus at diam nam', 'http://dummyimage.com/181x100.png/ff4444/ffffff', '72', '21', '4237e8dsx793', 41, 6, 0, 1, 'justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut'),
-(4, 'Charline', 'lacinia eget tincidunt eget tempus vel pede morbi', 'http://dummyimage.com/213x100.png/dddddd/000000', '93', '49', '4237e8dsx793', 20, 5, 0, 2, 'morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum'),
-(5, 'Thane', 'nulla mollis molestie lorem quisque ut erat curabitur', 'http://dummyimage.com/150x100.png/cc0000/ffffff', '76', '85', '4237e8dsx793', 84, 4, 1, 2, 'maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus'),
-(6, 'Jacob', 'amet erat nulla tempus vivamus in felis', 'http://dummyimage.com/230x100.png/ff4444/ffffff', '5', '99', '4237e8dsx793', 37, 3, 1, 2, 'id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede malesuada in imperdiet et commodo vulputate'),
-(7, 'Beck', 'nullam molestie nibh in lectus pellentesque at', 'http://dummyimage.com/148x100.png/dddddd/000000', '13', '87', '4237e8dsx793', 12, 2, 1, 3, 'lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare'),
-(8, 'Ingunna', 'nulla ut erat id mauris vulputate elementum nullam varius', 'http://dummyimage.com/195x100.png/dddddd/000000', '93', '71', '4237e8dsx793', 47, 1, 0, 3, 'ipsum primis in faucibus orci luctus et ultrices posuere cubilia');
+(2, 'Żarówka filamentowa SPIRAL 4W LED E27 IP20 2700K Eko-light', 'Model ML553 to żarówka LED o maksymalnej mocy 4 W odpowiadającej 31 W przy tradycyjnej żarówce oraz zasilaniu równym 230 V. Zastosowano w niej gwint typu E27. Żarówka jest źródłem światła o przyjemnym i bezpiecznym ciepłym zabarwieniu. W związku z tym jej temperatura barwowa jest równa 2700 K. A strumień świetlny ma wartość 280 lumenów. Produkt nie współpracuje ze ściemniaczem.', 'http://dummyimage.com/169x100.png/dddddd/000000', '19.99', '49.99', '4237e8dsx793', 96, 7, 1, 2, 'Brązowy'),
+(3, 'Żarówka LED VALUE CLASSIC A MATOWA 40 5,5W 4000K E27 Osram', 'E27 Osram to żarówka LED o maksymalnej mocy 5,5 W odpowiadającej 31 W przy tradycyjnej żarówce oraz zasilaniu równym 260 V. Zastosowano w niej gwint typu E27. Żarówka jest źródłem światła o przyjemnym i bezpiecznym ciepłym zabarwieniu. W związku z tym jej temperatura barwowa jest równa 4000 K. A strumień świetlny ma wartość 280 lumenów. Produkt nie współpracuje ze ściemniaczem.', 'http://dummyimage.com/181x100.png/ff4444/ffffff', '18.99', '29.99', '4237e8dsx793', 41, 6, 1, 3, 'Biały-4000K'),
+(4, 'Żarówka LED VALUE CLASSIC A MATOWA 40 5,5W 6500K E27 Osram', 'E27 Osram to żarówka LED o maksymalnej mocy 5,5 W odpowiadającej 31 W przy tradycyjnej żarówce oraz zasilaniu równym 260 V. Zastosowano w niej gwint typu E27. Żarówka jest źródłem światła o przyjemnym i bezpiecznym ciepłym zabarwieniu. W związku z tym jej temperatura barwowa jest równa 6500 K. A strumień świetlny ma wartość 280 lumenów. Produkt nie współpracuje ze ściemniaczem.', 'http://dummyimage.com/181x100.png/ff4444/ffffff', '18.99', '29.99', '4237e8dsx793', 41, 6, 1, 3, 'Biały-6500K'),
+(5, 'Żarówka LED VALUE CLASSIC A MATOWA 40 5,5W 2700K E27 Osram', 'E27 Osram to żarówka LED o maksymalnej mocy 5,5 W odpowiadającej 31 W przy tradycyjnej żarówce oraz zasilaniu równym 260 V. Zastosowano w niej gwint typu E27. Żarówka jest źródłem światła o przyjemnym i bezpiecznym ciepłym zabarwieniu. W związku z tym jej temperatura barwowa jest równa 2700 K. A strumień świetlny ma wartość 280 lumenów. Produkt nie współpracuje ze ściemniaczem.', 'http://dummyimage.com/181x100.png/ff4444/ffffff', '18.99', '29.99', '4237e8dsx793', 41, 6, 1, 3, 'Biały-2700K'),
+(6, 'Żarówka LED CorePro 13W E27 2700K ciepła Philips 8718696490747', 'Nie trzeba czekać. Źródła światła LED firmy Philips zapewniają maksymalną jasność natychmiast po włączeniu. Wskaźnik oddawania barw (CRI) opisuje wpływ źródła światła na wygląd kolorów. Wskaźnik CRI naturalnego światła na zewnątrz wynosi 100 — jest to standard, z którym porównujemy wszelkie inne źródła światła. Wskaźnik CRI źródeł światła LED firmy Philips jest zawsze wyższy niż 80, a więc zbliżony do wartości, jaką ma światło słoneczne, dzięki czemu źródła światła LED wiernie i naturalnie oddają kolory.', 'http://dummyimage.com/230x100.png/ff4444/ffffff', '11.99', '24.99', '4237phil4793', 37, 3, 1, 4, 'Biały'),
+(7, 'Żarówka Philips CorePro LED PLC 4.5W 830 2P G24d-1 3000K ciepła', ' Żarówka CorePro LED ide­al­nie zaspo­koi pod­sta­wowe potrzeby oświe­tle­niowe, zapew­nia­jąc piękne świa­tło i nie­za­wodną pracę, któ­rej ocze­kuje się od lamp LED, a przy tym jest przy­stępna cenowo. Są prze­wi­dziane jako zamien­niki żaró­wek.Zapew­niają dosko­nałą ener­go­osz­częd­ność i bar­dzo niskie koszty kon­ser­wa­cji.', 'http://dummyimage.com/148x100.png/dddddd/000000', '33.99', '64.99', '4237e8dsx793', 12, 2, 1, 5, 'Biały'),
+(8, 'Pasek taśma LED Philips LightStrip 5m zestaw', 'Jeśli taśmy LightStrip nie mają pasują idealnie do wybranego miejsca, można je łatwo skrócić do odpowiedniej długości. Taśmy można przycinać w miejscach, w których widoczne są specjalne oznaczenia co 10cm. Wystarczy podłączyć. Prosta instalacja taśmy LightStrip są bardzo łatwe w instalacji i gwarantują natychmiastową zabawę — wystarczy podłączyć. Wszystkie niezbędne elementy znajdują się w zestawie, a wymagane czynności są objaśnione w skróconej instrukcji obsługi.', 'http://dummyimage.com/195x100.png/dddddd/000000', '9.99', '19.99', '4237e8dsx793', 47, 1, 1, 6, 'Żółty');
 
 INSERT INTO `product_category` (`product_ID`, `category_ID`) VALUES
 (1, 1),
@@ -101,14 +109,22 @@ INSERT INTO `product_flag` (`product_ID`, `flag_ID`) VALUES
 (3, 2);
 
 INSERT INTO `product_image` (`ID`, `image_name`, `product_ID`, `main`) VALUES
-(1, './photos/Image 149.png', 1, 0),
-(2, 'http://dummyimage.com/205x100.png/cc0000/ffffff', 8, 0),
-(3, 'http://dummyimage.com/170x100.png/5fa2dd/ffffff', 4, 0),
-(4, 'http://dummyimage.com/220x100.png/5fa2dd/ffffff', 1, 0),
-(5, 'http://dummyimage.com/112x100.png/dddddd/000000', 6, 0),
-(6, 'http://dummyimage.com/219x100.png/dddddd/000000', 6, 0),
-(7, 'http://dummyimage.com/210x100.png/dddddd/000000', 6, 1),
-(8, 'http://dummyimage.com/243x100.png/cc0000/ffffff', 8, 0);
+(1, '../photos/products/Image 1.png', 1, 0),
+(2, '../photos/products/zarowka_filamentowa.jpg', 2, 0),
+(3, '../photos/products/zarowka_OSRAM_produkt.jpg', 3, 0),
+(4, '../photos/products/zarowka_OSRAM_pudelko.jpg', 3, 0),
+(5, '../photos/products/zarowka_OSRAM_produkt.jpg', 4, 0),
+(6, '../photos/products/zarowka_OSRAM_pudelko.jpg', 4, 0),
+(7, '../photos/products/zarowka_OSRAM_produkt.jpg', 5, 0),
+(8, '../photos/products/zarowka_OSRAM_pudelko.jpg', 5, 0),
+(9, '../photos/products/zarowka_PHILIPS_produkt.jpg', 6, 0),
+(10, '../photos/products/zarowka_PHILIPS_wyciagnieta.jpg', 6, 0),
+(11, '../photos/products/zarowka_PHILIPS_prezentacja.jpg', 6, 0),
+(12, '../photos/products/corepro_PHILIPS_produkt.jpg', 7, 0),
+(13, '../photos/products/corepro_PHILIPS_energia.png', 7, 0),
+(14, '../photos/products/tasmaLED_PHILIPS_produkt.jpg', 8, 0),
+(15, '../photos/products/tasmaLED_PHILIPS_żółta.png', 8, 0),
+(16, '../photos/products/tasmaLED_PHILIPS_zasilacz.jpg', 8, 0),;
 
 INSERT INTO `product_parameter_value` (`product_ID`, `parameter_value_ID`) VALUES
 (1, 1),
@@ -122,23 +138,16 @@ INSERT INTO `product_parameter_value` (`product_ID`, `parameter_value_ID`) VALUE
 
 
 
-insert into manufacturer (ID, name, image_name) values (1, 'Skilith', 'http://dummyimage.com/188x100.png/cc0000/ffffff');
-insert into manufacturer (ID, name, image_name) values (2, 'Wordpedia', 'http://dummyimage.com/180x100.png/cc0000/ffffff');
-insert into manufacturer (ID, name, image_name) values (3, 'Edgeblab', 'http://dummyimage.com/201x100.png/cc0000/ffffff');
-insert into manufacturer (ID, name, image_name) values (4, 'Npath', 'http://dummyimage.com/244x100.png/5fa2dd/ffffff');
-insert into manufacturer (ID, name, image_name) values (5, 'Aimbu', 'http://dummyimage.com/134x100.png/dddddd/000000');
-insert into manufacturer (ID, name, image_name) values (6, 'Tagcat', 'http://dummyimage.com/177x100.png/5fa2dd/ffffff');
-insert into manufacturer (ID, name, image_name) values (7, 'Twinte', 'http://dummyimage.com/113x100.png/dddddd/000000');
-insert into manufacturer (ID, name, image_name) values (8, 'Mydo', 'http://dummyimage.com/210x100.png/cc0000/ffffff');
-
-
+insert into manufacturer (ID, name, image_name) values (1, 'Philips', '../photos/manufacturers/Philips_logo.png');
+insert into manufacturer (ID, name, image_name) values (2, 'Osram', '../photos/manufacturers/osram_logo.png');
+insert into manufacturer (ID, name, image_name) values (3, 'Spiral', '../photos/manufacturers/spiral_logo.png');
 
 INSERT INTO `product_manufacturer` (`product_ID`, `manufacturer_ID`) VALUES
 (1, 1),
-(2, 2),
-(3, 3),
+(2, 3),
+(3, 2),
 (4, 2),
-(5, 3),
-(6, 4),
-(7, 5),
-(8, 6);
+(5, 2),
+(6, 1),
+(7, 1),
+(8, 1);
