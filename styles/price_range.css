@@ -3,18 +3,10 @@
   --left: 0% ;
 }
 
-.a {
+price-range {
   position: relative;
 }
-
-.track-blocker {
-  position: absolute;
-  top: 10px;
-  height: 30px;
-  width: 210px;
-}
-
-.between {
+price-range .range__track {
   height: 4px;
   width: 210px;
   background: #F6F7FB;
@@ -22,40 +14,45 @@
   top: 15px;
   transform: translateY(-50%);
 }
-
-.range {
+price-range .range__track-disabler {
+  position: absolute;
+  top: 10px;
+  height: 30px;
+  width: 210px;
+}
+price-range .range__input {
   margin: 0;
   height: 30px;
   width: 210px;
   overflow: hidden;
 }
-.range, .range::-webkit-slider-runnable-track, .range::-webkit-slider-thumb {
+price-range .range__input, price-range .range__input::-webkit-slider-runnable-track, price-range .range__input::-webkit-slider-thumb {
   -webkit-appearance: none;
 }
-.range::-webkit-slider-thumb {
+price-range .range__input::-webkit-slider-thumb {
   background: #F74137;
   position: relative;
   width: 16px;
   height: 16px;
 }
-.range::-moz-range-thumb {
+price-range .range__input::-moz-range-thumb {
   height: 4px;
   background: #F74137;
 }
-.range::-moz-range-progress, .range::-ms-fill-lower {
+price-range .range__input::-moz-range-progress, price-range .range__input::-ms-fill-lower {
   background: #F74137;
 }
-.range-max {
+price-range .range__input--max {
   position: absolute;
   left: 0;
 }
-.range.range-min {
+price-range .range__input.range__input--min {
   position: relative;
 }
-.range.range-min::-webkit-slider-thumb {
+price-range .range__input.range__input--min::-webkit-slider-thumb {
   z-index: 1;
 }
-.range.range-min::before {
+price-range .range__input.range__input--min::before {
   z-index: 1;
   height: 4px;
   top: 15px;
@@ -66,14 +63,13 @@
   position: absolute;
   content: "";
 }
-.range.range-max::-webkit-slider-thumb {
+price-range .range__input.range__input--max::-webkit-slider-thumb {
   z-index: 2;
 }
-.range.range-max::after {
+price-range .range__input.range__input--max::after {
   content: "";
 }
-
-.number {
+price-range .range__value {
   border-top: none;
   border-bottom: none;
   border: 2px solid #E1E2E8;
@@ -85,7 +81,7 @@
   padding: 10px 5px;
   -moz-appearance: textfield;
 }
-.number::-webkit-outer-spin-button, .number::-webkit-inner-spin-button {
+price-range .range__value::-webkit-outer-spin-button, price-range .range__value::-webkit-inner-spin-button {
   -webkit-appearance: none;
   display: none;
 }
