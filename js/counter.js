@@ -2,7 +2,8 @@ class CounterElement extends HTMLElement {
   constructor() {
     super();
     this.counterTemplate = document.querySelector('#counter')
-    this.innerHTML = this.counterTemplate.innerHTML
+    const clone = this.counterTemplate.content.cloneNode(true);
+    this.appendChild(clone);
     this.increaseButton = this.querySelector('.counter__button-increase')
     this.decreaseButton = this.querySelector('.counter__button-decrease')
     this.input = this.querySelector('.counter__input')
@@ -17,14 +18,14 @@ class CounterElement extends HTMLElement {
   increase(){
     this.decreaseButton.disabled = false
     const newValue = +this.input.value + 1
-    this.input.value = newValue
+    this.value = this.input.value = newValue
     this.blockOnBoundary(undefined, newValue, this.max)
   }
 
   decrease(){
     this.increaseButton.disabled = false
     const newValue = +this.input.value - 1
-    this.input.value = newValue
+    this.value = this.input.value = newValue
     this.blockOnBoundary(this.min, newValue, undefined)
   }
 
@@ -32,14 +33,14 @@ class CounterElement extends HTMLElement {
     this.decreaseButton.disabled = false
     this.increaseButton.disabled = false
 
-    const value = +this.input.value
+    const value = +this.value
     let limitedValue = value
     if(value > this.max){
       limitedValue = this.max
     }else if(value < this.min){
       limitedValue = this.min
     }
-    this.input.value = limitedValue
+    this.value = this.input.value = limitedValue
     this.blockOnBoundary(this.min, limitedValue, this.max)
   }
 

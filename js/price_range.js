@@ -1,10 +1,9 @@
 class PriceRange extends HTMLElement {
   constructor() {
     super();
-    this.selectTemplate = document.querySelector("#range");
-    const clone = this.selectTemplate.content.cloneNode(true);
+    this.rangeTemplate = document.querySelector("#range");
+    const clone = this.rangeTemplate.content.cloneNode(true);
     this.appendChild(clone);
-    console.log(clone, this)
     this.rangeMin = this.querySelector('.range__input--min')
     this.rangeMax = this.querySelector('.range__input--max')
     this.inputMin = this.querySelector('.range__value--min')
