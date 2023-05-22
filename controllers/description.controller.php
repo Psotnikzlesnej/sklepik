@@ -6,7 +6,7 @@ include_once __DIR__ . '/../utils/php/controller.php';
 $view_path =__DIR__ . '/../views/'.$component_name.'.view.php';
 
 $model = new Model();
-$controller = new Controller($model, $view_path);
+$controller = new \Utils\Controller($model, $view_path);
 
 $controller->renderView();
 ?>
