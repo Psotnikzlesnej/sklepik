@@ -215,7 +215,7 @@ body {
 
 @media (min-width: 768px) {
   .whyUs__img {
-    content: url("Image.jpg");
+    content: url("../photos/about_us/Image.jpg");
     opacity: 0.5;
     position: absolute;
     left: 0;
@@ -284,6 +284,4 @@ body {
   .whyUs__btnSpan {
     font-size: 14px;
   }
-}
-
-/*# sourceMappingURL=about_us.css.map */
+}/*# sourceMappingURL=about_us.css.map */
