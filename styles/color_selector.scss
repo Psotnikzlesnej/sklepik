@@ -1,0 +1,22 @@
+.color-selector {
+  display: block;
+
+  &__list{
+    display: grid;
+    grid-template-columns: repeat(5, 40px);
+    gap: 15px;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+
+    ::slotted(&-item) {
+      cursor: pointer;
+      height: 40px;
+      width: 40px;
+    }
+
+    ::slotted(&-item--selected) {
+      outline:2px solid lightblue
+    }
+  }
+}
