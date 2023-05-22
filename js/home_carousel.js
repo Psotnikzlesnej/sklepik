@@ -4,20 +4,38 @@ const prevButton = document.getElementById("slide-arrow-prev_horizontal");
 const nextButton = document.getElementById("slide-arrow-next_horizontal");
 
 nextButton.addEventListener("click", () => {
-    const slideWidth = slide.clientWidth;
-    slidesContainer.scrollLeft += slideWidth;
+  const slideWidth = slide.clientWidth;
+  slidesContainer.scrollLeft += slideWidth;
 });
 
 prevButton.addEventListener("click", () => {
-    const slideWidth = slide.clientWidth;
-    slidesContainer.scrollLeft -= slideWidth;
+  const slideWidth = slide.clientWidth;
+  slidesContainer.scrollLeft -= slideWidth;
 });
 
-function changeImage() {
-    let displayImage = document.getElementById("image40");
-    if (displayImage.src.match("../photos/banners/Group_40.png")) {
-        displayImage.src = "../photos/banners/Mask_group_40.png";
-    } else {
-        displayImage.src = "../photos/banners/Group_40.png";
-    }
+const bannercontainer = document.getElementById("slides-container_banner");
+const slide_banner = document.querySelector(".slide_banner");
+const prev = document.getElementById("slide-arrow-prev_banner");
+const next = document.getElementById("slide-arrow-next_banner");
+const wrapper = document.querySelector(".dots-wrapper");
+const dots = document.querySelectorAll(".dot");
+
+next.addEventListener("click", () => {
+  const slideWidth = slide_banner.clientWidth;
+  bannercontainer.scrollLeft += slideWidth;
+});
+
+prev.addEventListener("click", () => {
+  const slideWidth = slide_banner.clientWidth;
+  bannercontainer.scrollLeft -= slideWidth;
+});
+
+var btnContainer = document.getElementById("dots-wrapper");
+var btns = btnContainer.getElementsByClassName("dot");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function () {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
 }

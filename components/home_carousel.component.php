@@ -10,12 +10,50 @@
 </head>
 <body>
 
+<button class="slide-arrow_banner" id="slide-arrow-next_banner" >
+
+<i class="fa-solid fa-angle-right"></i>
+
+</button>
+
+</button>
+
+<section class="slider-wrapper_banner">
 
 
-<img id="image40"  src="../photos/banners/Group_40.png" onclick="changeImage()"> 
+<ul class="slides-container_banner" id="slides-container_banner">
+    
+<div class="slide_banner"><img id="image40"  src="../photos/banners/Group_40.png" > </div>
+<div class="slide_banner"><img id="image40"  src="../photos/banners/Mask_Group_40.png" > </div>
 
 
 
+</ul>
+
+    
+  <button class="slide-arrow_banner" id="slide-arrow-prev_banner" >
+
+<i class="fa-solid fa-angle-left"></i> 
+
+</button>
+
+
+<div class="dots-wrapper" id="dots-wrapper">
+  <button class="dot active"></button>
+  <button class="dot"></button>
+  <button   class="dot"></button>
+  <button  class="dot"></button>
+</div>
+
+
+
+
+
+
+
+
+
+</section>
 
 
 
@@ -38,8 +76,11 @@
   <div class="slide_horizontal"><img class="image149" src="../photos/categories/Image 149.png"> <p class="slide_text_top">ŁĄCZNIK JEDNOBIEGUNOWY</p>  <p class="slide_text_middle">Kod produktu: CW1.01/11</p><div class="slide_text_prices"><p class="slide_old_price">656,65 zł</p><p class="slide_new_price">442,85 zł</p> </div>  </div>
  
 
+
   </ul>
 
+
+  
 
   <button class="slide-arrow_horizontal" id="slide-arrow-next_horizontal">
 
@@ -47,8 +88,13 @@
 
   </button>
 
+  
 </section>
+
+
 <script src="../js/home_carousel.js"></script> 
+
+
 
 
 </body>
