@@ -1,5 +1,6 @@
 <?php
-class ProductSimilarModel{
+namespace ProductSimilar;
+class Model{
   function __construct(){
 global $mysqli;
 $this ->mysqli = $mysqli;

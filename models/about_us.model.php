@@ -1,5 +1,6 @@
 <?php
-class AboutUsModel {
+namespace AboutUs;
+class Model {
   function __construct(){
     global $mysqli;
     $this->mysqli = $mysqli;

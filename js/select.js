@@ -17,7 +17,6 @@ class SelectElement extends HTMLElement {
     const slot = this.shadowRoot.querySelector("slot");
     this.list = [...slot.assignedElements()];
     this.value;
-
     this.setDefault()
     this.setEventListeners()
   }
@@ -43,6 +42,7 @@ class SelectElement extends HTMLElement {
         this.setNewContent(el);
         this.makeEveryItemVisible()
         el.classList.add('select__list-item--selected')
+        this.icon.classList.toggle('select__icon--rotated')
         this.listElement.classList.add('select__list--hidden')
         this.dispatchEvent(new CustomEvent("selectionchange", {
           detail: {
@@ -55,6 +55,7 @@ class SelectElement extends HTMLElement {
 
     this.currentElement.addEventListener('click', _=>{
       this.icon.classList.toggle('select__icon--rotated')
+      console.log('xD')
       this.listElement.classList.toggle('select__list--hidden')
     })
   }

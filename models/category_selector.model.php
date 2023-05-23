@@ -1,5 +1,6 @@
 <?php
-class CategorySelectorModel {
+namespace CategorySelector;
+class Model {
   function __construct(){
     global $mysqli;
     $this->mysqli = $mysqli;

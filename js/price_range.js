@@ -1,3 +1,6 @@
+const rangeWidth = 280;
+document.documentElement.style.setProperty("--range-width", rangeWidth + "px");
+
 class PriceRange extends HTMLElement {
   constructor() {
     super();
@@ -62,8 +65,8 @@ class PriceRange extends HTMLElement {
   updateProgress(){
     const maxValue = this.max;
     const minValue = this.min;
-    const minWidth = ((minValue - this.bottomBoundary)/(this.topBoundary-this.bottomBoundary)*400)
-    const maxWidth = ((maxValue - this.bottomBoundary) / (this.topBoundary - this.bottomBoundary)*400)
+    const minWidth = ((minValue - this.bottomBoundary)/(this.topBoundary-this.bottomBoundary)*rangeWidth)
+    const maxWidth = ((maxValue - this.bottomBoundary) / (this.topBoundary - this.bottomBoundary)*rangeWidth)
     document.documentElement.style.setProperty("--left", Math.floor(minWidth) + "px");
     document.documentElement.style.setProperty("--width", Math.floor(maxWidth-minWidth) + "px");
   }

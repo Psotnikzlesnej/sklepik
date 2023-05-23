@@ -7,72 +7,76 @@ $background: #fff;
 $list-border: #e1e2e8;
 $hover: #efefef;
 
-custom-select {
+:host {
   font-family: 'Metropolis', sans-serif;
   font-size: 12px;
   width: max-content;
   min-width: 100px;
   display: block;
   color: $color;
-  
-  .select {
-    &__current {
-      &-element {
-        cursor: pointer;
-        box-sizing: border-box;
-        background: $background;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: max-content;
-        width: 100%;
-        padding: 10px;
-      }
-    }
-    &__list {
-      position: relative;
-      background: $background;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      width: 100%;
+  position: relative;
+}
+
+.select {
+  &__current {
+    &-element {
+      cursor: pointer;
       box-sizing: border-box;
-      border: 1px solid $list-border;
-
-      ::slotted(&-item) {
-        cursor: pointer;
-        padding: 10px;
-      }
-
-      ::slotted(&-item--selected){
-        background: $list-selected;
-      }
-
-      ::slotted(&-item:hover){
-        background: $hover;
-      }
-
-      &--hidden {
-        display: none;
-        // z-index: -1;
-      }
-
+      background: $background;
+      display: flex;
+      gap: 10px;
+      justify-content: space-between;
+      align-items: center;
+      height: max-content;
+      width: 100%;
+      padding: 10px;
     }
-    &__icon {
-      $icon-side: 7px;
-      $border-thicness: 2px;
-      width: #{$icon-side};
-      height: #{$icon-side};
-      border-top: $border-thicness solid $color;
-      border-right: $border-thicness solid $color;
-      transform: rotateX(0deg) rotate(135deg) 
-      translateY(calc(($icon-side - $border-thicness)*math.sqrt(2)/2))
-      translateX(calc(($icon-side - $border-thicness)*math.sqrt(2)/(-2)));
-      transition: transform ease-in-out .15s;
+  }
+  &__list {
+    min-width: 100%;
+    width: max-content;
+    position: absolute;
+    background: $background;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid $list-border;
 
-      &--rotated{
-        transform: rotateY(180deg) rotate(-45deg);
-      }
+    ::slotted(&-item) {
+      cursor: pointer;
+      padding: 10px 40px 10px 10px;
+    }
+
+    ::slotted(&-item--selected){
+      background: $list-selected;
+    }
+
+    ::slotted(&-item:hover){
+      background: $hover;
+    }
+
+    &--hidden {
+      display: none;
+    }
+
+  }
+  &__icon {
+    top: 3px;
+    position: relative;
+    $icon-side: 7px;
+    $border-thicness: 2px;
+    width: #{$icon-side};
+    height: #{$icon-side};
+    border-top: $border-thicness solid $color;
+    border-right: $border-thicness solid $color;
+    transform: rotateX(0deg) rotate(135deg) 
+    translateY(calc(($icon-side - $border-thicness)*math.sqrt(2)/2))
+    translateX(calc(($icon-side - $border-thicness)*math.sqrt(2)/(-2)));
+    transition: transform ease-in-out .15s;
+
+    &--rotated{
+      transform: rotateY(180deg) rotate(-45deg);
     }
   }
 }

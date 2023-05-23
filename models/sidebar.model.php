@@ -1,6 +1,6 @@
 <?php
-
-class SidebarModel {
+namespace Sidebar;
+class Model {
   function __construct(){
     global $mysqli;
     $this->mysqli = $mysqli;

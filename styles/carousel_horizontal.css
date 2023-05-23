@@ -2,21 +2,17 @@
   box-sizing: border-box;
 }
 
-body {
-  max-width: 1440px;
-  margin: auto;
-}
-
 .slider-wrapper_horizontal {
-  margin: 1rem;
   position: relative;
   overflow: hidden;
+  width: 50%;
+  display: inline-flex;
 }
 
 .slides-container_horizontal {
   height: calc(66vh - 2rem);
   width: 100%;
-  display: flex;
+  display: -webkit-inline-box;
   overflow: scroll;
   scroll-behavior: smooth;
   list-style: none;
@@ -74,8 +70,7 @@ body {
 .slide_horizontal {
   width: 100%;
   text-align: center;
-  height: 100%;
-  margin-top: 100px;
+  margin-top: 40px;
   flex: 0 0 96%;
 }
 

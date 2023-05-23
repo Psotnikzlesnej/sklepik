@@ -1,37 +1,35 @@
-:root {
-  --width: 0%;
-  --left: 0% ;
-}
-
 price-range {
   position: relative;
-  width: 400px;
+  width: var(--range-width);
   display: block;
 }
 price-range .range__track {
   height: 4px;
-  width: 400px;
+  width: var(--range-width);
   background: #F6F7FB;
   position: absolute;
   top: 15px;
   transform: translateY(-50%);
 }
 price-range .range__track-disabler {
+  z-index: 1;
   position: absolute;
-  top: 10px;
+  top: 0;
   height: 30px;
-  width: 400px;
+  width: var(--range-width);
 }
 price-range .range__input {
   margin: 0;
   height: 30px;
-  width: 400px;
+  width: var(--range-width);
   overflow: hidden;
 }
 price-range .range__input, price-range .range__input::-webkit-slider-runnable-track, price-range .range__input::-webkit-slider-thumb {
   -webkit-appearance: none;
 }
 price-range .range__input::-webkit-slider-thumb {
+  cursor: pointer;
+  z-index: 2;
   background: #F74137;
   position: relative;
   width: 16px;
@@ -50,9 +48,6 @@ price-range .range__input--max {
 }
 price-range .range__input.range__input--min {
   position: relative;
-}
-price-range .range__input.range__input--min::-webkit-slider-thumb {
-  z-index: 1;
 }
 price-range .range__input.range__input--min::before {
   z-index: 1;
@@ -91,7 +86,5 @@ price-range .range__value::-webkit-outer-spin-button, price-range .range__value:
   -webkit-appearance: none;
   display: none;
 }
-
-
 
 /*# sourceMappingURL=price_range.css.map */

@@ -116,7 +116,8 @@ body {
   background-color: #f2f3f4;
 }
 
-#image40 {
+#image40,
+#image41 {
   margin-left: 20px;
 }
 
@@ -128,7 +129,7 @@ body {
 
 .slides-container_horizontal,
 .slides-container_banner {
-  height: calc(66vh - 2rem);
+  height: calc(68vh - 2rem);
   width: 99%;
   display: flex;
   overflow: scroll;
@@ -251,16 +252,19 @@ body {
   opacity: 1;
 }
 
-#image40:hover {
+#image40:hover,
+#image41:hover {
   cursor: pointer;
 }
 
-#image40:active {
+#image40:active,
+#image41:active {
   opacity: 0.5;
   transition: 0.3s ease-in;
 }
 
-#image40 {
+#image40,
+#image41 {
   transition: 0.3s ease-out;
 }
 

@@ -2,15 +2,16 @@
   box-sizing: border-box;
 }
 
-body {
-  max-width: 1440px;
-  margin: auto;
+.slider-wrapper {
+  display: inline-block;
+  width: 5%;
+  margin-left: 20px;
 }
 
 .slides-container {
   height: calc(44vh - 2rem);
   overflow: hidden;
-  width: 10%;
+  width: 160%;
   scroll-behavior: smooth;
   list-style: none;
   margin: 0px;

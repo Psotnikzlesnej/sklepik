@@ -1,6 +1,6 @@
 <?php
-
-    class ProductDescriptionModel{
+ namespace ProductDescription;
+    class Model{
         function __construct(){
 			global $mysqli;
 			$this ->mysqli = $mysqli;
