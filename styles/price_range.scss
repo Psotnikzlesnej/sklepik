@@ -1,11 +1,7 @@
 $dark-gray: #E1E2E8;
 
-$range-width: 400px;
+$range-width: var(--range-width);
 $range-height: 30px;
-:root{
-  --width: 0%;
-  --left: 0%
-}
 
 price-range {
   position: relative;
@@ -23,8 +19,9 @@ price-range {
     }
 
     &__track-disabler {
+      z-index: 1;
       position: absolute;
-      top: 10px;
+      top: 0;
       height: $range-height;
       width: $range-width;
     }
@@ -42,6 +39,8 @@ price-range {
       }
     
       &::-webkit-slider-thumb {
+        cursor: pointer;
+        z-index: 2;
         background: #F74137;
         position: relative;
         width: 16px;
@@ -64,9 +63,6 @@ price-range {
     
       &.range__input--min{
         position: relative;
-        &::-webkit-slider-thumb{
-          z-index: 1;
-        }
     
         &::before{
           z-index: 1;

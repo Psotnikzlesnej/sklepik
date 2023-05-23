@@ -11,4 +11,4 @@
   <div class="range__track"></div>
 </template>
 
-<price-range data-min="2" data-max="100" class="range"></price-range>
+<price-range data-min="1" data-max="100" class="range"></price-range>
