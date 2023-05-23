@@ -1,5 +1,5 @@
 <?php
-namespace AboutUS;
+namespace AboutUs;
 $component_name='about_us';
 include_once __DIR__ . '/../models/'.$component_name.'.model.php';
 include_once __DIR__ . '/../utils/php/controller.php';

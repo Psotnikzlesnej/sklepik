@@ -1,40 +1,25 @@
-const slidesContainer = document.getElementById("slides-container_horizontal");
-const slide = document.querySelector(".slide_horizontal");
-const prevButton = document.getElementById("slide-arrow-prev_horizontal");
-const nextButton = document.getElementById("slide-arrow-next_horizontal");
+let currIndex = 0;
+const elements = document.querySelectorAll('.carousel__element')
+const leftArrow = document.querySelector('.carousel__arrow--left')
+const rightArrow = document.querySelector('.carousel__arrow--right')
+elements[currIndex].classList.add('carousel__element--active')
 
-nextButton.addEventListener("click", () => {
-  const slideWidth = slide.clientWidth;
-  slidesContainer.scrollLeft += slideWidth;
-});
+leftArrow.addEventListener('click', e=>{
+  const oldIndex = currIndex
+  if(--currIndex < 0){
+    currIndex = elements.length - 1
+  }
+  updateElement(oldIndex)
+})
+rightArrow.addEventListener('click', e=>{
+  const oldIndex = currIndex
+  if(++currIndex > elements.length - 1){
+    currIndex = 0
+  }
+  updateElement(oldIndex)
+})
 
-prevButton.addEventListener("click", () => {
-  const slideWidth = slide.clientWidth;
-  slidesContainer.scrollLeft -= slideWidth;
-});
-
-const bannercontainer = document.getElementById("slides-container_banner");
-const slide_banner = document.querySelector(".slide_banner");
-const prev = document.getElementById("slide-arrow-prev_banner");
-const next = document.getElementById("slide-arrow-next_banner");
-const image = document.getElementById("image40");
-const image2 = document.getElementById("image41");
-
-next.addEventListener("click", () => {
-  const slideWidth = slide_banner.clientWidth;
-  bannercontainer.scrollLeft += slideWidth;
-});
-
-prev.addEventListener("click", () => {
-  const slideWidth = slide_banner.clientWidth;
-  bannercontainer.scrollLeft -= slideWidth;
-});
-
-image.addEventListener("click", () => {
-  const slideWidth = slide_banner.clientWidth;
-  bannercontainer.scrollLeft += slideWidth;
-});
-image2.addEventListener("click", () => {
-  const slideWidth = slide_banner.clientWidth;
-  bannercontainer.scrollLeft -= slideWidth;
-});
+function updateElement(oldIndex){
+  elements[oldIndex].classList.remove('carousel__element--current')
+  elements[currIndex].classList.add('carousel__element--current')
+}
