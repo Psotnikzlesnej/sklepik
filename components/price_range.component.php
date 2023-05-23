@@ -1,3 +1,5 @@
+
+<div class="scale">
 <script src="../js/price_range.js" defer></script>
 <link rel="stylesheet" href="../styles/price_range.css">
 <template id="range">
@@ -12,3 +14,4 @@
 </template>
 
 <price-range data-min="2" data-max="100" class="range"></price-range>
+</div> 

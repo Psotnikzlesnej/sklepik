@@ -114,7 +114,7 @@ body{
 }
 .producent{
     margin-left: 30px;
-    width: 300px;
+    width: 298px;
     height: auto;
     border: 1px solid #E1E2E8;
 
@@ -230,3 +230,14 @@ body{
 .hidden {
   display: none;
 }
+
+@media (min-width: 1200px) and  (max-width: 1440px){
+.producent {
+    width: 298px;
+}
+}
+@media (min-width: 768px) and (max-width: 1199px){
+.producent {
+    
+    width: 24.4%;
+}}

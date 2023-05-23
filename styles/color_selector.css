@@ -1,4 +1,5 @@
 .color-selector {
+  
   display: block;
 }
 .color-selector__list {
@@ -6,7 +7,7 @@
   grid-template-columns: repeat(5, 40px);
   gap: 15px;
   margin: 0;
-  list-style: none;
+  list-style: none; 
   padding: 0;
 }
 ::slotted(.color-selector__list-item) {
@@ -17,5 +18,6 @@
 ::slotted(.color-selector__list-item--selected) {
   outline: 2px solid lightblue;
 }
+
 
 /*# sourceMappingURL=color_selector.css.map */

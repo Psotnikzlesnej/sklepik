@@ -173,13 +173,27 @@
         </ul>
     </aside>
 
-    <div class="sidebar__producent">
-        
-        <?php
-        include '../components/manufacturer_checkbox.component.php';
-        ?>
+            <div class="sidebar__producent">
+                
+                <?php
+                include '../components/manufacturer_checkbox.component.php';
+                ?>
 
-    </div>
+            </div>
+
+            <div class="sidebar__colorpicker">
+                <!-- proszę naprawić kod :) -->
+            </div>
+
+            
+
+            <div class="sidebar_pricerange">
+
+            <?php
+            include '../components/price_range.component.php'
+            ?>
+
+            </div>
 
     </div>
 </body>
