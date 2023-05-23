@@ -1,19 +1,14 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/header.css">
+
+    <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
-    <script src="../js/hamburger.js"></script>
-</head>
-<body>
+    <script src="js/hamburger.js"></script>
+
+
   <div class="main-container">
     <div class="container">
       <div  class="menu-long">
         <div class="photo">
-          <img src="../static/logo.png" alt="logo">
+          <img src="static/logo.png" alt="logo">
         </div>
         <div class="menu__text">
           <a href="javascript:void(0);" class="hamburger mobile__block" onclick="hamburger()">
@@ -97,5 +92,4 @@
     </div>
   </div>
 
-</body>
-</html>
+
