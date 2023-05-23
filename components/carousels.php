@@ -94,7 +94,10 @@
 
 
 
-
+  <div class="info">
+        <div class="prom">PROMOCJA</div>
+        <div class="new">NOWOŚĆ</div>
+      </div>
 
 
 

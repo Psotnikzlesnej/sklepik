@@ -15,7 +15,7 @@
     
     <div class="main-text">
       <span>Łącznik jednobiegunowy (moduł) 10AX, 250V~, zaciski śrubowe</span>
-      <img src="../photos/manufacturers/Philips_logo.svg.png" style="height: 17px; "alt="">   
+      <img src="../photos/manufacturers/Philips_logo.png" style="height: 17px; "alt="">   
     </div>
 
 
@@ -26,16 +26,14 @@
     include_once '../components/carousels.php';
   ?>
     <script src="../js/carousels.js"></script> 
-      
-    <div class="info">
-        <div class="prom">PROMOCJA</div>
-        <div class="new">NOWOŚĆ</div>
-      </div>
+  
+
 
       <div class="shop-min">
         <div class="id">
           <span>IPC-HFW2231S-S-0280B</span>
           <div>
+  
             <div class="main_id">
               <div class="Dostępne" >
                 <svg xmlns="http://www.w3.org/2000/svg" width="17.23" height="17.353" viewBox="0 0 17.23 17.353"style="margin-right:10px; ">
@@ -105,14 +103,10 @@
 
     </div>    
     </div>
-
-
-
-
-
   </div>
 
 
+  
 
 
 </body>
