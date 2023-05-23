@@ -1,0 +1,54 @@
+@use '../utils/styles/fonts';
+@use '../utils/styles/variables';
+
+body {
+  font-family: "Metropolis", sans-serif;
+}
+
+
+.word-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+ 
+}
+
+.word {
+    margin-right: 175px;
+    margin-left: 20px;
+
+}
+
+.remove-button {
+    cursor: pointer;
+    color: black;
+background-color: #E1E2E8;
+opacity: 1;
+width: 25px;
+height: 25px;
+font-weight: bold;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.filtry-container{
+    background-color: bisque;
+    width: 300px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E1E2E8;
+    opacity: 1;
+    background-color: #F2F3F4;
+    padding-top: 10px;
+}
+.filtry{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E1E2E8;
+    opacity: 1;
+    width: 300px;
+    border-bottom: none;
+    font-weight: bold;
+    
+}
+.text{
+    padding: 20px;
+}
