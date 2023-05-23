@@ -1,3 +1,203 @@
-
+@font-face {
+  font-family: "metropolis";
+  font-style: normal;
+  font-weight: 100;
+  src: url("/fonts/metropolis-thin-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: italic;
+  font-weight: 100;
+  src: url("/fonts/metropolis-thinitalic-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: normal;
+  font-weight: 200;
+  src: url("/fonts/metropolis-extralight-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: italic;
+  font-weight: 200;
+  src: url("/fonts/metropolis-extralightitalic-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/metropolis-light-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: italic;
+  font-weight: 300;
+  src: url("/fonts/metropolis-lightitalic-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/metropolis-regular-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: italic;
+  font-weight: 400;
+  src: url("/fonts/metropolis-regularitalic-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/metropolis-medium-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: italic;
+  font-weight: 500;
+  src: url("/fonts/metropolis-mediumitalic-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/metropolis-semibold-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: italic;
+  font-weight: 600;
+  src: url("/fonts/metropolis-semibolditalic-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/metropolis-bold-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: italic;
+  font-weight: 700;
+  src: url("/fonts/metropolis-bolditalic-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: normal;
+  font-weight: 800;
+  src: url("/fonts/metropolis-extrabold-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: italic;
+  font-weight: 800;
+  src: url("/fonts/metropolis-extrabolditalic-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: normal;
+  font-weight: 900;
+  src: url("/fonts/metropolis-black-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: italic;
+  font-weight: 900;
+  src: url("/fonts/metropolis-blackitalic-webfont.woff2") format("woff2");
+}
+.sidebar {
+  font-family: "Metropolis", sans-serif;
+  width: 100%;
+}
+.sidebar__heading {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #E1E2E8;
+  padding: 20px;
+  font-size: 15px;
+  font-weight: 700;
+  border-bottom: 2px solid #F74137;
+  margin: 0;
+}
+.sidebar__list {
+  box-sizing: border-box;
+  border-right: 1px solid #E1E2E8;
+  border-bottom: 1px solid #E1E2E8;
+  border-left: 1px solid #E1E2E8;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.sidebar__listItem {
+  border-top: 1px solid #E1E2E8;
+}
+.sidebar__listItem:first-child {
+  border: none;
+}
+.sidebar__listItem:hover {
+  background-color: #F8F8F8;
+  transition: background-color 0.3s ease-out;
+}
+.sidebar__listItemAnchor {
+  padding: 20px;
+}
+.sidebar__listItemAnchor, .sidebar__nestedListItemAnchor {
+  display: flex;
+  justify-content: space-between;
+  color: #323940;
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+}
+.sidebar__listItemAnchor .plus, .sidebar__nestedListItemAnchor .plus {
+  background-color: #323940;
+  -webkit-mask-image: url(../static/plus.svg);
+  mask-image: url(../static/plus.svg);
+  height: 12px;
+  width: 12px;
+  fill: currentColor;
+  stroke: currentColor;
+}
+.sidebar__listItemAnchor--active, .sidebar__nestedListItemAnchor--active {
+  color: #E30815;
+  font-weight: bold;
+}
+.sidebar__listItemAnchor .minus, .sidebar__nestedListItemAnchor .minus {
+  background-color: #E30815;
+  -webkit-mask-image: url(../static/minus.svg);
+  mask-image: url(../static/minus.svg);
+  height: 12px;
+  width: 12px;
+  fill: currentColor;
+  stroke: currentColor;
+}
+.sidebar__nestedList {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+.sidebar__nestedList--hidden {
+  display: none;
+}
+.sidebar__nestedListItem {
+  border-top: 1px solid #E1E2E8;
+  background-color: #F8F8F8;
+}
+.sidebar__nestedListItem:hover {
+  background-color: #e1e2e8;
+  transition: background-color 0.3s ease-out;
+}
+.sidebar__nestedListItemAnchor {
+  padding: 20px 40px 20px;
+}
+.sidebar__nestedListItemSpan {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+}
 
 /*# sourceMappingURL=accordion.css.map */

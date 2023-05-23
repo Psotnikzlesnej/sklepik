@@ -1,0 +1,111 @@
+@use '../utils/styles/fonts';
+@use '../utils/styles/variables';
+
+.sidebar {
+font-family: 'Metropolis', sans-serif;
+  width: 100%;
+
+  &__heading {
+    text-transform: uppercase;
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid #E1E2E8;
+      padding: 20px;
+      font-size: 15px;
+      font-weight: variables.$bold;
+      border-bottom: 2px solid #F74137;
+      margin: 0;
+  }
+
+  &__list {
+    box-sizing: border-box;
+    border-right: 1px solid #E1E2E8;
+    border-bottom: 1px solid #E1E2E8;
+    border-left: 1px solid #E1E2E8;
+        margin: 0;
+        padding: 0;
+      width: 100%;
+  }
+
+  &__listItem {
+    border-top: 1px solid #E1E2E8;
+  }
+
+  &__listItem:first-child {
+    border: none;
+  }
+
+  &__listItem:hover {
+      background-color: #F8F8F8;
+      transition: background-color .3s ease-out;
+  }
+
+  &__listItemAnchor{
+    padding: 20px;
+  }
+
+  &__listItemAnchor, &__nestedListItemAnchor {
+    display: flex;
+    justify-content: space-between;
+    color: #323940;
+    text-decoration: none;
+    cursor: pointer;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: variables.$regular;
+        .plus {
+          background-color: #323940;
+          -webkit-mask-image: url(../static/plus.svg);
+          mask-image: url(../static/plus.svg);
+            height: 12px;
+            width: 12px;
+            fill: currentColor;
+            stroke: currentColor;
+        }
+
+        &--active {
+          color: #E30815;
+          font-weight: bold;
+        }
+        
+        .minus {
+          background-color: #E30815;
+          -webkit-mask-image: url(../static/minus.svg);
+          mask-image: url(../static/minus.svg);
+            height: 12px;
+            width: 12px;
+            fill: currentColor;
+            stroke: currentColor;
+        }
+  }
+
+  &__nestedList {
+    margin: 0;
+    padding: 0;
+    display: block;
+
+    &--hidden {
+        display: none;
+    }
+    }
+
+  &__nestedListItem {
+      border-top: 1px solid #E1E2E8;
+      background-color: #F8F8F8;
+  }
+
+  &__nestedListItem:hover {
+      background-color: #e1e2e8;
+      transition: background-color .3s ease-out;
+  }
+
+  &__nestedListItemAnchor {
+      padding: 20px 40px 20px;
+  }
+
+  &__nestedListItemSpan {
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: variables.$regular;
+  }
+}

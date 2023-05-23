@@ -83,7 +83,11 @@ a {
     }
 
     &__nestedList {
-        display: none;
+        display: block;
+
+        &--hidden {
+            display: none;
+        }
     }
 
     &__nestedListItem {

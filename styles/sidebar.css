@@ -181,6 +181,9 @@ a {
   font-weight: 400;
 }
 .sidebar__nestedList {
+  display: block;
+}
+.sidebar__nestedList--hidden {
   display: none;
 }
 .sidebar__nestedListItem {
