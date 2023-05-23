@@ -171,7 +171,15 @@
                 </a>
             </li>
         </ul>
-    </aside>
+    </aside> 
+
+            <div class="sidebar__filtry">
+
+                <?php
+                include '../components/applied_filters.component.php'
+                ?>
+
+            </div>
 
             <div class="sidebar__producent">
                 
@@ -182,7 +190,9 @@
             </div>
 
             <div class="sidebar__colorpicker">
-                <!-- proszę naprawić kod :) -->
+                <?php
+                include '../components/color_selector.component.php'
+                ?>
             </div>
 
             

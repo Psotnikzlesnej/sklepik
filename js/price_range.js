@@ -1,4 +1,4 @@
-const rangeWidth = 280;
+const rangeWidth = 257;
 document.documentElement.style.setProperty("--range-width", rangeWidth + "px");
 
 class PriceRange extends HTMLElement {

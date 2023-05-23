@@ -13,7 +13,7 @@ class ColorSelector extends HTMLElement {
 
     this.renderColors()
     this.setEventListeners()
-  }
+  } 
 
   renderColors(){
     this.list.forEach(el=>{
