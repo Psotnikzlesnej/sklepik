@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles/offer.css">
+  <link rel="stylesheet" href="../styles/offer.scss">
+
 </head>
 <body>
   <div class="main-container">
@@ -20,7 +22,6 @@
       <div class="shop-min">
         <div class="id">
           <span>IPC-HFW2231S-S-0280B</span>
-          <hr style="border: 1px solid #E1E2E8; margin-top: 15px;">
           <div>
             <div class="main_id">
               <div class="Dostępne" >
@@ -34,7 +35,7 @@
                 </svg>
                 <span>Dostępny</span>
               </div>
-              <hr style="margin:0; border: 1px solid #E1E2E8; height: 33px;">
+              <div class="vertical_line">  </div>
               <div class="xd">
                 <svg xmlns="http://www.w3.org/2000/svg" width="19.06" height="13.956" viewBox="0 0 19.06 13.956" style="margin-right:10px;">
                   <g id="Group_5250" data-name="Group 5250" transform="translate(0.5 0.5)">
