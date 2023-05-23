@@ -1,0 +1,61 @@
+@use '../utils/styles/fonts';
+
+$current: #E30815;
+
+.product-navbar {
+  height: 45px;
+  font-family: 'Metropolis', sans-serif;
+  background: #f8f8f8;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 16px;
+
+  &__mode {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+
+  &__right {
+    display: flex;
+    gap: 25px;
+  }
+
+  &__sort, &__visible, &__pages {
+  }
+
+  &__section{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    &-title {
+      font-size: 12px;
+      font-weight: normal;
+      margin: 0;
+    }
+  }
+
+  &__pages {
+    gap: 5px;
+    display: flex;
+  }
+
+  &__page-link, &__page-dots {
+    color: #222627;
+    text-decoration: none;
+    background: white;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__page-link--current {
+    color: white;
+    background: $current;
+  }
+}

@@ -14,6 +14,7 @@ $hover: #efefef;
   min-width: 100px;
   display: block;
   color: $color;
+  position: relative;
 }
 
 .select {
@@ -32,12 +33,13 @@ $hover: #efefef;
     }
   }
   &__list {
-    position: relative;
+    min-width: 100%;
+    width: max-content;
+    position: absolute;
     background: $background;
     list-style: none;
     padding: 0;
     margin: 0;
-    width: 100%;
     box-sizing: border-box;
     border: 1px solid $list-border;
 
@@ -55,12 +57,13 @@ $hover: #efefef;
     }
 
     &--hidden {
-      visibility: hidden;
-      z-index: -1;
+      display: none;
     }
 
   }
   &__icon {
+    top: 3px;
+    position: relative;
     $icon-side: 7px;
     $border-thicness: 2px;
     width: #{$icon-side};

@@ -1,16 +1,30 @@
+<link rel="stylesheet" href="../styles/product_navbar.css">
 <?php 
-$url_parts = parse_url($_SERVER['REQUEST_URI']);
+$url = $_SERVER['REQUEST_URI'];
+$url_manipulator = new URLManipulator($url);
 
-function get_query_parameters($url_parts){
-    if (isset($url_parts['query'])) {
-        parse_str($url_parts['query'], $params);
-    } else {
-        $params = array();
+class URLManipulator {
+    public function __construct($url){
+        $this->url_parts = parse_url($url);
+        $queries = $this->url_parts['query'] ?? '';
+        parse_str($queries, $this->query_params);
     }
-    return $params;
+
+    public function setParam($key, ...$values){
+        $this->query_params[$key] = join(',', $values);
+    }
+
+    public function build_url(){
+        $encoded_query = http_build_query($this->query_params);
+        return $this->url_parts['path'] . '?' . $encoded_query;
+    }
 }
 
-$params = get_query_parameters($url_parts);
+function get_new_page_url($url_manipulator, $page) {
+    $url_manipulator->setParam('p', $page);
+    $new_url = $url_manipulator->build_url();
+    return $new_url;
+}
 
 
 function generateNavigation($pages, $currentPage, $middle_count = 3){
@@ -47,9 +61,7 @@ $pages_array = generateNavigation($pages_amount, $current_page);
 $current_index = array_search($current_page, $pages_array);
 $previous_page = $pages_array[$current_index-1] ?? NULL;
 $next_page = $pages_array[$current_index+1] ?? NULL;
-$url = $_SERVER['REQUEST_URI'];
 ?>
-
 <?php include __DIR__ . '/select.component.php' ?>
 <nav class="product-navbar">
     <div class="product-navbar__mode">
@@ -57,55 +69,50 @@ $url = $_SERVER['REQUEST_URI'];
         <a href="." class="product-navbar__mode-link">List</a>
         <a href="." class="product-navbar__mode-link">Grid</a>
     </div>
-    <div class="product-navbar__sort">
-        Sortuj
-        <custom-select class="select product-navbar__select">
-            <li slot="item" class="select__list-item" data-value="">Domyślnie</li>
-            <li slot="item" class="select__list-item" data-value="price_asc">Cena rosnąco</li>
-            <li slot="item" class="select__list-item" data-value="price_desc">Cena malejąco</li>
-            <li slot="item" class="select__list-item" data-value="name_asc">Nazwa rosnąco</li>
-            <li slot="item" class="select__list-item" data-value="name_desc">Nazwa malejąco</li>
-        </custom-select>
-    </div>
-    <div class="product-navbar__visible">
-        Pokaż
-        <custom-select class="select product-navbar__select">
-            <li slot="item" class="select__list-item" data-value="10">10</li>
-            <li slot="item" class="select__list-item" data-value="20">20</li>
-            <li slot="item" class="select__list-item" data-value="30">30</li>
-            <li slot="item" class="select__list-item" data-value="40">40</li>
-        </custom-select>
-    </div>
-    <!-- co to kurwa jest -->
-    <?php if($previous_page): 
-            $params_copy = $params; 
-            $params_copy['p'] = $previous_page;
-            $new_query = http_build_query($params_copy);
-            $new_url = $url_parts['path'] . '?' . $new_query;
+    <div class="product-navbar__right">
+        <div class="product-navbar__section">
+            <h3 class="product-navbar__section-title">Sortuj</h3>
+            <custom-select class="select product-navbar__select">
+                <li slot="item" class="select__list-item" data-value="">Domyślnie</li>
+                <li slot="item" class="select__list-item" data-value="price_asc">Cena rosnąco</li>
+                <li slot="item" class="select__list-item" data-value="price_desc">Cena malejąco</li>
+                <li slot="item" class="select__list-item" data-value="name_asc">Nazwa rosnąco</li>
+                <li slot="item" class="select__list-item" data-value="name_desc">Nazwa malejąco</li>
+            </custom-select>
+        </div>
+        <div class="product-navbar__section">
+            <h3 class="product-navbar__section-title">Pokaż</h3>
+            <custom-select class="select product-navbar__select">
+                <li slot="item" class="select__list-item" data-value="10">10</li>
+                <li slot="item" class="select__list-item" data-value="20">20</li>
+                <li slot="item" class="select__list-item" data-value="30">30</li>
+                <li slot="item" class="select__list-item" data-value="40">40</li>
+            </custom-select>
+        </div>
+        <div class="product-navbar__section product-navbar__pages">
+            <?php
+                if($previous_page):
+                $new_url = get_new_page_url($url_manipulator, "$previous_page");
             ?>
-        <a href="<?= $new_url ?>"><</a>
-    <?php endif; ?>
-    <div class="pages">
-        <?php foreach($pages_array as $page_id):
-            if($page_id != '...'):
-                $params_copy = $params;
-                $params_copy['p'] = $page_id;
-                $new_query = http_build_query($params_copy);
-                $new_url = $url_parts['path'] . '?' . $new_query;
+                <a href="<?= $new_url ?>" class="product-navbar__page-link"><</a>
+            <?php 
+                endif;
+                foreach($pages_array as $page_id):
+                if($page_id != '...'):
+                $new_url = get_new_page_url($url_manipulator, "$page_id");
             ?>
-                <a href="<?= $new_url ?>" class="current"><?= $page_id ?></a>
+                <a href="<?= $new_url ?>" class="product-navbar__page-link <?= $current_page == $page_id ? 'product-navbar__page-link--current' : '' ?>">
+                    <?= $page_id ?>
+                </a>
             <?php else: ?>
-                <span>...</span>
-            <?php endif;
-        endforeach; ?>
-    </div>
-    <?php if($next_page): 
-            $params_copy = $params; 
-            $params_copy['p'] = $next_page;
-            $new_query = http_build_query($params_copy);
-            $new_url = $url_parts['path'] . '?' . $new_query;
+                <span class="product-navbar__page-dots">...</span>
+            <?php endif; endforeach;
+                if($next_page): 
+                $new_url = get_new_page_url($url_manipulator, "$next_page");
             ?>
-        <a href="<?= $new_url ?>">></a>
-    <?php endif; ?>
+            <a href="<?= $new_url ?>" class="product-navbar__page-link">></a>
+        <?php endif; ?>
+        </div>
+    </div>
 </nav>
 <script src="../js/product_navbar.js"></script>
