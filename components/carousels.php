@@ -15,15 +15,19 @@
  
 
 
-<section class="slider-wrapper_horizontal">
+
+
+
 <div class="slider-wrapper">
  
-
  <button class="slide-arrow" id="slide-arrow-prev" >
 
 <i class="fa-solid fa-angle-left" style="
     display: block;
-    margin-bottom: 0px;"></i> 
+    margin-bottom: 0px;
+    margin-left: 2px;
+    margin-top: -2px;
+    margin-right: 0px;"></i> 
 
 </button>
 
@@ -52,11 +56,16 @@
 
   <i class="fa-solid fa-angle-right" style="
     display: block;
-    margin-bottom: 0px;"></i>
+    margin-bottom: 0px;
+    margin-left: 2px;
+    margin-top: -2px;
+    margin-right: 0px;"></i>
 
   </button>
 </div>
 
+
+<section class="slider-wrapper_horizontal">
  <button class="slide-arrow_horizontal" id="slide-arrow-prev_horizontal">
 
 <i class="fa-solid fa-angle-left"></i> 

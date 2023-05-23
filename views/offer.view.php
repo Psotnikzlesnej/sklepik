@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../styles/offer.css">
   <link rel="stylesheet" href="../styles/offer.scss">
 
 </head>
@@ -18,15 +17,14 @@
       <span>Łącznik jednobiegunowy (moduł) 10AX, 250V~, zaciski śrubowe</span>
       <img src="../photos/manufacturers/Philips_logo.svg.png" style="height: 17px; "alt="">   
     </div>
-    <?php
-include_once 'C:\xampp\htdocs\sklepik\components\carousel_vertical.component.php';
-include_once 'C:\xampp\htdocs\sklepik\components\carousel_horizontal.component.php'
-  ?>
+
+
     <div class="container"> 
-      <div class="info">
-        <div class="prom">PROMOCJA</div>
-        <div class="new">NOWOŚĆ</div>
-      </div>
+    <?php
+    include_once 'C:\xampp\htdocs\sklepik\components\carousels.php';
+  ?>
+    <script src="../js/carousels.js"></script> 
+      
       <div class="shop-min">
         <div class="id">
           <span>IPC-HFW2231S-S-0280B</span>
@@ -62,30 +60,49 @@ include_once 'C:\xampp\htdocs\sklepik\components\carousel_horizontal.component.p
             <div class="product">
               <h5>WARIANTY<h5>
             </div>
+
           </div>
           <div class="container-product">
+
             <div class="item1">
               <img src="../photos/categories/49.png" alt="light" class="img1">
-              <div style="display: flex; align-items: center; justify-content: center;">Biały</div>
+           
+             <div style="display: flex; align-items: center; justify-content: center;">Biały</div>
+          
+          
             </div>
+
+
             <div class="item2">
               <img src="../photos/categories/49.png" alt="light" class="img1">
               <div class="black_variant">Czarny</div>
             </div>
-          </div>
+
+
+
+            </div>
         </div>
-      </div>
-    </div>
+
+
     <div class="shopme">
       <div class="shopme-border">
         <div class="high">
           <s>656,65 zł</s>
         </div>
+        
         <div class="low">
           <span>442,85 zł</span>
         </div>
       </div>
     </div>
+
+    </div>    
+    </div>
+
+
+
+
+
   </div>
 
 

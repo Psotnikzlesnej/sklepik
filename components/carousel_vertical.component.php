@@ -20,7 +20,10 @@
 
 <i class="fa-solid fa-angle-left" style="
     display: block;
-    margin-bottom: 0px;"></i> 
+    margin-bottom: 0px;
+    margin-left: 2px;
+    margin-top: -2px;
+    margin-right: 0px;"></i> 
 
 </button>
 
@@ -49,7 +52,10 @@
 
   <i class="fa-solid fa-angle-right" style="
     display: block;
-    margin-bottom: 0px;"></i>
+    margin-bottom: 0px;
+    margin-left: 2px;
+    margin-top: -2px;
+    margin-right: 0px;"></i>
 
   </button>
 

@@ -5,7 +5,7 @@
 .slider-wrapper_horizontal {
   position: relative;
   overflow: hidden;
-  width: 50%;
+  width: 55%;
   display: inline-flex;
 }
 
@@ -70,8 +70,8 @@
 .slide_horizontal {
   width: 100%;
   text-align: center;
-  margin-top: 40px;
-  flex: 0 0 96%;
+  flex: 0 0 97%;
+  margin-top: 15px;
 }
 
 .slide:nth-child(1) {
