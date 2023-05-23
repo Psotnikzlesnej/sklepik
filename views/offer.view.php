@@ -9,12 +9,20 @@
 
 </head>
 <body>
+
+
+
   <div class="main-container">
+    
     <div class="main-text">
       <span>Łącznik jednobiegunowy (moduł) 10AX, 250V~, zaciski śrubowe</span>
-      <img src="../photos/manufacturers/Philips_logo.svg.png" style="height: 17px; "alt="">
+      <img src="../photos/manufacturers/Philips_logo.svg.png" style="height: 17px; "alt="">   
     </div>
-    <div class="container">
+    <?php
+include_once 'C:\xampp\htdocs\sklepik\components\carousel_vertical.component.php';
+include_once 'C:\xampp\htdocs\sklepik\components\carousel_horizontal.component.php'
+  ?>
+    <div class="container"> 
       <div class="info">
         <div class="prom">PROMOCJA</div>
         <div class="new">NOWOŚĆ</div>
@@ -79,5 +87,9 @@
       </div>
     </div>
   </div>
+
+
+
+
 </body>
 </html>
