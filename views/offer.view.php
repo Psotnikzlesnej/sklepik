@@ -20,11 +20,18 @@
 
 
     <div class="container"> 
+
+    
     <?php
-    include_once 'C:\xampp\htdocs\sklepik\components\carousels.php';
+    include_once '../components/carousels.php';
   ?>
     <script src="../js/carousels.js"></script> 
       
+    <div class="info">
+        <div class="prom">PROMOCJA</div>
+        <div class="new">NOWOŚĆ</div>
+      </div>
+
       <div class="shop-min">
         <div class="id">
           <span>IPC-HFW2231S-S-0280B</span>
