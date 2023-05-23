@@ -10,7 +10,7 @@
     
     <div class="tile__main">
         <div class="tile__image">
-            <img class="tile__image" src="../photos/banners/Image 203.jpg">
+            <img class="tile__image" src="../photos/banners/Image_203.jpg">
             <div class="tile__gradient"></div>
         </div>
         <div class="tile__title">Pomoc eksperta</div>
@@ -22,7 +22,7 @@
 
     <div class="tile__main">
         <div class="tile__image">
-            <img class="tile__image" src="../photos/banners/Image 204.jpg">
+            <img class="tile__image" src="../photos/banners/Image_204.jpg">
             <div class="tile__gradient"></div>
         </div>
         <div class="tile__title">Szukaj wygodnie</div>
@@ -35,7 +35,7 @@
 
     <div class="tile__main">
         <div class="tile__image">
-            <img class="tile__image" src="../photos/banners/Image 205.jpg">
+            <img class="tile__image" src="../photos/banners/Image_205.jpg">
             <div class="tile__gradient"></div>
         </div>
         <div class="tile__title">Seria Unica</div>

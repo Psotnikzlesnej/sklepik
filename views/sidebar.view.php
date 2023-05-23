@@ -8,6 +8,8 @@
     <script src="../js/sidebar.js"></script>
 </head>
 <body>
+
+    <div class="sidebar__superglue">
     <aside class="sidebar">
             <p class="sidebar__heading">
                 <span class="sidebar__heading-text">Gniazdka, wyłączniki</span>
@@ -170,5 +172,15 @@
             </li>
         </ul>
     </aside>
+
+    <div class="sidebar__producent">
+        
+        <?php
+        include '../components/manufacturer_checkbox.component.php';
+        ?>
+
+    </div>
+
+    </div>
 </body>
 </html>
