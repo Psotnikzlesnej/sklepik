@@ -155,9 +155,12 @@ body {
 .main_id {
   display: flex;
   flex-direction: row;
+  border-top: 1px solid #e1e2e8;
   border-bottom: 1px solid #e1e2e8;
+  padding-top: 7px;
   padding-bottom: 7px;
   color: black;
+  margin-top: 15px;
 }
 
 .xd {
@@ -327,10 +330,13 @@ body {
     width: 100%;
     margin-bottom: 15px;
   }
-  .info, .prom, .new {
+  .info,
+  .prom,
+  .new {
     margin: 0 0 5px;
   }
-  .prom, .new {
+  .prom,
+  .new {
     margin: 0 5px;
   }
   .info {
@@ -380,6 +386,14 @@ body {
     border: 1px solid #e1e2e8;
     height: 100%;
   }
+}
+.vertical_line {
+  width: 1px;
+  height: 30px;
+  transform: matrix(-1, 0, 0, -1, 0, 0);
+  /* UI Properties */
+  background: #e1e2e8 0% 0% no-repeat padding-box;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=offer.css.map */
