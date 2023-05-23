@@ -1,5 +1,6 @@
 <?php
-class NotFoundModel{
+namespace NotFound;
+class Model{
   public function getEverything(){
     return [];
   }

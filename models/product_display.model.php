@@ -1,5 +1,6 @@
 <?php
-class ProductDisplayModel {
+namespace ProductDisplay;
+class Model {
   function __construct(){
     global $mysqli;
     $this->mysqli = $mysqli;

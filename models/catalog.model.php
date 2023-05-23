@@ -1,5 +1,6 @@
 <?php 
-class CatalogModel{
+namespace Catalog;
+class Model{
   public function getEverything(){
     return [];
   }

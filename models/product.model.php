@@ -1,5 +1,6 @@
 <?php
-class ProductModel{
+namespace Product;
+class Model{
   public function getEverything(){
     return [];
   }
