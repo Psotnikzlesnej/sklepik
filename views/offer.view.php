@@ -15,7 +15,7 @@
     
     <div class="main-text">
       <span>Łącznik jednobiegunowy (moduł) 10AX, 250V~, zaciski śrubowe</span>
-      <img src="../photos/manufacturers/Philips_logo.png" style="height: 17px; "alt="">   
+      <img src="../photos/manufacturers/Philips_logo.png" style="height: 17px;margin-right: 15px; "alt="">   
     </div>
 
 
