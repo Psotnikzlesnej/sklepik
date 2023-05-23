@@ -24,7 +24,7 @@
 <ul class="slides-container_banner" id="slides-container_banner">
     
 <div class="slide_banner"><img id="image40"  src="../photos/banners/Group_40.png" > </div>
-<div class="slide_banner"><img id="image40"  src="../photos/banners/Mask_Group_40.png" > </div>
+<div class="slide_banner"><img id="image41"  src="../photos/banners/Mask_Group_40.png" > </div>
 
 
 
@@ -44,9 +44,6 @@
   <button   class="dot"></button>
   <button  class="dot"></button>
 </div>
-
-
-
 
 
 

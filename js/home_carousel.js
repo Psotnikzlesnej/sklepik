@@ -17,8 +17,8 @@ const bannercontainer = document.getElementById("slides-container_banner");
 const slide_banner = document.querySelector(".slide_banner");
 const prev = document.getElementById("slide-arrow-prev_banner");
 const next = document.getElementById("slide-arrow-next_banner");
-const wrapper = document.querySelector(".dots-wrapper");
-const dots = document.querySelectorAll(".dot");
+const image = document.getElementById("image40");
+const image2 = document.getElementById("image41");
 
 next.addEventListener("click", () => {
   const slideWidth = slide_banner.clientWidth;
@@ -30,12 +30,11 @@ prev.addEventListener("click", () => {
   bannercontainer.scrollLeft -= slideWidth;
 });
 
-var btnContainer = document.getElementById("dots-wrapper");
-var btns = btnContainer.getElementsByClassName("dot");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function () {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
+image.addEventListener("click", () => {
+  const slideWidth = slide_banner.clientWidth;
+  bannercontainer.scrollLeft += slideWidth;
+});
+image2.addEventListener("click", () => {
+  const slideWidth = slide_banner.clientWidth;
+  bannercontainer.scrollLeft -= slideWidth;
+});
