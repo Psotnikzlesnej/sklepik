@@ -2,7 +2,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles\description.css">
    <div class="description_box">  
-    <div class="parameters_box_text_top_description">DANE PODSTAWOWE </div>    
+    <div class="parameters_box_text_top_description">Opis produktu </div>    
      <div class="description_box_text_line"></div>
 </div>  
 
