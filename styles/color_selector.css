@@ -17,10 +17,5 @@
 ::slotted(.color-selector__list-item--selected) {
   outline: 2px solid lightblue;
 }
-.color__selector{
-  width: 298px;
-  border: 1px solid #e1e2e8;
-  height: auto;
-  margin-left: 30px;
-}
+
 /*# sourceMappingURL=color_selector.css.map */
