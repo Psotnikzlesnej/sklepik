@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "metropolis";
   font-style: normal;
@@ -161,6 +160,8 @@ body {
 }
 
 .product_tile {
+  position: relative;
+  overflow: hidden;
   margin-top: 30px;
   margin-left: 23px;
   display: inline-flex;
@@ -195,7 +196,7 @@ body {
 }
 
 .photo {
-  content: url("../photos/products/Photo – 1.png");
+  cursor: pointer;
   top: 1427px;
   left: 73px;
   width: 270px;
@@ -203,7 +204,7 @@ body {
   opacity: 1;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 65px;
+  margin-top: 45px;
 }
 
 .photo img {
@@ -216,7 +217,7 @@ body {
   width: 200px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 60px;
+  margin-top: 80px;
   padding-top: 5px;
 }
 
@@ -229,6 +230,7 @@ body {
 }
 
 .dsc1 {
+  cursor: pointer;
   text-align: center;
   font-weight: bold;
   font-size: 18px;
@@ -265,35 +267,29 @@ body {
 
 .addtocart {
   display: flex;
-  flex-direction: row;
-  margin-left: auto;
-  margin-right: auto;
-  height: 50px;
-  width: 190px;
-  margin-top: 80px;
+  gap: 10px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
-.product_tile-hover:hover > .addtocart {
-  display: flex;
-  margin-top: 30px;
-  transition: 150ms;
+.product_tile:hover .addtocart {
+  opacity: 1;
 }
 
-.addtocart {
-  display: none;
+.product_tile-hover {
+  transition: transform 0.5s;
 }
 
-.product_tile-hover:hover > .price and .dsc {
-  margin-top: -30px;
-  transition: 150ms;
-}
-
-.product_tile-hover:hover > .dsc {
-  margin-top: 0;
-  transition: 150ms;
+.product_tile:hover > .product_tile-hover {
+  transform: translateY(-60px);
 }
 
 .buybutton {
+  cursor: pointer;
   width: 50px;
   height: 50px;
   background: #9bcb3b;
