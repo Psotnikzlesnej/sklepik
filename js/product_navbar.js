@@ -27,3 +27,29 @@ const generateNavigation = (pages, currentPage) => {
 };
 
 const guwno = generateNavigation(51, 49);
+
+var gridViewLink = document.getElementById("gridViewLink");
+var listViewLink = document.getElementById("listViewLink");
+
+gridViewLink.addEventListener("click", function() {
+	listViewLink.classList.remove("hidden");
+	gridViewLink.classList.add("hidden");
+});
+
+listViewLink.addEventListener("click", function() {
+	gridViewLink.classList.remove("hidden");
+	listViewLink.classList.add("hidden");
+});
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar-product");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+	if (window.pageYOffset >= sticky) {
+		navbar.classList.add("sticky")
+	} else {
+		navbar.classList.remove("sticky");
+	}
+}
