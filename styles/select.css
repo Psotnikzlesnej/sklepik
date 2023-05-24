@@ -166,4 +166,11 @@
   transform: rotateY(180deg) rotate(-45deg);
 }
 
+@media (max-width: 767px) {
+  .select__current-element {
+    height: 100%;
+    padding: 0 10px;
+  }
+}
+
 /*# sourceMappingURL=select.css.map */

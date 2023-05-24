@@ -1,3 +1,25 @@
+.carousel {
+  position: relative;
+}
+.carousel__dots-container {
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  bottom: -25px;
+}
+.carousel__dot {
+  margin-left: 10px;
+  cursor: pointer;
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  opacity: 0.8;
+  background: black;
+  border-radius: 50%;
+}
+.carousel__dot--current {
+  background: #F74137;
+}
 .carousel__element {
   opacity: 0;
   transition: opacity 1s;
@@ -13,7 +35,12 @@
 .carousel__element--current {
   opacity: 1;
 }
+.carousel__element-content {
+  padding: 70px;
+  position: absolute;
+}
 .carousel__container {
+  overflow: hidden;
   position: relative;
   height: 400px;
   width: 100%;
@@ -29,7 +56,7 @@
   width: 50px;
   height: 50px;
   top: 50%;
-  transform: translateY(50%);
+  transform: translateY(-50%);
   justify-content: center;
   align-items: center;
   display: flex;

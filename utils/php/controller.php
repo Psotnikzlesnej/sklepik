@@ -8,9 +8,9 @@ class Controller {
   }
 
   public function renderView(){
-    $variables_array = $this->model->getEverything();
+    $variables_array = $this->model->getEverything() ?? [];
     extract($variables_array);
-    include_once $this->view_path;
+    require $this->view_path;
   }
 }
 ?>

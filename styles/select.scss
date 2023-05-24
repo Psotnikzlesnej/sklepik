@@ -80,3 +80,14 @@ $hover: #efefef;
     }
   }
 }
+
+@media (max-width: 767px) {
+  .select {
+    &__current {
+      &-element {
+        height: 100%;
+        padding: 0 10px;
+      }
+    }
+  }
+}

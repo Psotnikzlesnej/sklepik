@@ -106,89 +106,88 @@
   font-weight: 900;
   src: url("/fonts/metropolis-blackitalic-webfont.woff2") format("woff2");
 }
-* {
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  font-family: "Metropolis", sans-serif;
-  background-color: #F2F3F4;
-}
-
-@media (min-width: 1200px) {
-  .tile__slider {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: max-content;
-    max-width: 100%;
-    box-sizing: border-box;
-    gap: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .tile__sliderDiv {
-    overflow: none;
-    aspect-ratio: 6/4;
-    position: relative;
-  }
-  .tile__sliderDivImage {
-    width: 100%;
-    object-fit: cover;
-  }
-  .tile__sliderDivItems {
-    position: absolute;
-    left: 8%;
-    top: 30%;
-  }
-}
-.tile__sliderHeading {
-  color: white;
-  font-size: 44px;
-}
-.tile__sliderSpan {
-  color: white;
-  font-size: 44px;
-}
-.tile__sliderItems {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 10px;
-}
-.tile__sliderBtn {
-  border: 1px solid #FFFFFF;
-  padding: 21PX;
-  background-color: transparent;
-  color: white;
-  letter-spacing: 0px;
-  margin-top: 15px;
-  font-size: 14px;
-  letter-spacing: -0.28px;
-  text-transform: uppercase;
-  width: 59%;
-}
-.tile__sliderBtn:hover {
-  background-color: #F74137;
-  border-color: #F74137;
-}
-.tile__sliderImage {
-  filter: brightness(0.8);
-}
-.tile__slider {
+.tile__main {
+  user-select: none;
+  position: relative;
+  display: inline-flex;
+  margin-left: 27px;
+  width: 600px;
+  height: 400px;
   overflow: hidden;
-  padding: 0;
 }
-.tile__slider img {
-  transition-duration: 1s;
-  margin: 0 auto;
-  display: block;
+
+.tile__title {
+  width: 100%;
+  height: 44px;
+  font-family: "Metropolis", sans-serif;
+  text-align: left;
+  font-size: 44px;
+  z-index: 20;
+  color: white;
+  font-weight: bold;
+  margin-left: 49px;
+  margin-top: 120px;
 }
-.tile__slider img:hover {
-  transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
+
+.tile__dsc {
+  font-weight: lighter;
+  position: absolute;
+  margin-top: 172px;
+  margin-left: 49px;
+  text-align: left;
+  font-size: 44px;
+  font-family: "Metropois", sans-serif;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.tile__image {
+  position: absolute;
+  width: 600px;
+  height: 400px;
+}
+
+.tile__gradient {
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  background-image: linear-gradient(to left, rgba(255, 0, 0, 0), rgba(0, 0, 0, 0.55));
+}
+
+.tile__main:hover .tile__image {
+  transition: 450ms;
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
   z-index: 0;
+}
+
+.tile__button {
+  position: absolute;
+  margin-bottom: 100px;
+  margin-left: 49px;
+  bottom: 0%;
+  width: 200px;
+  height: 55px;
+  border: 1px solid #FFFFFF;
+  z-index: 2;
+}
+
+.tile__buttontext {
+  text-align: center;
+  font-family: "Metropolis", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  margin-top: 18px;
+}
+
+.tile__button:hover {
+  transform: 300ms;
+  background-color: #F74137;
+  border: none;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=tile.css.map */

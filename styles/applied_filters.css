@@ -106,20 +106,14 @@
   font-weight: 900;
   src: url("/fonts/metropolis-blackitalic-webfont.woff2") format("woff2");
 }
-body {
-  font-family: "Metropolis", sans-serif;
-}
-
 .word-container {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
   margin-top: 10px;
-  font-size: 14px;
 }
 
 .word {
-  font-size: 14px;
   margin-right: 175px;
   margin-left: 20px;
 }
@@ -138,23 +132,23 @@ body {
 }
 
 .filtry-container {
-  font-size: 14px;
   background-color: bisque;
-  width: 298px;
+  width: 300px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   border: 1px solid #E1E2E8;
   opacity: 1;
   background-color: #F2F3F4;
+  margin-left: 30px;
 }
 
 .filtry {
-  font-size: 14px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   border: 1px solid #E1E2E8;
   opacity: 1;
-  width: 298px;
+  width: 300px;
   border-bottom: none;
   font-weight: bold;
+  margin-left: 30px;
 }
 
 .text {

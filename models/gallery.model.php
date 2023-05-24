@@ -24,7 +24,7 @@ class Model {
   public function getEverything(){
    $tiles = $this -> getHomeTiles();
    $banners = $this -> getHomeBanners();
-   return ['home_tile' => $tiles , 'home_top' => $banners];
+   return ['home_tiles' => $tiles , 'home_top' => $banners];
   }
 }
 ?>
