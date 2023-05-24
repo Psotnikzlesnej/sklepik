@@ -109,7 +109,6 @@
 :host {
   font-family: "Metropolis", sans-serif;
   font-size: 12px;
-  width: -moz-max-content;
   width: max-content;
   min-width: 100px;
   display: block;
@@ -125,14 +124,12 @@
   gap: 10px;
   justify-content: space-between;
   align-items: center;
-  height: -moz-max-content;
   height: max-content;
   width: 100%;
   padding: 10px;
 }
 .select__list {
   min-width: 100%;
-  width: -moz-max-content;
   width: max-content;
   position: absolute;
   background: #fff;
@@ -174,4 +171,6 @@
     height: 100%;
     padding: 0 10px;
   }
-}/*# sourceMappingURL=select.css.map */
+}
+
+/*# sourceMappingURL=select.css.map */
