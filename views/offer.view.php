@@ -1,21 +1,11 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../styles/offer.scss">
 
-</head>
-<body>
-
-
+  <link rel="stylesheet" href="styles/offer.scss">
 
   <div class="main-container">
     
     <div class="main-text">
       <span>Łącznik jednobiegunowy (moduł) 10AX, 250V~, zaciski śrubowe</span>
-      <img src="../photos/manufacturers/Philips_logo.png" style="height: 17px;margin-right: 15px; "alt="">   
+      <img src="photos/manufacturers/Philips_logo.png" style="height: 17px;margin-right: 15px; "alt="">   
     </div>
 
 
@@ -23,9 +13,9 @@
 
     
     <?php
-    include_once '../components/carousels.php';
+    include_once 'components/carousels.php';
   ?>
-    <script src="../js/carousels.js"></script> 
+    <script src="js/carousels.js"></script> 
   
 
 
@@ -70,7 +60,7 @@
           <div class="container-product">
 
             <div class="item1">
-              <img src="../photos/categories/49.png" alt="light" class="img1">
+              <img src="photos/categories/49.png" alt="light" class="img1">
            
              <div style="display: flex; align-items: center; justify-content: center;">Biały</div>
           
@@ -79,7 +69,7 @@
 
 
             <div class="item2">
-              <img src="../photos/categories/49.png" alt="light" class="img1">
+              <img src="photos/categories/49.png" alt="light" class="img1">
               <div class="black_variant">Czarny</div>
             </div>
 
@@ -104,10 +94,3 @@
     </div>    
     </div>
   </div>
-
-
-  
-
-
-</body>
-</html>

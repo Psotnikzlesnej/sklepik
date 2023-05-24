@@ -1,5 +1,6 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="../styles/product_navbar.css">
-<?php 
+<?php
 $url = $_SERVER['REQUEST_URI'];
 $url_manipulator = new URLManipulator($url);
 
@@ -63,14 +64,19 @@ $previous_page = $pages_array[$current_index-1] ?? NULL;
 $next_page = $pages_array[$current_index+1] ?? NULL;
 ?>
 <?php include __DIR__ . '/select.component.php' ?>
-<nav class="product-navbar">
+
+<nav class="product-navbar" id="navbar-product">
     <div class="product-navbar__mode">
-        Widok:
-        <a href="." class="product-navbar__mode-link">List</a>
-        <a href="." class="product-navbar__mode-link">Grid</a>
+        <span class="product-navbar__mode-text">Widok:</span>
+        <a href="#" class="product-navbar__mode-link" id="gridViewLink">
+            <i class="product-navbar__mode-icon icon-e90a gridView"></i>
+        </a>
+        <a href="#" class="product-navbar__mode-link hidden" id="listViewLink">
+            <i class="product-navbar__mode-icon icon-e90b listView"></i>
+        </a>
     </div>
     <div class="product-navbar__right">
-        <div class="product-navbar__section">
+        <div class="product-navbar__section product-navbar__section-sort">
             <h3 class="product-navbar__section-title">Sortuj</h3>
             <custom-select class="select product-navbar__select">
                 <li slot="item" class="select__list-item" data-value="">Domyślnie</li>
@@ -80,7 +86,7 @@ $next_page = $pages_array[$current_index+1] ?? NULL;
                 <li slot="item" class="select__list-item" data-value="name_desc">Nazwa malejąco</li>
             </custom-select>
         </div>
-        <div class="product-navbar__section">
+        <div class="product-navbar__section product-navbar__section-show">
             <h3 class="product-navbar__section-title">Pokaż</h3>
             <custom-select class="select product-navbar__select">
                 <li slot="item" class="select__list-item" data-value="10">10</li>
@@ -95,7 +101,7 @@ $next_page = $pages_array[$current_index+1] ?? NULL;
                 $new_url = get_new_page_url($url_manipulator, "$previous_page");
             ?>
                 <a href="<?= $new_url ?>" class="product-navbar__page-link"><</a>
-            <?php 
+            <?php
                 endif;
                 foreach($pages_array as $page_id):
                 if($page_id != '...'):
@@ -107,7 +113,7 @@ $next_page = $pages_array[$current_index+1] ?? NULL;
             <?php else: ?>
                 <span class="product-navbar__page-dots">...</span>
             <?php endif; endforeach;
-                if($next_page): 
+                if($next_page):
                 $new_url = get_new_page_url($url_manipulator, "$next_page");
             ?>
             <a href="<?= $new_url ?>" class="product-navbar__page-link">></a>

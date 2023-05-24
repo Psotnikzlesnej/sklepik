@@ -1,27 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="..\styles\description.css">
-
-    <title>Details</title>
-</head>
-<body>
-  
-
-<div class="description_layout"></div>
-
+    <link rel="stylesheet" href="styles\description.css">
    <div class="description_box">  
     <div class="parameters_box_text_top_description">DANE PODSTAWOWE </div>    
      <div class="description_box_text_line"></div>
 </div>  
-
-    
-
-
-
 
 
       <div class="description_box_text">Simon 10 to ekonomiczna seria modułowa dla inwestycji,
@@ -52,20 +35,3 @@
             
             
             </div>
-
-<img src="test.png" class="test"></img>
-
- 
-    
-
-        
-
-
-
-
-
-
-
-
-</body>
-</html>
