@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="..\styles\featured.css">
+    <link rel="stylesheet" href="styles\featured.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
 </head> 
@@ -48,7 +48,7 @@
                             <div id="minus" class="minus">-</div>
                             <div id="count" class="count">0</div>
                             <div id="plus" class="plus">+</div>
-                            <script src="C:\xampp\htdocs\sklepik\js\featured.js"></script>
+                            <script src="js\featured.js"></script>
                         </div>
                         <div class="buybutton">
                             
@@ -74,7 +74,7 @@
                             <div id="minus" class="minus">-</div>
                             <div id="count" class="count">0</div>
                             <div id="plus" class="plus">+</div>
-                            <script src="C:\xampp\htdocs\sklepik\js\featured.js"></script>
+                            <script src="js\featured.js"></script>
                         </div>
                         <div class="buybutton">
                             
@@ -200,7 +200,7 @@
  </button>
 
 </section>
-<script src="../js/featured.js"></script> 
+<script src="js/featured.js"></script> 
 
 
 
