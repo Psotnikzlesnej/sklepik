@@ -1,11 +1,14 @@
 .color-selector {
   display: block;
+  align-items: center;
+  justify-content: center;
 }
 .color-selector__list {
   display: grid;
   grid-template-columns: repeat(5, 40px);
   gap: 15px;
-  margin: 0;
+  justify-content: center;
+  align-items: center;
   list-style: none;
   padding: 0;
 }
@@ -16,6 +19,32 @@
 }
 ::slotted(.color-selector__list-item--selected) {
   outline: 2px solid lightblue;
+}
+
+.color__wrap {
+  display: block;
+  margin-left: 30px;
+  width: 298px;
+  border: 1px solid #e1e2e8;
+  border-top: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.color__title {
+  width: 298px;
+  border: 1px solid #e1e2e8;
+  border-bottom: none;
+  margin-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  margin-bottom: -25px;
+}
+
+.color__titlehelp {
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=color_selector.css.map */
