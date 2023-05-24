@@ -1,16 +1,11 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/similar.css">
-    <script src="../js/counter.js" defer></script>
-    <link rel="stylesheet" href="../styles/counter.css">
+
+    <link rel="stylesheet" href="styles/similar.css">
+    <script src="js/counter.js" defer></script>
+    <link rel="stylesheet" href="styles/counter.css">
 </head>
 <body>
     <div class="bg">
-        <div class="text">Polecane produkty</div>
+        <div class="text">Inne z kategorii</div>
         <div class="rectangle"></div>
         <div class="border"></div>
 
@@ -43,6 +38,3 @@
         </div>
 
     </div>
-
-</body>
-</html>
