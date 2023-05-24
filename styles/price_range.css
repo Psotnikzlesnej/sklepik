@@ -76,7 +76,7 @@ price-range .range__value {
   opacity: 0.5;
   font-size: 14px;
   padding: 10px 5px;
-  -moz-appearance: textfield; 
+  -moz-appearance: textfield;
 }
 price-range .range__value--max {
   position: absolute;
@@ -85,29 +85,6 @@ price-range .range__value--max {
 price-range .range__value::-webkit-outer-spin-button, price-range .range__value::-webkit-inner-spin-button {
   -webkit-appearance: none;
   display: none;
-}
-
-.pricerange__wrap{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 30px;
-  border: 1px solid #E1E2E8;
-  border-top: none;
-  width: 298px;
-}
-.pricerange__title{
-  font-size: 14px;
-  font-family: "Metropolis", sans-serif;
-  font-weight: bold;
-  margin-left: 30px;
-  padding-top: 20px;
-  padding-left:20px;
-  width: 278px;
-  height: 30px;
-  border: 1px solid #E1E2E8;
-  border-bottom: none;
-
 }
 
 /*# sourceMappingURL=price_range.css.map */

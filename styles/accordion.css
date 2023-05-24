@@ -108,8 +108,7 @@
 }
 .sidebar {
   font-family: "Metropolis", sans-serif;
-  width: 300px;
-  margin-left: 30px;
+  width: 100%;
 }
 .sidebar__heading {
   text-transform: uppercase;
