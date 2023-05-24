@@ -13,7 +13,7 @@
 
     
     <?php
-    include_once '../components/carousels.php';
+    include_once 'components/carousels.php';
   ?>
     <script src="js/carousels.js"></script> 
   

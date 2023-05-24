@@ -7,7 +7,7 @@
   <div class="main-container">
     <div class="container">
       <div  class="menu-long">
-        <div class="photo">
+        <div class="logo">
           <img src="static/logo.png" alt="logo">
         </div>
         <div class="menu__text">

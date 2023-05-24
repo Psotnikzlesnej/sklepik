@@ -1,8 +1,6 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles\description.css">
-    <title>Details</title>
-<div class="description_layout"></div>
    <div class="description_box">  
     <div class="parameters_box_text_top_description">DANE PODSTAWOWE </div>    
      <div class="description_box_text_line"></div>

@@ -1,3 +1,258 @@
+@font-face {
+    font-family: "metropolis";
+    font-style: normal;
+    font-weight: 100;
+    src: url("/fonts/metropolis-thin-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "metropolis";
+    font-style: italic;
+    font-weight: 100;
+    src: url("/fonts/metropolis-thinitalic-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "metropolis";
+    font-style: normal;
+    font-weight: 200;
+    src: url("/fonts/metropolis-extralight-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "metropolis";
+    font-style: italic;
+    font-weight: 200;
+    src: url("/fonts/metropolis-extralightitalic-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "metropolis";
+    font-style: normal;
+    font-weight: 300;
+    src: url("/fonts/metropolis-light-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "metropolis";
+    font-style: italic;
+    font-weight: 300;
+    src: url("/fonts/metropolis-lightitalic-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "metropolis";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/metropolis-regular-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "metropolis";
+    font-style: italic;
+    font-weight: 400;
+    src: url("/fonts/metropolis-regularitalic-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "metropolis";
+    font-style: normal;
+    font-weight: 500;
+    src: url("/fonts/metropolis-medium-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "metropolis";
+    font-style: italic;
+    font-weight: 500;
+    src: url("/fonts/metropolis-mediumitalic-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "metropolis";
+    font-style: normal;
+    font-weight: 600;
+    src: url("/fonts/metropolis-semibold-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "metropolis";
+    font-style: italic;
+    font-weight: 600;
+    src: url("/fonts/metropolis-semibolditalic-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "metropolis";
+    font-style: normal;
+    font-weight: 700;
+    src: url("/fonts/metropolis-bold-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "metropolis";
+    font-style: italic;
+    font-weight: 700;
+    src: url("/fonts/metropolis-bolditalic-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "metropolis";
+    font-style: normal;
+    font-weight: 800;
+    src: url("/fonts/metropolis-extrabold-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "metropolis";
+    font-style: italic;
+    font-weight: 800;
+    src: url("/fonts/metropolis-extrabolditalic-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "metropolis";
+    font-style: normal;
+    font-weight: 900;
+    src: url("/fonts/metropolis-black-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "metropolis";
+    font-style: italic;
+    font-weight: 900;
+    src: url("/fonts/metropolis-blackitalic-webfont.woff2") format("woff2");
+}
+
+body {
+    font-family: "Metropolis", sans-serif;
+}
+
+.parameters_box_text_top_description {
+    height: 50px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #111111;
+    opacity: 1;
+    margin-bottom: 17px;
+}
+
+.description_box_text_line {
+    left: 930px;
+    width: 60px;
+    height: 3px;
+    background: #f74137 0% 0% no-repeat padding-box;
+    opacity: 1;
+    position: relative;
+}
+
+.description_layout {
+    position: absolute;
+    top: 1049px;
+    left: 0px;
+    width: 1920px;
+    height: 532px;
+    opacity: 1;
+}
+
+.description_box {
+    left: 0px;
+    width: 1920px;
+    height: 71px;
+    opacity: 1;
+    border-bottom: 1px solid #e1e2e8;
+    position: relative;
+}
+
+.description_box_text {
+    left: 160px;
+    width: 1511px;
+    height: 177px;
+    text-align: left;
+    letter-spacing: -0.38px;
+    color: #111111;
+    opacity: 1;
+    position: relative;
+    margin-top: 65px;
+}
+
+.description_box_text2 {
+    left: 160px;
+    width: 1432px;
+    height: 310px;
+    text-align: left;
+    letter-spacing: -0.32px;
+    color: #111111;
+    opacity: 1;
+    position: relative;
+    margin-top: -50px;
+}
+
+.description_span_big_top {
+    top: 0px;
+    left: 0px;
+    width: 330px;
+    height: 16px;
+    text-align: left;
+    letter-spacing: -0.32px;
+    color: #111111;
+    text-transform: uppercase;
+}
+
+.description_span_big_down {
+    top: 189px;
+    left: 0px;
+    width: 579px;
+    height: 16px;
+    text-align: left;
+    letter-spacing: -0.32px;
+    color: #111111;
+    text-transform: uppercase;
+    position: absolute;
+}
+
+.description_span1 {
+    top: 63px;
+    left: 0px;
+    width: 1389px;
+    height: 16px;
+    text-align: left;
+    letter-spacing: -0.32px;
+    color: #111111;
+    position: absolute;
+}
+
+.description_span2 {
+    top: 126px;
+    left: 0px;
+    width: 1425px;
+    height: 16px;
+    text-align: left;
+    letter-spacing: -0.32px;
+    color: #111111;
+    position: absolute;
+}
+
+.description_span_down {
+    top: 252px;
+    left: 0px;
+    width: 1233px;
+    height: 16px;
+    text-align: left;
+    letter-spacing: -0.32px;
+    color: #111111;
+    position: absolute;
+}
+
+.test {
+    left: 565px;
+    width: 790px;
+    height: 420px;
+    opacity: 1;
+    position: relative;
+    margin-top: 40px;
+}
 
 
 /*# sourceMappingURL=description.css.map */

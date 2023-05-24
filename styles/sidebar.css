@@ -204,16 +204,6 @@ a {
   font-weight: 400;
 }
 
-.sidebar__filtry{
-  margin-left: 30px;
-}
-.sidebar__colorpicker{
-  width: 298px;
-  border: 1px solid #e1e2e8;
-  margin-left: 30px;
-  height: auto;
-}
-
 @media (max-width: 767px) {
   body {
     margin: 15px;

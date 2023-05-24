@@ -1,6 +1,5 @@
 
     <link rel="stylesheet" href="styles\parameters.css">
-<div class="parameters_layout"></div>
 
    <div class="parameters_box">
 

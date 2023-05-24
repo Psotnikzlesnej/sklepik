@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="../styles/carousel_horizontal.scss">
+    <link rel="stylesheet" href="styles/carousel_horizontal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <link rel="stylesheet" href="../styles/carousel_vertical.scss">
+    <link rel="stylesheet" href="styles/carousel_vertical.css">
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,18 +35,18 @@
   <ul class="slides-container" id="slides-container">
     
  
-  <div class="slide"><img class="image_149" src="..\photos\categories\Image 149.png"></div>
-  <div class="slide"><img class="image_149" src="..\photos\categories\Image 149.png"></div>
-  <div class="slide"><img class="image_149" src="..\photos\categories\Image 149.png"></div>
-  <div class="slide"><img  class="image_149" src="..\photos\categories\Image 149.png"></div>
-  <div class="slide"><img class="image_149" src="..\photos\categories\Image 149.png"></div>
+  <div class="slide"><img class="image_149" src="photos\categories\Image 149.png"></div>
+  <div class="slide"><img class="image_149" src="photos\categories\Image 149.png"></div>
+  <div class="slide"><img class="image_149" src="photos\categories\Image 149.png"></div>
+  <div class="slide"><img  class="image_149" src="photos\categories\Image 149.png"></div>
+  <div class="slide"><img class="image_149" src="photos\categories\Image 149.png"></div>
 
    
-  <div class="slide"><img class="image_149" src="..\photos\categories\Image 149.png"></div>
-  <div class="slide"><img class="image_149" src="..\photos\categories\Image 149.png"></div>
-  <div class="slide"><img class="image_149" src="..\photos\categories\Image 149.png"></div>
-  <div class="slide"><img class="image_149" src="..\photos\categories\Image 149.png"></div>
-  <div class="slide"><img class="image_149" src="..\photos\categories\Image 149.png"></div>
+  <div class="slide"><img class="image_149" src="photos\categories\Image 149.png"></div>
+  <div class="slide"><img class="image_149" src="photos\categories\Image 149.png"></div>
+  <div class="slide"><img class="image_149" src="photos\categories\Image 149.png"></div>
+  <div class="slide"><img class="image_149" src="photos\categories\Image 149.png"></div>
+  <div class="slide"><img class="image_149" src="photos\categories\Image 149.png"></div>
 
   </ul>
 
@@ -76,10 +76,10 @@
   <ul class="slides-container_horizontal" id="slides-container_horizontal">
     
 
-  <div class="slide_horizontal"><img src="../photos/products/Photo – 1.png"></div>
-  <div class="slide_horizontal"><img src="../photos/products/Photo – 1.png"></div>
-  <div class="slide_horizontal"><img src="../photos/products/Photo – 1.png"></div>
-  <div class="slide_horizontal"><img src="../photos/products/Photo – 1.png"></div>
+  <div class="slide_horizontal"><img src="photos/products/Photo – 1.png"></div>
+  <div class="slide_horizontal"><img src="photos/products/Photo – 1.png"></div>
+  <div class="slide_horizontal"><img src="photos/products/Photo – 1.png"></div>
+  <div class="slide_horizontal"><img src="photos/products/Photo – 1.png"></div>
   </ul>
 
 
@@ -89,7 +89,7 @@
   <i class="fa-solid fa-angle-right"></i>
 
   </button>
-  <script src="../js/carousels.js"></script> 
+  <script src="js/carousels.js"></script> 
 
 
 
