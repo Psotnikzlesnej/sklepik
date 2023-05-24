@@ -172,8 +172,8 @@ body {
   background: #ffffff 0% 0% no-repeat padding-box;
   opacity: 1;
   overflow: hidden;
-  border: 1px solid #E1E2E8;
-
+  border-right: 1px solid #E1E2E8;
+  border-bottom: 1px solid #E1E2E8;
 }
 
 .seeallproducts {
@@ -275,12 +275,9 @@ body {
   margin-top: 80px;
 }
 
-
 .addtocart {
   display: none;
 }
-
-
 
 .buybutton {
   width: 50px;
@@ -301,7 +298,7 @@ body {
   height: 48px;
 }
 
-/*# sourceMappingURL=similar.css.map */
+
 
 
 /*# sourceMappingURL=item.css.map */
