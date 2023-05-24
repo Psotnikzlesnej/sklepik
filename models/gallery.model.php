@@ -7,17 +7,23 @@ class Model {
     $this ->mysqli = $mysqli;
   }
   private function getHomeBanners(){
+    $banners = [];
   $query = "SELECT title, description, image_name, link, type, alt, mask FROM `banner` 
   WHERE visible=true AND type = 'home_top' LIMIT 0,5";
   $result = $this ->mysqli ->query($query);
-  $banners = $result -> fetch_assoc();
+  while($banner = $result -> fetch_assoc()){
+    $banners[] = $banner;
+  }
   return $banners;
   }
   private function getHomeTiles(){
+    $tiles = [];
     $query = "SELECT title, image_name, link, type, alt, mask FROM `banner` 
   WHERE visible=true AND type = 'home_tile'";
   $result = $this->mysqli ->query($query);
-  $tiles = $result -> fetch_assoc();
+  while($tile = $result -> fetch_assoc()){
+    $tiles[] = $tile;
+  }
   return $tiles;
   }
 
