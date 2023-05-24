@@ -69,10 +69,10 @@ $next_page = $pages_array[$current_index+1] ?? NULL;
     <div class="product-navbar__mode">
         <span class="product-navbar__mode-text">Widok:</span>
         <a href="#" class="product-navbar__mode-link" id="gridViewLink">
-            <i class="product-navbar__mode-icon gridView"></i>
+            <i class="product-navbar__mode-icon icon-e90a gridView"></i>
         </a>
         <a href="#" class="product-navbar__mode-link hidden" id="listViewLink">
-            <i class="product-navbar__mode-icon listView"></i>
+            <i class="product-navbar__mode-icon icon-e90b listView"></i>
         </a>
     </div>
     <div class="product-navbar__right">

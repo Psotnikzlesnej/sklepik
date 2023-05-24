@@ -163,14 +163,6 @@
   background: #E30815;
 }
 
-.listView {
-  content: url(../static/listView.svg);
-}
-
-.gridView {
-  content: url(../static/gridView.svg);
-}
-
 @media (min-width: 320px) and (max-width: 767px) {
   body {
     padding: 0;
