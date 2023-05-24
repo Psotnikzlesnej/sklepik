@@ -173,10 +173,11 @@ body {
 .description_box_text {
     left: 160px;
     height: 131px;
-    width: 80%;
+    width: 82%;
     text-align: left;
     letter-spacing: -0.38px;
     color: #111111;
+    font-size: 17px;
     opacity: 1;
     position: relative;
     margin-top: 28px;
