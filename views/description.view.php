@@ -1,12 +1,13 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles\description.css">
+
+
    <div class="description_box">  
     <div class="parameters_box_text_top_description">Opis produktu  <div class="description_box_text_line"></div> </div>    
    
+
 </div>  
-
-
       <div class="description_box_text">Simon 10 to ekonomiczna seria modułowa dla inwestycji,
          na których zróżnicowana kolorystyka nie jest wymagana. Dwa podstawowe kolory: biały i kremowy oraz
           pełen przekrój asortymentu łączników i gniazd pozwolą na kompleksowe wyposażenie każdego mieszkania lub biura.
@@ -35,3 +36,4 @@
             
             
             </div>
+

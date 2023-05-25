@@ -1,36 +1,33 @@
-var countElement = document.getElementById("count");
-var minusButton = document.getElementById("minus");
-var plusButton = document.getElementById("plus");
+(()=>{
+    let currIndex = 0;
+    const elements = document.querySelectorAll('.featured-carousel__element')
+    const leftArrow = document.querySelector('.featured-carousel__arrow--left')
+    const rightArrow = document.querySelector('.featured-carousel__arrow--right')
+    console.log(elements)
 
-var count = 0;
-
-function updateCount(value) {
-    count += value;
-    if (count < 0) {
-        count = 0;
+    leftArrow.addEventListener('click', e=>{
+    const oldIndex = currIndex
+    if(--currIndex < 0){
+        currIndex = elements.length - 1
     }
-    countElement.textContent = count;
-}
+    updateElement(oldIndex)
+    })
 
-minusButton.addEventListener("click", function() {
-    updateCount(-1);
-});
+    rightArrow.addEventListener('click', rightArrowClick)
 
-plusButton.addEventListener("click", function() {
-    updateCount(1);
-});
+    function rightArrowClick(){
+    const oldIndex = currIndex
+    if(++currIndex > elements.length - 1){
+        currIndex = 0
+    }
+    updateElement(oldIndex)
+    }
 
-const slidesContainer = document.getElementById("slides-container_horizontal");
-const slide = document.querySelector(".slide_horizontal");
-const prevButton = document.getElementById("slide-arrow-prev_horizontal");
-const nextButton = document.getElementById("slide-arrow-next_horizontal");
+    function updateElement(oldIndex){
+        console.log(oldIndex)
+        elements[oldIndex].classList.remove('featured-carousel__element--current')
+        elements[currIndex].classList.add('featured-carousel__element--current')
+    }
 
-nextButton.addEventListener("click", () => {
-    const slideWidth = slide.clientWidth;
-    slidesContainer.scrollLeft += slideWidth;
-});
-
-prevButton.addEventListener("click", () => {
-    const slideWidth = slide.clientWidth;
-    slidesContainer.scrollLeft -= slideWidth;
-});
+    updateElement(0)
+})()

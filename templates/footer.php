@@ -15,7 +15,7 @@
                 <p class="footer__heading">
                     INFORMACJE
                     <a class="footer__mobileViewBtn icon" href="javascript:void(0);" onclick="toggleElementVisibility1()">
-                        <i class="footer__btnIcon plus" id="changeIcon1"></i>
+                        <i class="footer__btnIcon footer-plus" id="changeIcon1"></i>
                     </a>
                 </p>
                 <div class="footer__line">
@@ -49,7 +49,7 @@
                 <p class="footer__heading">
                     INFORMACJE
                     <a class="footer__mobileViewBtn icon" href="javascript:void(0);" onclick="toggleElementVisibility2()">
-                        <i class="footer__btnIcon plus" id="changeIcon2"></i>
+                        <i class="footer__btnIcon footer-plus" id="changeIcon2"></i>
                     </a>
                 </p>
                 <div class="footer__line">
@@ -83,7 +83,7 @@
                 <p class="footer__heading">
                     MOJE KONTO
                     <a class="footer__mobileViewBtn icon" href="javascript:void(0);" onclick="toggleElementVisibility3()">
-                        <i class="footer__btnIcon plus" id="changeIcon3"></i>
+                        <i class="footer__btnIcon footer-plus" id="changeIcon3"></i>
                     </a>
                 </p>
                 <div class="footer__line">
@@ -117,7 +117,7 @@
                 <p class="footer__heading">
                     INFORMACJE
                     <a class="footer__mobileViewBtn icon" href="javascript:void(0);" onclick="toggleElementVisibility4()">
-                        <i class="footer__btnIcon plus" id="changeIcon4"></i>
+                        <i class="footer__btnIcon footer-plus" id="changeIcon4"></i>
                     </a>
                 </p>
                 <div class="footer__line">

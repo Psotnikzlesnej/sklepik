@@ -124,11 +124,11 @@ body {
 .footer__mobileViewBtn {
   height: 16px;
 }
-.footer .plus {
+.footer .footer-plus {
   content: url(../static/plus.svg);
   height: 100%;
 }
-.footer .minus {
+.footer .footer-minus {
   content: url(../static/minus.svg);
   height: 100%;
 }

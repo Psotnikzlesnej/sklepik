@@ -115,6 +115,7 @@ body {
   height: 851px;
   background: #f2f3f4 0% 0% no-repeat padding-box;
   opacity: 1;
+  display: inline-block;
 }
 
 .nag {
