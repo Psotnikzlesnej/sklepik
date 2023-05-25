@@ -14,6 +14,15 @@ body {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    &__icon1 {
+        content: url(../photos/about_us/delivery.png);
+    }
+        &__icon2 {
+            content: url(../photos/about_us/search.png);
+    }
+        &__icon3 {
+            content: url(../photos/about_us/refund.png);
+    }
     &__bg {
         position: absolute;
         height: 100%;
@@ -178,5 +187,13 @@ body {
         &__btnSpan {
             font-size: 14px;
         }
+    }
+}
+
+@media (max-width:767px) {
+    .whyUs__img {
+        content: '';
+        width: 0;
+        height: 0;
     }
 }

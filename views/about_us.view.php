@@ -24,15 +24,15 @@
             </p>
             <ul class="whyUs__list">
                 <li class="whyUs__listItem">
-                    <img class="whyUs__listItemIcon" src="photos/about_us/icon1.png" alt="Szybka wysyłka">
+                    <img class="whyUs__listItemIcon  whyUs__icon1 alt="Szybka wysyłka">
                     <span class="whyUs__listItemSpan">szybka wysyłka</span>
                 </li>
                 <li class="whyUs__listItem">
-                    <img class="whyUs__listItemIcon" src="photos/about_us/icon2.png" alt="Szeroki asortyment">
+                    <img class="whyUs__listItemIcon  whyUs__icon2" alt="Szeroki asortyment">
                     <span class="whyUs__listItemSpan">szeroki asortyment</span>
                 </li>
                 <li class="whyUs__listItem">
-                    <img class="whyUs__listItemIcon" src="photos/about_us/icon3.png" alt="Bezpieczne zwroty">
+                    <img class="whyUs__listItemIcon  whyUs__icon3" alt="Bezpieczne zwroty">
                     <span class="whyUs__listItemSpan">bezpieczne zwroty</span>
                 </li>
             </ul>

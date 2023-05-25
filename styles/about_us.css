@@ -123,6 +123,15 @@ body {
   flex-direction: column;
   padding: 20px;
 }
+.whyUs__icon1 {
+  content: url(../photos/about_us/delivery.png);
+}
+.whyUs__icon2 {
+  content: url(../photos/about_us/search.png);
+}
+.whyUs__icon3 {
+  content: url(../photos/about_us/refund.png);
+}
 .whyUs__bg {
   position: absolute;
   height: 100%;
@@ -285,5 +294,10 @@ body {
     font-size: 14px;
   }
 }
-
-/*# sourceMappingURL=about_us.css.map */
+@media (max-width: 767px) {
+  .whyUs__img {
+    content: "";
+    width: 0;
+    height: 0;
+  }
+}/*# sourceMappingURL=about_us.css.map */
