@@ -9,6 +9,7 @@ body {
     height: 851px;
     background: #f2f3f4 0% 0% no-repeat padding-box;
     opacity: 1;
+    display: inline-block;
 }
 
 .nag {
@@ -170,7 +171,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
-    transition: opacity .5s;
+    transition: opacity 0.5s;
     //background: red;
 }
 
@@ -179,10 +180,10 @@ body {
 }
 
 .product_tile-hover {
-    transition: transform .5s;
+    transition: transform 0.5s;
 }
 
-.product_tile:hover > .product_tile-hover {
+.product_tile:hover>.product_tile-hover {
     transform: translateY(-60px);
 }
 
