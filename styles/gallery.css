@@ -4,11 +4,18 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   box-sizing: border-box;
-  padding-top: 30px;
 }
-
-.gallery {
-  padding: 20px;
+@media (max-width: 1300px) {
+  .tile-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+@media (max-width: 968px) {
+  .tile-container {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+  }
 }
 
 /*# sourceMappingURL=gallery.css.map */

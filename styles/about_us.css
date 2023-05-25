@@ -121,7 +121,6 @@ body {
   color: #FFF;
   display: flex;
   flex-direction: column;
-  padding: 20px;
 }
 .whyUs__icon1 {
   content: url(../photos/about_us/delivery.png);
@@ -132,6 +131,9 @@ body {
 .whyUs__icon3 {
   content: url(../photos/about_us/refund.png);
 }
+.whyUs__img {
+  position: absolute;
+}
 .whyUs__bg {
   position: absolute;
   height: 100%;
@@ -141,6 +143,7 @@ body {
   top: 0;
 }
 .whyUs__content {
+  padding: 20px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -204,6 +207,7 @@ body {
   margin-top: 5px;
 }
 .whyUs__btn {
+  font-weight: bold;
   padding: 20px;
   background-color: #F74137;
   border: 0;
@@ -224,11 +228,9 @@ body {
 
 @media (min-width: 768px) {
   .whyUs__img {
-    content: url("../photos/about_us/Image.jpg");
+    object-fit: cover;
+    object-position: center top;
     opacity: 0.5;
-    position: absolute;
-    left: 0;
-    top: 0;
     width: 100%;
     height: auto;
   }
@@ -247,6 +249,7 @@ body {
     margin-bottom: 5px;
   }
   .whyUs__listItemSpan {
+    font-weight: bold;
     margin-top: 5px;
   }
   .whyUs__btn {
@@ -292,13 +295,6 @@ body {
   }
   .whyUs__btnSpan {
     font-size: 14px;
-  }
-}
-@media (max-width: 767px) {
-  .whyUs__img {
-    content: "";
-    width: 0;
-    height: 0;
   }
 }
 

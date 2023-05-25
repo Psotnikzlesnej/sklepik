@@ -13,7 +13,6 @@ body {
     color: #FFF;
     display: flex;
     flex-direction: column;
-    padding: 20px;
     &__icon1 {
         content: url(../photos/about_us/delivery.png);
     }
@@ -22,6 +21,9 @@ body {
     }
         &__icon3 {
             content: url(../photos/about_us/refund.png);
+    }
+    &__img {
+        position: absolute;
     }
     &__bg {
         position: absolute;
@@ -32,6 +34,7 @@ body {
         top: 0;
     }
     &__content {
+        padding: 20px;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -95,6 +98,7 @@ body {
         margin-top: 5px;
     }
     &__btn {
+        font-weight: bold;
         padding: 20px;
         background-color: #F74137;
         border: 0;
@@ -116,11 +120,9 @@ body {
 @media (min-width: 768px) {
     .whyUs {
         &__img {
-            content: url("../photos/about_us/Image.jpg");
+            object-fit: cover;
+            object-position: center top;
             opacity: 0.5;
-            position: absolute;
-            left: 0;
-            top: 0;
             width: 100%;
             height: auto;
         }
@@ -139,6 +141,7 @@ body {
             margin-bottom: 5px;
         }
         &__listItemSpan {
+            font-weight: bold;
             margin-top: 5px;
         }
         &__btn {
@@ -187,13 +190,5 @@ body {
         &__btnSpan {
             font-size: 14px;
         }
-    }
-}
-
-@media (max-width:767px) {
-    .whyUs__img {
-        content: '';
-        width: 0;
-        height: 0;
     }
 }

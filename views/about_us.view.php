@@ -8,7 +8,7 @@
 </head>
 <body>
     <section class="whyUs">
-        <img src="" alt="" class="whyUs__img">
+        <img src="photos/about_us/Image.jpg" alt="" class="whyUs__img">
         <div class="whyUs__content">
             <h3 class="whyUs__heading">Sprawdź dlaczego my</h3>
             <div class="whyUs__line">

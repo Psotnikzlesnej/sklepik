@@ -1,14 +1,13 @@
 // @use "../utils/styles/fonts";
 // @use "../utils/styles/variables";
 
-.carousel {
+.home-carousel {
   position: relative;
 
   &__dots-container {
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    bottom: -25px;
+    width: max-content;
+    margin: 5px auto;
+    position: relative;
   }
 
   &__dot {
@@ -18,11 +17,15 @@
     height: 15px;
     width: 15px;
     opacity: .8;
-    background: black;
+    background: #323940;
     border-radius: 50%;
 
     &--current {
       background: #F74137;
+    }
+
+    &:first-child {
+      margin: 0;
     }
   }
 
@@ -36,6 +39,7 @@
     &-image {
       width: 100%;
       height: 100%;
+      object-position: center top;
       object-fit: cover;
     }
 
@@ -52,7 +56,7 @@
   &__container {
     overflow: hidden;
     position: relative;
-    height: 400px;
+    height: 500px;
     width: 100%;
   }
 
@@ -60,8 +64,8 @@
     user-select: none;
     cursor: pointer;
     background-color: white;
-    color: black;
-    opacity: .8;
+    color: #323940;
+    opacity: .6;
     position: absolute;
     z-index: 2;
     width: 50px;
