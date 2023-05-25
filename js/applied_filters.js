@@ -4,6 +4,6 @@ removeButtons.forEach(button => {
         const word = button.getAttribute('data-word');
         const wordContainer = button.parentNode;
         wordContainer.remove();
-        console.log(`Usunięto słowo: ${word}`);
+        // console.log(`Usunięto słowo: ${word}`);
     });
 });

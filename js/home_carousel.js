@@ -1,9 +1,9 @@
 (()=>{
   let currIndex = 0;
-  const elements = document.querySelectorAll('.carousel__element')
-  const dots = document.querySelectorAll('.carousel__dot')
-  const leftArrow = document.querySelector('.carousel__arrow--left')
-  const rightArrow = document.querySelector('.carousel__arrow--right')
+  const elements = document.querySelectorAll('.home-carousel__element')
+  const dots = document.querySelectorAll('.home-carousel__dot')
+  const leftArrow = document.querySelector('.home-carousel__arrow--left')
+  const rightArrow = document.querySelector('.home-carousel__arrow--right')
 
   let timeout = setTimeout(rightArrowClick, 2500)
 
@@ -37,10 +37,10 @@
   })
 
   function updateElement(oldIndex){
-    dots[oldIndex].classList.remove('carousel__dot--current');
-    dots[currIndex].classList.add('carousel__dot--current');
-    elements[oldIndex].classList.remove('carousel__element--current')
-    elements[currIndex].classList.add('carousel__element--current')
+    dots[oldIndex].classList.remove('home-carousel__dot--current');
+    dots[currIndex].classList.add('home-carousel__dot--current');
+    elements[oldIndex].classList.remove('home-carousel__element--current')
+    elements[currIndex].classList.add('home-carousel__element--current')
     timeout = setTimeout(rightArrowClick, 2500)
   }
 

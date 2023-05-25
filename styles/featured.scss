@@ -6,6 +6,8 @@ body {
 }
 
 .featured {
+    margin-top: 48px;
+
     &__title {
         font-family: "Metropolis", sans-serif;
         text-align: center;
@@ -42,8 +44,9 @@ body {
         text-decoration: none;
         text-transform: uppercase;
         margin: 35px 0;
-        width: 318px;
-        height: 55px;
+        width: 300px;
+        height: 50px;
+        font-size: 14px;
         background: #f74137 0% 0% no-repeat padding-box;
         opacity: 1;
         margin-left: auto;
@@ -60,13 +63,29 @@ body {
         position: relative;
 
         &__element{
+            height: 100%;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
             display: none;
 
             &--current {
-                height: 100%;
                 display: grid;
-                grid-template-columns: repeat(5, 1fr);
-                gap: 20px;
+            }
+
+            @media (max-width: 1400px){
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            @media (max-width: 1200px){
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            @media (max-width: 1000px){
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @media (max-width: 700px){
+                grid-template-columns: 1fr;
             }
         }
 

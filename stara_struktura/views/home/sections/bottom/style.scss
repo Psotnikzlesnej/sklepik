@@ -101,6 +101,7 @@ body {
     }
 
     &__btn {
+        font-weight: bold;
         padding: 20px;
         background-color: #F74137;
         border: 0;
@@ -126,6 +127,8 @@ body {
     .whyUs {
 
         &__img {
+            object-fit: cover;
+            object-position: 0 50%;
             content: url("Image.jpg");
             opacity: 0.5;
             position: absolute;
@@ -154,6 +157,7 @@ body {
         }
 
         &__listItemSpan {
+            font-weight: bold;
             margin-top: 5px;
         }
 

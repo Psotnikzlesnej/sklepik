@@ -1,11 +1,11 @@
 
 INSERT INTO `banner` (`ID`, `title`, `description`, `image_name`, `link`, `visible`, `type`, `alt`, `mask`) VALUES
-(1, 'Poznaj SEDNA ', '<h2> Schneider Electric </h2> <p> Sedna to osprzęt elektroinstalacyjny o wyrazistym kształcie oraz unikalnej formie.</p>','Group_40.jpg', 'http://biblegateway.com/congue/elementum/in/hac/habitasse/platea/dictumst.json?neque=massa&libero=volutpat&convallis=convallis&eget=morbi&eleifend=odio&luctus=odio&ultricies=elementum&eu=eu&nibh=interdum&quisque=eu&id=tincidunt&justo=in&sit=leo&amet=maece', 1, 'home_top', 'baner strony głównej', 1),
-(2, 'Philips HUE', '<h2> Oświetl swój dom </h2> <p>Wyobraź sobie, że jednym dotknięciem wyłączasz wszystkie światła.</p>', 'Mask_Group_40.jpg', 'http://biblegateway.com/congue/elementum/in/hac/habitasse/platea/dictumst.json?neque=massa&libero=volutpat&convallis=convallis&eget=morbi&eleifend=odio&luctus=odio&ultricies=elementum&eu=eu&nibh=interdum&quisque=eu&id=tincidunt&justo=in&sit=leo&amet=maece', 1, 'home_top', '2 baner strony głównej', 1),
+(1, 'Poznaj SEDNA ', '<h2> Schneider Electric </h2> <p> Sedna to osprzęt elektroinstalacyjny o wyrazistym kształcie oraz unikalnej formie.</p>','Group_40.png', 'http://biblegateway.com/congue/elementum/in/hac/habitasse/platea/dictumst.json?neque=massa&libero=volutpat&convallis=convallis&eget=morbi&eleifend=odio&luctus=odio&ultricies=elementum&eu=eu&nibh=interdum&quisque=eu&id=tincidunt&justo=in&sit=leo&amet=maece', 1, 'home_top', 'baner strony głównej', 1),
+(2, 'Philips HUE', '<h2> Oświetl swój dom </h2> <p>Wyobraź sobie, że jednym dotknięciem wyłączasz wszystkie światła.</p>', 'Mask_Group_40.png', 'http://biblegateway.com/congue/elementum/in/hac/habitasse/platea/dictumst.json?neque=massa&libero=volutpat&convallis=convallis&eget=morbi&eleifend=odio&luctus=odio&ultricies=elementum&eu=eu&nibh=interdum&quisque=eu&id=tincidunt&justo=in&sit=leo&amet=maece', 1, 'home_top', '2 baner strony głównej', 1),
 (3, 'Pomoc Eksperta', '<h2> Doradzamy </h2>', 'image_203.jpg', 'http://biblegateway.com/congue/elementum/in/hac/habitasse/platea/dictumst.json?neque=massa&libero=volutpat&convallis=convallis&eget=morbi&eleifend=odio&luctus=odio&ultricies=elementum&eu=eu&nibh=interdum&quisque=eu&id=tincidunt&justo=in&sit=leo&amet=maece', 1, 'home_tile', 'home tile ekspert', 1),
 (4, 'Szukaj Wygodnie', '<h2> Elhurt plus </h2>', 'image_204.jpg', 'http://epa.gov/habitasse/platea.xml?aenean=nisi&fermentum=at&donec=nibh&ut=in&mauris=hac&eget=habitasse&massa=platea&tempor=dictumst&convallis=aliquam&nulla=augue&neque=quam&libero=sollicitudin&convallis=vitae&eget=consectetuer&eleifend=eget&luctus=rutrum', 1, 'home_tile', 'home tile szukaj', 1),
 (5, 'Seria Unica', '<h2> Wyjątkowy wzór </h2>', 'image_205.jpg', 'https://webnode.com/at/turpis/a.jpg?vulputate=eleifend&luctus=quam&cum=a&sociis=odio&natoque=in&penatibus=hac&et=habitasse&magnis=platea&dis=dictumst&parturient=maecenas&montes=ut&nascetur=massa&ridiculus=quis&mus=augue&vivamus=luctus&vestibulum=tincidunt', 1, 'home_tile', 'home tile unica', 1),
-(6, 'Sprawdź dlaczego my', 'Początki działalności to rok 2002r i otwarcie hurtowni elektrycznej, oferującej podstawoer produkty do instalacji elektrycznych jak i również materiały używane w przemyśle wydobywczym. Firma dostarczała produkty trudno dostępne do kopalń, zakładów przemysłowych <img src="icon1.png"> <img src="icon2.png"> <img src="icon3.png">', 'image.jpg', 'http://wiley.com/condimentum.jsp?natoque=nec&penatibus=nisi&et=volutpat&magnis=eleifend&dis=donec&parturient=ut&montes=dolor&nascetur=morbi&ridiculus=vel&mus=lectus&etiam=in&vel=quam&augue=fringilla&vestibulum=rhoncus&rutrum=mauris&rutrum=enim&neque=leo&a', 1, 'home_bottom', 'about_us', 0),
+(6, 'Sprawdź dlaczego my', 'Początki działalności to rok 2002r i otwarcie hurtowni elektrycznej, oferującej podstawoer produkty do instalacji elektrycznych jak i również materiały używane w przemyśle wydobywczym. Firma dostarczała produkty trudno dostępne do kopalń, zakładów przemysłowych <img src="icon1.png"> <img src="icon2.png"> <img src="icon3.png">', 'test.png', 'http://wiley.com/condimentum.jsp?natoque=nec&penatibus=nisi&et=volutpat&magnis=eleifend&dis=donec&parturient=ut&montes=dolor&nascetur=morbi&ridiculus=vel&mus=lectus&etiam=in&vel=quam&augue=fringilla&vestibulum=rhoncus&rutrum=mauris&rutrum=enim&neque=leo&a', 1, 'home_bottom', 'about_us', 0),
 (7, 'DJI Mavic Air 2', '<h2> Fly More Combo </h2>', 'img_04.jpg', 'https://guardian.co.uk/curabitur/convallis/duis/consequat.xml?cum=eu&sociis=sapien&natoque=cursus&penatibus=vestibulum&et=proin&magnis=eu&dis=mi&parturient=nulla&montes=ac&nascetur=enim&ridiculus=in&mus=tempor&vivamus=turpis&vestibulum=nec&sagittis=euismo', 1, 'store', 'banner sklep', 1);
 
 INSERT INTO `category` (`ID`, `name`, `image_name`, `parent`, `level`,`description`) VALUES
@@ -59,9 +59,9 @@ INSERT INTO `filter_value` (`ID`, `ID_filter`, `value`) VALUES
 (21, 4, '100');
 
 INSERT INTO `flag` (`ID`, `name`) VALUES
-(1, 'Nowość'),
-(2, 'Dostępny'),
-(3, 'Promocja');
+(1, 'new'),
+(2, 'promo'),
+(3, 'featured');
 
 INSERT INTO `parameter_value` (`ID`, `value`, `parameter`) VALUES
 (1, '33', 'parametr'),

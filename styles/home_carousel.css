@@ -1,56 +1,59 @@
-.carousel {
+.home-carousel {
   position: relative;
 }
-.carousel__dots-container {
-  left: 50%;
-  transform: translateX(-50%);
-  position: absolute;
-  bottom: -25px;
+.home-carousel__dots-container {
+  width: max-content;
+  margin: 5px auto;
+  position: relative;
 }
-.carousel__dot {
+.home-carousel__dot {
   margin-left: 10px;
   cursor: pointer;
   display: inline-block;
   height: 15px;
   width: 15px;
   opacity: 0.8;
-  background: black;
+  background: #323940;
   border-radius: 50%;
 }
-.carousel__dot--current {
+.home-carousel__dot--current {
   background: #F74137;
 }
-.carousel__element {
+.home-carousel__dot:first-child {
+  margin: 0;
+}
+.home-carousel__element {
   opacity: 0;
   transition: opacity 1s;
   position: absolute;
   width: 100%;
   height: 100%;
 }
-.carousel__element-image {
+.home-carousel__element-image {
   width: 100%;
   height: 100%;
+  object-position: center top;
   object-fit: cover;
 }
-.carousel__element--current {
+.home-carousel__element--current {
   opacity: 1;
 }
-.carousel__element-content {
+.home-carousel__element-content {
   padding: 70px;
   position: absolute;
 }
-.carousel__container {
+.home-carousel__container {
   overflow: hidden;
   position: relative;
-  height: 400px;
+  height: 500px;
   width: 100%;
 }
-.carousel__arrow {
+.home-carousel__arrow {
   user-select: none;
   cursor: pointer;
   background-color: white;
-  color: black;
-  opacity: 0.8;
+  color: #323940;
+  opacity: 0.6;
   position: absolute;
   z-index: 2;
   width: 50px;
@@ -61,10 +64,10 @@
   align-items: center;
   display: flex;
 }
-.carousel__arrow--left {
+.home-carousel__arrow--left {
   left: 0;
 }
-.carousel__arrow--right {
+.home-carousel__arrow--right {
   right: 0;
 }
 

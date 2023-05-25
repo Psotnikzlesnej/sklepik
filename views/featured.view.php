@@ -14,17 +14,13 @@
             <i class="icon-arrow-left"></i>
         </div>
         <div class="featured-carousel__product-container">
-            <div class="featured-carousel__element">
-                <div class="featured-carousel__product"><?php include __DIR__ .'/../components/item.component.php' ?></div>
-                <div class="featured-carousel__product"><?php include __DIR__ .'/../components/item.component.php' ?></div>
-                <div class="featured-carousel__product"><?php include __DIR__ .'/../components/item.component.php' ?></div>
-                <div class="featured-carousel__product"><?php include __DIR__ .'/../components/item.component.php' ?></div>
-                <div class="featured-carousel__product"><?php include __DIR__ .'/../components/item.component.php' ?></div>
-            </div>
-            <div class="featured-carousel__element">
-                <div class="featured-carousel__product"><?php include __DIR__ .'/../components/item.component.php' ?></div>
-                <div class="featured-carousel__product"><?php include __DIR__ .'/../components/item.component.php' ?></div>
-            </div>
+            <div class="featured-carousel__product"><?php include __DIR__ .'/../components/item.component.php' ?></div>
+            <div class="featured-carousel__product"><?php include __DIR__ .'/../components/item.component.php' ?></div>
+            <div class="featured-carousel__product"><?php include __DIR__ .'/../components/item.component.php' ?></div>
+            <div class="featured-carousel__product"><?php include __DIR__ .'/../components/item.component.php' ?></div>
+            <div class="featured-carousel__product"><?php include __DIR__ .'/../components/item.component.php' ?></div>
+            <div class="featured-carousel__product"><?php include __DIR__ .'/../components/item.component.php' ?></div>
+            <div class="featured-carousel__product"><?php include __DIR__ .'/../components/item.component.php' ?></div>
         </div>
         <div class="featured-carousel__arrow featured-carousel__arrow--right">
             <i class="icon-arrow-right"></i>

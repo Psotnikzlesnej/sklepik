@@ -111,6 +111,9 @@ body {
   background-color: #f2f3f4;
 }
 
+.featured {
+  margin-top: 48px;
+}
 .featured__title {
   font-family: "Metropolis", sans-serif;
   text-align: center;
@@ -144,8 +147,9 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   margin: 35px 0;
-  width: 318px;
-  height: 55px;
+  width: 300px;
+  height: 50px;
+  font-size: 14px;
   background: #f74137 0% 0% no-repeat padding-box;
   opacity: 1;
   margin-left: auto;
@@ -161,13 +165,33 @@ body {
   position: relative;
 }
 .featured-carousel__element {
+  height: 100%;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
   display: none;
 }
 .featured-carousel__element--current {
-  height: 100%;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
+}
+@media (max-width: 1400px) {
+  .featured-carousel__element {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 1200px) {
+  .featured-carousel__element {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1000px) {
+  .featured-carousel__element {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .featured-carousel__element {
+    grid-template-columns: 1fr;
+  }
 }
 .featured-carousel__product {
   height: 100%;
