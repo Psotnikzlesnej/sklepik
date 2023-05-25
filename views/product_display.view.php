@@ -64,16 +64,6 @@ $next_page = $pages_array[$current_index+1] ?? NULL;
 ?>
 
 <?php
-include '../templates/header.php'
-?>
-<?php
-include '../templates/breadcrumbs.php'
-?>
-<?php
-include '../views/sidebar.view.php'
-?>
-
-<?php
 require __DIR__ . '/../components/product_navbar.component.php';
 require __DIR__ . '/../components/item.component.php';
 require __DIR__ . '/../components/item.component.php';
@@ -84,7 +74,3 @@ require __DIR__ . '/../components/item.component.php';
 require __DIR__ . '/../components/item.component.php';
 require __DIR__ . '/../components/product_navbar.component.php';
 
-?>
-<?php
-include '../templates/footer.php'
-?>

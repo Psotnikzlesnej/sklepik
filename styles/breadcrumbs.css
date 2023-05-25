@@ -107,11 +107,15 @@
   font-weight: 900;
   src: url("/fonts/metropolis-blackitalic-webfont.woff2") format("woff2");
 }
+.breadcrumb {
+  margin: 0;
+}
+
 ul.breadcrumb {
-  padding: 10px 31px;
   list-style: none;
   background-color: #f2f3f5;
   width: 100%;
+  padding: 10px 0px;
 }
 
 ul.breadcrumb li {
@@ -131,6 +135,7 @@ ul.breadcrumb li a {
   color: black;
   text-decoration: none;
   font-size: 12px;
+  margin-left: 31px;
 }
 
 ul.breadcrumb li a:hover {

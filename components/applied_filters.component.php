@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <div class="filtry"><div class="text">FILTRY</div></div>
+    <div class="filtry"><div class="appliedfilters__text">FILTRY</div></div>
     <div class="filtry-container">
     <div class="word-container">
         <span class="word">Parametr</span>
