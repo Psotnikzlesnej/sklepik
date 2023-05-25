@@ -10,7 +10,7 @@ private function getAboutUs(){
     WHERE visible=true AND type = 'home_bottom'";
     $result = $this->mysqli->query($query);
     $about_us = $result -> fetch_assoc();
-    return $result;
+    return $about_us;
   }
 public function getEverything(){
   $about_us = $this->getAboutUs();

@@ -59,9 +59,9 @@ INSERT INTO `filter_value` (`ID`, `ID_filter`, `value`) VALUES
 (21, 4, '100');
 
 INSERT INTO `flag` (`ID`, `name`) VALUES
-(1, 'Nowość'),
-(2, 'Dostępny'),
-(3, 'Promocja');
+(1, 'new'),
+(2, 'promo'),
+(3, 'featured');
 
 INSERT INTO `parameter_value` (`ID`, `value`, `parameter`) VALUES
 (1, '33', 'parametr'),
