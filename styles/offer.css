@@ -408,10 +408,34 @@ body {
 .buybutton_offer {
   cursor: pointer;
   width: 506px;
-  height: 50px;
+  height: 60px;
   background: #9bcb3b;
   display: flex;
   margin-left: 8px;
+}
+
+.buybutton-icon-offer {
+  content: url(../static/cart.svg);
+  height: 60%;
+  margin-top: 9px;
+  margin-left: 135px;
+}
+
+.buybutton_text {
+  height: 60%;
+  margin-top: 20px;
+  margin-left: 25px;
+  color: white;
+  font-size: 17px;
+}
+
+.buybutton_offer_items {
+  display: inline-flex;
+}
+
+.counter-offer {
+  height: 62px;
+  width: 102px;
 }
 
 /*# sourceMappingURL=offer.css.map */

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/sidebar.css">
     <script src="../js/sidebar.js"></script>
-</head>
+</head> 
 <body>
 
     <div class="sidebar__superglue">
