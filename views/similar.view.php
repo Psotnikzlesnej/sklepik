@@ -1,7 +1,7 @@
 
-    <link rel="stylesheet" href="styles/similar.css">
+    <link rel="stylesheet" href="../styles/similar.css">
     <script src="js/counter.js" defer></script>
-    <link rel="stylesheet" href="styles/counter.css">
+    <link rel="stylesheet" href="../styles/counter.css">
 </head>
 <body>
     <div class="bg">
@@ -11,6 +11,7 @@
 
         <div class="product_tile">
             <div class="photo">
+                <img src="../photos/products/Photo – 1.png" alt="">
             </div>
             <div class="product_tile-hover">
                 <div class="dsc">
@@ -21,7 +22,9 @@
                     <div class="price1">297zł</div>
                     <div class="price2">100zł</div>
                 </div>
-                <div class="addtocart">
+            </div>
+            <div class="addtocart">
+                <?php include __DIR__ . '/../components/counter.component.php'; ?>
                     <div class="counter_container">
                         <template id="counter">
                             <button type="button" class="counter__button counter__button-decrease"></button>
@@ -34,7 +37,6 @@
                         <i class="buybutton-icon"></i>
                     </div>
                 </div>
-            </div>
         </div>
 
     </div>

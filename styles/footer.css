@@ -226,5 +226,10 @@ body {
     justify-content: space-between;
   }
 }
+@media (max-width: 767px) {
+  .copyright {
+    padding-bottom: 79px;
+  }
+}
 
 /*# sourceMappingURL=footer.css.map */

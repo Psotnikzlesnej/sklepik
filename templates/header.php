@@ -3,7 +3,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
     <script src="js/hamburger.js"></script>
 
-
   <div class="main-container-header">
     <div class="container-header">
       <div  class="menu-long">
@@ -40,7 +39,7 @@
                 </g>
               </g>
             </svg>
-             <span class="span_header">ULUBIONE</span>
+            <span class="span_header">ULUBIONE</span>
           </a>
           <a class="menu__lo mobile__block" href="#">
             <svg class="menu__lo-padding" xmlns="http://www.w3.org/2000/svg" width="24.995" height="100%" viewBox="0 0 24.995 28.566">
@@ -50,7 +49,7 @@
                 </g>
               </g>
             </svg>
-             <span class="span_header">MOJE KONTO</span>
+            <span class="span_header">MOJE KONTO</span>
           </a>
           <a class="menu__lo1 mobile__block" href="#" >
             <svg class="menu__lo1-border menu__lo-padding" xmlns="http://www.w3.org/2000/svg" width="38.929" height="100%" viewBox="0 0 38.929 35.677" >
@@ -61,7 +60,7 @@
               </g>
             </svg>
             <div class="yk">
-               <span class="span_header">TWÓJ KOSZYK</span>
+              <span class="span_header">TWÓJ KOSZYK</span>
             </div>
             <div class="button1">
               <span class="material-symbols-outlined">chevron_right</span>
@@ -71,25 +70,23 @@
       </div>
       <div class="menu" id="hamburger__menu">
         <a class="menu__item menu__item--left" href="#">
-           <span class="span_header">ŹRÓDŁA ŚWIATŁA</span>
+          <span class="span_header">ŹRÓDŁA ŚWIATŁA</span>
         </a>
         <a class="menu__item" href="#">
-           <span class="span_header">OŚWIETLENIE WEWNETRZNE</span>
+          <span class="span_header">OŚWIETLENIE WEWNETRZNE</span>
         </a>
         <a class="menu__item" href="#">
-           <span class="span_header">GNIAZDKA, WYŁĄCZNIKI</span>
+          <span class="span_header">GNIAZDKA, WYŁĄCZNIKI</span>
         </a>
         <a class="menu__item" href="#">
-           <span class="span_header">AUTOMATYKA, STEROWANIE</span>
+          <span class="span_header">AUTOMATYKA, STEROWANIE</span>
         </a>
         <a  class="menu__item" href="#">
-           <span class="span_header">ROZDZIELANIE I APARATURA</span>
+          <span class="span_header">ROZDZIELANIE I APARATURA</span>
         </a>
         <a class="menu__item menu__item--right" href="#">
-           <span class="span_header">MATERIAŁY INSTALACYJNE</span>
+          <span class="span_header">MATERIAŁY INSTALACYJNE</span>
         </a>
       </div>
     </div>
   </div>
-
-

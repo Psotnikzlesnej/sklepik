@@ -78,6 +78,10 @@ require __DIR__ . '/../components/product_navbar.component.php';
 require __DIR__ . '/../components/item.component.php';
 require __DIR__ . '/../components/item.component.php';
 require __DIR__ . '/../components/item.component.php';
+require __DIR__ . '/../components/item.component.php';
+require __DIR__ . '/../components/item.component.php';
+require __DIR__ . '/../components/item.component.php';
+require __DIR__ . '/../components/item.component.php';
 require __DIR__ . '/../components/product_navbar.component.php';
 
 ?>

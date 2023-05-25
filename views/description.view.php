@@ -2,8 +2,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles\description.css">
    <div class="description_box">  
-    <div class="parameters_box_text_top_description">Opis produktu </div>    
-     <div class="description_box_text_line"></div>
+    <div class="parameters_box_text_top_description">Opis produktu  <div class="description_box_text_line"></div> </div>    
+   
 </div>  
 
 
@@ -29,7 +29,7 @@
           <span class="description_span_big_down">  MOŻLIWOŚĆ ZDJĘCIA RAMKI BEZ DEMONTAŻU POKRYWY LUB KLAWISZA </span>
 
 
-          <span class="description_span_down">       Seria Simon 10 dedykowana jest inwestycjom, gdzie wytworny design i różnorodność w kolorach osprzętu nie jest najważniejsza. 
+          <span class="description_span_down">Seria Simon 10 dedykowana jest inwestycjom, gdzie wytworny design i różnorodność w kolorach osprzętu nie jest najważniejsza. 
               W tej linii produktów liczy się przede wszystkim ekonomiczność, funkcjonalność oraz trwałość. Uniwersalne kolory: biały i kremowy pozwolą 
               na wykorzystanie łączników oraz gniazd w każdym mieszkaniu czy też przestrzeni biurowej.</span>
             

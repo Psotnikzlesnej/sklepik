@@ -111,63 +111,45 @@ body {
   background-color: #f2f3f4;
 }
 
-.bg {
-  width: 100%;
-  height: 851px;
-  background: #f2f3f4 0% 0% no-repeat padding-box;
-  opacity: 1;
-}
-
-.nag {
-  width: 100%;
-  height: 71px;
-  opacity: 1;
-}
-
-.text {
+.featured__title {
   font-family: "Metropolis", sans-serif;
-  margin-top: 30px;
-  height: 80px;
-  top: 1266px;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
   font-size: 44px;
   font-weight: bold;
   letter-spacing: 0px;
   color: #111111;
-  opacity: 1;
 }
-
-.rectangle {
-  top: 1333px;
-  left: 930px;
+.featured__custom-break {
+  height: 1px;
+  width: 100%;
+  background-color: #e1e2e8;
+  margin: 25px auto;
+  position: relative;
+}
+.featured__custom-break::before {
+  content: "";
+  left: 50%;
+  top: -3px;
+  transform: translateX(-50%);
   width: 60px;
   height: 3px;
   background: #f74137 0% 0% no-repeat padding-box;
-  opacity: 1;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  position: absolute;
 }
 
-.border {
-  margin-right: 20px;
-  width: 100%;
-  height: 1px;
-  background: #e1e2e8 0% 0% no-repeat padding-box;
-  opacity: 1;
+.carousel {
+  height: 450px;
+  overflow-x: auto;
 }
-
-.product_tile {
-  margin-top: 30px;
+.carousel__product-container {
+  width: max-content;
+}
+.carousel__product {
+  height: 450px;
+  width: 280px;
   display: inline-block;
-  flex-grow: 4;
   user-select: none;
-  width: 356px;
-  height: 560px;
   background: #ffffff 0% 0% no-repeat padding-box;
-  opacity: 1;
   overflow: hidden;
 }
 
