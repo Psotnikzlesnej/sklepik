@@ -390,4 +390,28 @@ body {
   opacity: 1;
 }
 
+.emil_mikolajczak_zjeb {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.addtocart_offer {
+  display: inline-flex;
+  margin-top: 35px;
+}
+
+.counter_container_offer {
+  display: inline-flex;
+  margin-left: 30px;
+}
+
+.buybutton_offer {
+  cursor: pointer;
+  width: 506px;
+  height: 50px;
+  background: #9bcb3b;
+  display: flex;
+  margin-left: 8px;
+}
+
 /*# sourceMappingURL=offer.css.map */

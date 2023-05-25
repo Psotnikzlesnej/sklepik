@@ -2,7 +2,7 @@
     <link rel="stylesheet" href="styles\parameters.css">
 
 
-<div class="cwel">
+<div class="parameters_layout">
 
 
    <div class="parameters_box">
