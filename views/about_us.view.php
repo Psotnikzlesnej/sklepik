@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles/about_us.css">
 </head>
 <body>
+<?php odrobaczanie($about_us) ;?>
+
     <section class="whyUs">
         <img src="photos/about_us/Image.jpg" alt="" class="whyUs__img">
         <div class="whyUs__content">
@@ -16,11 +18,8 @@
                 <hr class="whyUs__lineColorWhite">
             </div>
             <p class="whyUs__paragraph">
-                Początki działalności to rok 2002r i otwarcie hurtowni elektrycznej,
-                oferującej podstawowe produkty do instalacji elektrycznych jak i również
-                materiały używane w przemyśle wydobywczym.
-                Firma dostarczała produkty trudno dostępne do kopalń,
-                zakładów przemysłowych.
+    
+
             </p>
             <ul class="whyUs__list">
                 <li class="whyUs__listItem">
