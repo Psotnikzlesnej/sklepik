@@ -107,8 +107,16 @@
   src: url("/fonts/metropolis-blackitalic-webfont.woff2") format("woff2");
 }
 .sidebar {
+  margin-top: 20px;
   font-family: "Metropolis", sans-serif;
-  width: 100%;
+  width: 300px;
+  margin-left: 30px;
+}
+.sidebar ol {
+  list-style-type: none;
+}
+.sidebar ul {
+  list-style-type: none;
 }
 .sidebar__heading {
   text-transform: uppercase;
