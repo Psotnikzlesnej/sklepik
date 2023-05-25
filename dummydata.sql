@@ -1,12 +1,12 @@
 
 INSERT INTO `banner` (`ID`, `title`, `description`, `image_name`, `link`, `visible`, `type`, `alt`, `mask`) VALUES
-(1, 'Poznaj SEDNA ', '<h2> Schneider Electric </h2> <p> Sedna to osprzęt elektroinstalacyjny o wyrazistym kształcie oraz unikalnej formie.</p>','../photos/banners/Group 40.jpg', 'http://biblegateway.com/congue/elementum/in/hac/habitasse/platea/dictumst.json?neque=massa&libero=volutpat&convallis=convallis&eget=morbi&eleifend=odio&luctus=odio&ultricies=elementum&eu=eu&nibh=interdum&quisque=eu&id=tincidunt&justo=in&sit=leo&amet=maece', 1, 'home_top', 'baner strony głównej', 1),
-(2, 'Philips HUE', '<h2> Oświetl swój dom </h2> <p>Wyobraź sobie, że jednym dotknięciem wyłączasz wszystkie światła.</p>', '../photos/banners/Mask Group 40.jpg', 'http://biblegateway.com/congue/elementum/in/hac/habitasse/platea/dictumst.json?neque=massa&libero=volutpat&convallis=convallis&eget=morbi&eleifend=odio&luctus=odio&ultricies=elementum&eu=eu&nibh=interdum&quisque=eu&id=tincidunt&justo=in&sit=leo&amet=maece', 1, 'home_top', '2 baner strony głównej', 1),
-(3, 'Pomoc Eksperta', '<h2> Doradzamy </h2>', '../photos/banners/image_203.jpg', 'http://biblegateway.com/congue/elementum/in/hac/habitasse/platea/dictumst.json?neque=massa&libero=volutpat&convallis=convallis&eget=morbi&eleifend=odio&luctus=odio&ultricies=elementum&eu=eu&nibh=interdum&quisque=eu&id=tincidunt&justo=in&sit=leo&amet=maece', 1, 'home_tile', 'home tile ekspert', 1),
-(4, 'Szukaj Wygodnie', '<h2> Elhurt plus </h2>', '../photos/banners/image_204.jpg', 'http://epa.gov/habitasse/platea.xml?aenean=nisi&fermentum=at&donec=nibh&ut=in&mauris=hac&eget=habitasse&massa=platea&tempor=dictumst&convallis=aliquam&nulla=augue&neque=quam&libero=sollicitudin&convallis=vitae&eget=consectetuer&eleifend=eget&luctus=rutrum', 1, 'home_tile', 'home tile szukaj', 1),
-(5, 'Seria Unica', '<h2> Wyjątkowy wzór </h2>', '../photos/banners/image_205.jpg', 'https://webnode.com/at/turpis/a.jpg?vulputate=eleifend&luctus=quam&cum=a&sociis=odio&natoque=in&penatibus=hac&et=habitasse&magnis=platea&dis=dictumst&parturient=maecenas&montes=ut&nascetur=massa&ridiculus=quis&mus=augue&vivamus=luctus&vestibulum=tincidunt', 1, 'home_tile', 'home tile unica', 1),
-(6, 'Sprawdź dlaczego my', 'Początki działalności to rok 2002r i otwarcie hurtowni elektrycznej, oferującej podstawoer produkty do instalacji elektrycznych jak i również materiały używane w przemyśle wydobywczym. Firma dostarczała produkty trudno dostępne do kopalń, zakładów przemysłowych <img src="icon1.png"> <img src="icon2.png"> <img src="icon3.png">', '../photos/about_us/image.jpg', 'http://wiley.com/condimentum.jsp?natoque=nec&penatibus=nisi&et=volutpat&magnis=eleifend&dis=donec&parturient=ut&montes=dolor&nascetur=morbi&ridiculus=vel&mus=lectus&etiam=in&vel=quam&augue=fringilla&vestibulum=rhoncus&rutrum=mauris&rutrum=enim&neque=leo&a', 1, 'home_bottom', 'about_us', 0),
-(7, 'DJI Mavic Air 2', '<h2> Fly More Combo </h2>', '../photos/banners/img_04.jpg', 'https://guardian.co.uk/curabitur/convallis/duis/consequat.xml?cum=eu&sociis=sapien&natoque=cursus&penatibus=vestibulum&et=proin&magnis=eu&dis=mi&parturient=nulla&montes=ac&nascetur=enim&ridiculus=in&mus=tempor&vivamus=turpis&vestibulum=nec&sagittis=euismo', 1, 'store', 'banner sklep', 1);
+(1, 'Poznaj SEDNA ', '<h2> Schneider Electric </h2> <p> Sedna to osprzęt elektroinstalacyjny o wyrazistym kształcie oraz unikalnej formie.</p>','Group 40.jpg', 'http://biblegateway.com/congue/elementum/in/hac/habitasse/platea/dictumst.json?neque=massa&libero=volutpat&convallis=convallis&eget=morbi&eleifend=odio&luctus=odio&ultricies=elementum&eu=eu&nibh=interdum&quisque=eu&id=tincidunt&justo=in&sit=leo&amet=maece', 1, 'home_top', 'baner strony głównej', 1),
+(2, 'Philips HUE', '<h2> Oświetl swój dom </h2> <p>Wyobraź sobie, że jednym dotknięciem wyłączasz wszystkie światła.</p>', 'Mask Group 40.jpg', 'http://biblegateway.com/congue/elementum/in/hac/habitasse/platea/dictumst.json?neque=massa&libero=volutpat&convallis=convallis&eget=morbi&eleifend=odio&luctus=odio&ultricies=elementum&eu=eu&nibh=interdum&quisque=eu&id=tincidunt&justo=in&sit=leo&amet=maece', 1, 'home_top', '2 baner strony głównej', 1),
+(3, 'Pomoc Eksperta', '<h2> Doradzamy </h2>', 'image_203.jpg', 'http://biblegateway.com/congue/elementum/in/hac/habitasse/platea/dictumst.json?neque=massa&libero=volutpat&convallis=convallis&eget=morbi&eleifend=odio&luctus=odio&ultricies=elementum&eu=eu&nibh=interdum&quisque=eu&id=tincidunt&justo=in&sit=leo&amet=maece', 1, 'home_tile', 'home tile ekspert', 1),
+(4, 'Szukaj Wygodnie', '<h2> Elhurt plus </h2>', 'image_204.jpg', 'http://epa.gov/habitasse/platea.xml?aenean=nisi&fermentum=at&donec=nibh&ut=in&mauris=hac&eget=habitasse&massa=platea&tempor=dictumst&convallis=aliquam&nulla=augue&neque=quam&libero=sollicitudin&convallis=vitae&eget=consectetuer&eleifend=eget&luctus=rutrum', 1, 'home_tile', 'home tile szukaj', 1),
+(5, 'Seria Unica', '<h2> Wyjątkowy wzór </h2>', 'image_205.jpg', 'https://webnode.com/at/turpis/a.jpg?vulputate=eleifend&luctus=quam&cum=a&sociis=odio&natoque=in&penatibus=hac&et=habitasse&magnis=platea&dis=dictumst&parturient=maecenas&montes=ut&nascetur=massa&ridiculus=quis&mus=augue&vivamus=luctus&vestibulum=tincidunt', 1, 'home_tile', 'home tile unica', 1),
+(6, 'Sprawdź dlaczego my', 'Początki działalności to rok 2002r i otwarcie hurtowni elektrycznej, oferującej podstawoer produkty do instalacji elektrycznych jak i również materiały używane w przemyśle wydobywczym. Firma dostarczała produkty trudno dostępne do kopalń, zakładów przemysłowych <img src="icon1.png"> <img src="icon2.png"> <img src="icon3.png">', 'image.jpg', 'http://wiley.com/condimentum.jsp?natoque=nec&penatibus=nisi&et=volutpat&magnis=eleifend&dis=donec&parturient=ut&montes=dolor&nascetur=morbi&ridiculus=vel&mus=lectus&etiam=in&vel=quam&augue=fringilla&vestibulum=rhoncus&rutrum=mauris&rutrum=enim&neque=leo&a', 1, 'home_bottom', 'about_us', 0),
+(7, 'DJI Mavic Air 2', '<h2> Fly More Combo </h2>', 'img_04.jpg', 'https://guardian.co.uk/curabitur/convallis/duis/consequat.xml?cum=eu&sociis=sapien&natoque=cursus&penatibus=vestibulum&et=proin&magnis=eu&dis=mi&parturient=nulla&montes=ac&nascetur=enim&ridiculus=in&mus=tempor&vivamus=turpis&vestibulum=nec&sagittis=euismo', 1, 'store', 'banner sklep', 1);
 
 INSERT INTO `category` (`ID`, `name`, `image_name`, `parent`, `level`,`description`) VALUES
 (1, 'Gniazdka,wyłączniki', 'http://dummyimage.com/168x100.png/5fa2dd/ffffff', NULL, 1,  'Gniazda elektryczne są niezbędnym elementem instalacji elektrycznej. To dzięki nim użytkownicy mogą zasilić urządzenia i sprzęt. Kontakty elektryczne są funkcjonalne i łatwe w montażu. Posiadamy zarówno gniazda instalacyjne natynkowe, podtynkowe, nowoczesne gniazdka teleinformatyczne, RTV i SAT, jak i hermetyczne, sprawdzające się tam, gdzie istnieje ryzyko kontaktu z wodą – łazienka, kuchnia…'),
@@ -112,22 +112,22 @@ INSERT INTO `product_flag` (`product_ID`, `flag_ID`) VALUES
 (3, 2);
 
 INSERT INTO `product_image` (`ID`, `image_name`, `product_ID`, `main`) VALUES
-(1, '../photos/products/Image 1.png', 1, 0),
-(2, '../photos/products/zarowka_filamentowa.jpg', 2, 0),
-(3, '../photos/products/zarowka_OSRAM_produkt.jpg', 3, 0),
-(4, '../photos/products/zarowka_OSRAM_pudelko.jpg', 3, 0),
-(5, '../photos/products/zarowka_OSRAM_produkt.jpg', 4, 0),
-(6, '../photos/products/zarowka_OSRAM_pudelko.jpg', 4, 0),
-(7, '../photos/products/zarowka_OSRAM_produkt.jpg', 5, 0),
-(8, '../photos/products/zarowka_OSRAM_pudelko.jpg', 5, 0),
-(9, '../photos/products/zarowka_PHILIPS_produkt.jpg', 6, 0),
-(10, '../photos/products/zarowka_PHILIPS_wyciagnieta.jpg', 6, 0),
-(11, '../photos/products/zarowka_PHILIPS_prezentacja.jpg', 6, 0),
-(12, '../photos/products/corepro_PHILIPS_produkt.jpg', 7, 0),
-(13, '../photos/products/corepro_PHILIPS_energia.png', 7, 0),
-(14, '../photos/products/tasmaLED_PHILIPS_produkt.jpg', 8, 0),
-(15, '../photos/products/tasmaLED_PHILIPS_żółta.png', 8, 0),
-(16, '../photos/products/tasmaLED_PHILIPS_zasilacz.jpg', 8, 0);
+(1, 'Image 1.png', 1, 0),
+(2, 'zarowka_filamentowa.jpg', 2, 0),
+(3, 'zarowka_OSRAM_produkt.jpg', 3, 0),
+(4, 'zarowka_OSRAM_pudelko.jpg', 3, 0),
+(5, 'zarowka_OSRAM_produkt.jpg', 4, 0),
+(6, 'zarowka_OSRAM_pudelko.jpg', 4, 0),
+(7, 'zarowka_OSRAM_produkt.jpg', 5, 0),
+(8, 'zarowka_OSRAM_pudelko.jpg', 5, 0),
+(9, 'zarowka_PHILIPS_produkt.jpg', 6, 0),
+(10, 'zarowka_PHILIPS_wyciagnieta.jpg', 6, 0),
+(11, 'zarowka_PHILIPS_prezentacja.jpg', 6, 0),
+(12, 'corepro_PHILIPS_produkt.jpg', 7, 0),
+(13, 'corepro_PHILIPS_energia.png', 7, 0),
+(14, 'tasmaLED_PHILIPS_produkt.jpg', 8, 0),
+(15, 'tasmaLED_PHILIPS_żółta.png', 8, 0),
+(16, 'tasmaLED_PHILIPS_zasilacz.jpg', 8, 0);
 
 INSERT INTO `product_parameter_value` (`product_ID`, `parameter_value_ID`) VALUES
 (1, 1),
@@ -141,9 +141,9 @@ INSERT INTO `product_parameter_value` (`product_ID`, `parameter_value_ID`) VALUE
 
 
 
-insert into manufacturer (ID, name, image_name) values (1, 'Philips', '../photos/manufacturers/Philips_logo.png');
-insert into manufacturer (ID, name, image_name) values (2, 'Osram', '../photos/manufacturers/osram_logo.png');
-insert into manufacturer (ID, name, image_name) values (3, 'Spiral', '../photos/manufacturers/spiral_logo.png');
+insert into manufacturer (ID, name, image_name) values (1, 'Philips', 'Philips_logo.png');
+insert into manufacturer (ID, name, image_name) values (2, 'Osram', 'osram_logo.png');
+insert into manufacturer (ID, name, image_name) values (3, 'Spiral', 'spiral_logo.png');
 
 INSERT INTO `product_manufacturer` (`product_ID`, `manufacturer_ID`) VALUES
 (1, 1),
