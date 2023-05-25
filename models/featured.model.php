@@ -19,7 +19,7 @@ class Model {
 }
   public function getEverything(){
     $featured = $this->getFeaturedProducts();
-    return $featured;
+    return ['featured'=> $featured];
   }
 }
 ?>
