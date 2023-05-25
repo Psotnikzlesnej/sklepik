@@ -6,12 +6,12 @@
             </div>
             <div class="product_tile-hover">
                 <div class="dsc">
-                    <div class="dsc1">TURBOMATURA</div>
-                    <div class="dsc2">2017</div>
+                    <div class="dsc1"><?= $item['name'] ?></div>
+                    <div class="dsc2">Kod produktu: <?= $item['serial_number'] ?></div>
                 </div>
                 <div class="price">
-                    <div class="price1">297zł</div>
-                    <div class="price2">100zł</div>
+                    <div class="price1"><?= $item['catalog_price'] ?></div>
+                    <div class="price2"><?= $item['promo_price'] ?></div>
                 </div>
             </div>
             <div class="addtocart">
