@@ -1,6 +1,5 @@
 @use '../utils/styles/fonts';
 @use '../utils/styles/variables';
-<<<<<<< HEAD
 * {
     margin: 0px;
 }
@@ -9,13 +8,11 @@ body{
   font-family: 'Metropolis', sans-serif;
   margin: 0;
   padding: 0;
-=======
 
 body{
     font-family: 'Metropolis', sans-serif;
     margin: 0;
     padding: 0;
->>>>>>> 7b89815cf6afd87aec8598566d6de760b9b164c3
 }
 
 .span_header {
@@ -423,4 +420,4 @@ body{
     .menu__item--right {
         text-align: right;
     }
-}
+}}
