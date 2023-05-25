@@ -53,7 +53,7 @@
               </div>
             </div><br>
             <div class="product">
-              <h5>WARIANTY<h5>
+              <h5 class="emil_mikolajczak_zjeb">WARIANTY<h5>
             </div>
 
           </div>
@@ -89,6 +89,25 @@
           <span>442,85 zł</span>
         </div>
       </div>
+
+
+      <div class="addtocart_offer">
+                <?php include __DIR__ . '/../components/counter.component.php'; ?>
+                    <div class="counter_container_offer">
+                        <template id="custom-counter-offer">
+                            <button type="button" class="counter__button counter__button-decrease"></button>
+                            <input type="number" class="counter__input">
+                            <button type="button" class="counter__button counter__button-increase"></button>
+                        </template>
+                        <custom-counter class="counter-offer" data-value="1" data-max="10" data-min="1"></custom-counter>
+                    </div>
+                    <div class="buybutton_offer">
+                    <div class="buybutton_offer_items">    <i class="buybutton-icon-offer"></i><p class="buybutton_text">DODAJ DO KOSZYKA</p>  </div> 
+                    </div>
+                </div>
+        </div>
+
+
     </div>
 
     </div>    

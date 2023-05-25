@@ -1,5 +1,5 @@
 
-    <link rel="stylesheet" href="styles/similar.css">
+<link rel="stylesheet" href="styles/similar.css">
     <script src="js/counter.js" defer></script>
     <link rel="stylesheet" href="styles/counter.css">
 </head>

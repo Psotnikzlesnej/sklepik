@@ -285,3 +285,51 @@ body {
   background: #e1e2e8 0% 0% no-repeat padding-box;
   opacity: 1;
 }
+
+.emil_mikolajczak_zjeb {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.addtocart_offer {
+  display: inline-flex;
+  margin-top: 35px;
+}
+
+.counter_container_offer {
+  display: inline-flex;
+  margin-left: 30px;
+}
+
+.buybutton_offer {
+  cursor: pointer;
+  width: 506px;
+  height: 60px;
+  background: #9bcb3b;
+  display: flex;
+  margin-left: 8px;
+}
+
+.buybutton-icon-offer {
+  content: url(../static/cart.svg);
+  height: 60%;
+  margin-top: 9px;
+  margin-left: 135px;
+}
+
+.buybutton_text {
+  height: 60%;
+  margin-top: 20px;
+  margin-left: 25px;
+  color: white;
+  font-size: 17px;
+}
+
+.buybutton_offer_items {
+  display: inline-flex;
+}
+
+.counter-offer {
+  height: 62px;
+  width: 102px;
+}
