@@ -33,7 +33,7 @@ body{
     padding: 10px;
     text-decoration: none;
     color: #111111;
-    border: 1px solid rgb(230, 231, 233);
+    border: 1px solid #e1e2e8;
     font-size: 12px;
 }
 
@@ -46,6 +46,7 @@ body{
 .mobile__block {
     display: block;
     text-align: center;
+    align-items: center;
     color: #111111;
     margin: auto;
     padding: 10px;
@@ -64,6 +65,35 @@ body{
     padding: 10px;
 }
 
+@media (max-width: 767px) {
+    .menu__text {
+        position: fixed !important;
+        bottom: 0;
+        width: 100%;
+        border-top: 1px solid #e1e2e8;
+        border-bottom: 1px solid #e1e2e8;
+        z-index: 6;
+        background-color: #fff;
+    }
+    .menu {
+        position: fixed !important;
+        bottom: 57px;
+        width: 100%;
+        z-index: 6;
+        background-color: #fff;
+    }
+    .mobile__block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        margin: 0;
+    }
+    .mobile__block:nth-child(-n+4) {
+        border-right: 1px solid #e1e2e8;
+    }
+}
+
 @media (min-width: 768px) {
 .menu-long {
     display: flex;
@@ -80,7 +110,7 @@ body{
 }
 
 .menu{
-    border: 1px solid rgb(230, 231, 233);
+    border: 1px solid #e1e2e8;
     display: flex;
     box-sizing: border-box;
     width: 100%;
@@ -97,7 +127,14 @@ body{
     color: black;
     border: none;
 }
+}
 
+@media (min-width:768px) and (max-width:1199px) {
+    .menu__lo, .menu__lo1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -118,7 +155,7 @@ body{
 }
 
 .menu__lo1-border {
-    border-right: 1px solid rgb(230, 231, 233);
+    border-right: 1px solid #e1e2e8;
     padding-right: 15px;
 }
 
@@ -128,7 +165,6 @@ body{
 
 .main-container-header{
     width: 100%;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -141,7 +177,7 @@ body{
     display: inline-block;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgb(230, 231, 233);
+    border: 1px solid #e1e2e8;
 }
 
 .menu{
@@ -205,7 +241,7 @@ body{
 
 .menu{
     display: flex !important;
-    border-top: 1px solid rgb(230, 231, 233);
+    border-top: 1px solid #e1e2e8;
     height: 57px;
 }
 
@@ -226,7 +262,7 @@ body{
     position: relative;
     transition: all 0.6s ease-in-out;
     text-align: center;
-    border: 1px solid rgb(230, 231, 233);
+    border: 1px solid #e1e2e8;
     padding-left: 10px;
     align-items: center;
     color: black;
