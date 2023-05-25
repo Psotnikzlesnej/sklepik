@@ -1,65 +1,52 @@
 .product_tile {
+  height: 100%;
   position: relative;
   overflow: hidden;
-  margin-top: 30px;
-  margin-left: 23px;
-  display: inline-flex;
-  flex-direction: column;
-  flex-grow: 4;
+  // margin-top: 30px;
+  // margin-left: 23px;
+  // display: inline-flex;
+  // flex-direction: column;
+  // flex-grow: 4;
   user-select: none;
-  width: 350px;
-  height: 560px;
+  // width: 350px;
+  // height: 560px;
   background: #ffffff 0% 0% no-repeat padding-box;
   opacity: 1;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
-.seeallproducts {
-  font-family: "Metropolis", sans-serif;
-  font-weight: bold;
-  /* czcionka */
-  color: white;
-  margin-top: 35px;
-  top: 1947px;
-  left: 801px;
-  width: 318px;
-  height: 55px;
-  background: #f74137 0% 0% no-repeat padding-box;
-  opacity: 1;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-}
-
-.photo {
-  cursor: pointer;
-  top: 1427px;
-  left: 73px;
-  width: 270px;
-  height: 270px;
-  //background: #ebebeb 0% 0% no-repeat padding-box;
-  opacity: 1;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 45px;
-}
-
-.photo img {
-  width: 100%;
+.item__photo {
   height: 100%;
+  width: 100%;
+
+  &-container {
+    cursor: pointer;
+    top: 1427px;
+    left: 73px;
+    width: 270px;
+    height: 270px;
+    //background: #ebebeb 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
 }
+
+// .photo img {
+//   width: 100%;
+//   height: 100%;
+// }
 
 .dsc {
   //background: #ff7878 0% 0% no-repeat padding-box;
   height: 40px;
   width: 200px;
+  margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 80px;
-  padding-top: 5px;
+  // margin-top: 80px;
+  // padding-top: 5px;
 }
 
 .price {
@@ -68,7 +55,7 @@
   width: 200px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
+  // margin-top: 20px;
 }
 
 .dsc1 {
@@ -100,6 +87,7 @@
 }
 
 .price2 {
+  font-weight: bold;
   text-align: center;
   font-size: 18px;
   letter-spacing: -0.28px;
@@ -111,7 +99,7 @@
   display: flex;
   gap: 10px;
   position: absolute;
-  bottom: 50px;
+  bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
@@ -124,6 +112,7 @@
 }
 
 .product_tile-hover {
+  margin-top: 70px;
   transition: transform .5s;
 }
 
