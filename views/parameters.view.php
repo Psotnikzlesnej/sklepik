@@ -25,12 +25,44 @@
 
 
 
-         <div class="parameters_box_detail_blue_1">  <div class="parameters_box_description_center">  <span class="parameters_box_description"> dsds  hhhhhhh</span>   <div class="parameters_box_vertical_line">  </div>  <span class="parameters_box_description"> jjhhhhhhhhhdsds  </span> </div>   </div>
-         <div class="parameters_box_detail_white_1">  <span class="parameters_box_description"> dsdsjjjjjj  </span>   <div class="parameters_box_vertical_line">  </div>  <span class="parameters_box_description"> jjjdsds  </span>   </div>
-         <div class="parameters_box_detail_blue_1"> <span class="parameters_box_description"> dsdsjjjj  </span>   <div class="parameters_box_vertical_line">  </div>  <span class="parameters_box_description">jjj dsds  </span> </div>
-         <div class="parameters_box_detail_white_1"> <span class="parameters_box_description"> dsdsjj  </span>   <div class="parameters_box_vertical_line">  </div>  <span class="parameters_box_description">jjj dsds  </span> </div>
-         <div class="parameters_box_detail_blue_1">  <span class="parameters_box_description"> dsdjjjs  </span>   <div class="parameters_box_vertical_line">  </div>  <span class="parameters_box_description"> jjjdsds  </span>   </div>
-         <div class="parameters_box_detail_white_1">  <span class="parameters_box_description"> dsdsjj  </span>   <div class="parameters_box_vertical_line">  </div>  <span class="parameters_box_description"> jjjjjjjdsds  </span>   </div>
-         <div class="parameters_box_detail_blue_1">  <span class="parameters_box_description"> dsdsjj  </span>   <div class="parameters_box_vertical_line">  </div>  <span class="parameters_box_description"> jjjjjdsds  </span>  </div>
-
+     <div class="tab__container">
+       <div class="tbody1">
+         <table>   <tr> asa </tr>
+       <div class="textk">   </div>  </table>
+         <table> <tr> asas</tr> </table> </div>
+       <div class="tbody">
+         <table>   <tr> asa </tr>
+       <div class="textk">   </div>  </table>
+         <table> <tr> asas</tr> </table> </div>
+         <div class="tbody1">
+         <table>   <tr> asa </tr>
+       <div class="textk">   </div>  </table>
+         <table> <tr> asas</tr> </table> </div>
+       <div class="tbody">
+         <table>   <tr> asa </tr>
+       <div class="textk">   </div>  </table>
+         <table> <tr> asas</tr> </table> </div>
+       <div class="tbody1">
+         <table>   <tr> asa </tr>
+       <div class="textk">   </div>  </table>
+         <table> <tr> asas</tr> </table> </div>
+         <div class="tbody">
+         <table>   <tr> asa </tr>
+       <div class="textk">   </div>  </table>
+         <table> <tr> asas</tr> </table> </div>
+         <div class="tbody1">
+         <table>   <tr> asa </tr>
+       <div class="textk">   </div>  </table>
+         <table> <tr> asas</tr> </table> </div>
+       <div class="tbody2">
+         <table>   <tr> asa </tr>
+       <div class="textk">   </div>  </table>
+         <table> <tr> asas</tr> </table> </div>
+         </div>
+         
+           
+         
+       
+       
+        
  </div>
