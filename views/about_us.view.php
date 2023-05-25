@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="styles/about_us.css">
 </head>
 <body>
-<?php odrobaczanie($about_us) ;?>
+
 
     <section class="whyUs">
-        <img src="photos/about_us/Image.jpg" alt="" class="whyUs__img">
+        <img src="photos/banners/<?= $about_us['image_name'] ?>" alt="" class="whyUs__img">
         <div class="whyUs__content">
-            <h3 class="whyUs__heading">Sprawdź dlaczego my</h3>
+            <h3 class="whyUs__heading"><?= $about_us['title'] ?>
+</h3>
             <div class="whyUs__line">
                 <hr class="whyUs__lineColorRed">
                 <hr class="whyUs__lineColorWhite">
             </div>
             <p class="whyUs__paragraph">
-    
-
+            <?= $about_us['description'] ?>
             </p>
             <ul class="whyUs__list">
                 <li class="whyUs__listItem">
@@ -37,7 +37,7 @@
             </ul>
             <button class="whyUs__btn">
                 <span class="whyUs__btnSpan">
-                    <a href="#" class="whyUs__btnSpanAnchor">infromacje o firmie</a>
+                    <a href="<?= $about_us['link'] ?>" class="whyUs__btnSpanAnchor">infromacje o firmie</a>
                 </span>
             </button>
         </div>
