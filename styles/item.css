@@ -47,6 +47,12 @@
   color: #111111;
   text-transform: uppercase;
   opacity: 1;
+  display: -webkit-box;
+  -webkit-text-stroke: 2;
+  height: -webkit-fill-available;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .dsc2 {

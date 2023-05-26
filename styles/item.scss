@@ -13,6 +13,7 @@
   background: #ffffff 0% 0% no-repeat padding-box;
   opacity: 1;
   // overflow: hidden;
+ 
 }
 
 .item__photo {
@@ -67,6 +68,13 @@
   color: #111111;
   text-transform: uppercase;
   opacity: 1;
+  display: -webkit-box;
+  -webkit-text-stroke: 2;
+  height: -webkit-fill-available;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
 }
 
 .dsc2 {
@@ -75,6 +83,7 @@
   letter-spacing: -0.28px;
   color: #111111;
   opacity: 1;
+  
 }
 
 .price1 {
@@ -84,6 +93,7 @@
   letter-spacing: -0.28px;
   color: #a3a3a3;
   opacity: 1;
+  
 }
 
 .price2 {
@@ -114,10 +124,13 @@
 .product_tile-hover {
   margin-top: 70px;
   transition: transform .5s;
+
 }
 
 .product_tile:hover > .product_tile-hover {
   transform: translateY(-60px);
+ 
+
 }
 
 .buybutton {
