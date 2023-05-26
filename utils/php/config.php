@@ -15,5 +15,10 @@ $mysqli = @new mysqli(
   $credentials['PASSWORD'], 
   $credentials['DATABASE']
 );
+
+$root_dir = $credentials['SCRIPT_ROOT'] ?? '/sklepik';
+
+define('SCRIPT_ROOT', $root_dir);
+
 $mysqli->set_charset('utf8mb4');
 ?>
