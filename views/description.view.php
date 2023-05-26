@@ -3,15 +3,15 @@
     <link rel="stylesheet" href="styles\description.css">
 
 
-   <div class="description_box">  
+   <div class="description_box" id="description">  
     <div class="parameters_box_text_top_description">Opis produktu  <div class="description_box_text_line"></div> </div>    
    </div>  
 
 
-   <div class="description_box_product">
+   <div class="description_box_product" >
 
 
-   <p class="description_box_product_text_top"> 
+   <p class="description_box_product_text_top" > 
 
 Simon 10 to ekonomiczna seria modułowa dla inwestycji,
          na których zróżnicowana kolorystyka nie jest wymagana. Dwa podstawowe kolory: biały i kremowy oraz
@@ -38,7 +38,7 @@ Simon 10 to ekonomiczna seria modułowa dla inwestycji,
 
 
                      
-<p class="description_box_product_text">    Seria Simon 10 dedykowana jest inwestycjom, gdzie wytworny design i różnorodność w kolorach osprzętu nie jest najważniejsza. 
+<p class="description_box_product_text" >    Seria Simon 10 dedykowana jest inwestycjom, gdzie wytworny design i różnorodność w kolorach osprzętu nie jest najważniejsza. 
               W tej linii produktów liczy się przede wszystkim ekonomiczność, funkcjonalność oraz trwałość. Uniwersalne kolory: biały i kremowy pozwolą 
               na wykorzystanie łączników oraz gniazd w każdym mieszkaniu czy też przestrzeni biurowej.</p>
             

@@ -8,7 +8,7 @@
    <div class="parameters_box">
 
   
-      <div class="parameters_box_text_top">Dane podstawowe </div>
+      <div class="parameters_box_text_top" id="parameters">Dane podstawowe </div>
 
       <div class="parameter_box_text_line"></div>
 
