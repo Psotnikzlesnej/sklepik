@@ -13,7 +13,7 @@
         <?php
         foreach($similar_product as $item): 
            ?>
-        <div class="product_tile-hover"><?php include __DIR__ .'/../components/item.component.php' ?></div>
+        <div class="product_tile-hover"><?php include __DIR__ . COMPONENT_ROOT .'/item.component.php' ?></div>
             <?php endforeach ?>
         </div>
             <div class="addtocart">

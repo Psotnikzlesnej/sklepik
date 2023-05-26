@@ -36,7 +36,7 @@
             </div>
             </div>
 
-            <script src="../js/category_description.js"></script> 
+            <script src=".<?= JS_ROOT?>/category_description.js"></script> 
 
     </body>
 

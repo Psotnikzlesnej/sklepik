@@ -9,7 +9,7 @@
     <div class="main-container__display">
       <div class="main-container__product">
         <?php
-          include_once 'components/carousels.php';
+          include_once COMPONENT_ROOT .'/carousels.php';
         ?>
       </div>
       <div class="container">
@@ -75,7 +75,7 @@
               </div>
               <div class="addtocart_offer">
               <div class="counter_container_offer">
-                <?php include __DIR__ . '/../components/counter.component.php'; ?>
+                <?php include __DIR__ . COMPONENT_ROOT .'/counter.component.php'; ?>
                 <template id="custom-counter-offer">
                     <button type="button" class="counter__button counter__button-decrease"></button>
                     <input type="number" class="counter__input">
