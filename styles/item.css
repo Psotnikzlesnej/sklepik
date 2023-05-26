@@ -41,7 +41,7 @@
   cursor: pointer;
   text-align: center;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 14px;
   letter-spacing: -0.28px;
   color: #111111;
   text-transform: uppercase;
@@ -49,16 +49,17 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin-left: 150px;
 }
 
 .dsc2 {
   text-align: center;
-  font-size: 18px;
+  font-size: 14px;
   letter-spacing: -0.28px;
   color: #111111;
   opacity: 1;
-  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .price1 {
@@ -97,6 +98,9 @@
 .product_tile-hover {
   margin-top: 70px;
   transition: transform 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .product_tile:hover > .product_tile-hover {
