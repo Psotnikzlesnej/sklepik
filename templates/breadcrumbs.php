@@ -1,5 +1,5 @@
 
-    <link rel="stylesheet" href="styles/breadcrumbs.css">
+    <link rel="stylesheet" href="<?php= CSS_ROOT ?>/breadcrumbs.css">
     <div class="breadcrumbs">
 <ul class="breadcrumb" >
   <li><a href="#">Strona główna</a></li>
