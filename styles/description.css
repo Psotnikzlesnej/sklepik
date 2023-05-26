@@ -107,16 +107,15 @@
   src: url("/fonts/metropolis-blackitalic-webfont.woff2") format("woff2");
 }
 .parameters_box_text_top_description {
-  position: relative;
   text-align: center;
-  letter-spacing: 0px;
+  display: grid;
   color: #111111;
   opacity: 1;
   border-top: 1px solid #e1e2e8;
   font-weight: 700;
   font-size: 29px;
   margin-bottom: 3px;
-  padding-top: 65px;
+  padding-top: 50px;
   border-bottom: 1px solid #e1e2e8;
 }
 
@@ -142,10 +141,7 @@
 
 .description_box {
   width: 100%;
-  height: 71px;
   opacity: 1;
-  /* border-bottom: 1px solid #e1e2e8; */
-  /* border-top: 1px solid #e1e2e8; */
   padding-top: 23px;
 }
 
@@ -224,6 +220,28 @@
   opacity: 1;
   position: relative;
   margin-top: 40px;
+}
+
+.description_box_product {
+  text-align: left;
+  width: 74%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.description_box_product_h2 {
+  font-size: 17;
+  font-family: "Metropolis", sans-serif;
+}
+
+.description_box_product_text {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.description_box_product_text_top {
+  font-size: 17;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=description.css.map */
