@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="styles/home.css">
+<link rel="stylesheet" href="<?= CSS_ROOT?>/home.css">
 <?php
   require __DIR__ . '/../templates/header.php';
 ?>

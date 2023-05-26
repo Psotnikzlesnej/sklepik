@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="styles/product_display.css">
+<link rel="stylesheet" href="<?= CSS_ROOT?>/product_display.css">
 <?php
 $url = $_SERVER['REQUEST_URI'];
 $url_manipulator = new URLManipulator($url);

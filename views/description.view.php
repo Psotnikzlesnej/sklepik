@@ -1,6 +1,5 @@
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styles\description.css">
+    <link rel="stylesheet" href="<?= CSS_ROOT?>\description.css">
 
 
    <div class="description_box" id="description">  

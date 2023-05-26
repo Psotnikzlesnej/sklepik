@@ -1,6 +1,5 @@
 
-     <link rel="stylesheet" href="details/components/description/style.css">
-     <link rel="stylesheet" href="styles\details.css">
+     <link rel="stylesheet" href="<?=CSS_ROOT?>\details.css">
     <title>Document</title>
 </head>
 <body>

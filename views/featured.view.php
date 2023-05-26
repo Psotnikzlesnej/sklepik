@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="styles\featured.css">
+<link rel="stylesheet" href="<?= CSS_ROOT?>\featured.css">
 <!-- 
         <div class="bg"> 
            
