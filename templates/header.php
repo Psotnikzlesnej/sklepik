@@ -1,13 +1,13 @@
 
     <link rel="stylesheet" href="<?= CSS_ROOT ?>/header.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
-    <script src="<?php= JSS_ROOT ?>/hamburger.js"></script>
+    <script src="<?= JSS_ROOT ?>/hamburger.js"></script>
 
   <div class="main-container-header">
     <div class="container-header">
       <div  class="menu-long">
         <div class="logo">
-          <img src="<?php= STATIC_ROOT ?>/logo.png" alt="logo">
+          <img src="<?= STATIC_ROOT ?>/logo.png" alt="logo">
         </div>
         <div class="menu__text">
           <a href="javascript:void(0);" class="hamburger mobile__block" onclick="hamburger()">
