@@ -1,10 +1,10 @@
-<link rel="stylesheet" href="styles/offer.css">
-<script src="js/carousels.js"></script>
+<link rel="stylesheet" href="<?= CSS_ROOT?>/offer.css">
+<script src="<?= JS_ROOT?>/carousels.js"></script>
 
   <div class="main-container">
     <div class="main-text">
       <span>Łącznik jednobiegunowy (moduł) 10AX, 250V~, zaciski śrubowe</span>
-      <img src="photos/manufacturers/Philips_logo.png" style="height: 17px;margin-right: 15px; "alt="">
+      <img src="<?= PHOTO_ROOT?>/manufacturers/Philips_logo.png" style="height: 17px;margin-right: 15px; "alt="">
     </div>
     <div class="main-container__display">
       <div class="main-container__product">

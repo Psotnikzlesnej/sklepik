@@ -1,5 +1,5 @@
 
-<link rel="stylesheet" href="styles/sidebar.css">
+<link rel="stylesheet" href="<?= CSS_ROOT?>/sidebar.css">
 
 <div class="sidebar__superglue">
     <?php

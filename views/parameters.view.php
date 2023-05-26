@@ -1,5 +1,5 @@
 
-    <link rel="stylesheet" href="styles\parameters.css">
+    <link rel="stylesheet" href="<?= CSS_ROOT?>\parameters.css">
 
 
 <div class="parameters_layout">

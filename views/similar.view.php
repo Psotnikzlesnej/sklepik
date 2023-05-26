@@ -1,7 +1,7 @@
 
-<link rel="stylesheet" href="styles/similar.css">
-    <script src="js/counter.js" defer></script>
-    <link rel="stylesheet" href="styles/counter.css">
+<link rel="stylesheet" href="<?= CSS_ROOT?>/similar.css">
+    <script src="<?= JS_ROOT?>/counter.js" defer></script>
+    <link rel="stylesheet" href="<?= CSS_ROOT?>/counter.css">
 </head>
 <body>
     <div class="bg">
