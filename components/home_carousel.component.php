@@ -1,6 +1,6 @@
 
-<link rel="stylesheet" href="styles/home_carousel.css">
-<link rel="stylesheet" href="styles/icons.css">
+<link rel="stylesheet" href="<?= CSS_ROOT ?>/home_carousel.css">
+<link rel="stylesheet" href="<?= CSS_ROOT ?>/icons.css">
 <div class="home-carousel-container">
   <div class="home-carousel">
   <div class="home-carousel__arrow home-carousel__arrow--left">
@@ -16,7 +16,7 @@
         </div>
         <div class="home-carousel__image-container">
           <img class="home-carousel__image <?= $banner['mask'] ? 'home-carousel__image--mask' : '' ?>" 
-          src="photos/banners/<?= $banner['image_name'] ?>" alt="<?= $banner['alt'] ?>">
+          src="<?= PHOTO_ROOT ?>/banners/<?= $banner['image_name'] ?>" alt="<?= $banner['alt'] ?>">
         </div>
       </div>
       <?php endforeach ?>
@@ -33,7 +33,7 @@
 </div>
 
 
-<script src="js/home_carousel.js"></script> 
+<script src="<?= JS_ROOT ?>/home_carousel.js"></script> 
 
 
 

@@ -1,14 +1,14 @@
-<link rel="stylesheet" href="styles/home.css">
+<link rel="stylesheet" href="<?= CSS_ROOT?>/home.css">
 <?php
-  require __DIR__ . '/../templates/header.php';
+  require __DIR__ . TEMPLATE_ROOT .'/header.php';
 ?>
 <main>
   <?php 
-    require __DIR__ . '/../controllers/gallery.controller.php';
-    require __DIR__ . '/../controllers/featured.controller.php';
+    require __DIR__ . CONTROLLER_ROOT .'/gallery.controller.php';
+    require __DIR__ . CONTROLLER_ROOT .'/featured.controller.php';
   ?>
 </main>
 <?php
-  require __DIR__ . '/../controllers/about_us.controller.php';
-  require __DIR__ . '/../templates/footer.php';
+  require __DIR__ . CONTROLLER_ROOT .'/about_us.controller.php';
+  require __DIR__ . TEMPLATE_ROOT .'/footer.php';
 ?>

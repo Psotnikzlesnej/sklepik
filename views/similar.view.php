@@ -1,7 +1,7 @@
 
-<link rel="stylesheet" href="styles/similar.css">
-    <script src="js/counter.js" defer></script>
-    <link rel="stylesheet" href="styles/counter.css">
+<link rel="stylesheet" href="<?= CSS_ROOT?>/similar.css">
+    <script src="<?= JS_ROOT?>/counter.js" defer></script>
+    <link rel="stylesheet" href="<?= CSS_ROOT?>/counter.css">
 </head>
 <body>
     <div class="bg">
@@ -13,7 +13,7 @@
         <?php
         foreach($similar_product as $item): 
            ?>
-        <div class="product_tile-hover"><?php include __DIR__ .'/../components/item.component.php' ?></div>
+        <div class="product_tile-hover"><?php include __DIR__ . COMPONENT_ROOT .'/item.component.php' ?></div>
             <?php endforeach ?>
         </div>
             <div class="addtocart">

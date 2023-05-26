@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="styles/product_display.css">
+<link rel="stylesheet" href="<?= CSS_ROOT?>/product_display.css">
 <?php
 $url = $_SERVER['REQUEST_URI'];
 $url_manipulator = new URLManipulator($url);
@@ -65,14 +65,14 @@ $next_page = $pages_array[$current_index+1] ?? NULL;
 
 <div class="product-display">
     <?php
-        require __DIR__ . '/../components/product_navbar.component.php';
-        require __DIR__ . '/../components/item.component.php';
-        require __DIR__ . '/../components/item.component.php';
-        require __DIR__ . '/../components/item.component.php';
-        require __DIR__ . '/../components/item.component.php';
-        require __DIR__ . '/../components/item.component.php';
-        require __DIR__ . '/../components/item.component.php';
-        require __DIR__ . '/../components/item.component.php';
-        require __DIR__ . '/../components/product_navbar.component.php';
+        require __DIR__ . COMPONENT_ROOT . '/product_navbar.component.php';
+        require __DIR__ . COMPONENT_ROOT . '/item.component.php';
+        require __DIR__ . COMPONENT_ROOT . '/item.component.php';
+        require __DIR__ . COMPONENT_ROOT . '/item.component.php';
+        require __DIR__ . COMPONENT_ROOT . '/item.component.php';
+        require __DIR__ . COMPONENT_ROOT . '/item.component.php';
+        require __DIR__ . COMPONENT_ROOT . '/item.component.php';
+        require __DIR__ . COMPONENT_ROOT . '/item.component.php';
+        require __DIR__ . COMPONENT_ROOT . '/product_navbar.component.php';
     ?>
 </div>

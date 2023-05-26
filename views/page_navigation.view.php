@@ -1,5 +1,5 @@
 
-    <link rel="stylesheet" href="styles/page_navigation.css">
+    <link rel="stylesheet" href="<?= CSS_ROOT?>/page_navigation.css">
 <div class="nav-long">
     
     <div  class="cate">
@@ -8,4 +8,4 @@
     <a class="hejka" data-link="other"   data-div="div-3">   <span class="myDiv" data-div="div-3" id="div-3">INNE Z KATEGORII</span></a>
     </div>
     </div>
-    <script src="js/page_navigation.js"></script>
+    <script src="<?= JS_ROOT?>/page_navigation.js"></script>

@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="styles/gallery.css">
+<link rel="stylesheet" href="<?= CSS_ROOT?>/gallery.css">
 <div class="gallery">
   <?php
     require __DIR__ . '/../components/home_carousel.component.php';

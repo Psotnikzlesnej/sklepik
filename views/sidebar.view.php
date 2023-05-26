@@ -1,18 +1,18 @@
 
-<link rel="stylesheet" href="styles/sidebar.css">
+<link rel="stylesheet" href="<?= CSS_ROOT?>/sidebar.css">
 
 <div class="sidebar__superglue">
     <?php
-    include 'components/accordion.component.php'
+    include  COMPONENT_ROOT .'/accordion.component.php'
     ?>
     <?php
-    include 'components/applied_filters.component.php'
+    include  COMPONENT_ROOT .'/applied_filters.component.php'
     ?>
     <?php
-    include 'components/manufacturer_checkbox.component.php';
+    include  COMPONENT_ROOT .'/manufacturer_checkbox.component.php';
     ?>
     <?php
-    include 'components/color_selector.component.php'
+    include  COMPONENT_ROOT .'/color_selector.component.php'
     ?>
     <div class="color__selector">
         <color-selector class="color-selector" data-selected="1">

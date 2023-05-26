@@ -1,15 +1,15 @@
-<link rel="stylesheet" href="styles/offer.css">
-<script src="js/carousels.js"></script>
+<link rel="stylesheet" href="<?= CSS_ROOT?>/offer.css">
+<script src="<?= JS_ROOT?>/carousels.js"></script>
 
   <div class="main-container">
     <div class="main-text">
       <span>Łącznik jednobiegunowy (moduł) 10AX, 250V~, zaciski śrubowe</span>
-      <img src="photos/manufacturers/Philips_logo.png" style="height: 17px;margin-right: 15px; "alt="">
+      <img src="<?= PHOTO_ROOT?>/manufacturers/Philips_logo.png" style="height: 17px;margin-right: 15px; "alt="">
     </div>
     <div class="main-container__display">
       <div class="main-container__product">
         <?php
-          include_once 'components/carousels.php';
+          include_once COMPONENT_ROOT .'/carousels.php';
         ?>
       </div>
       <div class="container">
@@ -75,7 +75,7 @@
               </div>
               <div class="addtocart_offer">
               <div class="counter_container_offer">
-                <?php include __DIR__ . '/../components/counter.component.php'; ?>
+                <?php include __DIR__ . COMPONENT_ROOT .'/counter.component.php'; ?>
                 <template id="custom-counter-offer">
                     <button type="button" class="counter__button counter__button-decrease"></button>
                     <input type="number" class="counter__input">

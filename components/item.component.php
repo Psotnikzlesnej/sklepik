@@ -1,13 +1,13 @@
-<link rel="stylesheet" href="styles/item.css">
+<link rel="stylesheet" href="<?= CSS_ROOT ?>/item.css">
 
 <div class="product_tile">
             <div class="item__photo-container">
-                <img class="item__photo" src="photos/products/Photo – 1.png" alt="">
+                <img class="item__photo" src="<?= PHOTO_ROOT ?>/products/Photo – 1.png" alt="">
             </div>
             <div class="product_tile-hover">
                 <div class="dsc">
                     <div class="dsc1"><?= $item['name'] ?></div>
-                    <div class="dsc2">Kod produktu: <?= $item['serial_number'] ?></div>
+                    <div class="dsc2">Jaca to zjeb: <?= $item['serial_number'] ?></div>
                 </div>
                 <div class="price">
                     <div class="price1"><?= $item['catalog_price'] ?></div>
@@ -15,7 +15,7 @@
                 </div>
             </div>
             <div class="addtocart">
-                <?php include __DIR__ . '/../components/counter.component.php'; ?>
+                <?php include COMPONENT_ROOT . '/counter.component.php'; ?>
                     <div class="counter_container">
                         <template id="counter">
                             <button type="button" class="counter__button counter__button-decrease"></button>

@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="styles/product_navbar.css">
-<link rel="stylesheet" href="styles/icons.css">
-<?php include __DIR__ . '/select.component.php' ?>
+<link rel="stylesheet" href="<?= CSS_ROOT ?>/product_navbar.css">
+<link rel="stylesheet" href="<?= CSS_ROOT ?>/icons.css">
+<?php include COMPONENT_ROOT . '/select.component.php' ?>
 
 <nav class="product-navbar" id="navbar-product">
     <div class="product-navbar__mode">
@@ -58,4 +58,4 @@
         </div>
     </div>
 </nav>
-<script src="js/product_navbar.js"></script>
+<script src="<?= JS_ROOT ?>/product_navbar.js"></script>

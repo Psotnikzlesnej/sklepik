@@ -1,8 +1,8 @@
-<link rel="stylesheet" href="styles/tile.css">
+<link rel="stylesheet" href="<?= CSS_ROOT ?>/tile.css">
 <div class="tile__main">
     <div class="tile__image <?= $tile['mask'] ? 'tile__image--mask' : '' ?>">
         <img class="tile__image" 
-        src="photos/banners/<?= $tile['image_name'] ?>">
+        src="<?= PHOTO_ROOT ?>/banners/<?= $tile['image_name'] ?>">
     </div>
     <div class="tile__content">
         <div class="tile__title"><?= $tile['title'] ?> </div>

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/category_selector.css">
-    <script src="../js/category_selector.js"></script>
+    <link rel="stylesheet" href="<?= CSS_ROOT?>/category_selector.css">
+    <script src="<?= JS_ROOT?>/category_selector.js"></script>
 </head>
 <body>
     <div class="category_slider">
