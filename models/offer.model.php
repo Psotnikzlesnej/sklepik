@@ -30,7 +30,7 @@
 			WHERE p.visible = true AND p.stock > 0 AND p.ID = ? GROUP BY p.ID;";
 	$result = $this->mysqli->execute_query($query, [$this->id]);
 	$product_offer = $result -> fetch_assoc();
-	return $result;
+	return $product_offer;
 }
 	public function getEverything(){
 		$horizontal_carousel_image = $this -> getHorizontalCarouselImage();

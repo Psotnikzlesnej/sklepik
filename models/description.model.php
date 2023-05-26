@@ -10,7 +10,7 @@
     $query = "SELECT description, video_url FROM product";
     $result = $this->mysqli->query($query);
     $product_description = $result -> fetch_assoc();
-    return $result;
+    return $product_description;
      }
     public function getEverything(){
         $product_description = $this->getProductDescription();

@@ -10,19 +10,12 @@
         <div class="border"></div>
 
         <div class="product_tile">
-            <div class="photo">
-                <img src="photos/products/Photo – 1.png" alt="">
-            </div>
-            <div class="product_tile-hover">
-                <div class="dsc">
-                    <div class="dsc1">TURBOMATURA</div>
-                    <div class="dsc2">2017</div>
-                </div>
-                <div class="price">
-                    <div class="price1">297zł</div>
-                    <div class="price2">100zł</div>
-                </div>
-            </div>
+        <?php
+        foreach($similar_product as $item): 
+           ?>
+        <div class="product_tile-hover"><?php include __DIR__ .'/../components/item.component.php' ?></div>
+            <?php endforeach ?>
+        </div>
             <div class="addtocart">
                 <?php include __DIR__ . '/../components/counter.component.php'; ?>
                     <div class="counter_container">
@@ -38,5 +31,4 @@
                     </div>
                 </div>
         </div>
-
     </div>

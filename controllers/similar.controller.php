@@ -1,5 +1,5 @@
 <?php
-namespace Similar;
+namespace ProductSimilar;
 $component_name='similar';
 include_once __DIR__ . '/../models/'.$component_name.'.model.php';
 include_once __DIR__ . '/../utils/php/controller.php';
