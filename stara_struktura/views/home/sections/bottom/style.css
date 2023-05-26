@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @use '../../../../utils/styles/fonts';\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   stara_struktura\\views\\home\\sections\\bottom\\style.scss 1:1  root stylesheet";
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @use '../../../../utils/styles/fonts';\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   stara_struktura\\views\\home\\sections\\bottom\\style.scss 1:1  root stylesheet";
 }

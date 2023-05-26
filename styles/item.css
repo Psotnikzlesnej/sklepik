@@ -26,9 +26,8 @@
 .dsc {
   height: 40px;
   width: 200px;
-  margin-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 20px;
+  white-space: nowrap;
 }
 
 .price {
@@ -47,12 +46,10 @@
   color: #111111;
   text-transform: uppercase;
   opacity: 1;
-  display: -webkit-box;
-  -webkit-text-stroke: 2;
-  height: -webkit-fill-available;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-left: 150px;
 }
 
 .dsc2 {
@@ -61,6 +58,7 @@
   letter-spacing: -0.28px;
   color: #111111;
   opacity: 1;
+  margin-left: 20px;
 }
 
 .price1 {

@@ -7,7 +7,7 @@
             <div class="product_tile-hover">
                 <div class="dsc">
                     <div class="dsc1"><?= $item['name'] ?></div>
-                    <div class="dsc2">Kod produktu: <?= $item['serial_number'] ?></div>
+                    <div class="dsc2">Jaca to zjeb: <?= $item['serial_number'] ?></div>
                 </div>
                 <div class="price">
                     <div class="price1"><?= $item['catalog_price'] ?></div>
