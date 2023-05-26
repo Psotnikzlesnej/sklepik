@@ -4,7 +4,7 @@ function get_home_banners(){
   global $mysqli;
   $query = "SELECT title, description, image_name, link, type, alt, mask FROM `banner` 
   WHERE visible=true AND type IN ('home_top', 'home_tile', 'home_bottom')";
-  $result = $mysqli->query($query);
+  $result = $this->mysqli->query($query);
   return $result;
 }
 
@@ -29,7 +29,7 @@ function get_featured_products(){
   FROM product as p 
     JOIN product_flag as p_f on p_f.product_ID = p.ID JOIN flag as f on p_f.flag_ID = f.ID 
       WHERE p.visible = true AND p.stock > 0 GROUP BY p.ID HAVING flag_names LIKE '%featured%';";
-  $result = $mysqli->query($query);
+  $result = $this->mysqli->query($query);
   return $result;
 }
 ?>

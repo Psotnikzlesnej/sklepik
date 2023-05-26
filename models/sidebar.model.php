@@ -16,7 +16,7 @@ class Model {
     $tree = [];
     foreach ($parent as $k=>$l){
       if(isset($list[$l['ID']])){
-        $l['children'] = createTree($list, $list[$l['ID']]);
+        $l['children'] = $this->createTree($list, $list[$l['ID']]);
       }
       $tree[] = $l;
     } 
@@ -25,14 +25,14 @@ class Model {
 
   private function getCategories(){
     $query = "SELECT ID, name, image_name, description, (ID = ?) as is_current, parent, level from category;";
-    $result= $this->$mysqli->execute_query($query, [$this->category]);
+    $result= $this->mysqli->execute_query($query, [$this->category]);
     $categories_sorted_by_parent = [];
     while ($category = $result->fetch_assoc())
     {
       $parent_ID = $category['parent'];
       $categories_sorted_by_parent[$parent_ID][] = $category;
     }
-    $category_tree = createTree($categories_sorted_by_parent, $categories_sorted_by_parent[null]);
+    $category_tree = $this->createTree($categories_sorted_by_parent, $categories_sorted_by_parent[null]);
     return $category_tree;
   }
 
@@ -61,7 +61,7 @@ class Model {
   }
 
   public function getEverything(){
-    $colors = $this->get_colors();
+    $colors = $this->getColors();
     $manufacturers = $this->getManufacturers();
     $category_tree = $this->getCategories();
     return ['colors' => $colors, 'manufacturers' => $manufacturers, 'categories'=>$category_tree, 

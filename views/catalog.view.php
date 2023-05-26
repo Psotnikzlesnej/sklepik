@@ -1,14 +1,19 @@
-<link rel="stylesheet" href="styles/catalog.css">
+<link rel="stylesheet" href="<?= CSS_ROOT ?>/catalog.css">
 
 <?php include TEMPLATE_ROOT .'/header.php'?>
 <?php
   include TEMPLATE_ROOT .'/breadcrumbs.php'
 ?>
 <main>
-  <?php
-    include VIEW_ROOT .'/sidebar.view.php'
+  <?php include CONTROLLER_ROOT .'/sidebar.controller.php';
   ?>
-  <?php 
-  include VIEW_ROOT .'/product_display.view.php'?>
+  <div>
+  <?php
+    include CONTROLLER_ROOT .'/category_description.controller.php';
+    include CONTROLLER_ROOT .'/category_selector.controller.php';
+    include CONTROLLER_ROOT .'/banner.controller.php';
+    include CONTROLLER_ROOT .'/product_display.controller.php';
+  ?>
+  </div>
 </main>
 <?php include TEMPLATE_ROOT .'/footer.php'?>

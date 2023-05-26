@@ -10,7 +10,7 @@ class Model {
   private function getCategories($parent_id){
     $query = "SELECT ID, name, image_name, description, (ID = ?) as is_current 
     from category WHERE parent = ?;";
-    $result= $mysqli -> execute_query($query, [$this->id, $parent_id]);
+    $result= $this->mysqli -> execute_query($query, [$this->id, $parent_id['parent']]);
     $categories = [];
     while ($category = $result->fetch_assoc())
     {

@@ -16,7 +16,7 @@ function get_product($id){
 		LEFT JOIN product_flag as p_f ON p_f.product_ID = p.ID
 		LEFT JOIN flag as f ON p_f.flag_ID = f.ID
 			WHERE p.visible = true AND p.stock > 0 AND p.ID = ? GROUP BY p.ID;";
-	$result = $mysqli->execute_query($query, [$id]);
+	$result = $this->mysqli->execute_query($query, [$id]);
 	return $result;
 }
 
@@ -26,7 +26,7 @@ function get_product_categories($id) {
 		JOIN `product_category` as p_c on p_c.product_ID = p.ID
 		JOIN `category` as c on p_c.category_ID = c.ID
 			WHERE p.ID = ? ORDER BY level DESC";
-	$result = $mysqli->execute_query($query, [$id]);
+	$result = $this->mysqli->execute_query($query, [$id]);
 	return $result;
 }
 
@@ -40,7 +40,7 @@ function get_similar_products($category, $id){
     JOIN product_flag as p_f on p_f.product_ID = p.ID JOIN flag as f on p_f.flag_ID = f.ID 
       WHERE p.visible = true AND p.stock > 0 AND c.ID=$category AND NOT p.ID = ? 
 			GROUP BY p.ID;";
-	$result = $mysqli->execute_query($query, [$id]);
+	$result = $this->mysqli->execute_query($query, [$id]);
 	return $result;
 }
 
@@ -49,7 +49,7 @@ function get_product_variant($variant_id){
 	$query = "SELECT product.ID, product.variant_name, (select p_i.image_name from product_image as p_i 
 	where p_i.product_ID = product.ID ORDER BY p_i.main DESC LIMIT 1) as image_name FROM product
 	WHERE product.visible = true AND product.stock > 0 AND product.variant_group_ID =?";
-	$result = $mysqli -> execute_query($query, [$variant_id]);
+	$result = $this->mysqli -> execute_query($query, [$variant_id]);
 	return $result;
 }
 ?>
