@@ -15,7 +15,7 @@
                 </div>
             </div>
             <div class="addtocart">
-                <?php include __DIR__ . '/../components/counter.component.php'; ?>
+                <?php include COMPONENT_ROOT . '/counter.component.php'; ?>
                     <div class="counter_container">
                         <template id="counter">
                             <button type="button" class="counter__button counter__button-decrease"></button>

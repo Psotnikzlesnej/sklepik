@@ -77,7 +77,7 @@
   <i class="fa-solid fa-angle-right"></i>
 
   </button>
-  <script src="js/carousels.js"></script> 
+  <script src="<?= JS_ROOT ?>/carousels.js"></script> 
 
 
 

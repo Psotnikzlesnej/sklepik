@@ -26,11 +26,11 @@
   <div class="slide"><img class="image_149" src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
 
    
-  <div class="slide"><img class="image_149" src="..\photos\categories\Image 149.png"></div>
-  <div class="slide"><img class="image_149" src="..\photos\categories\Image 149.png"></div>
-  <div class="slide"><img class="image_149" src="..\photos\categories\Image 149.png"></div>
-  <div class="slide"><img class="image_149" src="..\photos\categories\Image 149.png"></div>
-  <div class="slide"><img  class="image_149"src="..\photos\categories\Image 149.png"></div>
+  <div class="slide"><img class="image_149" src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
+  <div class="slide"><img class="image_149" src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
+  <div class="slide"><img class="image_149" src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
+  <div class="slide"><img class="image_149" src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
+  <div class="slide"><img  class="image_149"src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
 
   </ul>
 
