@@ -18,7 +18,7 @@ class Model {
   }
   private function getHomeTiles(){
     $tiles = [];
-    $query = "SELECT title, image_name, link, type, alt, mask FROM `banner` 
+    $query = "SELECT title, description, image_name, link, type, alt, mask FROM `banner` 
   WHERE visible=true AND type = 'home_tile'";
   $result = $this->mysqli ->query($query);
   while($tile = $result -> fetch_assoc()){

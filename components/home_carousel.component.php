@@ -11,10 +11,13 @@
       <div class="home-carousel__element">
         <div class="home-carousel__element-content">
           <h1 class="home-carousel__title"><?= $banner['title'] ?></h1>
-          <?= $banner['description'] ?>
+          <div class="home-carousel__description"><?= $banner['description'] ?></div>
+          <a class="home-carousel__link" href="<?= $banner['link'] ?>">Zobacz więcej</a>
         </div>
-        <img class="home-carousel__element-image <?= $banner['mask'] ? 'home-carousel__element-image--mask' : '' ?>" 
-        src="photos/banners/<?= $banner['image_name'] ?>" alt="<?= $banner['alt'] ?>">
+        <div class="home-carousel__image-container">
+          <img class="home-carousel__image <?= $banner['mask'] ? 'home-carousel__image--mask' : '' ?>" 
+          src="photos/banners/<?= $banner['image_name'] ?>" alt="<?= $banner['alt'] ?>">
+        </div>
       </div>
       <?php endforeach ?>
     </div>

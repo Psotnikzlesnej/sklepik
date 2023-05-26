@@ -155,6 +155,7 @@
 }
 
 .tile__image {
+  display: block;
   object-fit: cover;
   position: absolute;
   height: 100%;
@@ -167,7 +168,8 @@
   }
 }
 
-.tile__gradient {
+.tile__image--mask::after {
+  content: "";
   position: absolute;
   height: 100%;
   width: 100%;

@@ -29,19 +29,28 @@
     }
   }
 
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-position: center top;
+    object-fit: cover;
+  }
+
+  &__image-container::after {
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(0,0,0,0.55));
+  }
+
   &__element {
     opacity: 0;
     transition: opacity 1s;
     position: absolute;
     width: 100%;
     height: 100%;
-
-    &-image {
-      width: 100%;
-      height: 100%;
-      object-position: center top;
-      object-fit: cover;
-    }
 
     &--current {
       opacity: 1;

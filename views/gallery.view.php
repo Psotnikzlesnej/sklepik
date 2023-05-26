@@ -6,7 +6,6 @@
   <div class="tile-container">
     <?php
       foreach($home_tiles as $tile){
-        // odrobaczanie($tile);
         require __DIR__ . '/../components/tile.component.php';
       }
     ?>
