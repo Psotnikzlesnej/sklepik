@@ -34,4 +34,6 @@ body {
     grid-template-rows: auto;
     grid-template-areas: "header header header header" "breadcrumbs breadcrumbs breadcrumbs breadcrumbs" "aside aside aside aside" "footer footer footer footer";
   }
-}/*# sourceMappingURL=catalog.css.map */
+}
+
+/*# sourceMappingURL=catalog.css.map */

@@ -149,12 +149,11 @@
   justify-content: center;
   align-items: center;
   border: 1px solid #e1e2e8;
-  width: 1858px;
   height: 50px;
   border-right: none;
   border-left: none;
   border-bottom: none;
-  background-color: #F2F3F4;
+  background-color: #f2f3f4;
 }
 
 .textk {
@@ -170,11 +169,10 @@
   justify-content: center;
   align-items: center;
   border: 1px solid #e1e2e8;
-  width: 1858px;
   height: 50px;
   border-right: none;
   border-left: none;
-  background-color: #F2F3F4;
+  background-color: #f2f3f4;
 }
 
 .tbody1 {
@@ -182,7 +180,6 @@
   justify-content: center;
   align-items: center;
   border: 1px solid #e1e2e8;
-  width: 1858px;
   height: 50px;
   border-right: none;
   border-left: none;
@@ -191,7 +188,7 @@
 
 .tab__container {
   width: 92%;
-  margin-left: 30px;
+  margin: auto;
 }
 
 /*# sourceMappingURL=parameters.css.map */
