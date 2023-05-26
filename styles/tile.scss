@@ -1,7 +1,20 @@
 @use '../utils/styles/fonts';
 @use '../utils/styles/variables';
 
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
 .tile {
+
+
   &__content {
     padding-left: 30px;
     box-sizing: border-box;
@@ -12,7 +25,7 @@
     flex-direction: column;
     justify-content: center;
   }
-}
+} 
 
 .tile__main{
     display: flex;
@@ -42,7 +55,7 @@
   .tile__dsc{
     margin: 5px 0 20px 0;
     font-weight: 100;
-    font-size: 44px;
+    font-size: 30px;
     font-family: "Metropolis", sans-serif;
     letter-spacing: 0px;
     color: #FFFFFF;
@@ -84,6 +97,7 @@
     font-weight: bold;
     font-size: 14px;
     color: white;
+    text-transform: uppercase;
   }
   .tile__button:hover{
     background-color: #F74137;
