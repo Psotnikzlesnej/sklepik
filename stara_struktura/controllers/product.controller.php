@@ -11,7 +11,6 @@ function process_product($id){
   $variant_id = $product['variant_group_ID'];
   $variants = process_variants($variant_id);
   $product['variants'] = $variants;
-  odrobaczanie($product);
   return $product;
 }
 

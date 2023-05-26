@@ -3,12 +3,12 @@
 
 
 <?php 
-include_once __DIR__ . CONTROLLER_ROOT .'/product.controller.php';
-require __DIR__. TEMPLATE_ROOT .'/header.php';
-require __DIR__. TEMPLATE_ROOT .'/breadcrumbs.php';
-require __DIR__. VIEW_ROOT.'/offer.view.php';
-require __DIR__. VIEW_ROOT.'/page_navigation.view.php';
-require __DIR__. VIEW_ROOT.'/description.view.php';
-require __DIR__. VIEW_ROOT.'/parameters.view.php';
-require __DIR__. CONTROLLER_ROOT .'/similar.controller.php';
-require __DIR__. TEMPLATE_ROOT .'/footer.php';
+include_once CONTROLLER_ROOT .'/product.controller.php';
+require TEMPLATE_ROOT .'/header.php';
+require TEMPLATE_ROOT .'/breadcrumbs.php';
+require VIEW_ROOT.'/offer.view.php';
+require VIEW_ROOT.'/page_navigation.view.php';
+require VIEW_ROOT.'/description.view.php';
+require VIEW_ROOT.'/parameters.view.php';
+require CONTROLLER_ROOT .'/similar.controller.php';
+require TEMPLATE_ROOT .'/footer.php';

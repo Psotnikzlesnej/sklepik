@@ -64,10 +64,10 @@
   <ul class="slides-container_horizontal" id="slides-container_horizontal">
     
 
-  <div class="slide_horizontal"><img src="photos/products/Photo – 1.png"></div>
-  <div class="slide_horizontal"><img src="photos/products/Photo – 1.png"></div>
-  <div class="slide_horizontal"><img src="photos/products/Photo – 1.png"></div>
-  <div class="slide_horizontal"><img src="photos/products/Photo – 1.png"></div>
+  <div class="slide_horizontal"><img src="<?= PHOTO_ROOT ?>/products/Photo – 1.png"></div>
+  <div class="slide_horizontal"><img src="<?= PHOTO_ROOT ?>/products/Photo – 1.png"></div>
+  <div class="slide_horizontal"><img src="<?= PHOTO_ROOT ?>/products/Photo – 1.png"></div>
+  <div class="slide_horizontal"><img src="<?= PHOTO_ROOT ?>/products/Photo – 1.png"></div>
   </ul>
 
 
