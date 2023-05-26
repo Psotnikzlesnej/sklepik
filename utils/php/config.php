@@ -16,9 +16,26 @@ $mysqli = @new mysqli(
   $credentials['DATABASE']
 );
 
-$root_dir = $credentials['SCRIPT_ROOT'] ?? '/sklepik';
+$credentials['CSS_ROOT'] ?? '/sklepik/styles';
+$credentials['TEMPLATE_ROOT'] ?? '/sklepik/template';
+$credentials['VIEW_ROOT'] ?? '/sklepik/views';
+$credentials['PHOTO_ROOT'] ?? '/sklepik/photos';
+$credentials['UTIL_ROOT'] ?? '/sklepik/utils';
+$credentials['STATIC_ROOT'] ?? '/sklepik/static';
+$credentials['COMPONENT_ROOT'] ?? '/sklepik/components';
+$credentials['CONTROLLER_ROOT'] ?? '/sklepik/controllers';
+$credentials['MODEL_ROOT'] ?? '/sklepik/models';
 
-define('SCRIPT_ROOT', $root_dir);
+
+define('JS_ROOT', $credentials['JS_ROOT'] ?? '/sklepik/js');
+define('CSS_ROOT', $credentials['CSS_ROOT'] ?? '/sklepik/styles');
+define('TEMPLATE_ROOT', $credentials['TEMPLATE_ROOT'] ?? '/sklepik/template');
+define('VIEW_ROOT', $credentials['VIEW_ROOT'] ?? '/sklepik/views');
+define('PHOTO_ROOT', $credentials['PHOTO_ROOT'] ?? '/sklepik/photos');
+define('STATIC_ROOT', $credentials['STATIC_ROOT'] ?? '/sklepik/static');
+define('COMPONENT_ROOT', $credentials['COMPONENT_ROOT'] ?? '/sklepik/components');
+define('CONTROLLER_ROOT', $credentials['CONTROLLER_ROOT'] ?? '/sklepik/controllers');
+define('MODEL_ROOT', $credentials['MODEL_ROOT'] ?? '/sklepik/models');
 
 $mysqli->set_charset('utf8mb4');
 ?>
