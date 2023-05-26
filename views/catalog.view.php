@@ -1,14 +1,14 @@
 <link rel="stylesheet" href="styles/catalog.css">
 
-<?php include 'templates/header.php'?>
+<?php include TEMPLATE_ROOT .'/header.php'?>
 <?php
-  include 'templates/breadcrumbs.php'
+  include TEMPLATE_ROOT .'/breadcrumbs.php'
 ?>
 <main>
   <?php
-    include 'sidebar.view.php'
+    include VIEW_ROOT .'/sidebar.view.php'
   ?>
   <?php 
-  include 'product_display.view.php'?>
+  include VIEW_ROOT .'/product_display.view.php'?>
 </main>
-<?php include 'templates/footer.php'?>
+<?php include TEMPLATE_ROOT .'/footer.php'?>

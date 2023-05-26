@@ -12,7 +12,7 @@
         <div class="home-carousel__element-content">
           <h1 class="home-carousel__title"><?= $banner['title'] ?></h1>
           <div class="home-carousel__description"><?= $banner['description'] ?></div>
-          <a class="home-carousel__link" href="<?= $banner['link'] ?>">Zobacz więcej</a>
+          <div class="home-carousel__button"><a class="home-carousel__link" href="<?= $banner['link'] ?>">Zobacz więcej</a></div>
         </div>
         <div class="home-carousel__image-container">
           <img class="home-carousel__image <?= $banner['mask'] ? 'home-carousel__image--mask' : '' ?>" 

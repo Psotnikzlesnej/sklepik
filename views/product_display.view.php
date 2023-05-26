@@ -65,14 +65,14 @@ $next_page = $pages_array[$current_index+1] ?? NULL;
 
 <div class="product-display">
     <?php
-        require __DIR__ . '/../components/product_navbar.component.php';
-        require __DIR__ . '/../components/item.component.php';
-        require __DIR__ . '/../components/item.component.php';
-        require __DIR__ . '/../components/item.component.php';
-        require __DIR__ . '/../components/item.component.php';
-        require __DIR__ . '/../components/item.component.php';
-        require __DIR__ . '/../components/item.component.php';
-        require __DIR__ . '/../components/item.component.php';
-        require __DIR__ . '/../components/product_navbar.component.php';
+        require COMPONENT_ROOT . '/product_navbar.component.php';
+        require COMPONENT_ROOT . '/item.component.php';
+        require COMPONENT_ROOT . '/item.component.php';
+        require COMPONENT_ROOT . '/item.component.php';
+        require COMPONENT_ROOT . '/item.component.php';
+        require COMPONENT_ROOT . '/item.component.php';
+        require COMPONENT_ROOT . '/item.component.php';
+        require COMPONENT_ROOT . '/item.component.php';
+        require COMPONENT_ROOT . '/product_navbar.component.php';
     ?>
 </div>

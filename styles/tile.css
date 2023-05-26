@@ -106,6 +106,22 @@
   font-weight: 900;
   src: url("/fonts/metropolis-blackitalic-webfont.woff2") format("woff2");
 }
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
 .tile__content {
   padding-left: 30px;
   box-sizing: border-box;
@@ -148,7 +164,7 @@
 .tile__dsc {
   margin: 5px 0 20px 0;
   font-weight: 100;
-  font-size: 44px;
+  font-size: 30px;
   font-family: "Metropolis", sans-serif;
   letter-spacing: 0px;
   color: #FFFFFF;
@@ -195,6 +211,7 @@
   font-weight: bold;
   font-size: 14px;
   color: white;
+  text-transform: uppercase;
 }
 
 .tile__button:hover {

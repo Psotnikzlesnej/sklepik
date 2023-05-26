@@ -1,8 +1,63 @@
 // @use "../utils/styles/fonts";
 // @use "../utils/styles/variables";
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
 
 .home-carousel {
   position: relative;
+
+  &__link{
+    color: white;
+  }
+
+  &__button{
+    margin-top: 15px;
+    transition: border-color .3s, background-color .3s;
+    box-sizing: border-box;
+    width: 200px;
+    height: 55px;
+    border: 1px solid #FFFFFF;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Metropolis', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    font-style: none;
+    color: white;
+  }
+  &__button:hover{
+    background-color: #F74137;
+    border: none;
+    cursor: pointer;
+  }
+ 
+  &__title{
+    color: white;
+    z-index: 23;
+    font-size: 44px;
+    font-weight: bold;
+  }
+  &__description{
+    color: white;
+    font-size: 22px;
+    font-weight: normal;
+    width: 400px;
+  }
+  &__h2{
+    font-size: 44px;
+  }
 
   &__dots-container {
     width: max-content;
@@ -59,6 +114,9 @@
     &-content {
       padding: 70px;
       position: absolute;
+      z-index: 2;
+      margin-left: 40px;
+      margin-top: 65px;
     }
   }
 
@@ -93,4 +151,7 @@
       right: 0;
     }
   }
+}
+.home-carousel__description p{
+  margin-top: 15px;
 }

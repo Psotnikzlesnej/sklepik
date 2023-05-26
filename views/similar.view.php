@@ -13,11 +13,11 @@
         <?php
         foreach($similar_product as $item): 
            ?>
-        <div class="product_tile-hover"><?php include __DIR__ .'/../components/item.component.php' ?></div>
+        <div class="product_tile-hover"><?php include COMPONENT_ROOT .'/item.component.php' ?></div>
             <?php endforeach ?>
         </div>
             <div class="addtocart">
-                <?php include __DIR__ . '/../components/counter.component.php'; ?>
+                <?php include COMPONENT_ROOT .'/counter.component.php'; ?>
                     <div class="counter_container">
                         <template id="counter">
                             <button type="button" class="counter__button counter__button-decrease"></button>

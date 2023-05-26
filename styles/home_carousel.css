@@ -1,5 +1,63 @@
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
 .home-carousel {
   position: relative;
+}
+.home-carousel__link {
+  color: white;
+}
+.home-carousel__button {
+  margin-top: 15px;
+  transition: border-color 0.3s, background-color 0.3s;
+  box-sizing: border-box;
+  width: 200px;
+  height: 55px;
+  border: 1px solid #FFFFFF;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Metropolis", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+  font-style: none;
+  color: white;
+}
+.home-carousel__button:hover {
+  background-color: #F74137;
+  border: none;
+  cursor: pointer;
+}
+.home-carousel__title {
+  color: white;
+  z-index: 23;
+  font-size: 44px;
+  font-weight: bold;
+}
+.home-carousel__description {
+  color: white;
+  font-size: 22px;
+  font-weight: normal;
+  width: 400px;
+}
+.home-carousel__h2 {
+  font-size: 44px;
 }
 .home-carousel__dots-container {
   width: max-content;
@@ -49,6 +107,9 @@
 .home-carousel__element-content {
   padding: 70px;
   position: absolute;
+  z-index: 2;
+  margin-left: 40px;
+  margin-top: 65px;
 }
 .home-carousel__container {
   overflow: hidden;
@@ -77,6 +138,10 @@
 }
 .home-carousel__arrow--right {
   right: 0;
+}
+
+.home-carousel__description p {
+  margin-top: 15px;
 }
 
 /*# sourceMappingURL=home_carousel.css.map */

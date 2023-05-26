@@ -15,7 +15,7 @@
         </div>
         <div class="featured-carousel__product-container">
        <?php foreach($featured as $item): ?>
-      <div class="featured-carousel__product"><?php include __DIR__ .'/../components/item.component.php' ?></div>
+      <div class="featured-carousel__product"><?php include COMPONENT_ROOT .'/item.component.php' ?></div>
 <?php endforeach ?>
         </div>
         <div class="featured-carousel__arrow featured-carousel__arrow--right">

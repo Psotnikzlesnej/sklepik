@@ -1,11 +1,10 @@
 <?php 
 include_once(__DIR__ . '/utils/php/error_handling.php'); 
-include_once(__DIR__ . '/utils/php/config.php'); 
-include_once(__DIR__ . '/utils/php/debug.php'); 
+include_once(__DIR__ . '/utils/php/debug.php');
+include_once(__DIR__ . '/utils/php/config.php');  
 $url = isset($_GET['url']) ? $_GET['url'] : 'home';
 $splitted_url = explode("/", $url);
 $layout_determiner = $splitted_url[0];
-// echo 'xD';
 
 if(isset($splitted_url[1])){
   $id = $splitted_url[1];
@@ -25,11 +24,12 @@ foreach($pairs as $pair){
 
 $controller_path = __DIR__ . '/controllers/' . $layout_determiner . '.controller.php';
 $not_found_path = __DIR__ . '/controllers/not_found.controller.php';
+
 if(file_exists($controller_path)){
   include_once($controller_path);
 }else{
-  // echo "xD";
-  // include_once($not_found_path);
+  echo "xD";
+  include_once($not_found_path);
 }
 
 ?>

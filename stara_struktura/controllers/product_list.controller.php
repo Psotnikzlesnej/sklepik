@@ -42,7 +42,6 @@ function compute_categories(){
     $categories_sorted_by_parent[$parent_ID][] = $category;
   }
   $category_tree = createTree($categories_sorted_by_parent, $categories_sorted_by_parent[null]);
-  odrobaczanie($category_tree);
   return $category_tree;
 }
 
