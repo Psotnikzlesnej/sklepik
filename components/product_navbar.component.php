@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="<?= CSS_ROOT ?>/product_navbar.css">
 <link rel="stylesheet" href="<?= CSS_ROOT ?>/icons.css">
-<?php include __DIR__ . '/select.component.php' ?>
+<?php include COMPONENT_ROOT . '/select.component.php' ?>
 
 <nav class="product-navbar" id="navbar-product">
     <div class="product-navbar__mode">
