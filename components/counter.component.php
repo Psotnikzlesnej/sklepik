@@ -1,5 +1,5 @@
-<script src="js/counter.js" defer></script>
-<link rel="stylesheet" href="styles/counter.css">
+<script src="<?= JS_ROOT ?>/counter.js" defer></script>
+<link rel="stylesheet" href="<?= CSS_ROOT ?>/counter.css">
 <template id="counter">
   <button type="button" class="counter__button counter__button-decrease"></button>
   <input type="number" class="counter__input">

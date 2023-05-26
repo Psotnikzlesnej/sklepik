@@ -1,6 +1,6 @@
 
-<script src="js/price_range.js" defer></script>
-<link rel="stylesheet" href="styles/price_range.css">
+<script src="<?= JS_ROOT ?>/price_range.js" defer></script>
+<link rel="stylesheet" href="<?= CSS_ROOT ?>/price_range.css">
 <template id="range">
   <div class="range__container">
     <input type="range" class="range__input range__input--min">

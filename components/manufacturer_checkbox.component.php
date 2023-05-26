@@ -1,4 +1,4 @@
-    <link rel="stylesheet" href="styles/manufacturer_checkbox.css">
+    <link rel="stylesheet" href="<?= CSS_ROOT ?>/manufacturer_checkbox.css">
 
         <div class="producent">
 

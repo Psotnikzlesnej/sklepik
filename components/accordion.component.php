@@ -1,5 +1,5 @@
 
-<link rel="stylesheet" href="styles/accordion.css">
+<link rel="stylesheet" href="<?= CSS_ROOT ?>/accordion.css">
 <aside class="sidebar">
 <p class="sidebar__heading">
                 <span class="sidebar__heading-text">Gniazdka, wyłączniki</span>
@@ -34,4 +34,4 @@
         </li>
     </ul>
 </aside>
-<script src="../js/accordion.js"></script>
+<script src="<?= JS_ROOT ?>/accordion.js"></script>

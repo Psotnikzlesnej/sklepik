@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="styles/item.css">
+<link rel="stylesheet" href="<?= CSS_ROOT ?>/item.css">
 
 <div class="product_tile">
             <div class="item__photo-container">
