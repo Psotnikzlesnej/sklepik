@@ -12,11 +12,14 @@ $current: #E30815;
   // padding: 8px 16px;
 
   &__mode {
+    color: #222627;
     display: flex;
     gap: 5px;
     align-items: center;
 
     &-link {
+      text-decoration: none;
+      color: inherit;
       width: 45px;
       height: 45px;
       display: flex;
@@ -24,9 +27,8 @@ $current: #E30815;
       justify-content: center;
     }
 
-    &-icon {
-      width: 30%;
-      height: 30%;
+    &--current {
+      color: $current
     }
   }
 

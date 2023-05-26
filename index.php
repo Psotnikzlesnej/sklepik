@@ -5,6 +5,7 @@ include_once(__DIR__ . '/utils/php/debug.php');
 $url = isset($_GET['url']) ? $_GET['url'] : 'home';
 $splitted_url = explode("/", $url);
 $layout_determiner = $splitted_url[0];
+// echo 'xD';
 
 if(isset($splitted_url[1])){
   $id = $splitted_url[1];

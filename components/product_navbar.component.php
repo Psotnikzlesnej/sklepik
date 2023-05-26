@@ -1,15 +1,15 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="../styles/product_navbar.css">
+<link rel="stylesheet" href="styles/product_navbar.css">
+<link rel="stylesheet" href="styles/icons.css">
 <?php include __DIR__ . '/select.component.php' ?>
 
 <nav class="product-navbar" id="navbar-product">
     <div class="product-navbar__mode">
         <span class="product-navbar__mode-text">Widok:</span>
         <a href="#" class="product-navbar__mode-link" id="gridViewLink">
-            <i class="product-navbar__mode-icon icon-e90a gridView"></i>
+            <i class="product-navbar__mode-icon icon-grid"></i>
         </a>
         <a href="#" class="product-navbar__mode-link hidden" id="listViewLink">
-            <i class="product-navbar__mode-icon icon-e90b listView"></i>
+            <i class="product-navbar__mode-icon icon-list"></i>
         </a>
     </div>
     <div class="product-navbar__right">
@@ -58,4 +58,4 @@
         </div>
     </div>
 </nav>
-<script src="../js/product_navbar.js"></script>
+<script src="js/product_navbar.js"></script>

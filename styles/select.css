@@ -129,6 +129,7 @@
   padding: 10px;
 }
 .select__list {
+  z-index: 1;
   min-width: 100%;
   width: max-content;
   position: absolute;

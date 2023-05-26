@@ -115,20 +115,22 @@
   justify-content: space-between;
 }
 .product-navbar__mode {
+  color: #222627;
   display: flex;
   gap: 5px;
   align-items: center;
 }
 .product-navbar__mode-link {
+  text-decoration: none;
+  color: inherit;
   width: 45px;
   height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.product-navbar__mode-icon {
-  width: 30%;
-  height: 30%;
+.product-navbar__mode--current {
+  color: #E30815;
 }
 .product-navbar__right {
   display: flex;

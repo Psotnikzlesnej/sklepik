@@ -106,11 +106,6 @@
   font-weight: 900;
   src: url("/fonts/metropolis-blackitalic-webfont.woff2") format("woff2");
 }
-* {
-  padding: 0;
-  margin: 0;
-}
-
 body {
   font-family: "Metropolis", sans-serif;
 }

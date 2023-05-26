@@ -3,6 +3,7 @@
 
 
 <?php 
+odrobaczanie(SCRIPT_ROOT);
 include_once __DIR__ . '/../controllers/product.controller.php';
 require __DIR__. '/../templates/header.php';
 require __DIR__. '/../templates/breadcrumbs.php';
