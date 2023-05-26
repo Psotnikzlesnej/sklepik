@@ -5,7 +5,7 @@ class Model {
     global $mysqli;
     $this->mysqli = $mysqli;
     $this->products_per_page = $GLOBALS['query_pp'] ?? 12;
-    $this->page = $GLOBALS['query_p'] ?? 0;
+    $this->page = $GLOBALS['query_p'] ?? 1;
     $this->offset = ($this->page - 1) * $this->products_per_page;
     $this->boundary = $this->page * $this->products_per_page;
     $this->category = $GLOBALS['catalog_id'] ?? '';
@@ -14,7 +14,7 @@ class Model {
     $this->min_price = $GLOBALS['query_min'] ?? '';
     $this->max_price = $GLOBALS['query_max'] ?? '';
     $this->display_variation = $GLOBALS['query_d'] ?? 'grid';
-    $this->order_by = match($GLOBALS['query_o']){
+    $this->order_by = match($GLOBALS['query_o'] ?? ''){
       'price_asc' => 'curr_price ASC',
       'price_desc' => 'curr_price DESC',
       'name_desc' => 'name DESC',
@@ -23,6 +23,7 @@ class Model {
   }
 
   private function getProducts(){
+    $products = [];
     $query = "SELECT p.ID, p.name, p.promo_price, p.catalog_price, p.serial_number, p.stock,
     GROUP_CONCAT(DISTINCT fl.name SEPARATOR ', ') as flag_names,
     (select p_i.image_name from product_image as p_i 
@@ -50,8 +51,8 @@ class Model {
         AND (? = '' OR curr_price < ?)
           ORDER BY {$this->order_by}
           LIMIT ?, ?;";
-    $result = $mysqli->execute_query($query, [$this->manufacturer, $this->manufacturer, $this->colors, $this->colors, 
-    $this->grid, $this->grid, $this->category, $this->category, $this->min_price, $this->min_price, $this->max_price,
+    $result = $this->mysqli->execute_query($query, [$this->manufacturer, $this->manufacturer, $this->colors, $this->colors, 
+    $this->category, $this->category, $this->min_price, $this->min_price, $this->max_price,
     $this->max_price, $this->offset, $this->boundary]);
     while ($product = $result->fetch_assoc())
     {
@@ -61,8 +62,13 @@ class Model {
   }
 
   private function countProducts(){
-    $query = "SELECT COUNT(*) as count
+    $query = "SELECT COUNT(*) as count, (select p_i.image_name from product_image as p_i 
+    where p_i.product_ID = p.ID ORDER BY p_i.main DESC LIMIT 1) as image_name,
+  CONCAT('%', c.ID, c.name, '%') as category_for_like,
+  IF(GROUP_CONCAT(DISTINCT fl.name SEPARATOR ', ') LIKE '%promo%', promo_price, catalog_price) as curr_price
     FROM product as p
+      LEFT JOIN product_flag as p_f on p_f.product_ID = p.ID
+      LEFT JOIN flag as fl on p_f.flag_ID = fl.ID 
       JOIN product_filter_value as p_f_v ON p_f_v.product_ID = p.ID
       JOIN filter_value as f_v ON f_v.ID = p_f_v.filter_value_ID
       JOIN filter as f ON f.ID = f_v.ID_filter
@@ -79,8 +85,8 @@ class Model {
         ) select GROUP_CONCAT(DISTINCT id, name SEPARATOR ', ') from cte) LIKE category_for_like)
         AND (? = '' OR curr_price > ?)
         AND (? = '' OR curr_price < ?);";
-      $result = $mysqli->execute_query($query, [$this->manufacturer, $this->manufacturer, $this->colors, $this->colors, 
-      $this->grid, $this->grid, $this->category, $this->category, $this->min_price, $this->min_price, $this->max_price,
+      $result = $this->mysqli->execute_query($query, [$this->manufacturer, $this->manufacturer, $this->colors, $this->colors, 
+      $this->category, $this->category, $this->min_price, $this->min_price, $this->max_price,
       $this->max_price]);
       $description = $result->fetch_assoc();
       return $description;

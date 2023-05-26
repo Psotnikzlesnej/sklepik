@@ -8,7 +8,7 @@ class Model{
       }
     private function getProductParameters(){
     $query = "SELECT value, parameter FROM parameter_value";
-    $result = $mysqli->query($query);
+    $result = $this->mysqli->query($query);
     $parameters = $result -> fetch_assoc();
     return $result;
     }

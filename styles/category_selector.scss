@@ -7,8 +7,8 @@ body {
 
 .category_slider {
   display: flex;
-  height: 80px;
-  flex-wrap: nowrap;
+  // height: 80px;
+  flex-wrap: wrap;
 }
 
 img {
@@ -27,7 +27,7 @@ img {
 }
 
 .category_slider__imgBox:hover {
-  border-bottom:  2px solid #F5740B;
+  border-bottom: 2px solid #F5740B;
 }
 
 .category_slider__text {
@@ -78,7 +78,7 @@ img {
 
 @media (min-width: 768px) {
   .category_slider {
-    justify-content: flex-end;
+    // justify-content: flex-end;
     flex-direction: row;
     flex-wrap: wrap;
     width: -75%;

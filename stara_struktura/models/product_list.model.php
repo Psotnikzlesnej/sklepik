@@ -37,7 +37,7 @@ function get_products($offset = '',$boundary = '',$category = '',$manufacturer =
       AND (? = '' OR curr_price < ?)
       	ORDER BY curr_price
         LIMIT ?, ?;";
-  $result= $mysqli->execute_query($query, [$manufacturer, $manufacturer, $colors, $colors, 
+  $result= $this->mysqli->execute_query($query, [$manufacturer, $manufacturer, $colors, $colors, 
   $grid, $grid, $category, $category, $min_price, $min_price, $max_price, $max_price, $offset, $boundary]);
   return $result;
 }
@@ -46,7 +46,7 @@ function get_products($offset = '',$boundary = '',$category = '',$manufacturer =
 function get_categories($curr_category){
   global $mysqli;
   $query = "SELECT ID, name, image_name, description, (ID = ?) as is_current, parent, level from category ORDER BY level;";
-  $result= $mysqli -> execute_query($query, [$curr_category]);
+  $result= $this->mysqli -> execute_query($query, [$curr_category]);
   return $result;
 }
 
@@ -54,7 +54,7 @@ function get_filters(){
   global $mysqli;
   $query = "SELECT filter.name, filter.type, filter.ID, GROUP_CONCAT(DISTINCT filter_value.value SEPARATOR ', ') 
   FROM filter JOIN filter_value ON filter_value.ID_filter = filter.ID GROUP BY ID";
-  $result = $mysqli->query($query);
+  $result = $this->mysqli->query($query);
   return $result;
 }
 
@@ -62,7 +62,7 @@ function getBanner(){
   global $mysqli;
   $select_banner =  "SELECT id,title, description ,image_name, link,visible,type,alt,mask from banner  where type='store' and visible='1'";
 
-  $select_banner_result= $mysqli -> query($select_banner);
+  $select_banner_result= $this->mysqli -> query($select_banner);
   
   if (mysqli_num_rows($select_banner_result) > 0) {
      while($row = mysqli_fetch_assoc($select_banner_result)) {

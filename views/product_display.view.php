@@ -66,13 +66,17 @@ $next_page = $pages_array[$current_index+1] ?? NULL;
 <div class="product-display">
     <?php
         require COMPONENT_ROOT . '/product_navbar.component.php';
-        require COMPONENT_ROOT . '/item.component.php';
-        require COMPONENT_ROOT . '/item.component.php';
-        require COMPONENT_ROOT . '/item.component.php';
-        require COMPONENT_ROOT . '/item.component.php';
-        require COMPONENT_ROOT . '/item.component.php';
-        require COMPONENT_ROOT . '/item.component.php';
-        require COMPONENT_ROOT . '/item.component.php';
+        ?> 
+        <div>
+        <?php foreach($products as $item):
+            ?>
+            <div>
+                <?php require COMPONENT_ROOT . '/item.component.php'; ?>
+            </div>
+        <?php
+        endforeach;
+        ?></div>
+        <?php
         require COMPONENT_ROOT . '/product_navbar.component.php';
     ?>
 </div>
