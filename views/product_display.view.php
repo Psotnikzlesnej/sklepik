@@ -67,10 +67,10 @@ $next_page = $pages_array[$current_index+1] ?? NULL;
     <?php
         require COMPONENT_ROOT . '/product_navbar.component.php';
         ?> 
-        <div>
+        <div class="product-display__grid">
         <?php foreach($products as $item):
             ?>
-            <div>
+            <div class="product-tile-wrapper">
                 <?php require COMPONENT_ROOT . '/item.component.php'; ?>
             </div>
         <?php

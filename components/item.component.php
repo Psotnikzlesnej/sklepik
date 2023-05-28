@@ -1,8 +1,8 @@
-<link rel="stylesheet" href="styles/item.css">
+<link rel="stylesheet" href="<?= CSS_ROOT ?>/item.css">
 
 <div class="product_tile">
             <div class="item__photo-container">
-                <img class="item__photo" src="photos/products/Photo – 1.png" alt="">
+                <img class="item__photo" src="<?= PHOTO_ROOT ?>/products/Photo – 1.png" alt="">
             </div>
             <div class="product_tile-hover">
                 <div class="dsc">

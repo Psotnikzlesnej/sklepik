@@ -15,8 +15,8 @@
   cursor: pointer;
   top: 1427px;
   left: 73px;
-  width: 270px;
-  height: 270px;
+  aspect-ratio: 1/1;
+  max-height: 270px;
   opacity: 1;
   margin-left: auto;
   margin-right: auto;
