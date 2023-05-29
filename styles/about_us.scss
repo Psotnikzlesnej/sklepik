@@ -110,11 +110,13 @@ body {
         color: #FFF;
         font-size: 12px;
         text-transform: uppercase;
+        font-weight: bold;
     }
     &__btnSpanAnchor {
         color: #FFF;
         text-decoration: none;
         font-weight: variables.$regular;
+        font-weight: bold;
     }
 }
 @media (min-width: 768px) {

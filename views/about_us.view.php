@@ -37,7 +37,7 @@
             </ul>
             <button class="whyUs__btn">
                 <span class="whyUs__btnSpan">
-                    <a href="<?= $about_us['link'] ?>" class="whyUs__btnSpanAnchor">infromacje o firmie</a>
+                    <a href="<?= $about_us['link'] ?>" class="whyUs__btnSpanAnchor">informacje o firmie</a>
                 </span>
             </button>
         </div>

@@ -219,11 +219,13 @@ body {
   color: #FFF;
   font-size: 12px;
   text-transform: uppercase;
+  font-weight: bold;
 }
 .whyUs__btnSpanAnchor {
   color: #FFF;
   text-decoration: none;
   font-weight: 400;
+  font-weight: bold;
 }
 
 @media (min-width: 768px) {
