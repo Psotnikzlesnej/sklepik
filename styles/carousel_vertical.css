@@ -4,8 +4,9 @@
 
 .slider-wrapper {
   display: inline-block;
-  margin-left: 20px;
-  margin-top: 45px;
+  margin-left: 10px;
+  margin-top: 27px;
+  margin-right: 20px;
 }
 
 .slides-container {

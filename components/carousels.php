@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="<?= CSS_ROOT ?>/carousel_vertical.css">
+<link rel="stylesheet" href="<?= CSS_ROOT ?>/carousel_horizontal.css">
 
 <div class="slider-wrapper">
   <button class="slide-arrow" id="slide-arrow-prev" >
