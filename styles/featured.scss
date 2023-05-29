@@ -55,6 +55,9 @@ body {
         align-items: center;
         text-align: center;
         justify-content: center;
+        @media (max-width: 375px) {
+            width: 100%;
+        }
     }
 
     &-carousel {
