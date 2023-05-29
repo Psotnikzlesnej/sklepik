@@ -7,11 +7,3 @@ links.forEach((item) => {
   });
 });
 
-window.myFunction = function (event) {
-  // reset all menu items
-  document.querySelectorAll("ul a.active").forEach(function (item) {
-    item.classList.remove("active");
-  });
-  // mark as active selected menu item
-  event.target.classList.add("active");
-};

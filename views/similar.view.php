@@ -4,8 +4,8 @@
     <link rel="stylesheet" href="<?= CSS_ROOT?>/counter.css">
 </head>
 <body>
-    <div class="bg" id="other">
-        <div class="text">Inne z kategorii</div>
+    <div class="bg" >
+        <div class="text" id="other">Inne z kategorii</div>
         <div class="rectangle"></div>
         <div class="border"></div>
 
