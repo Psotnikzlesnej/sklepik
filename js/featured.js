@@ -60,3 +60,16 @@
 
     updateElement(0)
 })()
+window.addEventListener('DOMContentLoaded', (event) => {
+    const featuredCarousel = document.querySelector('.featured-carousel');
+    const prevArrow = featuredCarousel.querySelector('.featured-carousel__arrow--left');
+    const nextArrow = featuredCarousel.querySelector('.featured-carousel__arrow--right');
+    const productContainer = featuredCarousel.querySelector('.featured-carousel__product-container');
+    const products = productContainer.querySelectorAll('.featured-carousel__product');
+  
+    if (products.length <= 4) {
+      prevArrow.style.display = 'none';
+      nextArrow.style.display = 'none';
+    }
+  });
+  
