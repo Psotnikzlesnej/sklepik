@@ -137,7 +137,9 @@ a:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   aspect-ratio: 3/2;
   position: relative;
   overflow: hidden;
@@ -172,7 +174,8 @@ a:active {
 
 .tile__image {
   display: block;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -180,7 +183,8 @@ a:active {
 }
 @media (max-width: 1300px) {
   .tile__image {
-    object-position: center top;
+    -o-object-position: center top;
+       object-position: center top;
   }
 }
 
@@ -220,4 +224,11 @@ a:active {
   cursor: pointer;
 }
 
-/*# sourceMappingURL=tile.css.map */
+@media (max-width: 767px) {
+  .tile__title {
+    font-size: 1.3em;
+  }
+  .tile__dsc {
+    font-size: 1.3em;
+  }
+}/*# sourceMappingURL=tile.css.map */

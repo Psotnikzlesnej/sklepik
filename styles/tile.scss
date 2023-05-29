@@ -104,3 +104,15 @@ a:active { text-decoration: none; }
     border: none;
     cursor: pointer;
   }
+
+  @media (max-width: 767px) {
+    .tile {
+      &__title {
+        font-size: 1.3em;
+      }
+
+      &__dsc {
+        font-size: 1.3em;
+      }
+    }
+  }
