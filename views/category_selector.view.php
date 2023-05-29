@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="<?= CSS_ROOT?>/category_selector.css">
     <script src="<?= JS_ROOT?>/category_selector.js"></script>
-</head>
-<body>
     <div class="category_slider">
         <div class="category_slider__box">
             <div class="category_slider__imgBox" onclick="changeColor(this)">
@@ -46,5 +39,3 @@
             <span class="category_slider__text">Ospel</span>
         </div>
     </div>
-</body>
-</html>

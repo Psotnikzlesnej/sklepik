@@ -133,6 +133,7 @@ body {
 }
 .whyUs__img {
   position: absolute;
+  height: 100%;
 }
 .whyUs__bg {
   position: absolute;

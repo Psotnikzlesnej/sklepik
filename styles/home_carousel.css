@@ -144,4 +144,31 @@ a:active {
   margin-top: 15px;
 }
 
+@media (max-width: 767px) {
+  .home-carousel__element {
+    display: flex;
+    align-items: center;
+  }
+  .home-carousel__element-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: auto;
+  }
+  .home-carousel__title {
+    font-size: 1.5em;
+  }
+  .home-carousel__description {
+    text-align: center;
+    width: 100%;
+    font-size: 1.3em;
+    overflow-wrap: break-word;
+  }
+  .home-carousel__description h2 {
+    font-size: 1.3em;
+  }
+}
+
 /*# sourceMappingURL=home_carousel.css.map */

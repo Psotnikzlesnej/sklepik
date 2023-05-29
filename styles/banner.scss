@@ -1,0 +1,57 @@
+@use '../utils/styles/fonts';
+@use '../utils/styles/variables';
+
+.banner{
+  // width: 1530px;
+  height: 360px;
+  opacity: 1;
+  background-image: url("../photos/banners/img_04.jpg");
+  -webkit-box-shadow: inset 500px 0px 110px 0px rgba(0,0,0,0.55);
+  -moz-box-shadow: inset 500px 0px 110px 0px rgba(0,0,0,0.55);
+  box-shadow: inset 500px 0px 10358px 0px rgba(0,0,0,0.55);
+  font-family: 'Metropolis', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.toptext{
+  margin-left: 54px;
+  width: 363px;
+  height: 44px;
+  text-align: left;
+  font: bold 44px/200px;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.bottomtext{
+  font-weight: 300;
+  margin-left: 54px;
+  width: 396px;
+  height: 44px;
+  text-align: left;
+  font: 44px/200px;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  margin-top: 0;
+}
+.button{
+  border: none;
+  font-family: 'Metropolis', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  /* czcionka */
+  color: white;
+  margin-left: 54px;
+  width: 200px;
+  height: 50px;
+  background: #F74137 0% 0% no-repeat padding-box;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}

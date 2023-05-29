@@ -1,5 +1,5 @@
 <?php
-  namespace CategoryDescription;
+  namespace Banner;
   class Model {
   function __construct(){
     global $mysqli;
@@ -10,7 +10,7 @@
   function getBanner(){
     global $mysqli;
     $query = "SELECT title, description, image_name, link, visible, type, alt, mask from banner where type='store' and visible='1';";
-    $result = $mysqli->query($query);
+    $result = $this->mysqli->query($query);
     $banner = $result->fetch_assoc();
     return $banner;
   }

@@ -1,5 +1,91 @@
-* {
-  margin: 0;
+.product-display__grid {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+@media (max-width: 1400px) {
+  .product-display__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1100px) {
+  .product-display__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.product-tile-wrapper {
+  position: relative;
+}
+.product-tile-wrapper::after {
+  transform: translateY(5px);
+  content: "";
+  width: 100%;
+  display: inline-block;
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+  height: 1px;
+  box-sizing: border-box;
+  background: black;
+  position: relative;
+}
+@media (min-width: 1400px) {
+  .product-tile-wrapper:nth-child(4n+1)::before, .product-tile-wrapper:nth-child(4n+2)::before, .product-tile-wrapper:nth-child(4n+3)::before {
+    transform: translateX(6px);
+    content: "";
+    width: 1px;
+    right: 0;
+    display: inline-block;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    height: 100%;
+    z-index: 1;
+    box-sizing: border-box;
+    background: black;
+    position: absolute;
+  }
+  .product-tile-wrapper:nth-child(4n+1):nth-last-child(-n+4)::after, .product-tile-wrapper:nth-child(4n+1):nth-last-child(-n+4) ~ .product-tile-wrapper::after {
+    display: none;
+  }
+}
+@media (max-width: 1400px) and (min-width: 1101px) {
+  .product-tile-wrapper:nth-child(3n+1)::before, .product-tile-wrapper:nth-child(3n+2)::before {
+    transform: translateX(6px);
+    content: "";
+    width: 1px;
+    right: 0;
+    display: inline-block;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    height: 100%;
+    z-index: 1;
+    box-sizing: border-box;
+    background: black;
+    position: absolute;
+  }
+  .product-tile-wrapper:nth-child(3n+1):nth-last-child(-n+3)::after, .product-tile-wrapper:nth-child(3n+1):nth-last-child(-n+3) ~ .product-tile-wrapper::after {
+    display: none;
+  }
+}
+@media (max-width: 1100px) {
+  .product-tile-wrapper:nth-child(2n+1)::before {
+    transform: translateX(6px);
+    content: "";
+    width: 1px;
+    right: 0;
+    display: inline-block;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    height: 100%;
+    z-index: 1;
+    box-sizing: border-box;
+    background: black;
+    position: absolute;
+  }
+  .product-tile-wrapper:nth-child(2n+1):nth-last-child(-n+2)::after, .product-tile-wrapper:nth-child(2n+1):nth-last-child(-n+2) ~ .product-tile-wrapper::after {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=product_display.css.map */

@@ -112,8 +112,7 @@ body {
 
 .category_slider {
   display: flex;
-  height: 80px;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 img {
@@ -180,7 +179,6 @@ img {
 }
 @media (min-width: 768px) {
   .category_slider {
-    justify-content: flex-end;
     flex-direction: row;
     flex-wrap: wrap;
     width: -75%;

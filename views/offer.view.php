@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="<?= CSS_ROOT?>/offer.css">
-<script src="<?= JS_ROOT?>/carousels.js"></script>
+
 
   <div class="main-container">
     <div class="main-text">
@@ -11,6 +11,7 @@
         <?php
           include_once COMPONENT_ROOT .'/carousels.php';
         ?>
+        <script src="<?= JS_ROOT?>/carousels.js"></script>
       </div>
       <div class="container">
         <div class="shop-min">

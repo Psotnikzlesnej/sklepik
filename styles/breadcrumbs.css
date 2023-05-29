@@ -116,6 +116,7 @@ ul.breadcrumb {
   background-color: #f2f3f5;
   width: 100%;
   padding: 10px 0px;
+  padding-left: 31px;
 }
 
 ul.breadcrumb li {
@@ -135,7 +136,6 @@ ul.breadcrumb li a {
   color: black;
   text-decoration: none;
   font-size: 12px;
-  margin-left: 31px;
 }
 
 ul.breadcrumb li a:hover {

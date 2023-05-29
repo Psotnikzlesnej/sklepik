@@ -46,3 +46,17 @@
 
   updateElement(0)
 })()
+window.addEventListener('DOMContentLoaded', (event) => {
+  const carouselContainer = document.querySelector('.home-carousel-container');
+  const prevArrow = carouselContainer.querySelector('.home-carousel__arrow--left');
+  const nextArrow = carouselContainer.querySelector('.home-carousel__arrow--right');
+  const carouselImages = carouselContainer.querySelectorAll('.home-carousel__image');
+  const dotsContainer = carouselContainer.querySelector('.home-carousel__dots-container');
+
+  if (carouselImages.length <= 1) {
+    prevArrow.style.display = 'none';
+    nextArrow.style.display = 'none';
+    dotsContainer.style.display = 'none';
+  }
+});
+

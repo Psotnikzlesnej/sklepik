@@ -1,9 +1,25 @@
 main {
   display: grid;
   grid-template-columns: 300px 1fr;
-  grid-template-rows: 1fr;
-
+  // grid-template-rows: 200px auto 300px 1fr;
+  // grid-template-areas: 
+  // 'sidebar info-container'
+  // 'sidebar category-slider'
+  // 'sidebar banner'
+  // 'sidebar product-display';
 }
+
+// .banner {
+//   grid-area: banner;
+// }
+
+// .info_container {
+//   grid-area: info-container;
+// }
+
+// .category_slider {
+//   grid-area: category-slider;
+// }
 
 // .breadcrumbs {
 //   grid-area: breadcrumbs;

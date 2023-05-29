@@ -155,3 +155,32 @@ a:active { text-decoration: none; }
 .home-carousel__description p{
   margin-top: 15px;
 }
+
+@media (max-width: 767px) {
+  .home-carousel {
+    &__element {
+      display: flex;
+      align-items: center;
+    }
+    &__element-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin: auto;
+    }
+    &__title {
+      font-size: 1.5em;
+    }
+    &__description {
+      text-align: center;
+      width: 100%;
+      font-size: 1.3em;
+      overflow-wrap: break-word;
+    }
+    &__description h2 {
+      font-size: 1.3em;
+    }
+  }
+}

@@ -220,4 +220,13 @@ a:active {
   cursor: pointer;
 }
 
+@media (max-width: 767px) {
+  .tile__title {
+    font-size: 1.3em;
+  }
+  .tile__dsc {
+    font-size: 1.3em;
+  }
+}
+
 /*# sourceMappingURL=tile.css.map */
