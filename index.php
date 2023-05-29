@@ -28,7 +28,6 @@ $not_found_path = __DIR__ . '/controllers/not_found.controller.php';
 if(file_exists($controller_path)){
   include_once($controller_path);
 }else{
-  echo "xD";
   include_once($not_found_path);
 }
 

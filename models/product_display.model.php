@@ -4,7 +4,7 @@ class Model {
   function __construct(){
     global $mysqli;
     $this->mysqli = $mysqli;
-    $this->products_per_page = $GLOBALS['query_pp'] ?? 12;
+    $this->products_per_page = $GLOBALS['query_pp'] ?? 5;
     $this->page = $GLOBALS['query_p'] ?? 1;
     $this->offset = ($this->page - 1) * $this->products_per_page;
     $this->boundary = $this->page * $this->products_per_page;
@@ -62,7 +62,7 @@ class Model {
   }
 
   private function countProducts(){
-    $query = "SELECT COUNT(*) as count, (select p_i.image_name from product_image as p_i 
+    $query = "SELECT COUNT(*) as count FROM (SELECT (select p_i.image_name from product_image as p_i 
     where p_i.product_ID = p.ID ORDER BY p_i.main DESC LIMIT 1) as image_name,
   CONCAT('%', c.ID, c.name, '%') as category_for_like,
   IF(GROUP_CONCAT(DISTINCT fl.name SEPARATOR ', ') LIKE '%promo%', promo_price, catalog_price) as curr_price
@@ -84,7 +84,7 @@ class Model {
             inner join cte on c.parent = cte.id
         ) select GROUP_CONCAT(DISTINCT id, name SEPARATOR ', ') from cte) LIKE category_for_like)
         AND (? = '' OR curr_price > ?)
-        AND (? = '' OR curr_price < ?);";
+        AND (? = '' OR curr_price < ?)) as xD;";
       $result = $this->mysqli->execute_query($query, [$this->manufacturer, $this->manufacturer, $this->colors, $this->colors, 
       $this->category, $this->category, $this->min_price, $this->min_price, $this->max_price,
       $this->max_price]);
@@ -93,8 +93,14 @@ class Model {
   }
 
   public function getEverything(){
-    $products = $this->getProducts();
     $products_amount = $this->countProducts()['count'];
+    if($products_amount <= $this->offset){
+      $_GET['p'] = 1;
+      $this->page = 1;
+      $this->offset = ($this->page - 1) * $this->products_per_page;
+      $this->boundary = $this->page * $this->products_per_page;
+    }
+    $products = $this->getProducts();
     $pages_amount = ceil($products_amount/$this->products_per_page);
     return ['products'=>$products, 'display_variation'=>$this->display_variation,
       'curr_page'=>$this->page, 'pages_amount'=>$pages_amount];

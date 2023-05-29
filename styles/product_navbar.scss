@@ -21,6 +21,7 @@ $current: #E30815;
     align-items: center;
 
     &-link {
+      background-color: white;
       text-decoration: none;
       color: inherit;
       width: 45px;
@@ -28,11 +29,16 @@ $current: #E30815;
       display: flex;
       align-items: center;
       justify-content: center;
+
+      &--active {
+        color: white;
+        background: $current;
+      }
     }
 
-    &--current {
-      color: $current
-    }
+    // &--current {
+    //   color: $current
+    // }
   }
 
   &__right {
@@ -122,6 +128,11 @@ $current: #E30815;
     &__mode {
       border-left: 1px solid #e1e2e8;
 
+      &--active {
+        color: white;
+        background: $current;
+      }
+
       &-text{
 
       }
@@ -199,11 +210,11 @@ $current: #E30815;
 
     &__mode {
 
-      &-link {
-        width: 35px;
-        height: 35px;
-        background-color: #fff;
-      }
+      // &-link {
+      //   width: 35px;
+      //   height: 35px;
+      //   background-color: #fff;
+      // }
 
       &-icon {
         width: 30%;
