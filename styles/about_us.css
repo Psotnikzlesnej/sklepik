@@ -133,6 +133,7 @@ body {
 }
 .whyUs__img {
   position: absolute;
+  height: 100%;
 }
 .whyUs__bg {
   position: absolute;
@@ -228,8 +229,10 @@ body {
 
 @media (min-width: 768px) {
   .whyUs__img {
-    object-fit: cover;
-    object-position: center top;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center top;
+       object-position: center top;
     opacity: 0.5;
     width: 100%;
     height: auto;
@@ -296,6 +299,4 @@ body {
   .whyUs__btnSpan {
     font-size: 14px;
   }
-}
-
-/*# sourceMappingURL=about_us.css.map */
+}/*# sourceMappingURL=about_us.css.map */
