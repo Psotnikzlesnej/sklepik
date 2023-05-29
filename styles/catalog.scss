@@ -1,12 +1,21 @@
 main {
   display: grid;
   grid-template-columns: 300px 1fr;
+  column-gap: 30px;
   // grid-template-rows: 200px auto 300px 1fr;
   // grid-template-areas: 
   // 'sidebar info-container'
   // 'sidebar category-slider'
   // 'sidebar banner'
   // 'sidebar product-display';
+  @media (max-width: 1100px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+main {
+  // box-sizing: border-box;
+  margin: 20px;
 }
 
 // .banner {

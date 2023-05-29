@@ -115,7 +115,7 @@ body {
   flex-wrap: wrap;
 }
 
-img {
+.category_slider img {
   width: 35px;
   height: 59px;
 }
@@ -160,7 +160,6 @@ img {
 @media (max-width: 767px) {
   .category_slider {
     width: 100%;
-    height: 100%;
     display: flex;
     overflow-x: auto;
   }

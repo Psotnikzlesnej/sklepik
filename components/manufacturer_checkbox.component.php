@@ -163,16 +163,4 @@
 
         </div>
         
-        <script>
-
-    document.getElementById('showMoreButton').addEventListener('click', function() {
-    var checkboxes = document.querySelectorAll('.producent__container');
-    console.log(checkboxes)
-    for (var i = 0; i < checkboxes.length; i++) {
-        checkboxes[i].classList.remove('hidden');
-    }
-    this.style.display = 'none';
-
-    });
-
-        </script>
+        <script src="<?= JS_ROOT ?>/manufacturer_checkbox.js"></script>

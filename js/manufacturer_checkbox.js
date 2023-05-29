@@ -3,5 +3,6 @@ document.getElementById('showMoreButton').addEventListener('click', function() {
     for (var i = 0; i < checkboxes.length; i++) {
         checkboxes[i].classList.remove('hidden');
     }
-    this.style.display = 'none';
+    console.log(this, this.parentElement)
+    this.parentElement.style.display = 'none';
 });

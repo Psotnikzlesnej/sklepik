@@ -9,8 +9,8 @@
 }
 
 .container_text_box {
-    overflow: hidden;
-    height: 80px;
+    // overflow: hidden;
+    // height: 80px;
     margin: 0px;
 }
 
@@ -24,14 +24,11 @@
 }
 
 #readmore {
-    outline: none;
-    overflow: hidden;
     display: inline-flex;
     cursor: pointer;
     margin-left: 15px;
     text-align: left;
     font: normal normal bold 14px/14px Metropolis;
-    letter-spacing: -0.28px;
     color: #22262c;
     text-transform: uppercase;
     opacity: 1;
@@ -39,7 +36,7 @@
 
 .box2 {
     display: flex;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .line {

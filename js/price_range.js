@@ -1,12 +1,10 @@
-const rangeWidth = 257;
-document.documentElement.style.setProperty("--range-width", rangeWidth + "px");
-
 class PriceRange extends HTMLElement {
   constructor() {
     super();
     this.rangeTemplate = document.querySelector("#range");
     const clone = this.rangeTemplate.content.cloneNode(true);
     this.appendChild(clone);
+    this.rangeWidth = this.querySelector(".range__input--min").offsetWidth
     this.rangeMin = this.querySelector('.range__input--min')
     this.rangeMax = this.querySelector('.range__input--max')
     this.inputMin = this.querySelector('.range__value--min')
@@ -19,6 +17,7 @@ class PriceRange extends HTMLElement {
   }
 
   setDefault(){
+    document.documentElement.style.setProperty("--range-width", this.rangeWidth + "px");
     this.rangeMin.value = this.inputMin.value = this.rangeMin.min = this.inputMin.min = this.rangeMax.min = this.inputMax.min = this.bottomBoundary;
     this.rangeMax.value = this.inputMax.value = this.rangeMin.max = this.inputMin.max = this.rangeMax.max = this.inputMax.max = this.topBoundary;
     this.updateProgress()
@@ -65,8 +64,8 @@ class PriceRange extends HTMLElement {
   updateProgress(){
     const maxValue = this.max;
     const minValue = this.min;
-    const minWidth = ((minValue - this.bottomBoundary)/(this.topBoundary-this.bottomBoundary)*rangeWidth)
-    const maxWidth = ((maxValue - this.bottomBoundary) / (this.topBoundary - this.bottomBoundary)*rangeWidth)
+    const minWidth = ((minValue - this.bottomBoundary)/(this.topBoundary-this.bottomBoundary)*this.rangeWidth)
+    const maxWidth = ((maxValue - this.bottomBoundary) / (this.topBoundary - this.bottomBoundary)*this.rangeWidth)
     document.documentElement.style.setProperty("--left", Math.floor(minWidth) + "px");
     document.documentElement.style.setProperty("--width", Math.floor(maxWidth-minWidth) + "px");
   }

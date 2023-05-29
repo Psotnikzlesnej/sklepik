@@ -113,9 +113,12 @@ body {
 }
 
 .producent {
-  width: 298px;
-  height: auto;
-  border: 1px solid #E1E2E8;
+  padding: 20px 0;
+  width: 100%;
+  box-sizing: border-box;
+  height: max-content;
+  border-right: 1px solid #E1E2E8;
+  border-left: 1px solid #E1E2E8;
 }
 
 .producent__title {
@@ -127,7 +130,6 @@ body {
   text-transform: uppercase;
   opacity: 1;
   margin-left: 20px;
-  margin-top: 20px;
   margin-bottom: 20px;
   font-weight: bold;
 }
@@ -189,7 +191,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 20px;
 }
 
 .producent__checkbox {
@@ -204,8 +205,6 @@ body {
 
 .show-more {
   text-align: left;
-  margin-top: 10px;
-  margin-bottom: 10px;
   margin-left: 20px;
 }
 
