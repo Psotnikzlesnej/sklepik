@@ -1,4 +1,4 @@
-const links = document.querySelectorAll(".hejka");
+const links = document.querySelectorAll(".page-navigation__item");
 
 links.forEach((item) => {
   item.addEventListener("click", () => {

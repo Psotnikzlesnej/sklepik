@@ -106,7 +106,7 @@
   font-weight: 900;
   src: url("/fonts/metropolis-blackitalic-webfont.woff2") format("woff2");
 }
-.nav-long {
+.page-navigation {
   background-color: #f8f8f8;
   height: 60px;
   width: 100%;
@@ -115,8 +115,19 @@
   flex-wrap: wrap;
   overflow-x: auto;
 }
-
-.mydiv {
+.page-navigation__container {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.page-navigation__item {
+  text-decoration: none;
+  list-style: none;
+}
+.page-navigation__item:nth-child(n+3) {
+  margin-right: 10px;
+}
+.page-navigation__text {
   padding: 12px;
   width: 185px;
   background-color: #ffffff;
@@ -133,23 +144,7 @@
   margin-left: 10px;
   cursor: pointer;
 }
-
-.cate {
-  display: flex;
-}
-
-.mydiv:hover {
+.page-navigation__text:hover {
   background-color: #f74137;
   color: #ffffff;
-}
-
-.blue {
-  background-color: #f74137;
-  color: #ffffff;
-}
-
-.hejka {
-  text-decoration: none;
-}
-
-/*# sourceMappingURL=page_navigation.css.map */
+}/*# sourceMappingURL=page_navigation.css.map */
