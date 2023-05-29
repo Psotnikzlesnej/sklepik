@@ -106,5 +106,16 @@
     width: 100%;
   }
 }
+@media (min-width: 2560px) {
+  #slide-arrow-next_horizontal {
+    bottom: 200px;
+  }
+  #slide-arrow-prev_horizontal {
+    bottom: 200px;
+  }
+  .slide_horizontal {
+    margin-top: 115px;
+  }
+}
 
 /*# sourceMappingURL=carousel_horizontal.css.map */

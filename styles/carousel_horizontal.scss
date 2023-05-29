@@ -116,10 +116,6 @@
 
 }
 
-
-
-
-
 @media (max-width: 767px) {
 
 
@@ -137,7 +133,20 @@
 }
 
 
+@media (min-width: 2560px) {
 
 
+  #slide-arrow-next_horizontal {
+
+    bottom: 200px;  }
+    #slide-arrow-prev_horizontal {
+    
+      bottom: 200px;  }
+  
+
+      .slide_horizontal {
+            margin-top: 115px;
+    }
 
 
+}
