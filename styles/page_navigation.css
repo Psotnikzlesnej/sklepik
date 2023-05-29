@@ -112,6 +112,8 @@
   width: 100%;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  overflow-x: auto;
 }
 
 .mydiv {
@@ -148,6 +150,4 @@
 
 .hejka {
   text-decoration: none;
-}
-
-/*# sourceMappingURL=page_navigation.css.map */
+}/*# sourceMappingURL=page_navigation.css.map */
