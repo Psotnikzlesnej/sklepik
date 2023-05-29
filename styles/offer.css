@@ -494,6 +494,7 @@ body {
   }
 }
 .main-container__product {
+  height: 500px;
   width: 60%;
   display: flex;
 }
@@ -519,7 +520,8 @@ body {
   margin-bottom: 5px;
 }
 
-.prom, .new {
+.prom,
+.new {
   margin-right: 0;
   margin-left: 0;
 }

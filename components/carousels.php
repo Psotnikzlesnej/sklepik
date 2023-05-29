@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="<?= CSS_ROOT ?>/icons.css">
 
 <div class="slider-wrapper">
-  <button class="slide-arrow" id="slide-arrow-prev" >
+<button class="slide-arrow-vertical slide-arrow-vertical--prev" id="slide-arrow-prev" >
     <i class="icon-arrow-left"  style="
       display: block;
       margin-bottom: 0px;
@@ -14,22 +14,22 @@
        color: white;">
 
     </i>
-  </button>
+    </button>
 
   <ul class="slides-container" id="slides-container">
-    <div class="slide"><img class="image_149" src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
-    <div class="slide"><img class="image_149" src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
-    <div class="slide"><img class="image_149" src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
-    <div class="slide"><img class="image_149" src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
-    <div class="slide"><img class="image_149" src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
-    <div class="slide"><img class="image_149" src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
-    <div class="slide"><img class="image_149" src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
-    <div class="slide"><img class="image_149" src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
-    <div class="slide"><img class="image_149" src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
-    <div class="slide"><img class="image_149" src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
+    <div class="slide-vertical"><img class="image_149" src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
+    <div class="slide-vertical"><img class="image_149" src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
+    <div class="slide-vertical"><img class="image_149" src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
+    <div class="slide-vertical"><img class="image_149" src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
+    <div class="slide-vertical"><img class="image_149" src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
+    <div class="slide-vertical"><img class="image_149" src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
+    <div class="slide-vertical"><img class="image_149" src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
+    <div class="slide-vertical"><img class="image_149" src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
+    <div class="slide-vertical"><img class="image_149" src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
+    <div class="slide-vertical"><img class="image_149" src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
   </ul>
 
-  <button class="slide-arrow" id="slide-arrow-next">
+  <button class="slide-arrow-vertical slide-arrow-vertical--next" id="slide-arrow-next">
     <i class="icon-arrow-right" style="
       display: block;
       margin-bottom: 0px;
