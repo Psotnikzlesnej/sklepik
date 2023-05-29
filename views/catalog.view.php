@@ -7,13 +7,12 @@
 <main>
   <?php include CONTROLLER_ROOT .'/sidebar.controller.php';
   ?>
-  <div>
-  <?php
-    include CONTROLLER_ROOT .'/category_description.controller.php';
-    include CONTROLLER_ROOT .'/category_selector.controller.php';
-    include CONTROLLER_ROOT .'/banner.controller.php';
-    include CONTROLLER_ROOT .'/product_display.controller.php';
-  ?>
+  <div class="left-wrapper">
+    <?php
+      include CONTROLLER_ROOT .'/category_description.controller.php';
+      include CONTROLLER_ROOT .'/category_selector.controller.php';
+      include CONTROLLER_ROOT .'/product_display.controller.php';
+    ?>
   </div>
 </main>
 <?php include TEMPLATE_ROOT .'/footer.php'?>

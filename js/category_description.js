@@ -8,11 +8,11 @@ function readmore() {
         dots.style.display = "inline";
         readmore.innerHTML = "Rozwiń";
         more.style.display = "none";
-        box.style.height = "150px";
+        // box.style.height = "150px";
     } else {
         dots.style.display = "none";
         readmore.innerHTML = "Zwiń";
         more.style.display = "inline";
-        box.style.height = "140px";
+        // box.style.height = "140px";
     }
 }

@@ -5,14 +5,13 @@
 .word-container {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
-    margin-top: 10px;
-
+    padding: 10px 20px;
+    justify-content: space-between;
 }
 
 .word {
-    margin-right: 175px;
-    margin-left: 20px;
+    // margin-right: 175px;
+    // margin-left: 20px;
 
 }
 
@@ -29,18 +28,22 @@ justify-content: center;
 align-items: center;
 }
 .filtry-container{
+    width: 100%;
+    box-sizing: border-box;
     background-color: bisque;
-    width: 298px;
+    // width: 298px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #E1E2E8;
     opacity: 1;
     background-color: #F2F3F4;
 }
 .filtry{
+    width: 100%;
+    box-sizing: border-box;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #E1E2E8;
     opacity: 1;
-    width: 298px;
+    // width: 298px;
     border-bottom: none;
     font-weight: bold;
     
