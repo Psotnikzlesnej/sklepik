@@ -337,11 +337,10 @@ body {
   .main-container {
     display: flex;
     flex-direction: column;
-    padding: 15px;
   }
   .main-text {
     font-size: 28px;
-    padding: 0;
+    padding: 15px;
     display: flex;
     flex-direction: column;
   }
@@ -353,6 +352,7 @@ body {
     flex-direction: column;
     width: 100%;
     margin-top: 15px;
+    padding: 15px;
     height: 100%;
   }
   .id {
@@ -434,7 +434,6 @@ body {
   .container {
     width: 40%;
     flex-direction: column;
-    align-self: flex-end;
   }
   .shop-min {
     width: 100%;
@@ -495,7 +494,8 @@ body {
   }
 }
 .main-container__product {
-  width: 100%;
+  width: 60%;
+  display: flex;
 }
 
 .gowno {
@@ -510,10 +510,9 @@ body {
 .info {
   display: flex;
   flex-direction: column;
-  padding: 10px;
   position: absolute;
   top: 0;
-  right: 0;
+  right: 15px;
 }
 
 .prom {
