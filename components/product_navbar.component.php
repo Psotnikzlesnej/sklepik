@@ -37,7 +37,7 @@
                 if($previous_page):
                 $new_url = get_new_page_url($url_manipulator, "$previous_page");
             ?>
-                <a href="<?= $new_url ?>" class="product-navbar__page-link"><</a>
+                <a href="<?= $new_url ?>" class="product-navbar__page-link product-navbar__page-link--arrow"><</a>
             <?php
                 endif;
                 foreach($pages_array as $page_id):
@@ -53,7 +53,7 @@
                 if($next_page):
                 $new_url = get_new_page_url($url_manipulator, "$next_page");
             ?>
-            <a href="<?= $new_url ?>" class="product-navbar__page-link">></a>
+            <a href="<?= $new_url ?>" class="product-navbar__page-link product-navbar__page-link--arrow">></a>
         <?php endif; ?>
         </div>
     </div>

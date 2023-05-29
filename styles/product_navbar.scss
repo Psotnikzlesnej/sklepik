@@ -104,11 +104,19 @@ $current: #E30815;
       padding: 0 5px;
       justify-content: center;
 
-      .product-navbar__section, .product-navbar__mode {
+      .product-navbar__section, .product-navbar__mode, .product-navbar__page-dots {
         display: none;
       } 
       .product-navbar__pages {
         display: flex;
+      }
+
+      .product-navbar__page-link {
+        display: none;
+
+        &--arrow, &--current {
+          display: flex;
+        }
       }
     }
     &__mode {
