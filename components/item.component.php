@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="<?= CSS_ROOT ?>/item.css">
-
+        <a href="/sklepik/product/<?= $item['ID']?>">
 <div class="product_tile">
             <div class="item__photo-container">
                 <img class="item__photo" src="<?= PHOTO_ROOT ?><?= $item['image_name']?>" alt="">
@@ -14,6 +14,7 @@
                     <div class="price2"><?= $item['promo_price'] ?></div>
                 </div>
             </div>
+            </a>
             <div class="addtocart">
                 <?php include COMPONENT_ROOT . '/counter.component.php'; ?>
                     <div class="counter_container">
