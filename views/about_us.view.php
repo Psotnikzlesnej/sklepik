@@ -10,7 +10,7 @@
 
 
     <section class="whyUs">
-        <img src="<?= PHOTO_ROOT?>/banners/<?= $about_us['image_name'] ?>" alt="" class="whyUs__img">
+        <img src="<?= PHOTO_ROOT?><?= $about_us['image_name'] ?>" alt="" class="whyUs__img">
         <div class="whyUs__content">
             <h3 class="whyUs__heading"><?= $about_us['title'] ?>
 </h3>

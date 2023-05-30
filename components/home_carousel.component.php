@@ -16,7 +16,7 @@
         </div>
         <div class="home-carousel__image-container">
           <img class="home-carousel__image <?= $banner['mask'] ? 'home-carousel__image--mask' : '' ?>" 
-          src="<?= PHOTO_ROOT ?>/banners/<?= $banner['image_name'] ?>" alt="<?= $banner['alt'] ?>">
+          src="<?= PHOTO_ROOT ?><?= $banner['image_name'] ?>" alt="<?= $banner['alt'] ?>">
         </div>
       </div>
       <?php endforeach ?>
