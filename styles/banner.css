@@ -107,6 +107,8 @@
   src: url("/fonts/metropolis-blackitalic-webfont.woff2") format("woff2");
 }
 .banner {
+  padding-right: -20px;
+  width: 950px;
   height: 360px;
   opacity: 1;
   background-image: url("../photos/banners/img_04.jpg");

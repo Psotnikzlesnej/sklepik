@@ -11,7 +11,7 @@
         <li class="sidebar__listItem">
         <a class="sidebar__listItemAnchor sidebar__listItemAnchor--active" href="#">
                 Berker
-                <i class="sidebar__btnIcon minus" id="changeIcon4"></i>
+                <i class="sidebar__btnIcon icon-minus" id="changeIcon4"></i>
 </a>
             <ul class="sidebar__nestedList">
                 <li class="sidebar__nestedListItem">
@@ -29,7 +29,7 @@
         <li class="sidebar__listItem">
             <a class="sidebar__listItemAnchor" href="#">
                 Berker
-                <i class="sidebar__btnIcon plus" id="changeIcon4"></i>
+                <i class="sidebar__btnIcon icon-plus" id="changeIcon4"></i>
             </a>
         </li>
     </ul>

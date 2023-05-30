@@ -1,3 +1,9 @@
+@use '../utils/styles/fonts';
+@use '../utils/styles/variables';
+
+.info_container{
+    font-family: 'Metropolis', sans-serif;
+}
 #more {
     display: none;
     overflow: hidden;
@@ -19,11 +25,13 @@
 // }
 
 .text {
+    font-family: 'Metropolis', sans-serif;
     margin: 0px;
     display: inline;
 }
 
 #readmore {
+    font-family: 'Metropolis', sans-serif;
     display: inline-flex;
     cursor: pointer;
     margin-left: 15px;
@@ -47,3 +55,4 @@
     margin-top: 6px;
     transition: height 400ms;
 }
+ 

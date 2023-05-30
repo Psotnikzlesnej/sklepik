@@ -2,7 +2,8 @@
 @use '../utils/styles/variables';
 
 .banner{
-  // width: 1530px;
+  padding-right: -20px;
+  width: 950px;
   height: 360px;
   opacity: 1;
   background-image: url("../photos/banners/img_04.jpg");
@@ -55,3 +56,4 @@
   text-align: center;
   justify-content: center;
 }
+

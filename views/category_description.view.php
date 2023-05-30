@@ -3,7 +3,7 @@
 
     <div class="info_container">
 
-            <div class= "container">
+            <div class= "container"> 
             <h1>Przykładowy tytuł</h1>
 
 

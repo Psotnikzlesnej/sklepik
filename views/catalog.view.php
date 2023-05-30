@@ -11,6 +11,7 @@
     <?php
       include CONTROLLER_ROOT .'/category_description.controller.php';
       include CONTROLLER_ROOT .'/category_selector.controller.php';
+      include CONTROLLER_ROOT .'/banner.controller.php';
       include CONTROLLER_ROOT .'/product_display.controller.php';
     ?>
   </div>
