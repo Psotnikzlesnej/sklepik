@@ -58,10 +58,16 @@
   </button>
 
   <ul class="slides-container_horizontal" id="slides-container_horizontal">
-    <div class="slide_horizontal"><img src="<?= PHOTO_ROOT ?>/products/Photo – 1.png"></div>
-    <div class="slide_horizontal"><img src="<?= PHOTO_ROOT ?>/products/Photo – 1.png"></div>
-    <div class="slide_horizontal"><img src="<?= PHOTO_ROOT ?>/products/Photo – 1.png"></div>
-    <div class="slide_horizontal"><img src="<?= PHOTO_ROOT ?>/products/Photo – 1.png"></div>
+    <div class="slide_horizontal"><img src="<?= PHOTO_ROOT ?>/products/Photo – 1.png" class="slide-horizontal__photo"></div>
+    <div class="slide_horizontal"><img src="<?= PHOTO_ROOT ?>/products/Photo – 1.png" class="slide-horizontal__photo"></div>
+    <div class="slide_horizontal"><img src="<?= PHOTO_ROOT ?>/products/Photo – 1.png" class="slide-horizontal__photo"></div>
+    <div class="slide_horizontal"><img src="<?= PHOTO_ROOT ?>/products/Photo – 1.png" class="slide-horizontal__photo"></div>
+    <div class="slide_horizontal"><img src="<?= PHOTO_ROOT ?>/products/Photo – 1.png" class="slide-horizontal__photo"></div>
+    <div class="slide_horizontal"><img src="<?= PHOTO_ROOT ?>/products/Photo – 1.png" class="slide-horizontal__photo"></div>
+    <div class="slide_horizontal"><img src="<?= PHOTO_ROOT ?>/products/Photo – 1.png" class="slide-horizontal__photo"></div>
+    <div class="slide_horizontal"><img src="<?= PHOTO_ROOT ?>/products/Photo – 1.png" class="slide-horizontal__photo"></div>
+    <div class="slide_horizontal"><img src="<?= PHOTO_ROOT ?>/products/Photo – 1.png" class="slide-horizontal__photo"></div>
+    <div class="slide_horizontal"><img src="<?= PHOTO_ROOT ?>/products/Photo – 1.png" class="slide-horizontal__photo"></div>
   </ul>
 
   <button class="slide-arrow_horizontal" id="slide-arrow-next_horizontal">

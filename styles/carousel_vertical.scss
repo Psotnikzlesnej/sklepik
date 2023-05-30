@@ -21,8 +21,13 @@
 }
 
 .slide-vertical {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #E1E2E8;
+  margin-bottom: 5px;
   &--current {
-    background: red;
+    border: 1px solid black;
   }
 }
 
@@ -53,6 +58,12 @@
   border: none;
   flex-shrink: 0;
   flex-grow: 1;
+  &--prev {
+    margin-bottom: 10px;
+  }
+  &--next {
+    margin-top: 10px;
+  }
 }
 
 .slide {
@@ -90,7 +101,8 @@
 .image_149 {
   width: 31px;
   height: 52px;
-  margin-top: 7px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .slide {

@@ -491,21 +491,16 @@ body {
   .main-container__product {
     padding-bottom: 30px;
     padding-left: 30px;
+    width: 60%;
+  }
+  .container {
+    width: 40%;
   }
 }
 .main-container__product {
   height: 500px;
   width: 60%;
   display: flex;
-}
-
-.gowno {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  height: 100%;
-  border: 1px solid #e1e2e8;
 }
 
 .info {
@@ -524,6 +519,4 @@ body {
 .new {
   margin-right: 0;
   margin-left: 0;
-}
-
-/*# sourceMappingURL=offer.css.map */
+}/*# sourceMappingURL=offer.css.map */
