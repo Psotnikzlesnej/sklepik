@@ -84,13 +84,16 @@ function verticalClick(i) {
   if (currIndex === oldIndex) {
     return;
   }
-  const shouldInverse =
+  const goBackwards =
     !slides[0].classList.contains("slide_horizontal--reverse") &&
     oldIndex > currIndex;
+  const goForward =
+    slides[0].classList.contains("slide_horizontal--reverse") &&
+    oldIndex < currIndex;
   slides.forEach((slide) => {
-    if (shouldInverse) {
+    if (goBackwards) {
       slide.classList.add("slide_horizontal--reverse");
-    } else {
+    } else if (goForward) {
       slide.classList.remove("slide_horizontal--reverse");
     }
   });

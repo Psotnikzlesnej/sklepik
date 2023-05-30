@@ -78,6 +78,10 @@
   // flex: 0 0 97%;
   margin-top: 15px;
 
+  img {
+    width: 100%
+  }
+
   &--current {
     transition: transform 0.5s;
     transform: translateX(0);
