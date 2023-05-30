@@ -33,7 +33,7 @@
   border-right: 5px solid white;
   height: 1px;
   box-sizing: border-box;
-  background: black;
+  background: #E1E2E8 0% 0% no-repeat padding-box;
   position: relative;
 }
 @media (min-width: 1400px) {
@@ -48,7 +48,7 @@
     height: 100%;
     z-index: 1;
     box-sizing: border-box;
-    background: black;
+    background: #E1E2E8 0% 0% no-repeat padding-box;
     position: absolute;
   }
   .product-tile-wrapper:nth-child(4n+1):nth-last-child(-n+4)::after, .product-tile-wrapper:nth-child(4n+1):nth-last-child(-n+4) ~ .product-tile-wrapper::after {
@@ -67,7 +67,7 @@
     height: 100%;
     z-index: 1;
     box-sizing: border-box;
-    background: black;
+    background: #E1E2E8 0% 0% no-repeat padding-box;
     position: absolute;
   }
   .product-tile-wrapper:nth-child(3n+1):nth-last-child(-n+3)::after, .product-tile-wrapper:nth-child(3n+1):nth-last-child(-n+3) ~ .product-tile-wrapper::after {
@@ -86,7 +86,7 @@
     height: 100%;
     z-index: 1;
     box-sizing: border-box;
-    background: black;
+    background: #E1E2E8 0% 0% no-repeat padding-box;
     position: absolute;
   }
   .product-tile-wrapper:nth-child(2n+1):nth-last-child(-n+2)::after, .product-tile-wrapper:nth-child(2n+1):nth-last-child(-n+2) ~ .product-tile-wrapper::after {

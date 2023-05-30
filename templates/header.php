@@ -7,7 +7,9 @@
     <div class="container-header">
       <div  class="menu-long">
         <div class="logo">
+          <a href="/sklepik/">
           <img src="<?= STATIC_ROOT ?>/logo.png" alt="logo">
+          </a>
         </div>
         <div class="menu__text">
           <a href="javascript:void(0);" class="hamburger mobile__block" onclick="hamburger()">
@@ -69,22 +71,22 @@
         </div>
       </div>
       <div class="menu" id="hamburger__menu">
-        <a class="menu__item menu__item--left" href="#">
+        <a class="menu__item menu__item--left" href="/sklepik/catalog/6">
           <span class="span_header">ŹRÓDŁA ŚWIATŁA</span>
         </a>
-        <a class="menu__item" href="#">
+        <a class="menu__item" href="/sklepik/catalog/7">
           <span class="span_header">OŚWIETLENIE WEWNETRZNE</span>
         </a>
-        <a class="menu__item" href="#">
+        <a class="menu__item" href="/sklepik/catalog/1">
           <span class="span_header">GNIAZDKA, WYŁĄCZNIKI</span>
         </a>
-        <a class="menu__item" href="#">
+        <a class="menu__item" href="/sklepik/catalog/5">
           <span class="span_header">AUTOMATYKA, STEROWANIE</span>
         </a>
-        <a  class="menu__item" href="#">
+        <a  class="menu__item" href="/sklepik/catalog/8">
           <span class="span_header">ROZDZIELANIE I APARATURA</span>
         </a>
-        <a class="menu__item menu__item--right" href="#">
+        <a class="menu__item menu__item--right" href="/sklepik/catalog/9">
           <span class="span_header">MATERIAŁY INSTALACYJNE</span>
         </a>
       </div>
