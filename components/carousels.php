@@ -15,18 +15,11 @@
 
     </i>
     </button>
-
   <ul class="slides-container" id="slides-container">
-    <div class="slide-vertical"><img class="image_149" src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
-    <div class="slide-vertical"><img class="image_149" src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
-    <div class="slide-vertical"><img class="image_149" src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
-    <div class="slide-vertical"><img class="image_149" src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
-    <div class="slide-vertical"><img class="image_149" src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
-    <div class="slide-vertical"><img class="image_149" src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
-    <div class="slide-vertical"><img class="image_149" src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
-    <div class="slide-vertical"><img class="image_149" src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
-    <div class="slide-vertical"><img class="image_149" src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
-    <div class="slide-vertical"><img class="image_149" src="<?= PHOTO_ROOT ?>\categories\Image 149.png"></div>
+
+    <?php foreach($vertical as $vert): ?>
+    <div class="slide-vertical"><img class="image_149" src="<?= PHOTO_ROOT ?><?= $vert['image_name']?>"></div>
+    <?php endforeach ?>
   </ul>
 
   <button class="slide-arrow-vertical slide-arrow-vertical--next" id="slide-arrow-next">
@@ -58,16 +51,9 @@
   </button>
 
   <ul class="slides-container_horizontal" id="slides-container_horizontal">
-    <div class="slide_horizontal"><img src="<?= PHOTO_ROOT ?>/products/Photo – 1.png" class="slide-horizontal__photo"></div>
-    <div class="slide_horizontal"><img src="<?= PHOTO_ROOT ?>/products/Photo – 1.png" class="slide-horizontal__photo"></div>
-    <div class="slide_horizontal"><img src="<?= PHOTO_ROOT ?>/products/Photo – 1.png" class="slide-horizontal__photo"></div>
-    <div class="slide_horizontal"><img src="<?= PHOTO_ROOT ?>/products/Photo – 1.png" class="slide-horizontal__photo"></div>
-    <div class="slide_horizontal"><img src="<?= PHOTO_ROOT ?>/products/Photo – 1.png" class="slide-horizontal__photo"></div>
-    <div class="slide_horizontal"><img src="<?= PHOTO_ROOT ?>/products/Photo – 1.png" class="slide-horizontal__photo"></div>
-    <div class="slide_horizontal"><img src="<?= PHOTO_ROOT ?>/products/Photo – 1.png" class="slide-horizontal__photo"></div>
-    <div class="slide_horizontal"><img src="<?= PHOTO_ROOT ?>/products/Photo – 1.png" class="slide-horizontal__photo"></div>
-    <div class="slide_horizontal"><img src="<?= PHOTO_ROOT ?>/products/Photo – 1.png" class="slide-horizontal__photo"></div>
-    <div class="slide_horizontal"><img src="<?= PHOTO_ROOT ?>/products/Photo – 1.png" class="slide-horizontal__photo"></div>
+    <?php foreach($horizontal as $horiz): ?>
+    <div class="slide-horizontal"><img class="slide-horizontal__photo" src="<?= PHOTO_ROOT ?><?= $horiz['image_name']?>"></div>
+    <?php endforeach ?>
   </ul>
 
   <button class="slide-arrow_horizontal" id="slide-arrow-next_horizontal">

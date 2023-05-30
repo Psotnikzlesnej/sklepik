@@ -1,7 +1,7 @@
 CREATE TABLE `product` (
   `ID` integer PRIMARY KEY,
   `name` varchar(255),
-  `description` varchar(255),
+  `description` varchar(4096),
   `video_url` varchar(255),
   `promo_price` decimal,
   `catalog_price` decimal,

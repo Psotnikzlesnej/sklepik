@@ -3,8 +3,8 @@
 
   <div class="main-container">
     <div class="main-text">
-      <span>Łącznik jednobiegunowy (moduł) 10AX, 250V~, zaciski śrubowe</span>
-      <img src="<?= PHOTO_ROOT?>/manufacturers/Philips_logo.png" style="height: 17px;margin-right: 15px; "alt="">
+      <span><?= $product_offer['name']?></span>
+      <img src="<?= PHOTO_ROOT?><?= $product_offer['manufacturer_image']?>" style="height: 17px;margin-right: 15px; "alt="">
     </div>
     <div class="main-container__display">
       <div class="main-container__product">
@@ -15,7 +15,7 @@
       <div class="container">
         <div class="shop-min">
           <div class="id">
-            <span>IPC-HFW2231S-S-0280B</span>
+            <span><?= $product_offer['serial_number']?></span>
             <div>
               <div class="main_id">
                 <div class="Dostępne" >
@@ -27,7 +27,7 @@
                       <line id="Line_380" data-name="Line 380" x2="8.115" y2="4.426" transform="translate(4.057 2.213)" fill="none" stroke="#80b61d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
                     </g>
                   </svg>
-                  <span>Dostępny</span>
+                  <span>Dostępny </span>
                 </div>
                 <div class="vertical_line"></div>
                 <div class="xd">
@@ -42,7 +42,7 @@
                       </g>
                     </g>
                   </svg>
-                  <span>24H</span>
+                  <span><?= $product_offer['delivery_name']?></span>
                 </div>
               </div>
               <br>
@@ -52,13 +52,13 @@
             </div>
             <div class="container-product">
               <div class="item1">
-                <img src="photos/categories/49.png" alt="light" class="img1">
+                <img src="<?= PHOTO_ROOT ?>/categories/49.png" alt="light" class="img1">
                 <div style="display: flex; align-items: center; justify-content: center;">
                   <span>Biały</span>
                 </div>
               </div>
               <div class="item2">
-                <img src="photos/categories/49.png" alt="light" class="img1">
+                <img src="<?= PHOTO_ROOT ?>/categories/49.png" alt="light" class="img1">
                 <div class="black_variant">
                   <span>Czarny</span>
                 </div>
@@ -68,10 +68,10 @@
           <div class="shopme">
             <div class="shopme-border">
               <div class="high">
-                <s>656,65 zł</s>
+                <s><?= $product_offer['catalog_price']?></s>
               </div>
               <div class="low">
-                <span>442,85 zł</span>
+                <span> <?= $product_offer['promo_price']?></span>
               </div>
               <div class="addtocart_offer">
               <div class="counter_container_offer">

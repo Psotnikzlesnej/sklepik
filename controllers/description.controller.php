@@ -1,5 +1,5 @@
 <?php
-namespace Description;
+namespace ProductDescription;
 $component_name='description';
 include_once MODEL_ROOT.'/'.$component_name.'.model.php';
 include_once UTIL_ROOT . '/php/controller.php';
