@@ -32,9 +32,6 @@ body {
   font-weight: bold;
 }
 
-
-
-
 .id {
   text-align: left;
   font-size: 14px;
@@ -235,12 +232,11 @@ body {
   .main-container {
     display: flex;
     flex-direction: column;
-    
   }
   .main-text {
     font-size: 28px;
     padding: 15px;
-        display: flex;
+    display: flex;
     flex-direction: column;
   }
   .main-text img {
@@ -311,7 +307,7 @@ body {
   }
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .container {
     flex-direction: row-reverse;
   }
@@ -399,6 +395,7 @@ body {
 }
 
 .main-container__product {
+  height: 500px;
   width: 60%;
   display: flex;
 }
@@ -422,9 +419,8 @@ body {
 .prom {
   margin-bottom: 5px;
 }
-.prom, .new {
+.prom,
+.new {
   margin-right: 0;
   margin-left: 0;
 }
-
-

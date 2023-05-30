@@ -1,7 +1,6 @@
 <link rel="stylesheet" href="<?= CSS_ROOT?>/product_display.css">
 <?php
 $url = $_SERVER['REQUEST_URI'];
-$url_manipulator = new URLManipulator($url);
 
 class URLManipulator {
     public function __construct($url){
@@ -10,22 +9,21 @@ class URLManipulator {
         parse_str($queries, $this->query_params);
     }
 
-    public function setParam($key, ...$values){
+    private function setParam($key, ...$values){
         $this->query_params[$key] = join(',', $values);
     }
 
-    public function build_url(){
+    private function build_url(){
         $encoded_query = http_build_query($this->query_params);
         return $this->url_parts['path'] . '?' . $encoded_query;
     }
-}
 
-function get_new_page_url($url_manipulator, $page) {
-    $url_manipulator->setParam('p', $page);
-    $new_url = $url_manipulator->build_url();
-    return $new_url;
+    public function get_new_url($key, $value){
+        $this->setParam($key, $value);
+        $new_url = $this->build_url();
+        return $new_url;
+    }
 }
-
 
 function generateNavigation($pages, $currentPage, $middle_count = 3){
 	if ($pages < 1) return [];
@@ -54,11 +52,8 @@ function generateNavigation($pages, $currentPage, $middle_count = 3){
 	return $visiblePages;
 };
 
-$current_page = 4;
-$pages_amount = 51;
-
-$pages_array = generateNavigation($pages_amount, $current_page);
-$current_index = array_search($current_page, $pages_array);
+$pages_array = generateNavigation($pages_amount, $curr_page);
+$current_index = array_search($curr_page, $pages_array);
 $previous_page = $pages_array[$current_index-1] ?? NULL;
 $next_page = $pages_array[$current_index+1] ?? NULL;
 ?>

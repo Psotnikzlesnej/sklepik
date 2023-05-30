@@ -2,7 +2,7 @@
 
 <?php include TEMPLATE_ROOT .'/header.php'?>
 <?php
-  include TEMPLATE_ROOT .'/breadcrumbs.php'
+  // include TEMPLATE_ROOT .'/breadcrumbs.php'
 ?>
 <main>
   <?php include CONTROLLER_ROOT .'/sidebar.controller.php';

@@ -1,6 +1,7 @@
 @use "../utils/styles/fonts";
 @use "../utils/styles/variables";
-.nav-long {
+
+.page-navigation {
   background-color: #f8f8f8;
   height: 60px;
   width: 100%;
@@ -8,40 +9,37 @@
   align-items: center;
   flex-wrap: wrap;
   overflow-x: auto;
-}
-
-.mydiv {
-  padding: 12px;
-  width: 185px;
-  background-color: #ffffff;
-  font-weight: bold;
-  text-align: left;
-  font-size: 14px;
-  letter-spacing: -0.28px;
-  color: #111111;
-  text-transform: uppercase;
-  opacity: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 10px;
-  cursor: pointer;
-}
-
-.cate {
-  display: flex;
-}
-
-.mydiv:hover {
-  background-color: #f74137;
-  color: #ffffff;
-}
-
-.blue {
-  background-color: #f74137;
-  color: #ffffff;
-}
-
-.hejka {
-  text-decoration: none;
+  &__container {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  &__item {
+    text-decoration: none;
+    list-style: none;
+  }
+  &__item:nth-child(n+3) {
+    margin-right: 10px;
+  }
+  &__text {
+    padding: 12px;
+    width: 185px;
+    background-color: #ffffff;
+    font-weight: bold;
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: -0.28px;
+    color: #111111;
+    text-transform: uppercase;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  &__text:hover {
+    background-color: #f74137;
+    color: #ffffff;
+  }
 }

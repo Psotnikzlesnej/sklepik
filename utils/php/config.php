@@ -1,5 +1,7 @@
 <?php 
 
+error_reporting(E_ALL ^ E_DEPRECATED);
+
 
 $default_credentials = [
   'HOSTNAME' => 'localhost', 

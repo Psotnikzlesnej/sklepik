@@ -159,6 +159,11 @@ body {
   text-align: center;
   justify-content: center;
 }
+@media (max-width: 375px) {
+  .featured__button {
+    width: 100%;
+  }
+}
 .featured-carousel {
   height: 500px;
   overflow: hidden;

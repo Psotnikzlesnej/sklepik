@@ -215,7 +215,6 @@ body .hamburger {
     display: inline;
     text-align: center;
     padding: 10px;
-    width: 100%;
     text-decoration: none;
     color: black;
     border: none;
@@ -318,7 +317,9 @@ body .hamburger {
   body .menu {
     display: flex !important;
     border-top: 1px solid #e1e2e8;
-    height: 57px;
+    /* height: 57px; */
+    justify-content: center;
+    align-items: center;
   }
   body .box {
     text-align: center;
