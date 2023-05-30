@@ -72,6 +72,9 @@
   transform: translateX(100%);
   margin-top: 15px;
 }
+.slide_horizontal img {
+  width: 100%;
+}
 .slide_horizontal--current {
   transition: transform 0.5s;
   transform: translateX(0);
